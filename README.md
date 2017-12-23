@@ -1,2 +1,2 @@
-# blanched-almond-paper
+# Off-Whitepaper
 Rewrite of the Yellowpaper in non-Yellowpaper syntax.
