@@ -1,0 +1,44 @@
+\documentclass[9pt,a4paper,oneside]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[style=ieee]{biblatex}
+\usepackage[a4paper,width=170mm,top=18mm,bottom=22mm,includeheadfoot]{geometry}
+\usepackage{mathtools}
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+\author{}
+\title{Yellowpaper Pseudocode Equivalents}
+\date{}
+\addbibresource{~/modules/References.bib}
+\begin{document}
+\maketitle
+\centering
+\begin{tabular}{rl}
+	\hline
+	\textbf{YP Notation} & \textbf{Pseudocode} \\
+	\hline
+	$\boldsymbol{\sigma}$ & \texttt{actual\_state} \\
+	$\mu$ & \texttt{actualizing\_state} \\
+	$\Upsilon$ & \texttt{state\_actualization\_function} \\
+	$\Pi$ & \texttt{block\_level\_state\_actualization\_function} \\
+	$\Omega$ & \texttt{block\_finalization\_state\_actualization\_function} \\
+	$\mathbb{B}$ & \texttt{all\_byte\_sequences(set)} \\
+	$\mathbb{P}$ & \texttt{all\_non\_negative\_scalars(set)} \\
+	\textit{B} & \texttt{actualizing\_block} \\
+	\textit{C} & \texttt{operation\_cost} \\
+	$\mathcal{L}$ & \texttt{last\_item\_in(set)} \\
+	$\delta$ & \texttt{stack\_input} \\
+	$\equiv$ & $=$ \\
+
+	\hline
+\end{tabular}
+
+
+\printbibliography
+\end{document}
+

@@ -1,0 +1,76 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{EF2017}{paper}{}
+      \name{author}{1}{}{%
+        {{hash=b8a91f4b79257e293f63378b4030938e}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Ethereum},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{b8a91f4b79257e293f63378b4030938e}
+      \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
+      \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
+      \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Ethereum Whitepaper}
+      \field{year}{2017}
+    \endentry
+    \entry{Wood2017}{paper}{}
+      \name{author}{1}{}{%
+        {{hash=e2eeb49d9390c82ee05b47c738b5ff4e}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Dr.\bibnamedelimi Gavin},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Ethereum: A Secure Decentralised Generalised Transaction Ledger}
+      \field{year}{2017}
+    \endentry
+  \endsortlist
+  \missing{Ngondi2016}
+  \missing{sourcemaking}
+  \missing{billwagner}
+\endrefsection
+\endinput
+

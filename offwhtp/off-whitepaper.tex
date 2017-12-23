@@ -1,0 +1,799 @@
+\documentclass[10pt,a4paper,leqno,bibliography=totoc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage} % Required to print the total number of pages
+\usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4.0cm]{geometry} % Adjust page margins
+\usepackage{amsmath} % Required for equation customization
+\usepackage{amssymb} % Required to include mathematical symbols
+\usepackage{makecell}
+\usepackage{boldline}
+\usepackage{beton}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage[colorlinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage[title,titletoc]{appendix}
+\usepackage{mathtools}
+\usepackage{subfig}
+\usepackage{ragged2e}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{wrapfig}
+\usepackage{IEEEtrantools}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,arrows,automata,shadows}
+\usepackage{epigraph}
+\usepackage{tabularx}
+\usepackage[perpage]{footmisc}
+\usepackage[style=ieee,
+	backref=true
+	]{biblatex}
+\usepackage{etoolbox}
+\usepackage{framed,color}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{minitoc}
+\usepackage{fancybox}
+\usepackage{tablefootnote}
+\usepackage{datatool}
+\usepackage{footnote}
+\usepackage{pgfkeys}
+\usepackage{pgf}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[acronyms,toc,section=section]{glossaries}
+\usepackage{endnotes}
+\usepackage{dirtytalk}
+\usepackage{pdfpages}
+\usepackage{supertabular}
+\usepackage{kantlipsum}
+\usepackage{makeidx}
+\makeindex
+\usepackage[totoc]{idxlayout}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Off-Whitepaper: Ethereum}
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{Version 0.1.64}
+\fancyfoot[C]{\thepage} 
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+
+\glstoctrue
+\newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
+
+%\definecolor{papayawhip}{RGB}{255,239,213}
+\definecolor{blanchedalmond}{RGB}{255,235,205}
+
+\newcount\n
+\n=0
+\def\tablebody{}
+\makeatletter
+\loop\ifnum\n<100
+ \advance\n by1
+ \protected@edef\tablebody{\tablebody
+ \textbf{\number\n.}& shortText
+ \tabularnewline
+  }
+\repeat
+\makeatletter
+			\let\mcnewpage=\newpage
+		\newcommand{\TrickSupertabularIntoMulticols}{%
+\renewcommand\newpage{%
+	      \if@firstcolumn
+	            \hrule width\linewidth height0pt
+          \columnbreak
+      \else
+        \mcnewpage
+       \fi
+  }%
+ }
+ \makeatother
+
+%╔═══════════════════DELETED TERMS═════════════════════╗
+%║Autonomous Object				       ║
+%║Design Pattern				       ║
+%║Object-Oriented Programming			       ║
+%║External Actor				       ║
+%║Abstract Machine				       ║
+%║Hacker Ethic					       ║ 
+%╚═════════════════════════════════════════════════════╝
+
+
+\makenoidxglossaries
+\setacronymstyle{long-short}
+\newacronym{EVM}{EVM}{Ethereum Virtual Machine}
+\newacronym{ERE}{ERE}{Ethereum Runtime Environment}
+\newacronym{LLL}{LLL}{Lower Level Lisp}
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner} In Ethereum, most data is serialized through tree structures.}}
+\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsl{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all previous \textsl{world states} which a client might need to reference}}
+\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. A transaction can also be an input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}} 
+\newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
+\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there can only be one given output.\footnote{Actually, most hashing functions eventually have some collision points where two viable inputs reproduce the same output. But actual collision points are rare discoveries and tend to be followed (if not preceded by) newer more powerful hashing algorithms that are yet harder to break or find collisions in. Since the number space is infinite, we aren't likely to run out of potential new and larger hashing algorithms any time soon. Older hashing algorithms with known collisions, such as MD5 are not recommended for use in applications with  stringent security requirements.}The reason this works is because the hash of a block's data is a certainty, just like two plus two equals four is a certainty.  }}
+\newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
+\newglossaryentry{Ethereum Foundation}{name={Ethereum Foundation}, description={The non-profit organization in charge of executing the development processes of Ethereum in line with the \gls{Whitepaper}}}
+\newglossaryentry{Whitepaper}{name={Whitepaper}, description={A conceptual map, distinct from the Yellowpaper, which highlights the development goals for Ethereum as a whole\autocite{EF2017}}}
+\newglossaryentry{Yellowpaper}{name={Yellowpaper}, description={Ethereum's primary formal specification, written by Dr. Gavin Wood, one of the founders of Ethereum. }}
+\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programming which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
+\newglossaryentry{specification}{name={specification}, description={Technical descriptions, instructions, and definitions from which other people can create models}}
+\newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state$^\sigma$ at a particular time}}
+\newglossaryentry{trie}{name={trie}, description={A tree-structure for organizing data, the position of data in the tree contains the particular path from root to leaf node that represents the key (the path from root to leaf is ``one'' key) you are searching the trie structure for. The data of the key is contained in the trie relationships that emerge from related nodes in the trie structure}}
+\newglossaryentry{leaf node}{name={leaf node},description={the bottom-most node in a particular tree, of blocks, one half of the ``key'' the other half being the root node, which creates the path between}}
+\newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.}}
+\newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
+\newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
+\newglossaryentry{Address}{name={Address}, description={A 160-bit (20-byte) code used for identifying Accounts}}
+\newglossaryentry{Bit}{name={Bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. The Yellowpaper gives certain values in bits (e.g. 160 bits instead of 20 bytes)}}
+\newglossaryentry{YP-transaction}{name={Transaction}, description={}}
+\newglossaryentry{Storage State}{name={Storage State}, description={The information particular to a given account that is maintained between the times that the account's associated EVM Code runs}}
+\newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two accounts.}}
+\newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit; gas is paid for exclusively by Ether}}
+\newglossaryentry{Contract}{name={Contract}, description={A piece of EVM Code that may be associated with an Account or an Autonomous Object}}
+\newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
+\newglossaryentry{Lower-Level Lisp}{name={Lower-Level Lisp}, description={The Lisp-like Low-level Language, a human-writable language used for authoring simple contracts and general low-level language toolkit for trans-compiling to}}
+\newglossaryentry{balance}{name={balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
+\newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of this block be transferred}}
+\newglossaryentry{block header}{name={block header}, description={Any information in a block besides transaction information}}
+\newglossaryentry{storage root}{name={storage root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
+\newglossaryentry{Recursive Length Prefix}{name={Recursive Length Prefix}, description={Recursive Length Prefix}}
+
+\addbibresource{References.bib}
+
+
+%\makeatletter
+%\patchcmd{\footnotetext}{\footnotesize}{\small\sffamily}{}{}
+%\makeatother
+
+\def\thesection{\arabic{section}}
+%\renewcommand\thesubsection{\thesection\arabic{subsection}}
+
+
+\setlength\bibitemsep{1.5\itemsep}
+\newcommand{\sortitem}[1]{%
+\DTLnewrow{list}% Create a new entry
+\DTLnewdbentry{list}{description}{#1}% Add entry as description
+}
+\newenvironment{sortedlist}{%
+\DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}% Create new/discard old list
+}{%
+\DTLsort{description}{list}% Sort list
+\DTLforeach*{list}{\theDesc=description}{%
+\item \theDesc}% Print each item
+}
+
+\newenvironment{alphafootnotes}
+{\par\edef\savedfootnotenumber{\number\value{footnote}}
+\renewcommand{\thefootnote}{\alph{footnote}}
+\setcounter{footnote}{0}}
+{\par\setcounter{footnote}{\savedfootnotenumber}}
+
+
+\setlength{\columnseprule}{0pt}
+
+\setlength{\columnsep}{5mm}
+
+\hfuzz=0.84074pt
+
+\setcounter{secnumdepth}{3}
+
+\date{}
+
+\author{\large{\textbf{Micah Dameron}}}
+
+\title{\LARGE{Off-Whitepaper} \\ \hfill \\ \Large{Ethereum}}
+
+\makeindex
+\begin{document}
+	\setstretch{1.15}
+
+	\begin{alphafootnotes}
+
+	\pagecolor{blanchedalmond}
+
+	\maketitle
+
+	\epigraph{\textsl{Beautiful is better than ugly. \\
+	Explicit is better than implicit. \\
+	Simple is better than complex. \\
+	Complex is better than complicated.
+	}}{\textit{The Zen of Python}}
+
+
+	\hfill \hfill
+	\begin{center}\textbf{Abstract}\end{center}\par
+	\abstract{The goal of this paper is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsl{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source is the Ethereum \textit{Yellowpaper}, but supplemental knowledge and crucial points from other sources have also been used for the reader's benefit.}
+		\index{pseudocode}
+		\index{abstract!state-machines}
+		\index{Yellowpaper}
+
+	\clearpage
+
+	\begin{center}\section*{Acknowledgements}\end{center}
+	Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, by contributing your vast knowledge and expertise. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
+
+	\clearpage
+
+	\tableofcontents
+
+	\clearpage
+
+	\begin{multicols*}{2}
+	\TrickSupertabularIntoMulticols
+	\justify	
+
+	\section{Native Currency \& Mining}
+		Because Ethereum is turing-complete, there needs to be a \textsl{network price  unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		\begin{tabular}{llr}
+			\toprule
+			\textbf{Unit} & \textbf{Ether} & \textbf{Wei} \\
+			\midrule
+			\scriptsize{Ether} & \scriptsize{$\Xi$\textbf{1}.000000000000000000} & \scriptsize{1,000,000,000,000,000,000} \\
+			\scriptsize{Finney} & \scriptsize{$\Xi$0.00\textbf{1}000000000000000} & \scriptsize{1,000,000,000,000,000} \\
+			\scriptsize{Szabo} & \scriptsize{$\Xi$0.00000\textbf{1}000000000000} & \scriptsize{1,000,000,000,000} \\
+			\scriptsize{Wei} & \scriptsize{$\Xi$0.00000000000000000\textbf{1}} & \scriptsize{1} \\
+			\bottomrule
+		\end{tabular}
+		\subsection{Mining}
+			\subsubsection{Total Difficulty}
+				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
+	\flushleft			
+   \begin{tabular}{ll}
+	   \toprule
+	   \textbf{Pseudocode} & \textbf{Definition} \\
+	   \midrule
+	   \texttt{\scriptsize{presentstate(total.difficulty)}} & \scriptsize{Total difficulty of \textsl{this block}.} \\
+	   \texttt{\scriptsize{presentstate(block.parent)}}     & \scriptsize{\textsl{This block's} parent block.} \\
+	   \texttt{\scriptsize{presentstate(block.difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
+	   \bottomrule
+   \end{tabular}
+	\justify
+
+	\section{Memory and Storage}
+			
+		\subsection{Data Structures}
+
+			\subsubsection{Merkle-Patricia Trees} 
+			
+			\subsubsection{World State}
+				Also known as \textit{Actual State}, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP.The mapping is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+
+
+			\subsubsection{The Block}
+				A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
+
+
+				\subsubsection{Block Header}
+				\paragraph{Notation}: \texttt{header} 
+				\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
+
+				\begin{enumerate}
+					\item \textbf{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
+					\item \textbf{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
+					\item \textbf{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
+					\item \textbf{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
+					\item \textbf{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
+					\item \textbf{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
+					\item \textbf{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
+					\item \textbf{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
+					\item \textbf{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
+					\item \textbf{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
+					\item \textbf{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
+					\item \textbf{Timestamp} -- This is a record of Unix's time at this block's inception.
+					\item \textbf{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
+					\item \textbf{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
+				
+					\subsubsection{Block Footer}
+					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
+				\end{enumerate}
+
+		\subsection{State Database}
+
+
+			\subsubsection{RLP}
+			\paragraph{Notation}: \texttt{rlp}
+			\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
+			\par
+
+		Positive RLP integers are represented with the most significant value stored at the lowest memory adddress (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeros it is invalid.\supercite{EF2017}
+			\par
+
+			The global state database is encoded as RLP for fast traversal and inspection of data. In structure it constitutes a mapping between \textsl{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be traversed speedily and without network delay. RLP encodes values as byte-arrays, or as sequences of further values. \supercite{Wood2017} 
+			\par 
+
+			This means that:
+			\\
+
+			\texttt{%
+				\begin{tabular}{ r l c l }
+					if & rlp(x) &  = & bytearray \\
+					then & rlp(bytearray) & = & true \\
+					elif & rlp(x) & = & value \\
+					then & rlp(value) & = & true \\
+					elif & rlp(x) & = & null \\
+					then & rlp(x) & = & false \\
+				\end{tabular}
+				}
+				\\~\\
+
+				\begin{enumerate}
+							\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
+				\end{enumerate}
+
+				In other words:
+	
+			\subsubsection{Account State}
+				\paragraph{Notation}: \texttt{body}
+				\paragraph{Description}: The EVM-code fragment that executes each time an account receives a message call. 
+
+				\paragraph{Description}: The account state is made up of four variables:
+				\begin{enumerate}
+					\item \textbf{nonce} The number of transactions sent from this address, or the number of contract creations made by the account associated with this address.
+					\item \textbf{balance} The number of Wei owned by this address.
+					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a Merkle Patricia tree that encodes the storage contents of the account.
+					\item The storage root aspect of an account’s state is the hash of the trie
+					\item \textbf{code\_hash} The hash of the EVM code of this account's contract.
+				\end{enumerate}
+
+				The account state is the state of any particular account during some specified world state.
+
+    				\paragraph{Nonce} 
+					The \textbf{nonce} aspect of an \textsc{account's state} is the number of transactions sent from, or the number of contract-creations by, the address of that account.\footnote{$\sigma$ is the world state at a certain given time, and \textit{n} is the number of transactions or contract creations by that account.}
+    				\paragraph{Storage Root}
+    					The \textbf{storage root} aspect of an \textsc{account's state} is the hash of the trie\footnote{A particular path from root to leaf in the \textbf{\gls{state database}} that encodes the \textsc{storage contents} of the account.}
+    				\paragraph{Code Hash}
+    					The \textbf{code hash} aspect of an \textsc{account's state} is the \textsc{hash of the evm code} of this account. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.
+    				\paragraph{Balance}
+    					The amount of \textbf{Wei} \textsc{owned} by this account. 
+					    \begin{itemize}
+				            \item Key/value pair stored inside the root hash. 
+					    \item $L_I^*$, is defined as the element-wise transformation of the base function
+					    \item The \textsl{element-wise transformation of the base-function} refers to all of the key/value pairs in \textit{$L_I$}
+					    \item $L_I$ refers to a particular \gls{trie}.
+					    \end{itemize}
+
+   		\subsection{Bloom Filter}
+				\paragraph{Notation}: \texttt{logs\_bloom}
+				\paragraph{Description}: The Bloom Filter is composed from indexable information (logger address and log topics) contained in each log entry from the receipt of each transaction in the transactions list. 
+
+		\subsubsection{Transaction Receipts}
+
+
+	\section{Processing and Computation}
+	
+		\subsection{State Transition Function}
+		State Transitions come about through a what is known as the State Transition Function; this is an abstraction of several operations in Ethereum which comprise the overall act of computing changes to the \textit{machine state} prior to adding them to the \textit{world state}, that is, through them being finalized and rewards applied to a given miner. \texttt{apply\_rewards} and \texttt{block\_beneficiary} are here.
+		subsection{Mining}
+			\paragraph{Block Beneficiary} The 160-bit (20-byte, or 20-character) address to which all fees collected from the successful mining of a block are transferred.
+			\paragraph{Apply Rewards} The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. A scalar value corresponding to the difficulty level of a current block. This can be calculated from the previous block's difficulty level and the timestamp. 
+
+			\subsubsection{Ethash}
+	
+			\paragraph{GHOST Protocol}
+
+		\subsection{Verification}
+		    Verifies Ommer headers
+
+			\subsubsection{Ommers}
+				\paragraph{Ommershash}
+
+		\subsection{Transactions}
+			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and flexibility of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+\paragraph{Notation}: \texttt{sender}
+\paragraph{Description}: A function that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve, (excepting the latter three signature fields) as the datum to sign. The sender of a given transaction can be represented:
+\texttt{transaction.sender}
+
+		\subsection{Execution}
+			\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
+			\subsubsection{Intrinsic Validity}
+				The criteria for intrinsic validity are as follows:
+				\begin{itemize}
+				\item The transaction follows the rules for \textsl{well-formed RLP} (recursive length prefix.)
+				\item The \textsl{signature} on the transaction is valid.
+				\item The \textsl{nonce} on the transaction is valid, i.e. it is equivalent to the sender account's current nonce.
+				\item The \texttt{gas\_limit} is greater than or equal to the \texttt{intrinsic\_gas} used by the transaction.
+				\item The sender's account balance contains the cost required in up-front payment.
+				\end{itemize}
+
+				Accordingly, the post-transactional state of Ethereum is expressed thus: 
+				\\
+				\texttt{transaction(post.state) = stf(present.state, transaction)}  
+				\\
+				While the amount of gas used in the execution is expressed: \texttt{stf(gas\_used)} and the accrued log items belonging to the transaction are expressed: \texttt{stf(logsbloom, content)(logsbloom, set)} Information concering the result of a transaction's execution is stored in the transaction receipt \texttt{tx\_receipt}. The set of log events which are created through the execution of the transaction, \texttt{logs\_set} in addition to the bloom filter which contains the actual information from those log events \texttt{logs\_bloom} are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gas\_used) are stored in the transaction receipt. Thusly the transaction receipt is a record of any given \texttt{execution}. \par
+
+																			A valid transaction execution begins with a permanent change to the state: the nonce of the sender account is increased by one and the balance is decreased by the \texttt{collateral\_gas}\footnote{Designated ``\texttt{intrinsic\_gas}'' in the Yellowpaper} which is the amount of gas a transaction is required to pay prior to its execution. The original transactor will differ from the sender if the message call or contract creation comes from a contract account executing code. 
+\paragraph{}After a transaction is executed, there comes a \textsc{provisional state}:
+			\\
+			\texttt{post\_execution(provisional.state)}
+			\\
+			Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates the provisional state. \texttt{productive\_gas}, and an associated substate \texttt{substate\_a}. 
+\par
+																			Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
+
+
+	
+			\subsubsection{Execution Model}
+				\paragraph{Description}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
+	
+				In addition to the system state $\boldsymbol{\sigma}$, and the remaining gas for computation $g$, there are several pieces of important information used in the execution environment that the execution agent must provide; these are contained in the tuple $I$:
+
+				\begin{itemize}
+					\item \texttt{account\_address}, the address of the account which owns the code that is executing.
+					\item \texttt{sender\_address} the sender address of the transaction that originated this execution.
+					\item \texttt{originator\_price} the price of gas in the transaction that originated this execution.
+					\item \texttt{input\_data}, a byte array that is the input data to this execution; if the execution agent is a transaction, this would be the transaction data.
+					\item \texttt{account\_address}  the address of the account which caused the code to be executing; if the execution agent is a transaction, this would be the transaction sender.
+					\item \texttt{newstate\_value} the value, in Wei, passed to this account if the execution agent is a transaction, this would be the transaction value.\supercite{Wood2017}
+					\item \texttt{code.array} the byte array that is the machine code to be executed.\supercite{Wood2017}
+					\item \texttt{samestate\_header} the block header of the present block.
+					\item \texttt{the stack depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
+				\end{itemize}
+				\subsection{Substate}
+				\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
+
+\begin{itemize}
+        \item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
+        \item The \texttt{logs\_series}, which creates checkpoints in EVM code execution for frontend applications to explore, and is made up of the\texttt{logs\_set} and \texttt{l
+ogs\_bloom} from the \texttt{tx\_receipt}.
+	\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
+\end{itemize}
+
+			\subsubsection{Message Calls}
+\paragraph{Description}:\paragraph{Notation}: \texttt{message\_call}
+\paragraph{Description}: A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user input to a message call.
+ Messages allow communication between accounts (whether contract or external,) and are a carryover from established concepts in Computer Science, most notably the \textsl{MPI: Message-Passing Framework}. Messages can come in the form of \texttt{msg\_calls} which give output data. If an account has EVM code in it (a contract account,) this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. A message call can come through a transaction, or through the internal execution of code. Message call \texttt{transactions} only contain data. They are separate from regular, standard \textit{transactions}.
+
+\paragraph{}Message calls always have a universally agreed-upon cost in gas. There is a strong distinction between contract creation transactions and message call transactions. Computation performed, whether it is a contract creation or a message call, represents the currently legal valid state. There can be no invalid transactions from this point. \supercite{Wood2017} There is also a message call/contract creation \textit{stack}. This stack has a depth, depending on how many transactions are in it. Contract creations and message calls have entirely different ways of executing, and are entirely different in their roles in Ethereum. The concepts can be conflated. Message calls can result in computation that occurs in the next state rather than the current one. If an account that is currently executing receives a message call, no code will execute, because the account might exist but has no code in it yet. To execute a message call transactions are required:
+
+\begin{itemize}
+	\item \texttt{Sender}
+	\item \texttt{Transaction\_Originator} 
+	\item \texttt{Recipient}
+	\item \texttt{Account} (usually the same as the recipient) 
+	\item \texttt{Available\_Gas} 
+	\item \texttt{Value}
+	\item \texttt{Gas\_Price}
+	\item An arbitrary length byte-array. \texttt{arb\_array}
+	\item \texttt{Present\_Depth} of the message call/contract creation stack.
+\end{itemize}
+\paragraph{Notation}: \texttt{data}
+\paragraph{Description}: User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
+
+			\subsubsection{Contract Creation}
+				\paragraph{Notation}: \texttt{init}
+				\paragraph{Description}: When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. 				Contract creation transactions are equal the recurisive length prefix of an empty byte-sequence. 		
+			\subsubsection{Account Creation}
+			
+			\subsection{Halting}
+				\paragraph{Execution Environment}
+					\paragraph{Notation}: \texttt{ERE}
+					\paragraph{Description}: The environment under which an Autonomous Object executes in the EVM: the EVM runs as a part of this environment.  
+
+				\paragraph{Notation}: \texttt{big\_endian\_f}
+				\paragraph{Description}:\textsc{Big Endian Function} This function expands a positive-integer value to a big-endian byte array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation. The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
+
+			\subsection{Gas}
+				\paragraph{Description}: The fundamental network cost unit converted to and from Ether as needed to complete the transaction while it is sent. Gas is arbitrarily determined at the moment it is needed, by the block and according to the miners decision to charge certain fees. 
+				\paragraph{Miner Choice}
+					Miners choose which gas prices they want to accept.
+	
+				\paragraph{Gasprice}
+					\paragraph{Notation}: \texttt{gas\_limit}
+					\paragraph{Description}: A value equal to the current limit of gas expenditure per block, according to the miners. 
+				\paragraph{Gaslimit}
+					Any unused gas is refunded to the user.
+
+				\paragraph{Gasused}
+		\paragraph{Description}: A value equal to the total gas used in transactions in this block. 
+
+			\subsubsection{Machine State}
+			The machine state is a tuple consisting of five elements:
+		
+		\begin{enumerate}
+			\item \texttt{gas\_available}
+			\item \texttt{program\_counter}
+			\item \texttt{memory\_contents} A series of zeroes of size $2^{256}$
+			\item \texttt{memory\_words.count}
+			\item \texttt{stack\_contents}
+		\end{enumerate}
+		
+		There is also, \texttt[to\_execute]: the current operation to be executed
+		
+		\subsubsection{Exceptional Halting}
+		An exceptional halt may be caused by a handful of boolean values:
+		
+		\begin{verbatim}
+		if ( empty_gas or invalid_instruction or undersize_stack or oversize_stack or bad_jumpdest) 
+			then signal exceptional_halt
+		else exec instruction.x 
+			then signal controlled_halt
+
+		\end{verbatim}
+		
+		No instruction can, through its execution, cause an exceptional halt. They can only happen if some instruction, for whatever reason, fails to execute.
+		
+		\begin{itemize}
+			\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
+			\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
+		\begin{itemize}
+				\item[true] indicating that in the run of computation, an exception was signaled
+				\item[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
+			\end{itemize}
+		\end{itemize}
+    	
+				\paragraph{Substate}
+					The \texttt{substate} is an emergent, ever-changing ball of computational energy that is about to be applied to the main state. It is the \textit{meta state} by which transactions are decided valid and to be added to the blockchain.
+		
+			\subsubsection{EVM Code}
+				\paragraph{}The bytecode that the EVM can natively execute. Used to explicitly specify the meaning of a message to an account.
+				\paragraph{Notation}: \texttt{contract}
+				\paragraph{Description}: A piece of EVM Code that may be associated with an Account or an Autonomous Object. 
+
+			\subsubsection{Opcodes/EVM Assembly}
+		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix A} \\
+
+
+				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{potential\_state}), the state which decides every new \texttt{actual\_state}. 
+
+	\end{multicols*}
+
+	\appendix
+
+	\section{Opcodes}
+
+		\subsection{0x10's: Comparisons and Bitwise Logic Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+			\textbf{Data} & \textbf{Opcode} & \textbf{Gas} & \textbf{Input} & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x00 & STOP & 0 & 0 & 0 & Halts execution. \\
+			0x01 & ADD & 3 & 2 & 1 & Addition operation. \\
+			0x02 & MUL & 5 & 2 & 1 & Multiplication operation. \\
+			0x03 & SUB & 3 & 2 & 1 & Subtraction operation. \\
+			0x04 & DIV & 5 & 2 & 1 & Integer division operation. \\
+			0x05 & SDIV & 5 & 2 & 1 & Signed integer division operation (truncated.)\\
+			0x06 & MOD & 5 & 2 & 1 & Modulo remainder operation. \\
+			0x07 & SMOD & 5 & 2 & 1 & Signed modulo remainder operation. \\
+			0x08 & ADDMOD & 8 & 3 & 1 & Modulo addition operation. \\
+			0x09 & MULMOD & 8 & 3 & 1 & Modulo multiplication operation. \\
+			0x0a & EXP & 10 & 2 & 1 & Exponential operation. \\
+			0x0b & SIGNEXTEND & 5  & 2 & 1 & Extend the length of two's complementary signed integer. \\
+			0x10 & LT & 3 & 2 & 1 & Less-than comparison. \\
+			0x11 & GT & 3 & 2 & 1 & Greater-than comparison. \\
+			0x12 & SLT & 3 & 2 & 1 & Signed less-than comparison. \\
+			0x13 & SGT & 3 & 2 & 1 & Signed greater-than comparison. \\
+			0x14 & EQ & 3 & 2 & 1 & Equality comparison. \\
+			0x15 & ISZERO & 3 & 1 & 1 & Simple not operator. \\
+			0x16 & AND & 3 & 2 & 1 & Bitwise \textsc{and} operation. \\
+			0x17 & OR & 3 & 2 & 1 & Bitwise \textsc{or} operation. \\
+			0x18 & XOR & 3 & 2 & 1 & Bitwise \textsc{xor} operation. \\
+			0x19 & NOT & 3 & 1 & 1 & Bitwise \textsc{not} operation. \\
+			0x1a & BYTE & 3 & 2 & 1 & Retrieve single byte from word. \\
+			\hline
+			\end{longtable}
+
+	        \subsection{0x20's: SHA3}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x20 & SHA3 & 30 & 2 & 1 & Compute a Keccak-256 hash. \\
+			\hline
+			\end{longtable}
+
+        	\subsection{0x30's: Environmental Information}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+	        	\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x30 & ADDRESS & 2 & 0 & 1 & Get the address of the currently executing account. \\
+			0x31 & BALANCE & 400 & 1 & 1 & Get the balance of the given account. \\
+			0x32 & ORIGIN & 2 & 0 & 1 & Get execution origination address. This is always the original sender of a transaction, never a contract account. \\
+			0x33 & CALLER & 2 & 0 & 1 & Get caller address. This is the address of the account that is directly responsible for this execution. \\
+			0x34 & CALLVALUE & 2 & 0 & 1 & Get deposited value by the instruction/transaction responsible for this execution. \\
+			0x35 & CALLDATALOAD & 3 & 1 & 1 & Get input data of the current environment. \\
+			0x36 & CALLDATASIZE & 2 & 0 & 1 & Get size of input data in current environment. This refers to the optional data field that can be passed with a message call instruction or transaction.\\
+			0x37 & CALLDATACOPY & 3 & 3 & 0 & Copy input data in the current environment to memory. This refers to the optional data field passed with the message call instruction or transaction. \\
+			0x38 & CODESIZE & 2 & 0 & 1 & Get size of code running in the current environment. \\
+			0x39 & CODECOPY & 3 & 3 & 0 & Copy the code running in the current environment to memory. \\
+			0x3a & GASPRICE & 2 & 0 & 1 & Get the price of gas in the current environment. This is the gas price specified by the originating transaction. \\
+			0x3b & EXTCODESIZE & 700 & 1 & 1 & Get the size of an account's code. \\
+			0x3c & EXTCODECOPY & 700 & 4 & 0 & Copy an account's code to memory. \\
+			0x3d & RETURNDATASIZE & 2 & 0 & 1 & \\
+			0x3e & RETURNDATACOPY & 3 & 3 & 0 & \\
+			\hline
+			\end{longtable}
+
+	        \subsection{0x40's: Block Data}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+			\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x40 & BLOCKHASH & 20 & 1 & 1 & Get the hash of one of the 256 most recent blocks. \footnote{A value of 0 is left on the stack if the block number is more than $256$ in number behind the current one, or if it is a number greater than the current one.} \\ 
+			0x41 & COINBASE & 2 & 0 & 1 & Look up a block's beneficiary address by its hash.\\
+			0x42 & TIMESTAMP & 2 & 0 & 1 & Look up a block's timestamp by its hash.\\
+			0x43 & NUMBER & 2  & 0 & 1 & Look up a block's number by its hash. \\
+			0x44 & DIFFICULTY & 2 & 0 & 1 & Look up a block's difficulty by its hash. \\
+			0x45 & GASLIMIT & 2  & 0 & 1 & Look up a block's gas limit by its hash. \\
+			\hline
+			\end{longtable}
+
+		\subsection{0x50's: Stack, memory, storage, and flow operations.}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+			\hline
+			\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline
+			0x50 & POP & 2 & 1 & 0 & Removes an item from the stack. \\
+			0x51 & MLOAD & 3 & 1 & 1 & Load a word from memory. \\
+			0x52 & MSTORE & 3 & 2 & 0 & Save a word to memory. \\
+			0x53 & MSTORE8 & 3 & 2 & 0 & Save a byte to memory. \\
+			0x54 & SLOAD & 200 & 1 & 1 & Load a word from storage. \\
+			0x55 & SSTORE & 0 & 2 & 0 & Save a word to storage.\\
+			0x56 & JUMP & 8 & 1 & 0 & Alter the program counter. \\
+			0x57 & JUMPI & 10 & 2 & 0 & Conditionally alter the program counter. \\
+			0x58 & PC & 2 & 0 & 1 & Look up the value of the program counter prior to the increment resulting from this instruction. \\
+			0x59 & MSIZE & 2 & 0 & 1 & Get the size of active memory in bytes. \\
+			0x5a & GAS & 2 & 0 & 1 & Get the amount of available gas, including the corresponding reduction for the cost of this instruction. \\
+			0x5b & JUMPDEST & 1 & 0 & 0 & Mark a valid destination for jumps. \footnote{This operation has no effect on the \texttt{machine\_state during execution.}} \\
+			\hline
+			\end{longtable}
+
+		\subsection{0x60-70's: Push Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+        		\hline
+        		\textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+        		\hline
+			0x60 & PUSH1 & - & 0 & 1 & Place a 1-byte item on the stack. \\
+			0x61 & PUSH2 & - & 0 & 1 & Place a 2-byte item on the stack. \\
+			0x62 & PUSH3 & - & 0 & 1 & Place a 3-byte item on the stack. \\
+			0x63 & PUSH4 & - & 0 & 1 & Place a 4-byte item on the stack. \\
+			0x64 & PUSH5 & - & 0 & 1 & Place a 5-byte item on the stack. \\
+			0x65 & PUSH6 & - & 0 & 1 & Place a 6-byte item on the stack. \\
+			0x66 & PUSH7 & - & 0 & 1 & Place a 7-byte item on the stack. \\
+			0x67 & PUSH8 & - & 0 & 1 & Place a 8-byte item on the stack. \\
+			0x68 & PUSH9 & - & 0 & 1 & Place a 9-byte item on the stack. \\
+			0x69 & PUSH10 & - & 0 & 1 & Place a 10-byte item on the stack. \\
+			0x6a & PUSH11 & - & 0 & 1 & Place a 11-byte item on the stack. \\
+			0x6b & PUSH12 & - & 0 & 1 & Place a 12-byte item on the stack. \\
+			0x6c & PUSH13 & - & 0 & 1 & Place a 13-byte item on the stack. \\
+			0x6d & PUSH14 & - & 0 & 1 & Place a 14-byte item on the stack. \\
+			0x6e & PUSH15 & - & 0 & 1 & Place a 15-byte item on the stack. \\
+			0x6f & PUSH16 & - & 0 & 1 & Place a 16-byte item on the stack. \\
+			0x70 & PUSH17 & - & 0 & 1 & Place a 17-byte item on the stack. \\
+			0x71 & PUSH18 & - & 0 & 1 & Place a 18-byte item on the stack. \\
+			0x72 & PUSH19 & - & 0 & 1 & Place a 19-byte item on the stack. \\
+			0x73 & PUSH20 & - & 0 & 1 & Place a 20-byte item on the stack. \\
+			0x74 & PUSH21 & - & 0 & 1 & Place a 21-byte item on the stack. \\
+			0x75 & PUSH22 & - & 0 & 1 & Place a 22-byte item on the stack. \\
+			0x76 & PUSH23 & - & 0 & 1 & Place a 23-byte item on the stack. \\
+			0x77 & PUSH24 & - & 0 & 1 & Place a 24-byte item on the stack. \\
+			0x78 & PUSH25 & - & 0 & 1 & Place a 25-byte item on the stack. \\
+			0x79 & PUSH26 & - & 0 & 1 & Place a 26-byte item on the stack. \\
+			0x7a & PUSH27 & - & 0 & 1 & Place a 27-byte item on the stack. \\
+			0x7b & PUSH28 & - & 0 & 1 & Place a 28-byte item on the stack. \\
+			0x7c & PUSH29 & - & 0 & 1 & Place a 29-byte item on the stack. \\
+			0x7d & PUSH30 & - & 0 & 1 & Place a 30-byte item on the stack. \\
+			0x7e & PUSH31 & - & 0 & 1 & Place a 31-byte item on the stack. \\
+			0x7f & PUSH32 & - & 0 & 1 & Place a 32-byte item on the stack. \\			
+			\hline
+			\end{longtable}
+
+		\subsection{0x80's: Duplication Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+		        \hline
+			0x80 & DUP1 & - & 1 & 2 & Duplicate the 1st item in the stack. \\
+			0x81 & DUP2 & - & 2 & 3 & Duplicate the 2nd item in the stack. \\
+			0x82 & DUP3 & - & 3 & 4 & Duplicate the 3rd item in the stack. \\
+			0x83 & DUP4 & - & 4 & 5 & Duplicate the 4th item in the stack. \\
+			0x84 & DUP5 & - & 5 & 6 & Duplicate the 5th item in the stack. \\
+			0x85 & DUP6 & - & 6 & 7 & Duplicate the 6th item in the stack. \\
+			0x86 & DUP7 & - & 7 & 8 & Duplicate the 7th item in the stack. \\
+			0x87 & DUP8 & - & 8 & 9 & Duplicate the 8th item in the stack. \\
+			0x88 & DUP9 & - & 9 & 10 & Duplicate the 9th item in the stack. \\
+			0x89 & DUP10 & - & 10 & 11 & Duplicate the 10th item in the stack. \\
+			0x8a & DUP11 & - & 11 & 12 & Duplicate the 11th item in the stack. \\
+			0x8b & DUP12 & - & 12 & 13 & Duplicate the 12th item in the stack. \\
+			0x8c & DUP13 & - & 13 & 14 & Duplicate the 13th item in the stack. \\
+			0x8d & DUP14 & - & 14 & 15 & Duplicate the 14th item in the stack. \\
+			0x8e & DUP15 & - & 15 & 16 & Duplicate the 15th item in the stack. \\
+			0x8f & DUP16 & - & 16 & 17 & Duplicate the 16th item in the stack. \\		
+			\hline
+			\end{longtable}
+        
+	
+		\subsection{0x90's: Swap Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline  
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+		        \hline  
+			0x90 & SWAP1 & - & 2 & 2 & Exchange the 1st and 2nd stack items. \\
+			0x91 & SWAP2 & - & 3 & 3 & Exchange the 1st and 3rd stack items. \\
+			0x92 & SWAP3 & - & 4 & 4 & Exchange the 1st and 4th stack items. \\
+			0x93 & SWAP4 & - & 5 & 5 & Exchange the 1st and 5th stack items. \\
+			0x94 & SWAP5 & - & 6 & 6 & Exchange the 1st and 6th stack items. \\
+			0x95 & SWAP6 & - & 7 & 7 & Exchange the 1st and 7th stack items. \\
+			0x96 & SWAP7 & - & 8 & 8 & Exchange the 1st and 8th stack items. \\
+			0x97 & SWAP8 & - & 9 & 9 & Exchange the 1st and 9th stack items. \\
+			0x98 & SWAP9 & - & 10 & 10 & Exchange the 1st and 10th stack items. \\
+			0x99 & SWAP10 & - & 11 & 11 & Exchange the 1st and 11th stack items. \\
+			0x9a & SWAP11 & - & 12 & 12 & Exchange the 1st and 12th stack items. \\
+			0x9b & SWAP12 & - & 13 & 13 & Exchange the 1st and 13th stack items. \\
+			0x9c & SWAP13 & - & 14 & 14 & Exchange the 1st and 14th stack items. \\
+			0x9d & SWAP14 & - & 15 & 15 & Exchange the 1st and 15th stack items. \\
+			0x9e & SWAP15 & - & 16 & 16 & Exchange the 1st and 16th stack items. \\
+			0x9f & SWAP16 & - & 17 & 17 & Exchange the 1st and 17th stack items. \\	
+			\hline
+			\end{longtable}
+
+		\subsection{0xa0's: Logging Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline  
+		        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+		        \hline  
+			0xa0 & LOG0 & 375 & 2 & 0 & Append log record with 0 topics. \\
+			0xa1 & LOG1 & 750 & 3 & 0 & Append log record with 1 topic. \\
+			0xa2 & LOG2 & 1125 & 4 & 0 & Append log record with 2 topic. \\
+			0xa3 & LOG3 & 1500 & 5 & 0 & Append log record with 3 topic. \\
+			0xa4 & LOG4 & 1875 & 6 & 0 & Append log record with 4 topic. \\
+			\hline
+			\end{longtable}
+
+	        \subsection{0xf0's: System Operations}
+			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
+		        \hline  
+	        \textbf{Data} & \textbf{Opcode} & \textbf{Gas}  & \textbf{Input}  & \textbf{Output} & \textbf{Description} \\
+			\hline  
+			0xf0 & CREATE & 32000 & 3 & 1 & Create a new contract account. Operand order is: value, input offset, input size. \\
+			0xf1 & CALL & 700 & 7 & 1 & Message-call into an account. The operand order is: gas, to, value, in offset, in size, out offset, out size. \\
+			0xf2 & CALLCODE & 700 & 7 & 1 & Message-call into this account with an alternative account's code. Exactly equivalent to CALL, except the recipient is the same account as at present, but the code is overwritten. \\
+			0xf3 & RETURN & 0 & 2 & 0 & Halt execution, then return output data. This defines the output at the moment of the halt. \\
+			0xf4 & DELEGATECALL & 700 & 6 & 1 & Message-call into this account with an alternative account's code, but with persisting values for \texttt{sender} and \texttt{value}. DELEGATECALL takes one less argument than CALL. This means that the recipient is in fact the same account as at present, but that the code is overwritten \textit{and} the context is almost entirely identical. \\
+			0xf5 & CALLBLACKBOX & 40 & 7 & 1 & - \\
+			0xfa & STATICCALL & 40 & 6 & 1 & - \\
+			0xfd & REVERT & 0 & 2 & 0 & - \\
+			0xfe & INVALID & - & 1 & 0 & Designated invalid instruction. \\
+			0xff & SELFDESTRUCT & 5000 & 1 & 0 & Halt execution and register the account for later deletion. \\
+			\hline
+			\end{longtable}
+
+		
+	\section{Higher Level Languages}
+		\subsection{Lower-Level Lisp}
+			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and trans-compiling to higher-level languages.
+	
+		\subsection{Solidity}
+			A language similar in syntax to Javascript, and the most commonly used language for creating smart contracts in Ethereum.
+		\subsection{Serpent}
+
+		\subsection{Viper}
+
+
+
+\clearpage
+\begin{multicols*}{2}
+\printbibliography
+\clearpage
+\printglossary[type=\acronymtype]
+\glsaddall
+\printnoidxglossaries
+\clearpage
+\end{multicols*}
+\end{alphafootnotes}
+
+\printindex
+
+\end{document}
