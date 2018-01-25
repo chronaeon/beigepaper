@@ -18,22 +18,22 @@
 \begin{document}
 \maketitle
 \centering
-\begin{tabular}{rl}
+\begin{tabular}{rlc}
 	\hline
-	\textbf{YP Notation} & \textbf{Pseudocode} \\
+	\textbf{YP Notation} & \textbf{Pseudocode} & \textbf{Qualifier}\\
 	\hline
-	$\boldsymbol{\sigma}$ & \texttt{actual\_state} \\
-	$\mu$ & \texttt{actualizing\_state} \\
-	$\Upsilon$ & \texttt{state\_actualization\_function} \\
-	$\Pi$ & \texttt{block\_level\_state\_actualization\_function} \\
-	$\Omega$ & \texttt{block\_finalization\_state\_actualization\_function} \\
-	$\mathbb{B}$ & \texttt{all\_byte\_sequences(set)} \\
-	$\mathbb{P}$ & \texttt{all\_non\_negative\_scalars(set)} \\
-	\textit{B} & \texttt{actualizing\_block} \\
-	\textit{C} & \texttt{operation\_cost} \\
-	$\mathcal{L}$ & \texttt{last\_item\_in(set)} \\
-	$\delta$ & \texttt{stack\_input} \\
-	$\equiv$ & $=$ \\
+	$\boldsymbol{\sigma}$ & \texttt{actual\_state} & (settled)  \\
+	$\mu$ & \texttt{actualizing\_state} & (settling)  \\
+	$\Upsilon$ & \texttt{global\_actualization} & (function) \\
+	$\Pi$ & \texttt{blocklevel\_actualization} & (function) \\
+	$\Omega$ & \texttt{blocklevel\_finalization} & (function) \\
+	$\mathbb{B}$ & \texttt{all\_byte\_sequences} & (set) \\
+	$\mathbb{P}$ & \texttt{all\_non\_negative\_scalars} & (set) \\
+	\textit{B} & \texttt{actualizing\_block} & (settling) \\
+	\textit{C} & \texttt{operation\_cost} & (settling) \\
+	$\mathcal{L}$ & \texttt{last\_item\_in} & (set) \\
+	$\delta$ & \texttt{stack\_input} & (set) \\
+	$\equiv$ & $=$ & (settled) \\
 
 	\hline
 \end{tabular}
