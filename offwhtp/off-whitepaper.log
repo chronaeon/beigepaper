@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.23)  23 DEC 2017 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  2 FEB 2018 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2291,31 +2291,75 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count532
 \@quotereset=\count533
-(./off-whitepaper.aux)
+(./off-whitepaper.aux
+
+Package glossaries Warning: Glossary entry `Ethereum Foundation' has not been d
+efined on input line 313.
+
+
+Package glossaries Warning: Glossary entry `Whitepaper' has not been defined on
+ input line 314.
+
+
+Package glossaries Warning: Glossary entry `Yellowpaper' has not been defined o
+n input line 315.
+
+
+Package glossaries Warning: Glossary entry `singleton' has not been defined on 
+input line 316.
+
+
+Package glossaries Warning: Glossary entry `specification' has not been defined
+ on input line 317.
+
+
+Package glossaries Warning: Glossary entry `Address' has not been defined on in
+put line 324.
+
+
+Package glossaries Warning: Glossary entry `Bit' has not been defined on input 
+line 325.
+
+
+Package glossaries Warning: Glossary entry `YP-transaction' has not been define
+d on input line 326.
+
+
+Package glossaries Warning: Glossary entry `Lower-Level Lisp' has not been defi
+ned on input line 332.
+
+
+Package glossaries Warning: Glossary entry `LLL' has not been defined on input 
+line 340.
+
+
+Package glossaries Warning: Glossary entry `Whitepaper' has not been defined on
+ input line 343.
+
+)
 \openout1 = `off-whitepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 197.
-LaTeX Font Info:    ... okay on input line 197.
-LaTeX Font Info:    Try loading font information for T1+ccr on input line 197.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ccfonts/t1ccr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Try loading font information for T1+ccr on input line 188.
+ (/usr/share/texlive/texmf-dist/tex/latex/ccfonts/t1ccr.fd
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 197.
+(lastpage)             ! on input line 188.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2352,7 +2396,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box126
-Package hyperref Info: Link coloring ON on input line 197.
+Package hyperref Info: Link coloring ON on input line 188.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2361,9 +2405,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count534
 )
-LaTeX Info: Redefining \ref on input line 197.
-LaTeX Info: Redefining \pageref on input line 197.
-LaTeX Info: Redefining \nameref on input line 197.
+LaTeX Info: Redefining \ref on input line 188.
+LaTeX Info: Redefining \pageref on input line 188.
+LaTeX Info: Redefining \nameref on input line 188.
 
 (./off-whitepaper.out) (./off-whitepaper.out)
 \@outlinefile=\write11
@@ -2412,7 +2456,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 197.
+LaTeX Info: Redefining \selectfont on input line 188.
  ABD: EveryShipout initializing macros
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2445,8 +2489,8 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 197.
-Package biblatex Info: Reference segment=0 on input line 197.
+Package biblatex Info: Reference section=0 on input line 188.
+Package biblatex Info: Reference segment=0 on input line 188.
 \c@minilofdepth=\count541
 \c@minilotdepth=\count542
 \c@partlofdepth=\count543
@@ -2485,7 +2529,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-LaTeX Info: Redefining \microtypecontext on input line 197.
+LaTeX Info: Redefining \microtypecontext on input line 188.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2508,7 +2552,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \GPT@outputbox=\box128
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 205.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 196.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -2523,7 +2567,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 205.
+LaTeX Font Info:    Try loading font information for U+msa on input line 196.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2531,7 +2575,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 205.
+LaTeX Font Info:    Try loading font information for U+msb on input line 196.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2540,17 +2584,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 205.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 196.
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 214.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 205.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 22
-7.
+Package tocbasic Info: character protrusion at toc deactivated on input line 21
+8.
  (./off-whitepaper.toc [3
 
 ])
@@ -2559,13 +2603,13 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 22
 
  [4]
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <7> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 241.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 232.
 
-Overfull \hbox (3.69498pt too wide) in paragraph at lines 236--247
+Overfull \hbox (3.69498pt too wide) in paragraph at lines 227--238
 [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 255.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 240.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2575,199 +2619,235 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (6.58957pt too wide) in paragraph at lines 251--260
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+[] []\T1/cmss/bx/n/10 Description[][] \T1/ccr/m/n/10 (+20) : The third pro-cess
+ in
+ []
+
+
+Overfull \hbox (6.58957pt too wide) in paragraph at lines 246--255
 []  
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 316--318
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
+Missing character: There is no ] in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\supercite' on input line 327.
 
 [6]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 347.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--360
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+ []
+
+[7]
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 355.
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 361.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 400.
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 406.
 
  (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 361
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 406
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 361.
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 406.
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+Underfull \hbox (badness 5359) in paragraph at lines 432--433
+[] []\T1/cmss/bx/n/10 Description[][] \T1/ccr/m/n/10 (+20) : The \T1/cmtt/m/n/1
+0 K256 \T1/ccr/m/n/10 (+20) hash of the root
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 [] []\T1/cmss/bx/n/10 Apply Re-wards[][] \T1/ccr/m/n/10 (+20) The third pro-ces
 s in
  []
 
-[7]
-Underfull \hbox (badness 5504) in paragraph at lines 410--414
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 9 might be wrong on input line 485.
+
+
+[9]
+Underfull \hbox (badness 5504) in paragraph at lines 492--496
 []\T1/ccr/m/n/10 (+20) Accordingly, the post-transactional state of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--414
+Underfull \hbox (badness 10000) in paragraph at lines 492--496
 \T1/cmtt/m/n/10 transaction(post.state) = stf(present.state,
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 8 might be wrong on input line 437.
+(multicol)                Footnotes on page 10 might be wrong on input line 520
+.
 
-
-[8]
-Underfull \hbox (badness 7907) in paragraph at lines 447--448
+[10]
+Underfull \hbox (badness 7907) in paragraph at lines 530--531
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 9 might be wrong on input line 469.
+(multicol)                Footnotes on page 11 might be wrong on input line 551
+.
 
-
-[9]
-Overfull \hbox (246.93156pt too wide) in paragraph at lines 523--523
-[]\T1/cmtt/m/n/10 if ( empty_gas or invalid_instruction or undersize_stack or o
-versize_stack or bad_jumpdest)[] 
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
-
- []
-
-[11]
-Underfull \vbox (badness 10000) detected at line 580
+[11] [12]
+Underfull \hbox (badness 7907) in paragraph at lines 631--632
+[]\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \vbox (badness 10000) detected at line 594
- []
-
-
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 606--606
- []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
- []
-
-
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 608--608
- []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
- []
-
-
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 614--614
- []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
- []
-
-
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 615--615
- []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 617
- []
-
-[12]
-Underfull \vbox (badness 10000) detected at line 631
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
+\T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 645--646
+
+ []
+
+[13]
+Underfull \vbox (badness 10000) detected at line 678
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 692
+ []
+
+
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 704--704
+ []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
+ []
+
+
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 706--706
+ []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
+ []
+
+
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 712--712
+ []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
+ []
+
+
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 713--713
+ []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 715
+ []
+
+[14]
+Underfull \vbox (badness 10000) detected at line 729
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 651
- []
-
-[13]
-Underfull \vbox (badness 10000) detected at line 677
- []
-
-[14]
-Underfull \vbox (badness 10000) detected at line 715
- []
-
-
-Underfull \vbox (badness 10000) detected at line 740
+Underfull \vbox (badness 10000) detected at line 749
  []
 
 [15]
-Underfull \vbox (badness 10000) detected at line 753
+Underfull \vbox (badness 10000) detected at line 775
+ []
+
+[16]
+Underfull \vbox (badness 10000) detected at line 813
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--761
+Underfull \vbox (badness 10000) detected at line 838
+ []
+
+[17]
+Underfull \vbox (badness 10000) detected at line 851
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 764--764
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 862--862
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Overfull \hbox (2.77728pt too wide) in paragraph at lines 765--765
+Overfull \hbox (2.77728pt too wide) in paragraph at lines 863--863
  []|\T1/ccr/m/n/10 (-20) CALLBLACKBOX| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 771
+Underfull \vbox (badness 10000) detected at line 869
  []
 
-[16] [17]
+[18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 788.
+(biblatex)                Using fallback driver on input line 886.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 788.
+(biblatex)                Using fallback driver on input line 886.
 
-[18
+[20
 
 ]
 No file off-whitepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
+Underfull \hbox (badness 10000) in paragraph at lines 890--890
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 19 might be wrong on input line 792
+(multicol)                Footnotes on page 21 might be wrong on input line 890
 .
 
-[19]
-Using TeX to sort glossary entries---this may take a while
-[20] (./off-whitepaper.ind) 
-AED: lastpage setting LastPage
 [21]
+Using TeX to sort glossary entries---this may take a while
+[22] (./off-whitepaper.ind) 
+AED: lastpage setting LastPage
+[23]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the off-whitepaper.maf file.
@@ -2779,32 +2859,49 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the off-whitepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 799.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 799.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 897.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 897.
 (./off-whitepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 799.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 799.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 897.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 897.
 Package rerunfilecheck Info: File `off-whitepaper.out' has not changed.
-(rerunfilecheck)             Checksum: 89EEFA3C90E17B582F86C7D9C3EBE25C;3641.
+(rerunfilecheck)             Checksum: E4C2A2B468C59FDA646D5D608EF195D7;4393.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                off-whitepaper
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'off-whitepaper.run.xml'.
 \openout1 = `off-whitepaper.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 799.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 897.
  ) 
 Here is how much of TeX's memory you used:
- 52508 strings out of 492990
- 999495 string characters out of 6135004
- 1913219 words of memory out of 5000000
- 54624 multiletter control sequences out of 15000+600000
- 570130 words of font info for 176 fonts, out of 8000000 for 9000
+ 52367 strings out of 492990
+ 996299 string characters out of 6135005
+ 1907265 words of memory out of 5000000
+ 54443 multiletter control sequences out of 15000+600000
+ 570594 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,11n,104p,10423b,3398s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
+ 77i,15n,92p,10423b,3398s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2863,15 +2960,16 @@ s/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfosl7.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfosl8.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfosl9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfoti1
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on off-whitepaper.pdf (21 pages, 502696 bytes).
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0700.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sftt1000.pfb>
+Output written on off-whitepaper.pdf (23 pages, 510364 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 713 compressed objects within 8 object streams
- 216 named destinations out of 1000 (max. 500000)
- 40477 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 817 compressed objects within 9 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 41083 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,20 +1,20 @@
-[2] Config.pm:354> INFO - This is Biber 2.7 (beta)
-[3] Config.pm:357> INFO - Logfile is 'off-whitepaper.blg'
-[142] biber:303> INFO - === Sat Dec 23, 2017, 15:46:34
-[215] Biber.pm:360> INFO - Reading 'off-whitepaper.bcf'
-[473] Biber.pm:836> INFO - Found 5 citekeys in bib section 0
-[532] Biber.pm:3671> INFO - Processing section 0
-[602] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
-[607] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[631] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
-[643] Utils.pm:164> WARN - BibTeX subsystem: /tmp/cILu4IMRVc/References.bib_5034.utf8, line 3, warning: 37 characters of junk seen at toplevel
-[646] Utils.pm:164> WARN - I didn't find a database entry for 'billwagner' (section 0)
-[646] Utils.pm:164> WARN - I didn't find a database entry for 'sourcemaking' (section 0)
-[647] Utils.pm:164> WARN - I didn't find a database entry for 'Ngondi2016' (section 0)
-[687] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[688] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[688] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[688] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[694] bbl.pm:608> INFO - Writing 'off-whitepaper.bbl' with encoding 'UTF-8'
-[696] bbl.pm:712> INFO - Output to off-whitepaper.bbl
-[696] Biber.pm:110> INFO - WARNINGS: 4
+[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[0] Config.pm:357> INFO - Logfile is 'off-whitepaper.blg'
+[46] biber:303> INFO - === Fri Feb  2, 2018, 14:18:12
+[68] Biber.pm:360> INFO - Reading 'off-whitepaper.bcf'
+[179] Biber.pm:836> INFO - Found 6 citekeys in bib section 0
+[201] Biber.pm:3671> INFO - Processing section 0
+[222] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
+[223] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[230] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
+[243] Utils.pm:164> WARN - BibTeX subsystem: /tmp/2Aq2PLb71D/References.bib_14721.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[244] Utils.pm:164> WARN - I didn't find a database entry for 'billwagner' (section 0)
+[244] Utils.pm:164> WARN - I didn't find a database entry for 'sourcemaking' (section 0)
+[245] Utils.pm:164> WARN - I didn't find a database entry for 'Ngondi2016' (section 0)
+[261] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[261] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[261] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[261] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[265] bbl.pm:608> INFO - Writing 'off-whitepaper.bbl' with encoding 'UTF-8'
+[266] bbl.pm:712> INFO - Output to off-whitepaper.bbl
+[266] Biber.pm:110> INFO - WARNINGS: 4

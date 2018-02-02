@@ -115,36 +115,27 @@
 \setacronymstyle{long-short}
 \newacronym{EVM}{EVM}{Ethereum Virtual Machine}
 \newacronym{ERE}{ERE}{Ethereum Runtime Environment}
-\newacronym{LLL}{LLL}{Lower Level Lisp}
-\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.\autocite{billwagner} In Ethereum, most data is serialized through tree structures.}}
+\newacronym{RLP}{RLP}{Recursive Length Prefix}
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed. \autocite{billwagner}}}
 \newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsl{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all previous \textsl{world states} which a client might need to reference}}
-\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. A transaction can also be an input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}} 
+\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. A transaction can also be an input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}}
 \newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
-\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there can only be one given output.\footnote{Actually, most hashing functions eventually have some collision points where two viable inputs reproduce the same output. But actual collision points are rare discoveries and tend to be followed (if not preceded by) newer more powerful hashing algorithms that are yet harder to break or find collisions in. Since the number space is infinite, we aren't likely to run out of potential new and larger hashing algorithms any time soon. Older hashing algorithms with known collisions, such as MD5 are not recommended for use in applications with  stringent security requirements.}The reason this works is because the hash of a block's data is a certainty, just like two plus two equals four is a certainty.  }}
+\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there is typically only one possible output.}}
 \newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
-\newglossaryentry{Ethereum Foundation}{name={Ethereum Foundation}, description={The non-profit organization in charge of executing the development processes of Ethereum in line with the \gls{Whitepaper}}}
-\newglossaryentry{Whitepaper}{name={Whitepaper}, description={A conceptual map, distinct from the Yellowpaper, which highlights the development goals for Ethereum as a whole\autocite{EF2017}}}
-\newglossaryentry{Yellowpaper}{name={Yellowpaper}, description={Ethereum's primary formal specification, written by Dr. Gavin Wood, one of the founders of Ethereum. }}
-\newglossaryentry{singleton}{name={singleton}, description={A design pattern in Object-Oriented Programming which specifies a class with one instance but with a global point of access to it\autocite{sourcemaking}}}
-\newglossaryentry{specification}{name={specification}, description={Technical descriptions, instructions, and definitions from which other people can create models}}
-\newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state$^\sigma$ at a particular time}}
+\newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state at a particular time}}
 \newglossaryentry{trie}{name={trie}, description={A tree-structure for organizing data, the position of data in the tree contains the particular path from root to leaf node that represents the key (the path from root to leaf is ``one'' key) you are searching the trie structure for. The data of the key is contained in the trie relationships that emerge from related nodes in the trie structure}}
 \newglossaryentry{leaf node}{name={leaf node},description={the bottom-most node in a particular tree, of blocks, one half of the ``key'' the other half being the root node, which creates the path between}}
 \newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.}}
 \newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
 \newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
-\newglossaryentry{Address}{name={Address}, description={A 160-bit (20-byte) code used for identifying Accounts}}
-\newglossaryentry{Bit}{name={Bit}, description={The smallest unit of electronic data storage: there are eight bits in one byte. The Yellowpaper gives certain values in bits (e.g. 160 bits instead of 20 bytes)}}
-\newglossaryentry{YP-transaction}{name={Transaction}, description={}}
 \newglossaryentry{Storage State}{name={Storage State}, description={The information particular to a given account that is maintained between the times that the account's associated EVM Code runs}}
 \newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two accounts.}}
 \newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit; gas is paid for exclusively by Ether}}
 \newglossaryentry{Contract}{name={Contract}, description={A piece of EVM Code that may be associated with an Account or an Autonomous Object}}
 \newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
-\newglossaryentry{Lower-Level Lisp}{name={Lower-Level Lisp}, description={The Lisp-like Low-level Language, a human-writable language used for authoring simple contracts and general low-level language toolkit for trans-compiling to}}
 \newglossaryentry{balance}{name={balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
 \newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of this block be transferred}}
-\newglossaryentry{block header}{name={block header}, description={Any information in a block besides transaction information}}
+\newglossaryentry{block header}{name={block header}, description={All the information in a block besides transaction information}}
 \newglossaryentry{storage root}{name={storage root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
 \newglossaryentry{Recursive Length Prefix}{name={Recursive Length Prefix}, description={Recursive Length Prefix}}
 
@@ -274,7 +265,12 @@
 		\subsection{Data Structures}
 
 			\subsubsection{Merkle-Patricia Trees} 
+				\paragraph{Notation}: \texttt{merkle\_p\_t} 
+				\paragraph{Description}: Generalized Merkle DHT
+
+				As blockchain technologies move beyond the "1.0" model of every node processing every transaction, and a more diverse ecosystem including "light clients" that achieve security by downloading only a small portion of the blockchain and extracting the rest of the data on-demand through hash-based authentication comes into play, and particularly in the long term as scalability models essentially turn \_every\_ node into a light client, there arises the need to develop a strong, robust and effective networking infrastructure to handle the load. Ideally, the core technology should be built to be maximally generalized, so that the same core code and network can be used for multiple blockchain, as well as non-blockchain, applications.
 			
+				
 			\subsubsection{World State}
 				Also known as \textit{Actual State}, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP.The mapping is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
 
@@ -311,7 +307,43 @@
 
 		\subsection{State Database}
 
+		\subsubsection{Tries}
+		\paragraph{Notation}: \texttt{trie}
+		\paragraph{Description}: A structure for organizing sequential data hierarchically. Members of a previous generation can spawn infinitely many members of the next generation, but the data cannot be read out of sequence. In other words a parent can spawn any number of children, but cannot skip a generation. This ensures that all the data in a trie are related to each other properly. 
 		
+		A simple kind of trie that everyone has used is a list: \\
+		
+		
+		\begin{tikzpicture}[sibling distance=10em,
+		every node/.style = {shape=circle,
+			draw, align=center,
+			top color=white, bottom color=blue!0}]]
+		\node {1}
+		child { node {2}
+			child { node {3}
+				child { node {4}
+					child { node {5} } } } };
+		\end{tikzpicture}
+		\section{Trie Terminology\supercite{wiki:xxx}}
+		\begin{enumerate}[label=\textbf{\alph*})]
+			\item [Root]--  The top (first) node in a tree.
+			\item	[Child]--  A node directly connected to another node when moving away from the Root.
+			\item	[Parent]--  The converse notion of a child.
+			\item	[Siblings]--  A group of nodes with the same parent.
+			\item	[Descendant]--  A node reachable by repeated proceeding from parent to child.
+			\item	[Ancestor]--  A node reachable by repeated proceeding from child to parent.
+			\item	[Leaf]\footnote{a.k.a. External Node}--  A node with no children.
+			\item	[Branch\footnote{a.k.a. Internal Node}]--  A node with at least one child.
+			\item	[Degree]--  The number of subtrees of a node.
+			\item	[Edge]--  The connection between one node and another.
+			\item	[Path]--  A sequence of nodes and edges connecting a node with a descendant.
+			\item	[Level]--  The level of a node is defined by 1 + (the number of connections between the node and the root).
+			\item	[Node Height]--  The height of a node is the number of edges on the longest path between that node and a leaf.
+			\item	[Tree Height]--  The height of a tree is the height of its root node.
+			\item	[Depth]--  The depth of a node is the number of edges from the tree's root node to the node.
+			\item [Forest]-- A forest is a set of n $\geq  0$ disjoint trees.
+		\end{enumerate}
+
 			\subsubsection{RLP}
 			\paragraph{Notation}: \texttt{rlp}
 			\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
@@ -393,7 +425,12 @@
 	
 		\subsection{Transaction}
 	
-			\paragraph{Description}: A single cryptographically signed instruction sent to the Ethereum network. There are two types of transactions: \textsc{message calls} and \textsc{contract creations}. Transactions are ubiquitous on the Ethereum network, and represent several common fields. 
+				\paragraph{Description}: A single cryptographically signed instruction sent to the Ethereum network. There are two types of transactions: \textsc{message calls} and \textsc{contract creations}. Transactions are ubiquitous on the Ethereum network, and represent several common fields. 
+			\subsubsection{Transactions Root}
+			\paragraph{Notation}: \texttt{listhash}
+			\paragraph{Alternatively:} Transactions Root
+			\paragraph{Description}: The \texttt{K256} hash of the root node\footnote{A root node is a type of progenitor node} that precedes the \texttt{transactions} in the \texttt{transactions\_list} section of a Block.
+			
 			
 			\begin{enumerate}
 				
@@ -605,10 +642,8 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 				\paragraph{Description}: A piece of EVM Code that may be associated with an Account or an Autonomous Object. 
 
 			\subsubsection{Opcodes/EVM Assembly}
-		The human readable version of EVM code. But what exactly are these computer instructions that can be executed with the same level of veracity and certainty as Bitcoin transactions? How do they come about, what makes them up, how are they kept in order, and what makes them execute? The first part of answering this question is understanding opcodes. In traditional machine architectures, you may not be introduced to working with processor-level assembly instructions for some time. In Ethereum however, they are essential to understanding the protocol because they are the most minute and subtle (yet HUGELY important) things going on in the Ethereum Blockchain at any moment, and they are the real "currency," that Ethereum trades in. I'll explain what I mean by that in a minute. First, let's go over a few Opcodes:\footnote{A full list of Opcodes is in Appendix A} \\
+		The human readable version of EVM code.  \\
 
-
-				\paragraph{}The STOP Opcode is used in order to stop a computation once it has completed, or to halt a computation if it has run out of gas. The ADD, MUL, SUB, and DIV operations are addition, multiplication, subtraction and division operations. The In/Out columns refer to inputs (to \texttt{potential\_state}), the state which decides every new \texttt{actual\_state}. 
 
 	\end{multicols*}
 

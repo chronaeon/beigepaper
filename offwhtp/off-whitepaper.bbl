@@ -19,6 +19,29 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{wiki:xxx}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e2ceeea38f8620383cfbd3e99c5c0cd8}{%
+           family={contributors},
+           familyi={c\bibinitperiod},
+           given={Wikipedia},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{fullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authornamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorfullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 15-December-2017]}
+      \field{title}{Tree (data structure) --- Wikipedia{,} The Free Encyclopedia}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Tree_(data_structure)&oldid=813972413
+      \endverb
+    \endentry
     \entry{EF2017}{paper}{}
       \name{author}{1}{}{%
         {{hash=b8a91f4b79257e293f63378b4030938e}{%
@@ -34,8 +57,8 @@
       \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}
@@ -58,8 +81,8 @@
       \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
       \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
       \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
