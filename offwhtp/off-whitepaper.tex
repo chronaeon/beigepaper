@@ -245,6 +245,10 @@
 			\bottomrule
 		\end{tabular}
 		\subsection{Mining}
+				\paragraph{Apply Rewards}
+				\paragraph{Notation}: \texttt{apply\_rewards} 
+				\paragraph{Description}: The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. 
+				
 			\subsubsection{Total Difficulty}
 				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
 	\flushleft			
@@ -257,6 +261,12 @@
 	   \texttt{\scriptsize{presentstate(block.difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
 	   \bottomrule
    \end{tabular}
+	\subsection{GHOST Protocol}
+		\paragraph{Notation}: \texttt{ghost}
+		\paragraph{Description}: Stands for greedy heaviest object subtree, this is used to determine the validity of a block. 
+		
+	
+	
 	\justify
 
 	\section{Memory and Storage}
@@ -301,7 +311,7 @@
 
 		\subsection{State Database}
 
-
+		
 			\subsubsection{RLP}
 			\paragraph{Notation}: \texttt{rlp}
 			\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
@@ -333,7 +343,10 @@
 				\end{enumerate}
 
 				In other words:
-	
+			\subsubsection{Create Account}
+				\paragraph{Notation}: \texttt{create}
+				\paragraph{Description}: Account creation definitively accours in the YP with contract creation. Does account creation also apply to regular account creation, or does it only apply to contract accounts? Also, what about protocol accounts?
+				\paragraph{Related}: \texttt{init}
 			\subsubsection{Account State}
 				\paragraph{Notation}: \texttt{body}
 				\paragraph{Description}: The EVM-code fragment that executes each time an account receives a message call. 
@@ -373,6 +386,28 @@
 
 	\section{Processing and Computation}
 	
+		\subsection{Verification}
+	
+		\paragraph{Notation}: \texttt{verification}
+		\paragraph{Description}: The process in The EVM that verifies Ommer Headers.
+	
+		\subsection{Transaction}
+	
+			\paragraph{Description}: A single cryptographically signed instruction sent to the Ethereum network. There are two types of transactions: \textsc{message calls} and \textsc{contract creations}. Transactions are ubiquitous on the Ethereum network, and represent several common fields. 
+			
+			\begin{enumerate}
+				
+				\item \textbf{Nonce} -- The number of transactions sent by the sender.
+				\item \textbf{Gas Price} -- The number of Wei to pay the network for unit of gas.
+				\item \textbf{Gas Limit} -- The maximum amount of gas to be used in while executing a transaction. 
+				
+				\item \textbf{To} -- The 20-character recipient of a message call.\footnote{In the case of a contract creation this is 0x000000000000000000.}
+				\item \textbf{Value} The number of Wei to be transferred to the recipient of a message call.\footnote{In the case of a contract creation, an endowment to the newly created contract account.}
+				\item \textbf{v, r, s} 
+				\item \textbf{}
+				\item 
+			\end{enumerate}
+			
 		\subsection{State Transition Function}
 		State Transitions come about through a what is known as the State Transition Function; this is an abstraction of several operations in Ethereum which comprise the overall act of computing changes to the \textit{machine state} prior to adding them to the \textit{world state}, that is, through them being finalized and rewards applied to a given miner. \texttt{apply\_rewards} and \texttt{block\_beneficiary} are here.
 		subsection{Mining}
@@ -395,8 +430,18 @@
 \paragraph{Description}: A function that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve, (excepting the latter three signature fields) as the datum to sign. The sender of a given transaction can be represented:
 \texttt{transaction.sender}
 
+		\subsection{Serialization}
+		
+		\subsection{Deserialization}
+			\paragraph{Notation}: \texttt{big\_endian}
+			\paragraph{Description}: This function expands a positive-integer value to a big-endian byte  array of minimal length.  When accompanied by a $\cdot$ operator, it signals sequence concatenation.  The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
+			
 		\subsection{Execution}
-			\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
+				\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
+			\subsubsection{Code Deposit}
+				\paragraph{Notation}: \texttt{code\_deposit}
+				\paragraph{Description}: If the initialization code completes successfully, a final contract-creation cost is paid, the code-deposit cost, c, proportional to the size of the created contract's code. 
+			
 			\subsubsection{Intrinsic Validity}
 				The criteria for intrinsic validity are as follows:
 				\begin{itemize}
@@ -414,10 +459,10 @@
 				While the amount of gas used in the execution is expressed: \texttt{stf(gas\_used)} and the accrued log items belonging to the transaction are expressed: \texttt{stf(logsbloom, content)(logsbloom, set)} Information concering the result of a transaction's execution is stored in the transaction receipt \texttt{tx\_receipt}. The set of log events which are created through the execution of the transaction, \texttt{logs\_set} in addition to the bloom filter which contains the actual information from those log events \texttt{logs\_bloom} are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gas\_used) are stored in the transaction receipt. Thusly the transaction receipt is a record of any given \texttt{execution}. \par
 
 																			A valid transaction execution begins with a permanent change to the state: the nonce of the sender account is increased by one and the balance is decreased by the \texttt{collateral\_gas}\footnote{Designated ``\texttt{intrinsic\_gas}'' in the Yellowpaper} which is the amount of gas a transaction is required to pay prior to its execution. The original transactor will differ from the sender if the message call or contract creation comes from a contract account executing code. 
-\paragraph{}After a transaction is executed, there comes a \textsc{provisional state}:
-			\\
-			\texttt{post\_execution(provisional.state)}
-			\\
+			
+			\paragraph{}After a transaction is executed, there comes a \textsc{provisional state}:
+			\paragraph{Notation}: \texttt{pv\_state}
+			\paragraph{Description}: Used to define the \textsc{pre-final state}, the \textsc{provisional state.} 
 			Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates the provisional state. \texttt{productive\_gas}, and an associated substate \texttt{substate\_a}. 
 \par
 																			Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
@@ -441,7 +486,8 @@
 					\item \texttt{the stack depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
 				\end{itemize}
 				\subsection{Substate}
-				\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
+				\subsection{Provisional State}
+					\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
 
 \begin{itemize}
         \item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
@@ -452,10 +498,10 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 			\subsubsection{Message Calls}
 \paragraph{Description}:\paragraph{Notation}: \texttt{message\_call}
-\paragraph{Description}: A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user input to a message call.
+\paragraph{Description}: A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call.
  Messages allow communication between accounts (whether contract or external,) and are a carryover from established concepts in Computer Science, most notably the \textsl{MPI: Message-Passing Framework}. Messages can come in the form of \texttt{msg\_calls} which give output data. If an account has EVM code in it (a contract account,) this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. A message call can come through a transaction, or through the internal execution of code. Message call \texttt{transactions} only contain data. They are separate from regular, standard \textit{transactions}.
 
-\paragraph{}Message calls always have a universally agreed-upon cost in gas. There is a strong distinction between contract creation transactions and message call transactions. Computation performed, whether it is a contract creation or a message call, represents the currently legal valid state. There can be no invalid transactions from this point. \supercite{Wood2017} There is also a message call/contract creation \textit{stack}. This stack has a depth, depending on how many transactions are in it. Contract creations and message calls have entirely different ways of executing, and are entirely different in their roles in Ethereum. The concepts can be conflated. Message calls can result in computation that occurs in the next state rather than the current one. If an account that is currently executing receives a message call, no code will execute, because the account might exist but has no code in it yet. To execute a message call transactions are required:
+\paragraph{Universal Gas}Message calls always have a universally agreed-upon cost in gas. There is a strong distinction between contract creation transactions and message call transactions. Computation performed, whether it is a contract creation or a message call, represents the currently legal valid state. There can be no invalid transactions from this point. \supercite{Wood2017} There is also a message call/contract creation \textit{stack}. This stack has a depth, depending on how many transactions are in it. Contract creations and message calls have entirely different ways of executing, and are entirely different in their roles in Ethereum. The concepts can be conflated. Message calls can result in computation that occurs in the next state rather than the current one. If an account that is currently executing receives a message call, no code will execute, because the account might exist but has no code in it yet. To execute a message call transactions are required:
 
 \begin{itemize}
 	\item \texttt{Sender}
@@ -473,7 +519,7 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 
 			\subsubsection{Contract Creation}
 				\paragraph{Notation}: \texttt{init}
-				\paragraph{Description}: When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. 				Contract creation transactions are equal the recurisive length prefix of an empty byte-sequence. 		
+				\paragraph{Description}: When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. 				Contract creation transactions are equal the recursive length prefix of an empty byte-sequence. 		
 			\subsubsection{Account Creation}
 			
 			\subsection{Halting}
@@ -512,28 +558,45 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 		There is also, \texttt[to\_execute]: the current operation to be executed
 		
 		\subsubsection{Exceptional Halting}
-		An exceptional halt may be caused by a handful of boolean values:
+		An exceptional halt may be caused by four conditions existing on the stack with regard to the next opcode in line for execution:
 		
 		\begin{verbatim}
-		if ( empty_gas or invalid_instruction or undersize_stack or oversize_stack or bad_jumpdest) 
-			then signal exceptional_halt
-		else exec instruction.x 
-			then signal controlled_halt
-
-		\end{verbatim}
+		if 
+		out_of_gas = true 
+		or
+		bad_instruction = true
+		or
+		bad_stack_size = true
+		or
+		bad_jumpdest = true
+		then throw exception
+		else exec opcode x
+		then init control_halt
+		\end{verbatim}	
 		
-		No instruction can, through its execution, cause an exceptional halt. They can only happen if some instruction, for whatever reason, fails to execute.
+		\paragraph{}Exceptional halts are reserved for opcodes that fail to execute. They are not caused through an opcode's actual execution.
 		
 		\begin{itemize}
 			\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
 			\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
 		\begin{itemize}
-				\item[true] indicating that in the run of computation, an exception was signaled
-				\item[false] indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
+				\item\textbf{true} indicating that in the run of computation, an exception was signaled
+				\item\textbf{false} indicating in the run of computation, exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
 			\end{itemize}
 		\end{itemize}
     	
 				\paragraph{Substate}
+				
+				\paragraph{Notation}: \texttt{substate}
+				\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
+				
+				\begin{itemize}
+					\item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
+					\item The \texttt{logs\_series}, which creates checkpoints in EVM code execution for frontend applications to explore, and is made up of the\texttt{logs\_set} and \texttt{l
+						ogs\_bloom} from the \texttt{tx\_receipt}.
+					\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
+				\end{itemize}
+				
 					The \texttt{substate} is an emergent, ever-changing ball of computational energy that is about to be applied to the main state. It is the \textit{meta state} by which transactions are decided valid and to be added to the blockchain.
 		
 			\subsubsection{EVM Code}
