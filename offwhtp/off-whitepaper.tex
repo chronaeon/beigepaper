@@ -5,6 +5,7 @@
 \usepackage{amsmath} % Required for equation customization
 \usepackage{amssymb} % Required to include mathematical symbols
 \usepackage{makecell}
+\usepackage{forest}
 \usepackage{boldline}
 \usepackage{beton}
 \usepackage{booktabs}
@@ -118,7 +119,7 @@
 \newacronym{RLP}{RLP}{Recursive Length Prefix}
 \newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed. \autocite{billwagner}}}
 \newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsl{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all previous \textsl{world states} which a client might need to reference}}
-\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. A transaction can also be an input message to a system that, because of the nature of the real-world event or activity it reflects, is required to be regarded as a single unit of work guaranteeing to either be processed completely or not at all.\autocite{Ngondi2016}}}
+\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. Transactions are regarded as a single unit of work, and must be processed completely or not at all.\autocite{Ngondi2016}}}
 \newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
 \newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there is typically only one possible output.}}
 \newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
@@ -224,7 +225,15 @@
 	\justify	
 
 	\section{Native Currency \& Mining}
-		Because Ethereum is turing-complete, there needs to be a \textsl{network price  unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$. All currency transactions in Ethereum are counted in Wei. There  is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		Because Ethereum is turing-complete, there needs to be a \textsl{network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $Xi$ stands for 1 Ether. All currency transactions in Ethereum are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		\index{native currency}
+		\index{mining}
+		\index{network cost unit}
+		\index{Wei}
+		\index{Szabo}
+		\index{Finney}
+		\index{Ether}
+
 		\begin{tabular}{llr}
 			\toprule
 			\textbf{Unit} & \textbf{Ether} & \textbf{Wei} \\
@@ -235,28 +244,36 @@
 			\scriptsize{Wei} & \scriptsize{$\Xi$0.00000000000000000\textbf{1}} & \scriptsize{1} \\
 			\bottomrule
 		\end{tabular}
+
 		\subsection{Mining}
+		\index{mining}
+		
 				\paragraph{Apply Rewards}
+				\index{apply rewards}
+				
 				\paragraph{Notation}: \texttt{apply\_rewards} 
 				\paragraph{Description}: The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. 
 				
 			\subsubsection{Total Difficulty}
 				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
+				\index{total difficulty}
+		
 	\flushleft			
    \begin{tabular}{ll}
 	   \toprule
 	   \textbf{Pseudocode} & \textbf{Definition} \\
 	   \midrule
-	   \texttt{\scriptsize{presentstate(total.difficulty)}} & \scriptsize{Total difficulty of \textsl{this block}.} \\
-	   \texttt{\scriptsize{presentstate(block.parent)}}     & \scriptsize{\textsl{This block's} parent block.} \\
-	   \texttt{\scriptsize{presentstate(block.difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
+	   \texttt{\scriptsize{total(difficulty)}} & \scriptsize{Total difficulty at \textsl{this block}.} \\
+	   \texttt{\scriptsize{block(difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
 	   \bottomrule
    \end{tabular}
+
+	   \index{block difficulty}
 	\subsection{GHOST Protocol}
 		\paragraph{Notation}: \texttt{ghost}
-		\paragraph{Description}: Stands for greedy heaviest object subtree, this is used to determine the validity of a block. 
+		\paragraph{Description}: Stands for greedy heaviest object subtree; the GHOST Protocol determines the probable correctness of the next block based on the number of miners attaching to it.
+		\index{GHOST protocol}
 		
-	
 	
 	\justify
 
@@ -309,22 +326,57 @@
 
 		\subsubsection{Tries}
 		\paragraph{Notation}: \texttt{trie}
-		\paragraph{Description}: A structure for organizing sequential data hierarchically. Members of a previous generation can spawn infinitely many members of the next generation, but the data cannot be read out of sequence. In other words a parent can spawn any number of children, but cannot skip a generation. This ensures that all the data in a trie are related to each other properly. 
+		\paragraph{Description}: Also known as a search tree, a radix  tree, or a prefix tree, a trie is tree structure for organizing sequential data hierarchically. Members of a previous generation can spawn infinitely many members of the next generation, but the data cannot be read out of sequence. In other words a parent can spawn any number of children, but cannot skip a generation. This ensures that all the data in a trie are related to each other properly. 
 		
-		A simple kind of trie that everyone has used is a list: \\
+		The following is a search tree beginning with hexadecimal values \texttt{a} and \texttt{4}: \\
 		
 		
-		\begin{tikzpicture}[sibling distance=10em,
-		every node/.style = {shape=circle,
-			draw, align=center,
-			top color=white, bottom color=blue!0}]]
-		\node {1}
-		child { node {2}
-			child { node {3}
-				child { node {4}
-					child { node {5} } } } };
-		\end{tikzpicture}
-		\section{Trie Terminology\supercite{wiki:xxx}}
+\begin{forest}
+	for tree={
+		circle,
+		black,
+		draw,
+		fill=blue!40,
+	}
+	[{}
+	[{}, edge label={node [midway, left] {a}}
+	[{}, edge label={node [midway, left] {2}}
+	[{}, edge label={node [midway, left] {c}}
+	[{}, edge label={node [midway, left] {7}}, label=below:a2c7
+	]
+	[,phantom]
+	]
+	[{}, edge label={node [midway, right] {b}}
+	[{}, edge label={node [midway, left] {6}}, label=below:a2b6
+	]
+	[,phantom]
+	]
+	[,phantom]
+	]
+	[{}, edge label={node [midway, right] {6}}
+	[,phantom]
+	[{}, edge label={node [midway, right] {2}}, label=below:a62
+	]
+	]
+	]
+	[{}, edge label={node [midway, above right] {4}}
+	[,phantom]
+	[{}, edge label={node [midway, right] {9}}
+	[,phantom]
+	[{}, edge label={node [midway, right] {7}}
+	[,phantom]
+	[{}, edge label={node [midway, right] {f}}
+	[,phantom]
+	[{}, edge label={node [midway, right] {f}}, label=below:497ff
+	]
+	]
+	]
+	]
+	]
+	]
+\end{forest}
+
+		\subsubsection{Tree Terminology\supercite{wiki:xxx}}
 		\begin{enumerate}[label=\textbf{\alph*})]
 			\item [Root]--  The top (first) node in a tree.
 			\item	[Child]--  A node directly connected to another node when moving away from the Root.

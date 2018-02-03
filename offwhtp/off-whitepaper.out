@@ -11,38 +11,38 @@
 \BOOKMARK [3][-]{subsubsection.2.1.5}{Block Footer}{subsection.2.1}% 11
 \BOOKMARK [2][-]{subsection.2.2}{State Database}{section.2}% 12
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Tries}{subsection.2.2}% 13
-\BOOKMARK [1][-]{section.3}{Trie Terminologywiki:xxx}{}% 14
-\BOOKMARK [2][-]{subsubsection.3.0.1}{RLP}{section.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.0.2}{Create Account}{subsubsection.3.0.1}% 16
-\BOOKMARK [3][-]{subsubsection.3.0.3}{Account State}{subsubsection.3.0.1}% 17
-\BOOKMARK [2][-]{subsection.3.1}{Bloom Filter}{section.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Transaction Receipts}{subsection.3.1}% 19
-\BOOKMARK [1][-]{section.4}{Processing and Computation}{}% 20
-\BOOKMARK [2][-]{subsection.4.1}{Verification}{section.4}% 21
-\BOOKMARK [2][-]{subsection.4.2}{Transaction}{section.4}% 22
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Transactions Root}{subsection.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.3}{State Transition Function}{section.4}% 24
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Ethash}{subsection.4.3}% 25
-\BOOKMARK [2][-]{subsection.4.4}{Verification}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Ommers}{subsection.4.4}% 27
-\BOOKMARK [2][-]{subsection.4.5}{Transactions}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.6}{Serialization}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.7}{Deserialization}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.8}{Execution}{section.4}% 31
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Code Deposit}{subsection.4.8}% 32
-\BOOKMARK [3][-]{subsubsection.4.8.2}{Intrinsic Validity}{subsection.4.8}% 33
-\BOOKMARK [3][-]{subsubsection.4.8.3}{Execution Model}{subsection.4.8}% 34
-\BOOKMARK [2][-]{subsection.4.9}{Substate}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.10}{Provisional State}{section.4}% 36
-\BOOKMARK [3][-]{subsubsection.4.10.1}{Message Calls}{subsection.4.10}% 37
-\BOOKMARK [3][-]{subsubsection.4.10.2}{Contract Creation}{subsection.4.10}% 38
-\BOOKMARK [3][-]{subsubsection.4.10.3}{Account Creation}{subsection.4.10}% 39
-\BOOKMARK [2][-]{subsection.4.11}{Halting}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.12}{Gas}{section.4}% 41
-\BOOKMARK [3][-]{subsubsection.4.12.1}{Machine State}{subsection.4.12}% 42
-\BOOKMARK [3][-]{subsubsection.4.12.2}{Exceptional Halting}{subsection.4.12}% 43
-\BOOKMARK [3][-]{subsubsection.4.12.3}{EVM Code}{subsection.4.12}% 44
-\BOOKMARK [3][-]{subsubsection.4.12.4}{Opcodes/EVM Assembly}{subsection.4.12}% 45
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Tree Terminologywiki:xxx}{subsection.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.3}{RLP}{subsection.2.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Create Account}{subsection.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Account State}{subsection.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.3}{Bloom Filter}{section.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Transaction Receipts}{subsection.2.3}% 19
+\BOOKMARK [1][-]{section.3}{Processing and Computation}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Verification}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.2}{Transaction}{section.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Transactions Root}{subsection.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.3}{State Transition Function}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Ethash}{subsection.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.4}{Verification}{section.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Ommers}{subsection.3.4}% 27
+\BOOKMARK [2][-]{subsection.3.5}{Transactions}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.6}{Serialization}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.7}{Deserialization}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.8}{Execution}{section.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Code Deposit}{subsection.3.8}% 32
+\BOOKMARK [3][-]{subsubsection.3.8.2}{Intrinsic Validity}{subsection.3.8}% 33
+\BOOKMARK [3][-]{subsubsection.3.8.3}{Execution Model}{subsection.3.8}% 34
+\BOOKMARK [2][-]{subsection.3.9}{Substate}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.10}{Provisional State}{section.3}% 36
+\BOOKMARK [3][-]{subsubsection.3.10.1}{Message Calls}{subsection.3.10}% 37
+\BOOKMARK [3][-]{subsubsection.3.10.2}{Contract Creation}{subsection.3.10}% 38
+\BOOKMARK [3][-]{subsubsection.3.10.3}{Account Creation}{subsection.3.10}% 39
+\BOOKMARK [2][-]{subsection.3.11}{Halting}{section.3}% 40
+\BOOKMARK [2][-]{subsection.3.12}{Gas}{section.3}% 41
+\BOOKMARK [3][-]{subsubsection.3.12.1}{Machine State}{subsection.3.12}% 42
+\BOOKMARK [3][-]{subsubsection.3.12.2}{Exceptional Halting}{subsection.3.12}% 43
+\BOOKMARK [3][-]{subsubsection.3.12.3}{EVM Code}{subsection.3.12}% 44
+\BOOKMARK [3][-]{subsubsection.3.12.4}{Opcodes/EVM Assembly}{subsection.3.12}% 45
 \BOOKMARK [1][-]{appendix.A}{Opcodes}{}% 46
 \BOOKMARK [2][-]{subsection.A.1}{0x10's: Comparisons and Bitwise Logic Operations}{appendix.A}% 47
 \BOOKMARK [2][-]{subsection.A.2}{0x20's: SHA3}{appendix.A}% 48

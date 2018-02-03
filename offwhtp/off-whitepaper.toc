@@ -50,27 +50,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{6}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Trie Terminology\supercite {wiki:xxx}}{7}{section.3}
+\contentsline {subsubsection}{\numberline {2.2.2}Tree Terminology\supercite {wiki:xxx}}{7}{subsubsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.0.1}RLP}{7}{subsubsection.3.0.1}
+\contentsline {subsubsection}{\numberline {2.2.3}RLP}{7}{subsubsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{7}{section*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{7}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.0.2}Create Account}{7}{subsubsection.3.0.2}
+\contentsline {subsubsection}{\numberline {2.2.4}Create Account}{7}{subsubsection.2.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{7}{section*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{7}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Related}{7}{section*.18}
+\contentsline {paragraph}{\nonumberline Related}{8}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.0.3}Account State}{7}{subsubsection.3.0.3}
+\contentsline {subsubsection}{\numberline {2.2.5}Account State}{8}{subsubsection.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Notation}{7}{section*.19}
+\contentsline {paragraph}{\nonumberline Notation}{8}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Description}{7}{section*.20}
+\contentsline {paragraph}{\nonumberline Description}{8}{section*.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{8}{section*.21}
 \defcounter {refsection}{0}\relax 
@@ -82,91 +82,91 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Balance}{8}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Bloom Filter}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {2.3}Bloom Filter}{8}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{8}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{8}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Transaction Receipts}{8}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1}Transaction Receipts}{8}{subsubsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Processing and Computation}{8}{section.4}
+\contentsline {section}{\numberline {3}Processing and Computation}{8}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Verification}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {3.1}Verification}{8}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{8}{section*.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{8}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Transaction}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {3.2}Transaction}{8}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{8}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Transactions Root}{8}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1}Transactions Root}{8}{subsubsection.3.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{8}{section*.31}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Alternatively:}{8}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Description}{8}{section*.33}
+\contentsline {paragraph}{\nonumberline Description}{9}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}State Transition Function}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {3.3}State Transition Function}{9}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Block Beneficiary}{9}{section*.34}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Apply Rewards}{9}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Ethash}{9}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1}Ethash}{9}{subsubsection.3.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline GHOST Protocol}{9}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Verification}{9}{subsection.4.4}
+\contentsline {subsection}{\numberline {3.4}Verification}{9}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Ommers}{9}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1}Ommers}{9}{subsubsection.3.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Ommershash}{9}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Transactions}{9}{subsection.4.5}
+\contentsline {subsection}{\numberline {3.5}Transactions}{9}{subsection.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{9}{section*.38}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{9}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Serialization}{9}{subsection.4.6}
+\contentsline {subsection}{\numberline {3.6}Serialization}{9}{subsection.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7}Deserialization}{9}{subsection.4.7}
+\contentsline {subsection}{\numberline {3.7}Deserialization}{9}{subsection.3.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{9}{section*.40}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{9}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8}Execution}{9}{subsection.4.8}
+\contentsline {subsection}{\numberline {3.8}Execution}{10}{subsection.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Description}{9}{section*.42}
+\contentsline {paragraph}{\nonumberline Description}{10}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.1}Code Deposit}{9}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {3.8.1}Code Deposit}{10}{subsubsection.3.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Notation}{9}{section*.43}
+\contentsline {paragraph}{\nonumberline Notation}{10}{section*.43}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{10}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.2}Intrinsic Validity}{10}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {3.8.2}Intrinsic Validity}{10}{subsubsection.3.8.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{10}{section*.46}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{10}{section*.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.3}Execution Model}{10}{subsubsection.4.8.3}
+\contentsline {subsubsection}{\numberline {3.8.3}Execution Model}{10}{subsubsection.3.8.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{10}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.9}Substate}{11}{subsection.4.9}
+\contentsline {subsection}{\numberline {3.9}Substate}{11}{subsection.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.10}Provisional State}{11}{subsection.4.10}
+\contentsline {subsection}{\numberline {3.10}Provisional State}{11}{subsection.3.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{11}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.10.1}Message Calls}{11}{subsubsection.4.10.1}
+\contentsline {subsubsection}{\numberline {3.10.1}Message Calls}{11}{subsubsection.3.10.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{11}{section*.50}
 \defcounter {refsection}{0}\relax 
@@ -180,15 +180,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{12}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.10.2}Contract Creation}{12}{subsubsection.4.10.2}
+\contentsline {subsubsection}{\numberline {3.10.2}Contract Creation}{12}{subsubsection.3.10.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{12}{section*.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{12}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.10.3}Account Creation}{12}{subsubsection.4.10.3}
+\contentsline {subsubsection}{\numberline {3.10.3}Account Creation}{12}{subsubsection.3.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.11}Halting}{12}{subsection.4.11}
+\contentsline {subsection}{\numberline {3.11}Halting}{12}{subsection.3.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Execution Environment}{12}{section*.58}
 \defcounter {refsection}{0}\relax 
@@ -200,7 +200,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{12}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.12}Gas}{12}{subsection.4.12}
+\contentsline {subsection}{\numberline {3.12}Gas}{12}{subsection.3.12}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{12}{section*.63}
 \defcounter {refsection}{0}\relax 
@@ -218,9 +218,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{12}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.12.1}Machine State}{12}{subsubsection.4.12.1}
+\contentsline {subsubsection}{\numberline {3.12.1}Machine State}{12}{subsubsection.3.12.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.12.2}Exceptional Halting}{13}{subsubsection.4.12.2}
+\contentsline {subsubsection}{\numberline {3.12.2}Exceptional Halting}{13}{subsubsection.3.12.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Substate}{13}{section*.72}
 \defcounter {refsection}{0}\relax 
@@ -228,13 +228,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{13}{section*.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.12.3}EVM Code}{13}{subsubsection.4.12.3}
+\contentsline {subsubsection}{\numberline {3.12.3}EVM Code}{13}{subsubsection.3.12.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Notation}{13}{section*.76}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Description}{13}{section*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.12.4}Opcodes/EVM Assembly}{13}{subsubsection.4.12.4}
+\contentsline {subsubsection}{\numberline {3.12.4}Opcodes/EVM Assembly}{13}{subsubsection.3.12.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Opcodes}{14}{appendix.A}
 \defcounter {refsection}{0}\relax 
