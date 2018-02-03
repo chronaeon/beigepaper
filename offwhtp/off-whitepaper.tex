@@ -258,6 +258,9 @@
 			\subsubsection{Total Difficulty}
 				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
 				\index{total difficulty}
+				
+			\subsubsection{Difficulty Mechanism}
+				This mechanism enforces a homeostasis in terms of the time between blocks; a smaller period between the last two blocks results in an increase in the difficulty level and thus additional computation required, lengthening the likely next period. Conversely, if the period is too large, the difficulty, and expected time to the next block, is reduced.\supercite{Wood2017}
 		
 	\flushleft			
    \begin{tabular}{ll}
@@ -321,6 +324,9 @@
 				
 					\subsubsection{Block Footer}
 					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
+					
+					\subsubsection{Block Number}
+						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time be- tween blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the expo- nential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor above, and the denominator 9, in order to target the mean block time including uncle blocks Buterin [2016]. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced and the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
 				\end{enumerate}
 
 		\subsection{State Database}
@@ -332,50 +338,50 @@
 		The following is a search tree beginning with hexadecimal values \texttt{a} and \texttt{4}: \\
 		
 		
-\begin{forest}
-	for tree={
-		circle,
-		black,
-		draw,
-		fill=blue!40,
-	}
-	[{}
-	[{}, edge label={node [midway, left] {a}}
-	[{}, edge label={node [midway, left] {2}}
-	[{}, edge label={node [midway, left] {c}}
-	[{}, edge label={node [midway, left] {7}}, label=below:a2c7
-	]
-	[,phantom]
-	]
-	[{}, edge label={node [midway, right] {b}}
-	[{}, edge label={node [midway, left] {6}}, label=below:a2b6
-	]
-	[,phantom]
-	]
-	[,phantom]
-	]
-	[{}, edge label={node [midway, right] {6}}
-	[,phantom]
-	[{}, edge label={node [midway, right] {2}}, label=below:a62
-	]
-	]
-	]
-	[{}, edge label={node [midway, above right] {4}}
-	[,phantom]
-	[{}, edge label={node [midway, right] {9}}
-	[,phantom]
-	[{}, edge label={node [midway, right] {7}}
-	[,phantom]
-	[{}, edge label={node [midway, right] {f}}
-	[,phantom]
-	[{}, edge label={node [midway, right] {f}}, label=below:497ff
-	]
-	]
-	]
-	]
-	]
-	]
-\end{forest}
+		\begin{forest}
+		for tree={
+			circle,
+			black,
+			draw,
+			fill=blue!40,
+		}
+		[{}
+		[{}, edge label={node [midway, left] {a}}
+		[{}, edge label={node [midway, left] {2}}
+		[{}, edge label={node [midway, left] {c}}
+		[{}, edge label={node [midway, left] {7}}, label=below:a2c7
+		]
+		[,phantom]
+		]
+		[{}, edge label={node [midway, right] {b}}
+		[{}, edge label={node [midway, left] {6}}, label=below:a2b6
+		]
+		[,phantom]
+		]
+		[,phantom]
+		]
+		[{}, edge label={node [midway, right] {6}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {2}},	label=below:a62
+		]
+		]
+		]
+		[{}, edge label={node [midway, above right] {4}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {9}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {7}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {f}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {f}}, label=below:497ff
+		]
+		]
+		]
+		]
+		]
+		]
+		\end{forest}
 
 		\subsubsection{Tree Terminology\supercite{wiki:xxx}}
 		\begin{enumerate}[label=\textbf{\alph*})]
@@ -471,12 +477,9 @@
 
 	\section{Processing and Computation}
 	
-		\subsection{Verification}
+		\subsection{The Transaction}
 	
-		\paragraph{Notation}: \texttt{verification}
-		\paragraph{Description}: The process in The EVM that verifies Ommer Headers.
-	
-		\subsection{Transaction}
+			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and flexibility of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
 	
 				\paragraph{Description}: A single cryptographically signed instruction sent to the Ethereum network. There are two types of transactions: \textsc{message calls} and \textsc{contract creations}. Transactions are ubiquitous on the Ethereum network, and represent several common fields. 
 			\subsubsection{Transactions Root}
@@ -509,24 +512,25 @@
 			\paragraph{GHOST Protocol}
 
 		\subsection{Verification}
-		    Verifies Ommer headers
+
+					\paragraph{Notation}: \texttt{verification}
+					\paragraph{Description}: The process in The EVM that verifies Ommer Headers
 
 			\subsubsection{Ommers}
 				\paragraph{Ommershash}
 
-		\subsection{Transactions}
-			The basic method for Ethereum accounts to interact with eachother. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and flexibility of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the temporary changes in computation that must be made before a block is finalized and added to the world state.
+
 \paragraph{Notation}: \texttt{sender}
 \paragraph{Description}: A function that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve, (excepting the latter three signature fields) as the datum to sign. The sender of a given transaction can be represented:
 \texttt{transaction.sender}
 
-		\subsection{Serialization}
-		
-		\subsection{Deserialization}
+		\subsection{Serialization/Deserialization}
 			\paragraph{Notation}: \texttt{big\_endian}
 			\paragraph{Description}: This function expands a positive-integer value to a big-endian byte  array of minimal length.  When accompanied by a $\cdot$ operator, it signals sequence concatenation.  The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
-			
-		\subsection{Execution}
+		
+		\subsection{Ethereum Virtual Machine}
+			The EVM is a simple stack-based architecture. The word size of the machine (and thus size of stack BYZANTIUM VERSION 3475aa8 - 2018-01-26 11 item) is 256-bit. This was chosen to facilitate the Keccak- 256 hash scheme and elliptic-curve computations. The memory model is a simple word-addressed byte array. The stack has a maximum size of 1024. The machine also has an independent storage model; this is similar in concept to the memory but rather than a byte array, it is a word- addressable word array. Unlike memory, which is volatile, storage is non volatile and is maintained as part of the system state. All locations in both storage and memory are well-defined initially as zero. The machine does not follow the standard von Neu- mann architecture. Rather than storing program code in generally-accessible memory or storage, it is stored sepa- rately in a virtual ROM interactable only through a spe- cialised instruction. The machine can have exceptional execution for several reasons, including stack underflows and invalid instruc- tions. Like the out-of-gas exception, they do not leave state changes intact. Rather, the machine halts immedi- ately and reports the issue to the execution agent (either the transaction processor or, recursively, the spawning ex- ecution environment) which will deal with it separately. 9.2. Fees Overview. Fees (denominated in gas) are charged under three distinct circumstances, all three as prerequisite to the execution of an operation. The first and most common is the fee intrinsic to the computation of the operation (see Appendix G). Secondly, gas may be deducted in order to form the payment for a subordinate message call or contract creation; this forms part of the payment for CREATE , CALL and CALLCODE . Finally, gas may be paid due to an increase in the usage of the memory. Over an account’s execution, the total fee for memory- usage payable is proportional to smallest multiple of 32 bytes that are required such that all memory indices (whether for read or write) are included in the range. This is paid for on a just-in-time basis; as such, referencing an area of memory at least 32 bytes greater than any previ- ously indexed memory will certainly result in an additional memory usage fee. Due to this fee it is highly unlikely addresses will ever go above 32-bit bounds. That said, implementations must be able to manage this eventuality. Storage fees have a slightly nuanced behaviour—to in- centivise minimisation of the use of storage (which corre- sponds directly to a larger state database on all nodes), the execution fee for an operation that clears an entry in the storage is not only waived, a qualified refund is given; in fact, this refund is effectively paid up-front since the initial usage of a storage location costs substantially more than normal usage. See Appendix H for a rigorous definition of the EVM gas cost.\supercite{Wood2017}
+			\subsubsection{Execution}
 				\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
 			\subsubsection{Code Deposit}
 				\paragraph{Notation}: \texttt{code\_deposit}
@@ -560,7 +564,7 @@
 
 	
 			\subsubsection{Execution Model}
-				\paragraph{Description}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
+				\paragraph{Basics}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
 	
 				In addition to the system state $\boldsymbol{\sigma}$, and the remaining gas for computation $g$, there are several pieces of important information used in the execution environment that the execution agent must provide; these are contained in the tuple $I$:
 
@@ -575,7 +579,16 @@
 					\item \texttt{samestate\_header} the block header of the present block.
 					\item \texttt{the stack depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
 				\end{itemize}
-				\subsection{Substate}
+				The execution model defines the \texttt{state\_transition function}, which can compute the \texttt{resultant state}, the \texttt{remaining\_gas}, the \texttt{accrued\_substate} and the \texttt{resultant\_output}, given these definitions. For the present context, we will define it where the accrued substate is defined as the tuple of the \texttt{suicides\_set}, the \texttt{log\_series}, the \texttt{touched\_accounts} and the \texttt{refunds}.
+				
+				\subsubsection{Execution Overview} The \texttt{execution\_function}, in most practical implementations, will be modeled as an iterative progression of the pair comprising the full \texttt{system\_state} and the \texttt{machine\_state}. It's defined recursively with the \texttt{iterator\_function}, which defines the result of a single cycle of the state machine, together with the \texttt{halting\_check} function, which determines if the present state is an exceptional halting state of the machine and \texttt{output\_data} of the instruction if the present state is a \texttt{controlled\_halt} of the machine. An empty sequence/series indicates that execution should halt, while the empty set indicates that execution should continue.
+				
+				\paragraph{}When evaluating execution, we extract the remaining gas from the resultant machine state. It is thus cycled (recursively or with an iterative loop) until either \texttt{exceptional\_halt} becomes true indicating that the present state is exceptional and that the machine must be halted and any changes discarded or until H becomes a series (rather than the empty set) indicating that the machine has reached a controlled halt. 
+				
+				\paragraph{}The machine state  is defined as the tuple which are the gas available, the program counter, the memory contents, the active number of words in memory (counting continuously from position 0), and the stack contents. The memory contents are a series of zeroes of size 2 256. For the ease of reading, the instruction mnemonics, written in small-caps (e.g. ADD ), should be interpreted as their numeric equivalents; the full table of instructions and their specifics is given For the purposes of defining  we define w as the current operation to be executed:  STOP otherwise We also assume the fixed amounts of and, specifying the stack items removed and added, both subscriptable on the instruction and an instruction \texttt{cost\_function} evaluating to the full cost, in gas, of executing the given instruction.
+				
+				\subsubsection{The Execution Cycle} Stack items are added or removed from the left-most, lower-indexed portion of the series; all other items remain unchanged:  The gas is reduced by the instruction’s gas cost and for most instructions, the program counter increments on each cycle, for the three exceptions, we assume a function J, subscripted by one of two instructions, which evaluates to the according value: otherwise In general, we assume the memory, self-destruct set and system state don’t change: However, instructions do typically alter one or several components of these values. 
+				
 				\subsection{Provisional State}
 					\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
 
@@ -625,12 +638,14 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 				\paragraph{Miner Choice}
 					Miners choose which gas prices they want to accept.
 	
-				\paragraph{Gasprice}
+				\subsubsection{Gasprice}
 					\paragraph{Notation}: \texttt{gas\_limit}
 					\paragraph{Description}: A value equal to the current limit of gas expenditure per block, according to the miners. 
 				\paragraph{Gaslimit}
-					Any unused gas is refunded to the user.
-
+					Any unused gas is refunded to the user. The canonical gas limit of a block is expressed \texttt{canonical\_gas}, and is stabilized by the \texttt{time\_stamp} of the block.
+					
+				\paragraph{Gas Price Stability}
+					Where \texttt{new\_header} is the new block’s header, but without the nonce and mix-hash components, d being the current DAG, a large data set needed to compute the mix-hash, and PoW is the proof-of-work function this evaluates to an array with the first item being the mix- hash, to proof that a correct DAG has been used, and the second item being a pseudo-random number cryptographically dependent on. Given an approximately uniform distribution in the range the expected time to find a solution is proportional to the difficulty. This is the foundation of the security of the blockchain and is the fundamental reason why a malicious node can- not propagate newly created blocks that would otherwise overwrite (“rewrite”) history. Because the nonce must satisfy this requirement, and because its satisfaction de- pends on the contents of the block and in turn its com- posed transactions, creating new, valid, blocks is difficult and, over time, requires approximately the total compute power of the trustworthy portion of the mining peers. Thus we are able to define the block header validity function.
 				\paragraph{Gasused}
 		\paragraph{Description}: A value equal to the total gas used in transactions in this block. 
 
@@ -693,9 +708,26 @@ ogs\_bloom} from the \texttt{tx\_receipt}.
 				\paragraph{}The bytecode that the EVM can natively execute. Used to explicitly specify the meaning of a message to an account.
 				\paragraph{Notation}: \texttt{contract}
 				\paragraph{Description}: A piece of EVM Code that may be associated with an Account or an Autonomous Object. 
-
-			\subsubsection{Opcodes/EVM Assembly}
-		The human readable version of EVM code.  \\
+		\subsection{Blocktree to Blockchain}
+		
+		The canonical blockchain is a path from root to leaf through the entire block tree. In order to have consensus over which path it is, conceptually we identify the path that has had the most computation done upon it, or, the heaviest path. Clearly one factor that helps determine the heaviest path is the block number of the leaf, equivalent to the number of blocks, not counting the unmined genesis block, in the path. The longer the path, the greater the total mining effort that must have been done in order to arrive at the leaf. This is akin to existing schemes, such as that employed in Bitcoin-derived protocols. Since a block header includes the difficulty, the header alone is enough to validate the computation done. Any block contributes toward the total computation or total difficulty of a chain. Thus we define the total difficulty of \texttt{this\_block} recursively by the difficulty of its parent block and the block itself.
+		
+		Validate (or, if mining, determine) ommers; validate (or, if mining, determine) transactions; apply rewards; verify (or, if mining, compute a valid) state and nonce. 
+		
+		\subsection{Ommer Validation} The validation of ommer headers means nothing more than verifying that each om- mer header is both a valid header and satisfies the rela- tion of N th-generation ommer to the present block where N  6. The maximum of ommer headers is two. Formally: where k denotes the “is-kin” property: otherwise and s denotes the “is-sibling” property: is the block of the corresponding header H. 
+		
+		\subsection{Transaction Validation} The given gasUsed must correspond faithfully to the transactions listed, the total gas used in the block, must be equal to the accumulated gas used according to the final transaction.
+		
+		\subsection{Reward Application} The application of rewards to a block involves raising the balance of the accounts of the beneficiary address of the block and each ommer by a certain amount. We raise the block’s beneficiary account by R b ; for each ommer, we raise the block’s beneficiary by 1 an additional 32 of the block reward and the beneficiary of the ommer gets rewarded depending on the block number. This constitutes the \texttt{block\_finalization state\_transition\_function} If there are collisions of the beneficiary addresses between ommers and the block two ommers with the same beneficiary address or an ommer with the same beneficiary address as the present block,
+		
+		\paragraph{}additions are applied cumulatively. We define the block reward as 3 Ether: State \& Nonce Validation. We may now define the function, that maps a block B to its initiation state: otherwise Here, that means the hash of the root node of a trie of state x; it is assumed that implementations will store this in the state database, trivial and efficient since the trie is by nature a resilient data structure. And finally define the \texttt{block\_transition\_function}, which maps an incomplete block to a complete block with a specified dataset. As specified at the beginning of the present work, the \texttt{state\_transition\_function}, which is defined in terms of, the \texttt{block\_finalisation\_function} and, the \texttt{transaction\_evaluation\_function}. As previously detailed, there is the nth corresponding status code, logs and cumulative gas used after each transaction, the fourth component in the tuple, has already been defined in terms of the logs). 
+		
+		\paragraph{}The nth state is given from applying the corresponding transaction to the state resulting from the previous trans- action (or the block’s initial state in the case of the first BYZANTIUM VERSION 3475aa8 - 2018-01-26 14 such transaction): otherwise In certain cases we take a similar approach defining each item as the gas used in evaluating the corresponding transaction summed with the previous item (or zero, if it is the first), giving us a running total: the function is used that was defined in the transaction execution function. We define R[n] a similar manner. Finally, we define \texttt{new state} given the \texttt{block reward function} applied to the final transaction’s \texttt{resultant state}, thus the complete block-transition mechanism, less PoW, the proof-of-work function is defined. 
+		
+		\subsection{Mining Proof-of-Work} The mining proof-of- work (PoW) exists as a cryptographically secure nonce that proves beyond reasonable doubt that a particular amount of computation has been expended in the deter- mination of some token value n. It is utilised to enforce the blockchain security by giving meaning and credence to the notion of difficulty (and, by extension, total difficulty). However, since mining new blocks comes with an attached reward, the proof-of-work not only functions as a method of securing confidence that the blockchain will remain canonical into the future, but also as a wealth distribution mechanism. For both reasons, there are two important goals of the proof-of-work function; firstly, it should be as accessible as possible to as many people as possible. The requirement of, or reward from, specialised and uncommon hardware should be minimised. This makes the distribution model as open as possible, and, ideally, makes the act of mining a simple swap from electricity to Ether at roughly the same rate for anyone around the world. Secondly, it should not be possible to make super-linear profits, and especially not so with a high initial barrier. Such a mechanism allows a well-funded adversary to gain a troublesome amount of the network’s total mining power and as such gives them a super-linear reward (thus skew- ing distribution in their favour) as well as reducing the network security. One plague of the Bitcoin world is ASICs. These are specialised pieces of compute hardware that exist only to do a single task. In Bitcoin’s case the task is the SHA256 hash function. While ASICs exist for a proof-of-work func- tion, both goals are placed in jeopardy. Because of this, a proof-of-work function that is ASIC-resistant (i.e. diffi- cult or economically inefficient to implement in specialised compute hardware) has been identified as the proverbial silver bullet.ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER Two directions exist for ASIC resistance; firstly make it sequential memory-hard, i.e. engineer the function such that the determination of the nonce requires a lot of mem- ory and bandwidth such that the memory cannot be used in parallel to discover multiple nonces simultaneously. The second is to make the type of computation it would need to do general-purpose; the meaning of “specialised hard- ware” for a general-purpose task set is, naturally, general purpose hardware and as such commodity desktop com- puters are likely to be pretty close to “specialised hard- ware” for the task. For Ethereum 1.0 we have chosen the first path. More formally, the proof-of-work function takes the form of 2 256 m = H m is the new block’s header but without the nonce and mix-hash components; H n is the nonce of the header; d is a large data set needed to compute the mix- Hash and H d is the new block’s difficulty value (i.e. the block difficulty from section 10). PoW is the proof-of-work function which evaluates to an array with the first item being the mixHash and the second item being a pseudo- random number cryptographically dependent on H and d. The underlying algorithm is called Ethash and is described below. 11.5.1. Ethash. Ethash is the PoW algorithm for Ethereum 1.0. It is the latest version of Dagger- Hashimoto, introduced by Buterin [2013b] and Dryja [2014], although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. The general route that the algorithm takes is as follows: There exists a seed which can be computed for each block by scanning through the block headers up until that point. From the seed, one can compute a pseudorandom cache, J cacheinit bytes in initial size. Light clients store the cache. From the cache, we can generate a dataset, J datasetinit bytes in initial size, with the property that each item in the dataset depends on only a small number of items from the cache. Full clients and miners store the dataset. The dataset grows linearly with time. Mining involves grabbing random slices of the dataset and hashing them together. Verification can be done with low memory by using the cache to regenerate the specific pieces of the dataset that you need, so you only need to store the cache. The large dataset is updated once ev- ery J epoch blocks, so the vast majority of a miner’s effort will be reading the dataset, not making changes to it. The mentioned parameters as well as the algorithm is explained in detail in appendix J. 12. Implementing Contracts There are several patterns of contracts engineering that allow particular useful behaviours; two of these that I will briefly discuss are data feeds and random numbers. 12.1. Data Feeds. A data feed contract is one which pro- vides a single service: it gives access to information from the external world within Ethereum. The accuracy and timeliness of this information is not guaranteed and it is BYZANTIUM VERSION 3475aa8 - 2018-01-26 15 the task of a secondary contract author—the contract that utilises the data feed—to determine how much trust can be placed in any single data feed. The general pattern involves a single contract within Ethereum which, when given a message call, replies with some timely information concerning an external phenom- enon. An example might be the local temperature of New York City. This would be implemented as a contract that returned that value of some known point in storage. Of course this point in storage must be maintained with the correct such temperature, and thus the second part of the pattern would be for an external server to run an Ethereum node, and immediately on discovery of a new block, creates a new valid transaction, sent to the contract, updating said value in storage. The contract’s code would accept such updates only from the identity contained on said server. 12.2. Random Numbers. Providing random numbers within a deterministic system is, naturally, an impossible task. However, we can approximate with pseudo-random numbers by utilising data which is generally unknowable at the time of transacting. Such data might include the block’s hash, the block’s timestamp and the block’s benefi- ciary address. In order to make it hard for malicious miner to control those values, one should use the BLOCKHASH operation in order to use hashes of the previous 256 blocks as pseudo-random numbers. For a series of such numbers, a trivial solution would be to add some constant amount and hashing the result. 13. Future Directions The state database won’t be forced to maintain all past state trie structures into the future. It should maintain an age for each node and eventually discard nodes that are neither recent enough nor checkpoints; checkpoints, or a set of nodes in the database that allow a particular block’s state trie to be traversed, could be used to place a maxi- mum limit on the amount of computation needed in order to retrieve any state throughout the blockchain. Blockchain consolidation could be used in order to re- duce the amount of blocks a client would need to download to act as a full, mining, node. A compressed archive of the trie structure at given points in time (perhaps one in every 10,000th block) could be maintained by the peer network, effectively recasting the genesis block. This would reduce the amount to be downloaded to a single archive plus a hard maximum limit of blocks. Finally, blockchain compression could perhaps be con- ducted: nodes in state trie that haven’t sent/received a transaction in some constant amount of blocks could be thrown out, reducing both Ether-leakage and the growth of the state database. 13.1. Scalability. Scalability remains an eternal con- cern. With a generalised state transition function, it be- comes difficult to partition and parallelise transactions to apply the divide-and-conquer strategy. Unaddressed, the dynamic value-range of the system remains essentially fixed and as the average transaction value increases, the less valuable of them become ignored, being economically pointless to include in the main ledger. However, several strategies exist that may potentially be exploited to pro- vide a considerably more scalable protocol.ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER Some form of hierarchical structure, achieved by ei- ther consolidating smaller lighter-weight chains into the main block or building the main block through the in- cremental combination and adhesion (through proof-of- work) of smaller transaction sets may allow parallelisa- tion of transaction combination and block-building. Par- allelism could also come from a prioritised set of parallel blockchains, consolidated each block and with duplicate or invalid transactions thrown out accordingly. Finally, verifiable computation, if made generally avail- able and efficient enough, may provide a route to allow the proof-of-work to be the verification of final state. 14. Conclusion I have introduced, discussed and formally defined the protocol of Ethereum. Through this protocol the reader may implement a node on the Ethereum network and join others in a decentralised secure social operating system. Contracts may be authored in order to algorithmically specify and autonomously enforce rules of interaction. 15. Acknowledgements Many thanks to Aeron Buchanan for authoring the Homestead revisions, Christoph Jentzsch for authoring the Ethash algorithm and Yoichi Hirai for doing most of the EIP-150 changes. Important maintenance, useful correc- tions and suggestions were provided by a number of oth- ers from the Ethereum DEV organisation and Ethereum community at large including Gustav Simonsson, Pawe l Bylica, Jutta Steiner, Nick Savers, Viktor Trón, Marko Simovic, Giacomo Tazzari and, of course, Vitalik Buterin.
+		
+			\subsubsection{EVM Assembly}
+		The human readable version of EVM Code (opcodes).   \\
 
 
 	\end{multicols*}
