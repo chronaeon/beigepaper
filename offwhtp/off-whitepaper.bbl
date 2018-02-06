@@ -31,8 +31,8 @@
       \strng{fullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
       \strng{authornamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
       \strng{authorfullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{[Online; accessed 15-December-2017]}
@@ -57,8 +57,8 @@
       \strng{fullhash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authornamehash}{b8a91f4b79257e293f63378b4030938e}
       \strng{authorfullhash}{b8a91f4b79257e293f63378b4030938e}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/wiki/wiki/White-Paper}}
@@ -81,8 +81,8 @@
       \strng{fullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
       \strng{authornamehash}{e2eeb49d9390c82ee05b47c738b5ff4e}
       \strng{authorfullhash}{e2eeb49d9390c82ee05b47c738b5ff4e}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/ethereum/yellowpaper}}
@@ -91,8 +91,8 @@
       \field{year}{2017}
     \endentry
   \endsortlist
-  \missing{billwagner}
   \missing{Ngondi2016}
+  \missing{billwagner}
 \endrefsection
 \endinput
 

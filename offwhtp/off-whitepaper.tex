@@ -186,7 +186,7 @@
 
 \author{\large{\textbf{Micah Dameron}}}
 
-\title{\LARGE{Off-Whitepaper} \\ \hfill \\ \Large{Ethereum}}
+\title{\LARGE{Ethereum Technical Specification}}
 
 \makeindex
 \begin{document}
@@ -246,83 +246,31 @@
 				\paragraph{Notation}: \texttt{apply\_rewards} 
 				\paragraph{Description}: The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. 
 				
-			\subsubsection{Total Difficulty}
-				The \textit{Total Difficulty} of a block is defined recursively by a function which calculates the difficulty of all blocks prior to the header in the present block. 
-				\index{total difficulty}
+
 				
 			\subsubsection{Difficulty Mechanism}
-				This mechanism enforces a homeostasis in terms of the time between blocks; a smaller period between the last two blocks results in an increase in the difficulty level and thus additional computation required, lengthening the likely next period. Conversely, if the period is too large, the difficulty, and expected time to the next block, is reduced.\supercite{Wood2017}
-		
-	\flushleft			
-   \begin{tabular}{ll}
-	   \toprule
-	   \textbf{Pseudocode} & \textbf{Definition} \\
-	   \midrule
-	   \texttt{\scriptsize{total(difficulty)}} & \scriptsize{Total difficulty at \textsl{this block}.} \\
-	   \texttt{\scriptsize{block(difficulty)}} & \scriptsize{\textsl{This block's} difficulty.} \\
-	   \bottomrule
-   \end{tabular}
-
-	   \index{block difficulty}
-	\subsection{GHOST Protocol}
-		\paragraph{Notation}: \texttt{ghost}
-		\paragraph{Description}: Stands for greedy heaviest object subtree; the GHOST Protocol determines the probable correctness of the next block based on the number of miners attaching to it.
-		\index{GHOST protocol}
-		
+			This mechanism enforces a homeostasis in terms of the time between blocks; a smaller period between the last two blocks results in an increase in the difficulty level and thus additional computation required, lengthening the likely next period. Conversely, if the period is too large, the difficulty, and expected time to the next block, is reduced. The \textit{Total Computation} is the difficulty state of the entire Ethereum blockchain. The \textit{Block Difficulty} is not a state of the blockchain, but is local--particular to each specific block. You reach the total difficulty by summing the difficulty of all previous blocks and then adding the present one.  \par
+			\index{total difficulty}	
+			\index{block difficulty}	
+			The \textbf{GHOST Protocol} provides an alternative solution to double-spend attacks from the original solution in Satoshi Nakamoto's Bitcoin Whitepaper. Nakamoto solved the problem of double-spending by requiring the network to agree on the first valid block.  impossible to submit a ``double-spend''  block without  having at least 50\% of the network's mining power to force the longest chain. This is because the network automatically chooses the longest chain. So even if one wanted to  submit two spend transactions in a row, the network simply picks whichever one comes first, ignoring the second because it no longer pertains to the longest chain (which now contains the first block that was sent) so the would-be hacker needs to submit a new block, as the first double block is no longer feasible.\par
+			\index{GHOST protocol}
+			\index{double-spend problem}
+			\index{longest chain}
+			\index{50\% attack}
 	
-	\justify
-
 	\section{Memory and Storage}
-			
-		\subsection{Data Structures}
-
-			\subsubsection{Merkle-Patricia Trees} 
-				\paragraph{Notation}: \texttt{merkle\_p\_t} 
-				\paragraph{Description}: Generalized Merkle DHT
-
-				As blockchain technologies move beyond the "1.0" model of every node processing every transaction, and a more diverse ecosystem including "light clients" that achieve security by downloading only a small portion of the blockchain and extracting the rest of the data on-demand through hash-based authentication comes into play, and particularly in the long term as scalability models essentially turn \_every\_ node into a light client, there arises the need to develop a strong, robust and effective networking infrastructure to handle the load. Ideally, the core technology should be built to be maximally generalized, so that the same core code and network can be used for multiple blockchain, as well as non-blockchain, applications.
-			
 				
-			\subsubsection{World State}
+				
+			\subsection{World State}
 				Also known as \textit{Actual State}, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP.The mapping is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-
-
-			\subsubsection{The Block}
-				A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
-
-
-				\subsubsection{Block Header}
-				\paragraph{Notation}: \texttt{header} 
-				\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
-
-				\begin{enumerate}
-					\item \textbf{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
-					\item \textbf{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
-					\item \textbf{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
-					\item \textbf{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
-					\item \textbf{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
-					\item \textbf{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
-					\item \textbf{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
-					\item \textbf{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
-					\item \textbf{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
-					\item \textbf{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
-					\item \textbf{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
-					\item \textbf{Timestamp} -- This is a record of Unix's time at this block's inception.
-					\item \textbf{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
-					\item \textbf{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
-					\item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
-					\item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
+		
+			\subsubsection{Merkle-Patricia Trees} 
+	
 				
-					\end{enumerate}
-				
-					\subsubsection{Block Footer}
-					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
-					
-					\subsubsection{Block Number}
-						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time be- tween blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the expo- nential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor above, and the denominator 9, in order to target the mean block time including uncle blocks Buterin [2016]. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced and the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
-			
+		
 
-		\subsection{State Database}
+		
+
 
 		\subsubsection{Tries}
 		\paragraph{Notation}: \texttt{trie}
@@ -440,7 +388,42 @@
 
 				In other words:
 			\subsubsection{Create Account}
-				\paragraph{Notation}: \texttt{create}
+				
+			
+			\subsubsection{The Block}
+				A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.
+
+			\subsubsection{Block Headers}
+				\paragraph{Notation}: \texttt{header} 
+				\paragraph{Description}: The information contained in a block besides the transactions list. This consists of:
+
+				\begin{enumerate}
+					\item \textbf{Parent Hash} -- This is the Keccak-256 hash of the parent block's header.
+					\item \textbf{Ommers Hash} -- This is the Keccak-256 hash of the ommer's list portion of this block.
+					\item \textbf{Beneficiary} -- This is the 20-byte address to which all block rewards are transferred.
+					\item \textbf{State Root} -- This is the Keccak-256 hash of the root node of the state trie, after a block and its transactions are finalized.
+					\item \textbf{Transactions Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with each transaction from a Block's transaction list.
+					\item \textbf{Receipts Root} -- This is the Keccak-256 hash of the root node of the trie structure populated with the receipts of each transaction in the transactions list portion of the block.
+					\item \textbf{Logs Bloom} -- This is the bloom filter composed from indexable information (log address and log topic) contained in the receipt for each transaction in the transactions list portion of a block.
+					\item \textbf{Difficulty} -- This is the difficulty of this block -- a quantity calculated from the previous block's difficulty and its timestamp.
+					\item \textbf{Number} -- This is a quantity equal to the number of ancestor blocks behind the current block.
+					\item \textbf{Gas Limit} -- This is a quantity equal to the current maximum gas expenditure per block.
+					\item \textbf{Gas Used} -- This is a quantity equal to the total gas used in transactions in this block.
+					\item \textbf{Timestamp} -- This is a record of Unix's time at this block's inception.
+					\item \textbf{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
+					\item \textbf{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
+					\item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
+				
+					\end{enumerate}
+				
+					\subsubsection{Block Footer}
+					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
+					
+					\subsubsection{Block Number}
+						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time be- tween blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the expo- nential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor above, and the denominator 9, in order to target the mean block time including uncle blocks Buterin [2016]. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced and the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
+			
+			\paragraph{Notation}: \texttt{create}
 				\paragraph{Description}: Account creation definitively accours in the YP with contract creation. Does account creation also apply to regular account creation, or does it only apply to contract accounts? Also, what about protocol accounts?
 				\paragraph{Related}: \texttt{init}
 			\subsubsection{Account State}

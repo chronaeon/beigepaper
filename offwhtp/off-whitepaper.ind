@@ -1,33 +1,45 @@
 \begin{theindex}
 
+  \item 50\% attack, \hyperpage{2}
+
+  \indexspace
+
   \item abstract
     \subitem state-machines, \hyperpage{1}
-  \item apply rewards, \hyperpage{5}
+  \item apply rewards, \hyperpage{1}
 
   \indexspace
 
-  \item block difficulty, \hyperpage{5}
+  \item block difficulty, \hyperpage{2}
 
   \indexspace
 
-  \item Ether, \hyperpage{5}
+  \item double-spend problem, \hyperpage{2}
 
   \indexspace
 
-  \item Finney, \hyperpage{5}
+  \item Ether, \hyperpage{1}
 
   \indexspace
 
-  \item GHOST protocol, \hyperpage{5}
+  \item Finney, \hyperpage{1}
 
   \indexspace
 
-  \item mining, \hyperpage{5}
+  \item GHOST protocol, \hyperpage{2}
 
   \indexspace
 
-  \item native currency, \hyperpage{5}
-  \item network cost unit, \hyperpage{5}
+  \item longest chain, \hyperpage{2}
+
+  \indexspace
+
+  \item mining, \hyperpage{1}
+
+  \indexspace
+
+  \item native currency, \hyperpage{1}
+  \item network cost unit, \hyperpage{1}
 
   \indexspace
 
@@ -35,15 +47,15 @@
 
   \indexspace
 
-  \item Szabo, \hyperpage{5}
+  \item Szabo, \hyperpage{1}
 
   \indexspace
 
-  \item total difficulty, \hyperpage{5}
+  \item total difficulty, \hyperpage{2}
 
   \indexspace
 
-  \item Wei, \hyperpage{5}
+  \item Wei, \hyperpage{1}
 
   \indexspace
 
