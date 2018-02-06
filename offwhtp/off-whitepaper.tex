@@ -267,15 +267,7 @@
 			\subsubsection{Merkle-Patricia Trees} 
 	
 				
-		
-
-		
-
-
-		\subsubsection{Tries}
-		\paragraph{Notation}: \texttt{trie}
-		\paragraph{Description}: Also known as a search tree, a radix  tree, or a prefix tree, a trie is tree structure for organizing sequential data hierarchically. Members of a previous generation can spawn infinitely many members of the next generation, but the data cannot be read out of sequence. In other words a parent can spawn any number of children, but cannot skip a generation. This ensures that all the data in a trie are related to each other properly. 
-		
+	Merkle-Patricia Trees\footnote{Also known as ``tries''} are modified Merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard Merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
 		The following is a search tree beginning with hexadecimal values \texttt{a} and \texttt{4}: \\
 		
 		
@@ -307,7 +299,7 @@
 		]
 		]
 		]
-		[{}, edge label={node [midway, above right] {4}}
+		[{}, edge label={node [midway, above left] {4}}
 		[,phantom]
 		[{}, edge label={node [midway, right] {9}}
 		[,phantom]
@@ -338,22 +330,22 @@
 
 		\subsubsection{Tree Terminology\supercite{wiki:xxx}}
 		\begin{enumerate}[label=\textbf{\alph*})]
-			\item Root--  The top (first) node in a tree.
-			\item	Child--  A node directly connected to another node when moving away from the Root.
-			\item	Parent--  The converse notion of a child.
-			\item	Siblings--  A group of nodes with the same parent.
-			\item	Descendant--  A node reachable by repeated proceeding from parent to child.
-			\item	Ancestor--  A node reachable by repeated proceeding from child to parent.
-			\item	Leaf\footnote{a.k.a. External Node}--  A node with no children.
-			\item	Branch\footnote{a.k.a. Internal Node}--  A node with at least one child.
-			\item	Degree--  The number of subtrees of a node.
-			\item	Edge--  The connection between one node and another.
-			\item	Path--  A sequence of nodes and edges connecting a node with a descendant.
-			\item	Level--  The level of a node is defined by 1 + (the number of connections between the node and the root).
-			\item	Node Height--  The height of a node is the number of edges on the longest path between that node and a leaf.
-			\item	Tree Height--  The height of a tree is the height of its root node.
-			\item	Depth--  The depth of a node is the number of edges from the tree's root node to the node.
-			\item Forest-- A forest is a set of n $\geq  0$ disjoint trees.
+			\item Root --  The top (first) node in a tree.
+			\item Child --  A node directly connected to another node when moving away from the Root.
+			\item Parent --  The converse notion of a child.
+			\item Siblings --  A group of nodes with the same parent.
+			\item Descendant --  A node reachable by repeated proceeding from parent to child.
+			\item Ancestor --  A node reachable by repeated proceeding from child to parent.
+			\item Leaf --  A node with no children.
+			\item Branch --  A node with at least one child.
+			\item Degree --  The number of subtrees of a node.
+			\item Edge --  The connection between one node and another.
+			\item Path --  A sequence of nodes and edges connecting a node with a descendant.
+			\item Level --  The level of a node is defined by 1 + (the number of connections between the node and the root).
+			\item Node Height --  The height of a node is the number of edges on the longest path between that node and a leaf.
+			\item Tree Height --  The height of a tree is the height of its root node.
+			\item Depth --  The depth of a node is the number of edges from the tree's root node to the node.
+			\item Forest -- A forest is a set of n $\geq  0$ disjoint trees.
 		\end{enumerate}
 
 			\subsubsection{RLP}
