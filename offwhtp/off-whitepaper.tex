@@ -103,12 +103,12 @@
  \makeatother
 
 %╔═══════════════════DELETED TERMS═════════════════════╗
-%║Autonomous Object				       ║
-%║Design Pattern				       ║
-%║Object-Oriented Programming			       ║
-%║External Actor				       ║
-%║Abstract Machine				       ║
-%║Hacker Ethic					       ║ 
+%║Autonomous Object				      				   ║
+%║Design Pattern				       				   ║
+%║Object-Oriented Programming					       ║
+%║External Actor				       				   ║
+%║Abstract Machine				       				   ║
+%║Hacker Ethic					       				   ║
 %╚═════════════════════════════════════════════════════╝
 
 
@@ -142,6 +142,9 @@
 
 \addbibresource{References.bib}
 
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{2}
 
 %\makeatletter
 %\patchcmd{\footnotetext}{\footnotesize}{\small\sffamily}{}{}
@@ -195,37 +198,25 @@
 
 	\maketitle
 
-	\epigraph{\textsl{Beautiful is better than ugly. \\
-	Explicit is better than implicit. \\
-	Simple is better than complex. \\
-	Complex is better than complicated.
-	}}{\textit{The Zen of Python}}
-
-
-	\hfill \hfill
 	\begin{center}\textbf{Abstract}\end{center}\par
-	\abstract{The goal of this paper is to create and expand concepts from Ethereum about which, notwithstanding any earlier documentation, there may be some justified confusion. We use pseudocode rather than mathematical notation to describe Ethereum's operation, because pseudocode has many advantages when describing \textsl{Abstract State Machines},\footnote{E. Borger and S. Robert F., \textit{Abstract state machines}:\textsl{ A method for high-level system design and analysis}. 1, pp. 3-8. Springer, 2003.} like Ethereum. This paper takes an approach to describing Ethereum that focuses on clarity and approachability. Our prime source is the Ethereum \textit{Yellowpaper}, but supplemental knowledge and crucial points from other sources have also been used for the reader's benefit.}
+		\abstract{The Ethereum Protocol is a deterministic but practically unbounded state-machine with two basic functions; the first being a globally accessible singleton state, and the second being a virtual machine that applies changes to that state. This paper explains the individual parts that make up these two factors.}
 		\index{pseudocode}
 		\index{abstract!state-machines}
 		\index{Yellowpaper}
 
-	\clearpage
-
-	\begin{center}\section*{Acknowledgements}\end{center}
-	Thank you to the Ethereum founders for creating a product worth writing about in minute detail. Thanks to the Ethereum Foundation for maintaining this product in its basic integrity. Thanks to the ConsenSys Mesh for supporting my work on this project, by contributing your vast knowledge and expertise. Finally, thank you to Dr. Gavin Wood for your technical astuteness and creative genius; your Yellowpaper has given Ethereum a soul worth decoding.
-
-	\clearpage
-
-	\tableofcontents
-
-	\clearpage
 
 	\begin{multicols*}{2}
 	\TrickSupertabularIntoMulticols
 	\begin{justify}
-
+	
+	
+	\section{Imagining Bitcoin as a Computer}
+		Ethereum borrows the crypto-economic model of a cryptographically-secure and instantiated ledger that originated with Bitcoin and repurposes it to model not just a ledger, but a stack-based virtual machine, complete with an assembly language, its own byte code, and many higher-level languages as well. With this machine people can execute machine codes with the same veracity and certainty that one has when sending a Bitcoin transaction. Just as sure that you can be certain of a Bitcoin transaction being the right balance, the right transfer, that things in the record are timestamped and actually \textit{did in fact happen}, just as certain as the 1st, 2nd, 1000th, and 10,000th transactions on the Bitcoin network are the same transactions that happened nine years ago, without anyone altering the record, (for no alteration of the record is possible, nor has ever been possible) just so sure are the \textit{machine instructions in assembly language that are given to the Ethereum interpreter.} \par
+		
+		This has profound implications for all areas of society. In short, \textit{programs written and executed on the Ethereum Blockchain are unstoppable.} This does not mean that no loopholes in the code exist that could cause undesirable outcomes, rather it means that at the base level, the outcomes, whether desirable or not, happened, and are recorded, and are uncensorable. 
+	
 	\section{Native Currency \& Mining}
-		Because Ethereum is turing-complete, there needs to be a \textsl{network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		Because Ethereum aims not at being a currency, but at modeling a computer, there needs to be a \textsl{network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
 		\index{native currency}
 		\index{mining}
 		\index{network cost unit}
@@ -322,12 +313,14 @@
 					\item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
 					\item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
 				
+					\end{enumerate}
+				
 					\subsubsection{Block Footer}
 					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
 					
 					\subsubsection{Block Number}
 						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time be- tween blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the expo- nential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor above, and the denominator 9, in order to target the mean block time including uncle blocks Buterin [2016]. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced and the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
-				\end{enumerate}
+			
 
 		\subsection{State Database}
 
@@ -379,28 +372,40 @@
 		]
 		]
 		]
+		[{}, edge label={node [midway, above right] {a}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {c}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {9}}
+		[,phantom]
+		[{}, edge label={node [midway, right] {5}}, label=below:4ac95
+		[,phantom]
+		]
+		]
+		]
+		]
 		]
 		]
 		\end{forest}
 
 		\subsubsection{Tree Terminology\supercite{wiki:xxx}}
 		\begin{enumerate}[label=\textbf{\alph*})]
-			\item [Root]--  The top (first) node in a tree.
-			\item	[Child]--  A node directly connected to another node when moving away from the Root.
-			\item	[Parent]--  The converse notion of a child.
-			\item	[Siblings]--  A group of nodes with the same parent.
-			\item	[Descendant]--  A node reachable by repeated proceeding from parent to child.
-			\item	[Ancestor]--  A node reachable by repeated proceeding from child to parent.
-			\item	[Leaf]\footnote{a.k.a. External Node}--  A node with no children.
-			\item	[Branch\footnote{a.k.a. Internal Node}]--  A node with at least one child.
-			\item	[Degree]--  The number of subtrees of a node.
-			\item	[Edge]--  The connection between one node and another.
-			\item	[Path]--  A sequence of nodes and edges connecting a node with a descendant.
-			\item	[Level]--  The level of a node is defined by 1 + (the number of connections between the node and the root).
-			\item	[Node Height]--  The height of a node is the number of edges on the longest path between that node and a leaf.
-			\item	[Tree Height]--  The height of a tree is the height of its root node.
-			\item	[Depth]--  The depth of a node is the number of edges from the tree's root node to the node.
-			\item [Forest]-- A forest is a set of n $\geq  0$ disjoint trees.
+			\item Root--  The top (first) node in a tree.
+			\item	Child--  A node directly connected to another node when moving away from the Root.
+			\item	Parent--  The converse notion of a child.
+			\item	Siblings--  A group of nodes with the same parent.
+			\item	Descendant--  A node reachable by repeated proceeding from parent to child.
+			\item	Ancestor--  A node reachable by repeated proceeding from child to parent.
+			\item	Leaf\footnote{a.k.a. External Node}--  A node with no children.
+			\item	Branch\footnote{a.k.a. Internal Node}--  A node with at least one child.
+			\item	Degree--  The number of subtrees of a node.
+			\item	Edge--  The connection between one node and another.
+			\item	Path--  A sequence of nodes and edges connecting a node with a descendant.
+			\item	Level--  The level of a node is defined by 1 + (the number of connections between the node and the root).
+			\item	Node Height--  The height of a node is the number of edges on the longest path between that node and a leaf.
+			\item	Tree Height--  The height of a tree is the height of its root node.
+			\item	Depth--  The depth of a node is the number of edges from the tree's root node to the node.
+			\item Forest-- A forest is a set of n $\geq  0$ disjoint trees.
 		\end{enumerate}
 
 			\subsubsection{RLP}
