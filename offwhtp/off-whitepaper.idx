@@ -65,18 +65,18 @@
 \indexentry{root node|hyperpage}{3}
 \indexentry{child node|hyperpage}{3}
 \indexentry{parent node|hyperpage}{3}
-\indexentry{sibling nodes|hyperpage}{3}
+\indexentry{sibling node|hyperpage}{3}
 \indexentry{descendant node|hyperpage}{3}
 \indexentry{ancestor node|hyperpage}{3}
-\indexentry{leaf node|hyperpage}{3}
+\indexentry{leaf!node|hyperpage}{3}
 \indexentry{branch node|hyperpage}{3}
-\indexentry{tree degree|hyperpage}{3}
-\indexentry{tree edge|hyperpage}{3}
-\indexentry{tree path|hyperpage}{3}
-\indexentry{tree level|hyperpage}{3}
-\indexentry{node height|hyperpage}{3}
-\indexentry{tree height|hyperpage}{3}
-\indexentry{node depth|hyperpage}{3}
+\indexentry{tree!degree|hyperpage}{3}
+\indexentry{tree!edge|hyperpage}{3}
+\indexentry{tree!path|hyperpage}{3}
+\indexentry{tree!level|hyperpage}{3}
+\indexentry{node!height|hyperpage}{3}
+\indexentry{tree!height|hyperpage}{3}
+\indexentry{node!depth|hyperpage}{3}
 \indexentry{forest|hyperpage}{3}
 \indexentry{RLP|hyperpage}{3}
 \indexentry{nested binary data|hyperpage}{3}
@@ -97,8 +97,8 @@
 \indexentry{single byte integer|hyperpage}{3}
 \indexentry{block!composition|hyperpage}{3}
 \indexentry{block!header|hyperpage}{3}
-\indexentry{parent hash|hyperpage}{3}
-\indexentry{ommers hash|hyperpage}{3}
+\indexentry{parent!hash|hyperpage}{3}
+\indexentry{ommers!hash|hyperpage}{3}
 \indexentry{beneficiary|hyperpage}{3}
 \indexentry{state root|hyperpage}{3}
 \indexentry{Keccak-256|hyperpage}{3}
@@ -109,8 +109,8 @@
 \indexentry{difficulty|hyperpage}{4}
 \indexentry{Keccak-256|hyperpage}{4}
 \indexentry{number|hyperpage}{4}
-\indexentry{gas limit|hyperpage}{4}
-\indexentry{gas used|hyperpage}{4}
+\indexentry{gas!limit|hyperpage}{4}
+\indexentry{gas!used|hyperpage}{4}
 \indexentry{timestamp|hyperpage}{4}
 \indexentry{Keccak-256|hyperpage}{4}
 \indexentry{extra data|hyperpage}{4}
@@ -120,8 +120,33 @@
 \indexentry{Keccak-256|hyperpage}{4}
 \indexentry{block number|hyperpage}{4}
 \indexentry{genesis difficulty|hyperpage}{4}
-\indexentry{homestead difficulty parameter|hyperpage}{4}
+\indexentry{homestead!difficulty parameter|hyperpage}{4}
 \indexentry{dynamic difficulty homeostasis|hyperpage}{4}
 \indexentry{exponential difficulty increase|hyperpage}{4}
-\indexentry{difficulty bomb|hyperpage}{4}
+\indexentry{difficulty!bomb|hyperpage}{4}
 \indexentry{byzantium|hyperpage}{4}
+\indexentry{ice age|hyperpage}{4}
+\indexentry{homestead|hyperpage}{4}
+\indexentry{EIP!2|hyperpage}{4}
+\indexentry{EIP!100|hyperpage}{4}
+\indexentry{EIP!649|hyperpage}{4}
+\indexentry{account!creation|hyperpage}{4}
+\indexentry{contract!creation|hyperpage}{4}
+\indexentry{account!init|hyperpage}{4}
+\indexentry{account!body|hyperpage}{4}
+\indexentry{account!state|hyperpage}{4}
+\indexentry{account!nonce|hyperpage}{4}
+\indexentry{account!balance|hyperpage}{4}
+\indexentry{account!storage root|hyperpage}{4}
+\indexentry{account!code hash|hyperpage}{4}
+\indexentry{account!balance|hyperpage}{4}
+\indexentry{wei|hyperpage}{4}
+\indexentry{256!bit|hyperpage}{4}
+\indexentry{32!byte|hyperpage}{4}
+\indexentry{root!node|hyperpage}{4}
+\indexentry{leaf!node|hyperpage}{4}
+\indexentry{state!database|hyperpage}{4}
+\indexentry{state!database|hyperpage}{4}
+\indexentry{transaction|hyperpage}{5}
+\indexentry{state!transition|hyperpage}{5}
+\indexentry{machine!state|hyperpage}{5}

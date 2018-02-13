@@ -4,11 +4,26 @@
 
   \indexspace
 
+  \item 32
+    \subitem byte, \hyperpage{4}
+  \item 256
+    \subitem bit, \hyperpage{4}
+
+  \indexspace
+
   \item abstract
     \subitem state-machine, \hyperpage{1}
   \item account
     \subitem addresses, \hyperpage{2}
+    \subitem balance, \hyperpage{4}
+    \subitem body, \hyperpage{4}
+    \subitem code hash, \hyperpage{4}
+    \subitem creation, \hyperpage{4}
+    \subitem init, \hyperpage{4}
+    \subitem nonce, \hyperpage{4}
+    \subitem state, \hyperpage{4}
     \subitem states, \hyperpage{2}
+    \subitem storage root, \hyperpage{4}
   \item ancestor node, \hyperpage{3}
   \item apply rewards, \hyperpage{1}
   \item assembly language, \hyperpage{1}
@@ -34,6 +49,8 @@
 
   \item certainty, \hyperpage{1}
   \item child node, \hyperpage{3}
+  \item contract
+    \subitem creation, \hyperpage{4}
   \item cryptoeconomic
     \subitem model, \hyperpage{1}
   \item cryptographically
@@ -48,13 +65,17 @@
   \item descendant node, \hyperpage{3}
   \item deterministic, \hyperpage{1}
   \item difficulty, \hyperpage{4}
-  \item difficulty bomb, \hyperpage{4}
+    \subitem bomb, \hyperpage{4}
   \item difficulty mechanism, \hyperpage{2}
   \item double-spend problem, \hyperpage{2}
   \item dynamic difficulty homeostasis, \hyperpage{4}
 
   \indexspace
 
+  \item EIP
+    \subitem 2, \hyperpage{4}
+    \subitem 100, \hyperpage{4}
+    \subitem 649, \hyperpage{4}
   \item empty byte-array, \hyperpage{3}
   \item Ether, \hyperpage{1}
   \item ethereum interpreter, \hyperpage{1}
@@ -70,8 +91,9 @@
 
   \indexspace
 
-  \item gas limit, \hyperpage{4}
-  \item gas used, \hyperpage{4}
+  \item gas
+    \subitem limit, \hyperpage{4}
+    \subitem used, \hyperpage{4}
   \item genesis difficulty, \hyperpage{4}
   \item GHOST protocol, \hyperpage{2}
   \item global state database, \hyperpage{3}
@@ -79,10 +101,12 @@
   \indexspace
 
   \item higher-level languages, \hyperpage{1}
-  \item homestead difficulty parameter, \hyperpage{4}
+  \item homestead, \hyperpage{4}
+    \subitem difficulty parameter, \hyperpage{4}
 
   \indexspace
 
+  \item ice age, \hyperpage{4}
   \item inspection
     \subitem  of data, \hyperpage{3}
 
@@ -92,7 +116,8 @@
 
   \indexspace
 
-  \item leaf node, \hyperpage{3}
+  \item leaf
+    \subitem node, \hyperpage{3, 4}
   \item ledger, \hyperpage{1}
   \item logs bloom, \hyperpage{4}
   \item longest chain, \hyperpage{2}
@@ -102,6 +127,7 @@
 
   \item machine
     \subitem codes, \hyperpage{1}
+    \subitem state, \hyperpage{5}
   \item mapping, \hyperpage{2}
   \item mapping between
     \subitem account states, \hyperpage{3}
@@ -122,8 +148,9 @@
   \item nested binary data, \hyperpage{3}
   \item network cost unit, \hyperpage{1}
   \item no leading zeroes, \hyperpage{3}
-  \item node depth, \hyperpage{3}
-  \item node height, \hyperpage{3}
+  \item node
+    \subitem depth, \hyperpage{3}
+    \subitem height, \hyperpage{3}
   \item node operator computer, \hyperpage{3}
   \item non
     \subitem empty deserialized integer, \hyperpage{3}
@@ -133,11 +160,13 @@
   \indexspace
 
   \item ommer block headers, \hyperpage{4}
-  \item ommers hash, \hyperpage{3}
+  \item ommers
+    \subitem hash, \hyperpage{3}
 
   \indexspace
 
-  \item parent hash, \hyperpage{3}
+  \item parent
+    \subitem hash, \hyperpage{3}
   \item parent node, \hyperpage{3}
   \item pseudocode, \hyperpage{1}
 
@@ -151,12 +180,14 @@
     \subitem integers, \hyperpage{3}
     \subitem serialized
       \subsubitem byte-array, \hyperpage{3}
+  \item root
+    \subitem node, \hyperpage{4}
   \item root node, \hyperpage{3}
 
   \indexspace
 
   \item Satoshi Nakamoto, \hyperpage{2}
-  \item sibling nodes, \hyperpage{3}
+  \item sibling node, \hyperpage{3}
   \item single byte integer, \hyperpage{3}
   \item singleton, \hyperpage{1}
   \item speedy
@@ -164,6 +195,9 @@
       \subsubitem of data, \hyperpage{3}
   \item stack-based
     \subitem virtual machine, \hyperpage{1}
+  \item state
+    \subitem database, \hyperpage{4}
+    \subitem transition, \hyperpage{5}
   \item state root, \hyperpage{3}
   \item Szabo, \hyperpage{1}
 
@@ -172,16 +206,17 @@
   \item timestamp, \hyperpage{4}
   \item timestamped, \hyperpage{1}
   \item total difficulty, \hyperpage{2}
+  \item transaction, \hyperpage{5}
   \item transactions root, \hyperpage{4}
   \item transfer, \hyperpage{1}
   \item tree
     \subitem arbitrary depth, \hyperpage{3}
     \subitem database, \hyperpage{2}
-  \item tree degree, \hyperpage{3}
-  \item tree edge, \hyperpage{3}
-  \item tree height, \hyperpage{3}
-  \item tree level, \hyperpage{3}
-  \item tree path, \hyperpage{3}
+    \subitem degree, \hyperpage{3}
+    \subitem edge, \hyperpage{3}
+    \subitem height, \hyperpage{3}
+    \subitem level, \hyperpage{3}
+    \subitem path, \hyperpage{3}
   \item trie
     \subitem database, \hyperpage{2}
 
@@ -200,6 +235,7 @@
   \indexspace
 
   \item Wei, \hyperpage{1}
+  \item wei, \hyperpage{4}
   \item World State, \hyperpage{2}
 
   \indexspace

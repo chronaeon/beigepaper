@@ -13,8 +13,8 @@
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Block Number and Difficulty}{subsection.3.2}% 13
 \BOOKMARK [3][-]{subsubsection.3.2.4}{Account Creation}{subsection.3.2}% 14
 \BOOKMARK [3][-]{subsubsection.3.2.5}{Account State}{subsection.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.3}{Bloom Filter}{section.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Transaction Receipts}{subsection.3.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Bloom Filter}{subsection.3.2}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.7}{Transaction Receipts}{subsection.3.2}% 17
 \BOOKMARK [1][-]{section.4}{Processing and Computation}{}% 18
 \BOOKMARK [2][-]{subsection.4.1}{The Transaction}{section.4}% 19
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Transactions Root}{subsection.4.1}% 20
@@ -67,7 +67,7 @@
 \BOOKMARK [2][-]{subsection.B.2}{Solidity}{appendix.B}% 67
 \BOOKMARK [2][-]{subsection.B.3}{Serpent}{appendix.B}% 68
 \BOOKMARK [2][-]{subsection.B.4}{Vyper}{appendix.B}% 69
-\BOOKMARK [1][-]{section*.63}{References}{}% 70
-\BOOKMARK [1][-]{section*.64}{Glossary}{}% 71
-\BOOKMARK [1][-]{section*.66}{Acronyms}{}% 72
-\BOOKMARK [1][-]{section*.68}{Index}{}% 73
+\BOOKMARK [1][-]{section*.57}{References}{}% 70
+\BOOKMARK [1][-]{section*.58}{Glossary}{}% 71
+\BOOKMARK [1][-]{section*.60}{Acronyms}{}% 72
+\BOOKMARK [1][-]{section*.62}{Index}{}% 73
