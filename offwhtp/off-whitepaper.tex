@@ -584,8 +584,7 @@
 				
 				\item \textbf{Nonce} -- The number of transactions sent by the sender.
 				\item \textbf{Gas Price} -- The number of Wei to pay the network for unit of gas.
-				\item \textbf{Gas Limit} -- The maximum amount of gas to be used in while executing a transaction. 
-				
+				\item \textbf{Gas Limit} -- The maximum amount of gas to be used in while executing a transaction.			
 				\item \textbf{To} -- The 20-character recipient of a message call.\footnote{In the case of a contract creation this is 0x000000000000000000.}
 				\item \textbf{Value} The number of Wei to be transferred to the recipient of a message call.\footnote{In the case of a contract creation, an endowment to the newly created contract account.}
 				\item \textbf{v, r, s} 
@@ -644,17 +643,46 @@
 					\index{memory!model!volatility of}
 					\index{system state}
 
-			All locations in both storage and memory are well-defined initially as zero. The machine does not follow the standard von Neu- mann architecture. Rather than storing program code in generally-accessible memory or storage, it is stored separately in a virtual ROM interactable only through a specialised set of instructions. 
+			All locations in both storage and memory are well-defined initially as zero. The machine does not follow the standard von Neumann architecture. Rather than storing program code in generally-accessible memory or storage, it is stored separately in a virtual ROM interactable only through specialized instructions. 
 			
-					\index{well defined}
+					\index{well!defined!storage}
+					\index{well!defined!memory}
+					\index{non-standard!architecture}
+					\index{virtual ROM}
 
-			The machine can have exceptional execution for several reasons, including stack underflows and invalid instruc- tions. Like the out-of-gas exception, they do not leave state changes intact. Rather, the machine halts immedi- ately and reports the issue to the execution agent (either the transaction processor or, recursively, the spawning ex- ecution environment) which will deal with it separately. 9.2. Fees Overview. Fees (denominated in gas) are charged under three distinct circumstances, all three as prerequisite to the execution of an operation. The first and most common is the fee intrinsic to the computation of the operation (see Appendix G). Secondly, gas may be deducted in order to form the payment for a subordinate message call or contract creation; this forms part of the payment for CREATE , CALL and CALLCODE . Finally, gas may be paid due to an increase in the usage of the memory. Over an account’s execution, the total fee for memory- usage payable is proportional to smallest multiple of 32 bytes that are required such that all memory indices (whether for read or write) are included in the range. This is paid for on a just-in-time basis; as such, referencing an area of memory at least 32 bytes greater than any previ- ously indexed memory will certainly result in an additional memory usage fee. Due to this fee it is highly unlikely addresses will ever go above 32-bit bounds. That said, implementations must be able to manage this eventuality. Storage fees have a slightly nuanced behaviour—to in- centivise minimisation of the use of storage (which corre- sponds directly to a larger state database on all nodes), the execution fee for an operation that clears an entry in the storage is not only waived, a qualified refund is given; in fact, this refund is effectively paid up-front since the initial usage of a storage location costs substantially more than normal usage. See Appendix H for a rigorous definition of the EVM gas cost.\supercite{Wood2017}
-			\subsubsection{Execution}
-				\paragraph{Description}: The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity. 
-			\subsubsection{Code Deposit}
-				\paragraph{Notation}: \texttt{code\_deposit}
-				\paragraph{Description}: If the initialization code completes successfully, a final contract-creation cost is paid, the code-deposit cost, c, proportional to the size of the created contract's code. 
+			The machine can have exceptional execution for several reasons, including stack underflows and invalid instructions. Like the out-of-gas exception, they do not leave state changes intact. Rather, the machine halts immediately and reports the issue to the execution agent (either the transaction processor or, recursively, the spawning execution environment) which will deal with it separately. 
 			
+					\index{exceptional!halt}
+					\index{stack!underflow}
+					\index{invalid instruction}
+					\index{out-of-gas}
+					\index{state!unchanged}
+					\index{machine!halt}
+					\index{report!exception}
+			
+			\subsubsection{Fees} Fees (denominated in gas) are charged under \textsc{three} distinct circumstances, all three as prerequisite to the execution of an operation.\supercite{Wood2017} The \textbf{first} and most common is \textsl{the fee intrinsic to the computation of the operation}. \textbf{Secondly}, gas may be deducted \textsl{in order to form the payment for a subordinate message call or contract creation}; this forms part of the payment for the CREATE, CALL and CALLCODE operations. \textbf{Finally}, \textsl{gas may be paid due to an increase in the usage of the memory.} 
+					\index{fees}
+					\index{gas}
+					\index{execution}
+					\index{computation!of!operation}
+					\index{gas!deducted}
+					\index{payment}
+					\index{message!call}
+					\index{gas!paid for!increased use of memory}
+
+
+			Over an account’s execution, the total fee for memory-usage payable is proportional to smallest multiple of 32 bytes that are required such that all memory indices (whether for read or write) are included in the range. This is paid for on a just-in-time basis; as such, referencing an area of memory at least 32 bytes greater than any previously indexed memory will certainly result in an additional memory usage fee. Due to this fee it is highly unlikely that addresses will trend above 32-bit bounds.\supercite{Wood2017} 
+					\index{total fee}
+					\index{memory!usage fee}
+					
+			Implementations must be able to manage this eventuality. Storage fees have a slightly nuanced behaviour to incentivize minimization of the use of storage (which corresponds directly to a larger state database on all nodes), the execution fee for an operation that clears an entry in the storage is not only waived, a qualified refund is given; in fact, this refund is effectively paid up-front since the initial usage of a storage location costs substantially more than normal usage. \supercite{Wood2017}
+					\index{gas!price}
+					\index{minimize!storage use}
+					\index{gas!refund!clearing space}
+					
+			\subsection{Execution}
+				The execution of a transaction defines the state transition function: \texttt{stf}. However, before any transaction can be executed it needs to go through the initial tests of intrinsic validity.
+				\index{intrinsic!validity}
 			\subsubsection{Intrinsic Validity}
 				The criteria for intrinsic validity are as follows:
 				\begin{itemize}
@@ -664,28 +692,56 @@
 				\item The \texttt{gas\_limit} is greater than or equal to the \texttt{intrinsic\_gas} used by the transaction.
 				\item The sender's account balance contains the cost required in up-front payment.
 				\end{itemize}
+					\index{well-formed RLP}
+					\index{transaction!signature}
+					\index{transaction!nonce}
+					\index{gas!limit}
+					\index{sender!account}
+					\index{upfront!payment}
 
-				Accordingly, the post-transactional state of Ethereum is expressed thus: 
-				\\
-				\texttt{transaction(post.state) = stf(present.state, transaction)}  
-				\\
-				While the amount of gas used in the execution is expressed: \texttt{stf(gas\_used)} and the accrued log items belonging to the transaction are expressed: \texttt{stf(logsbloom, content)(logsbloom, set)} Information concering the result of a transaction's execution is stored in the transaction receipt \texttt{tx\_receipt}. The set of log events which are created through the execution of the transaction, \texttt{logs\_set} in addition to the bloom filter which contains the actual information from those log events \texttt{logs\_bloom} are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gas\_used) are stored in the transaction receipt. Thusly the transaction receipt is a record of any given \texttt{execution}. \par
-
-																			A valid transaction execution begins with a permanent change to the state: the nonce of the sender account is increased by one and the balance is decreased by the \texttt{collateral\_gas}\footnote{Designated ``\texttt{intrinsic\_gas}'' in the Yellowpaper} which is the amount of gas a transaction is required to pay prior to its execution. The original transactor will differ from the sender if the message call or contract creation comes from a contract account executing code. 
+			\subsubsection{Transaction Receipt}
+				While the amount of gas used in the execution and the accrued log items belonging to the transaction are stored, information concering the result of a transaction's execution is stored in the transaction receipt \texttt{tx\_receipt}. The set of log events which are created through the execution of the transaction, \texttt{logs\_set} in addition to the bloom filter which contains the actual information from those log events \texttt{logs\_bloom} are located in the transaction receipt. In addition, the post-transaction state \texttt{post\_transaction(state)} and the amount of gas used in the block containing the transaction receipt post(gas\_used) are stored in the transaction receipt. As a result, the transaction receipt is a record of any given \texttt{execution}.
+					\index{gas!used}
+					\index{transaction!receipt}
+					\index{log!items}
+					\index{log!events}
+					\index{transaction!execution}
+					\index{post!transaction!state}
+					
+					A valid transaction execution begins with a permanent change to the state: the nonce of the sender account is increased by one and the balance is decreased by the \texttt{collateral\_gas}\footnote{Designated ``\texttt{intrinsic\_gas}'' in the Yellowpaper} which is the amount of gas a transaction is required to pay prior to its execution. The original transactor will differ from the sender if the message call or contract creation comes from a contract account executing code. 
 			
-			\paragraph{}After a transaction is executed, there comes a \textsc{provisional state}:
-			\paragraph{Notation}: \texttt{pv\_state}
-			\paragraph{Description}: Used to define the \textsc{pre-final state}, the \textsc{provisional state.} 
-			Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates the provisional state. \texttt{productive\_gas}, and an associated substate \texttt{substate\_a}. 
-\par
-																			Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
+			After a transaction is executed, there comes a \textsc{provisional state}, which is a pre-final state. Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates:
+			
+		\begin{itemize}
+			\item provisional state
+			\item \texttt{intrinsic gas}, and
+			\item an associated substate  
+		\end{itemize}
+		
+		\begin{itemize}
+        		\item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
+        		\item The \texttt{logs\_series}, which creates checkpoints in EVM code execution for frontend applications to explore, and is made up of the\texttt{logs\_set} and \texttt{logs\_bloom} from the \texttt{tx\_receipt}.
+			\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
+		\end{itemize}
 
+		Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
 
+				\subsubsection{Code Deposit}
+				If the initialization code completes successfully, a final contract-creation cost is paid, the code-deposit cost, \textsc{c}, proportional to the size of the created contract's code. 
 	
-			\subsubsection{Execution Model}
-				\paragraph{Basics}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the finalization function.  
+				\subsubsection{Execution Model}
+				\paragraph{Basics}: The stack-based \textsl{virtual machine} which lies at the heart of the Ethereum and performs the actions of a computer. This is actually an instantial runtime that executes several substates, as EVM computation instances, before adding the finished result, all calculations having been completed, to the final state  via the \texttt{finalization function}. 
 	
-				In addition to the system state $\boldsymbol{\sigma}$, and the remaining gas for computation $g$, there are several pieces of important information used in the execution environment that the execution agent must provide; these are contained in the tuple $I$:
+				In addition to the \texttt{system state} and the \texttt{remaining gas} for computation there are several pieces of important information used in the execution environment that the execution agent must provide:
+					\index{system!state}
+					\index{remaining!gas}
+					\index{stack!based}
+					\index{virtual!machine}
+					\index{instantial!runtime}
+					\index{substates}
+					\index{evm!computation!instances}
+					\index{finalization!function}
+					\index{execution!environment}
 
 				\begin{itemize}
 					\item \texttt{account\_address}, the address of the account which owns the code that is executing.
@@ -694,34 +750,55 @@
 					\item \texttt{input\_data}, a byte array that is the input data to this execution; if the execution agent is a transaction, this would be the transaction data.
 					\item \texttt{account\_address}  the address of the account which caused the code to be executing; if the execution agent is a transaction, this would be the transaction sender.
 					\item \texttt{newstate\_value} the value, in Wei, passed to this account if the execution agent is a transaction, this would be the transaction value.\supercite{Wood2017}
-					\item \texttt{code.array} the byte array that is the machine code to be executed.\supercite{Wood2017}
-					\item \texttt{samestate\_header} the block header of the present block.
-					\item \texttt{the stack depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
+					\item \texttt{code array} the byte array that is the machine code to be executed.\supercite{Wood2017}
+					\item \texttt{block\_header} the block header of the present block.
+					\item \texttt{stack\_depth} the depth of the present message-call or contract-creation (i.e. the number of {\small CALL}s or {\small CREATE}s being executed at present).\supercite{Wood2017}
 				\end{itemize}
-				The execution model defines the \texttt{state\_transition function}, which can compute the \texttt{resultant state}, the \texttt{remaining\_gas}, the \texttt{accrued\_substate} and the \texttt{resultant\_output}, given these definitions. For the present context, we will define it where the accrued substate is defined as the tuple of the \texttt{suicides\_set}, the \texttt{log\_series}, the \texttt{touched\_accounts} and the \texttt{refunds}.
-				
-				\subsubsection{Execution Overview} The \texttt{execution\_function}, in most practical implementations, will be modeled as an iterative progression of the pair comprising the full \texttt{system\_state} and the \texttt{machine\_state}. It's defined recursively with the \texttt{iterator\_function}, which defines the result of a single cycle of the state machine, together with the \texttt{halting\_check} function, which determines if the present state is an exceptional halting state of the machine and \texttt{output\_data} of the instruction if the present state is a \texttt{controlled\_halt} of the machine. An empty sequence/series indicates that execution should halt, while the empty set indicates that execution should continue.
-				
-				\paragraph{}When evaluating execution, we extract the remaining gas from the resultant machine state. It is thus cycled (recursively or with an iterative loop) until either \texttt{exceptional\_halt} becomes true indicating that the present state is exceptional and that the machine must be halted and any changes discarded or until H becomes a series (rather than the empty set) indicating that the machine has reached a controlled halt. 
-				
-				\paragraph{}The machine state  is defined as the tuple which are the gas available, the program counter, the memory contents, the active number of words in memory (counting continuously from position 0), and the stack contents. The memory contents are a series of zeroes of size 2 256. For the ease of reading, the instruction mnemonics, written in small-caps (e.g. ADD ), should be interpreted as their numeric equivalents; the full table of instructions and their specifics is given For the purposes of defining  we define w as the current operation to be executed:  STOP otherwise We also assume the fixed amounts of and, specifying the stack items removed and added, both subscriptable on the instruction and an instruction \texttt{cost\_function} evaluating to the full cost, in gas, of executing the given instruction.
+					\index{account!address}
+					\index{sender!address}
+					\index{originator!price}
+					\index{input!data}
+					\index{account!address}
+					\index{newstate!value}
+					\index{code!array}
+					\index{block!header}
+
+				The execution model defines the \texttt{state\_transition function}, which can compute the \texttt{resultant state}, the \texttt{remaining\_gas}, the \texttt{accrued\_substate} and the \texttt{resultant\_output}, given these definitions. For the present context, we will define it where the accrued substate is defined as the tuple of the \texttt{self-destructs\_set}, the \texttt{log\_series}, the \texttt{touched\_accounts} and the \texttt{refunds}.\supercite{Wood2017}
+					\index{execution!model}
+					\index{state!transition!function}
+					\index{resultant!state}
+					\index{remaining!gas}
+					\index{accrued!substate}
+					\index{resultant!output}
+					\index{self-destructs set}
+					\index{log series}
+					\index{touched accounts}
+					\index{refunds}
+
+				\subsubsection{Execution Overview} The \texttt{execution\_function}, in most practical implementations, \textbf{will be modeled as an iterative progression of the pair comprising the full \texttt{system\_state} and the \texttt{machine\_state}.} It's defined recursively with the \texttt{iterator\_function}, which defines the result of a single cycle of the state machine, together with the \texttt{halting\_check} function, which determines if the present state is an exceptional halting state of the machine and \texttt{output\_data} of the instruction if the present state is a \texttt{controlled\_halt} of the machine. An empty sequence/series indicates that execution should halt, while the empty set indicates that execution should continue.
+					\index{execution!function}
+					\index{iterative!progression}
+					\index{iterator function}
+					\index{state!machine!cycle}
+					\index{halting!function}
+					\index{halting!state}
+
+
+				When evaluating execution, we extract the remaining gas from the resultant machine state. It is thus cycled (recursively or with an iterative loop) until either \texttt{exceptional\_halt} becomes true indicating that the present state is exceptional and that the machine must be halted and any changes discarded or until H becomes a series (rather than the empty set) indicating that the machine has reached a controlled halt. 
+					\index{extract!remaining!gas}
+					\index{exceptional!halt}
+					
+				The machine state  is defined as the tuple which are the \textbf{gas available}, \textbf{the program counter}, \textbf{the memory contents}, \textbf{the active number of words in memory} (counting continuously from position 0), \textbf{and the stack contents}. The memory contents are a series of zeroes of size $2^{256}$.\supercite{Wood2017}
 				
 				\subsubsection{The Execution Cycle} Stack items are added or removed from the left-most, lower-indexed portion of the series; all other items remain unchanged:  The gas is reduced by the instruction’s gas cost and for most instructions, the program counter increments on each cycle, for the three exceptions, we assume a function J, subscripted by one of two instructions, which evaluates to the according value: otherwise In general, we assume the memory, self-destruct set and system state don’t change: However, instructions do typically alter one or several components of these values. 
 				
-				\subsection{Provisional State}
-					\paragraph{Description}: A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
-
-\begin{itemize}
-        \item The accounts tagged for self-destruction following the transaction's completion. \texttt{self\_destruct(accounts)}
-        \item The \texttt{logs\_series}, which creates checkpoints in EVM code execution for frontend applications to explore, and is made up of the\texttt{logs\_set} and \texttt{l
-ogs\_bloom} from the \texttt{tx\_receipt}.
-	\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
-\end{itemize}
+				\paragraph{Provisional State}
+				A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
 
 			\subsubsection{Message Calls}
-\paragraph{Description}:\paragraph{Notation}: \texttt{message\_call}
-\paragraph{Description}: A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call.
- Messages allow communication between accounts (whether contract or external,) and are a carryover from established concepts in Computer Science, most notably the \textsl{MPI: Message-Passing Framework}. Messages can come in the form of \texttt{msg\_calls} which give output data. If an account has EVM code in it (a contract account,) this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. A message call can come through a transaction, or through the internal execution of code. Message call \texttt{transactions} only contain data. They are separate from regular, standard \textit{transactions}.
+			A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call. Messages allow communication between accounts (whether contract or external.) Messages can come in the form of \texttt{msg\_calls} which give output data. If it is a contract account, this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. 
+					\index{init}
+					\index{message!call}
 
 \paragraph{Universal Gas}Message calls always have a universally agreed-upon cost in gas. There is a strong distinction between contract creation transactions and message call transactions. Computation performed, whether it is a contract creation or a message call, represents the currently legal valid state. There can be no invalid transactions from this point. \supercite{Wood2017} There is also a message call/contract creation \textit{stack}. This stack has a depth, depending on how many transactions are in it. Contract creations and message calls have entirely different ways of executing, and are entirely different in their roles in Ethereum. The concepts can be conflated. Message calls can result in computation that occurs in the next state rather than the current one. If an account that is currently executing receives a message call, no code will execute, because the account might exist but has no code in it yet. To execute a message call transactions are required:
 

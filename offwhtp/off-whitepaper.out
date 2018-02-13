@@ -24,52 +24,53 @@
 \BOOKMARK [2][-]{subsection.4.5}{Sender FUnction}{section.4}% 24
 \BOOKMARK [2][-]{subsection.4.6}{Serialization/Deserialization}{section.4}% 25
 \BOOKMARK [2][-]{subsection.4.7}{Ethereum Virtual Machine}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Execution}{subsection.4.7}% 27
-\BOOKMARK [3][-]{subsubsection.4.7.2}{Code Deposit}{subsection.4.7}% 28
-\BOOKMARK [3][-]{subsubsection.4.7.3}{Intrinsic Validity}{subsection.4.7}% 29
-\BOOKMARK [3][-]{subsubsection.4.7.4}{Execution Model}{subsection.4.7}% 30
-\BOOKMARK [3][-]{subsubsection.4.7.5}{Execution Overview}{subsection.4.7}% 31
-\BOOKMARK [3][-]{subsubsection.4.7.6}{The Execution Cycle}{subsection.4.7}% 32
-\BOOKMARK [2][-]{subsection.4.8}{Provisional State}{section.4}% 33
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Message Calls}{subsection.4.8}% 34
-\BOOKMARK [3][-]{subsubsection.4.8.2}{Contract Creation}{subsection.4.8}% 35
-\BOOKMARK [3][-]{subsubsection.4.8.3}{Account Creation}{subsection.4.8}% 36
-\BOOKMARK [2][-]{subsection.4.9}{Halting}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.10}{Gas}{section.4}% 38
-\BOOKMARK [3][-]{subsubsection.4.10.1}{Gasprice}{subsection.4.10}% 39
-\BOOKMARK [3][-]{subsubsection.4.10.2}{Machine State}{subsection.4.10}% 40
-\BOOKMARK [3][-]{subsubsection.4.10.3}{Exceptional Halting}{subsection.4.10}% 41
-\BOOKMARK [3][-]{subsubsection.4.10.4}{EVM Code}{subsection.4.10}% 42
-\BOOKMARK [3][-]{subsubsection.4.10.5}{EVM Assembly}{subsection.4.10}% 43
-\BOOKMARK [2][-]{subsection.4.11}{Blocktree to Blockchain}{section.4}% 44
-\BOOKMARK [2][-]{subsection.4.12}{Ommer Validation}{section.4}% 45
-\BOOKMARK [2][-]{subsection.4.13}{Transaction Validation}{section.4}% 46
-\BOOKMARK [2][-]{subsection.4.14}{Reward Application}{section.4}% 47
-\BOOKMARK [2][-]{subsection.4.15}{Mining Proof-of-Work}{section.4}% 48
-\BOOKMARK [2][-]{subsection.4.16}{Ethash}{section.4}% 49
-\BOOKMARK [2][-]{subsection.4.17}{Pseudorandom Numbers}{section.4}% 50
-\BOOKMARK [2][-]{subsection.4.18}{Chainsize Limits}{section.4}% 51
-\BOOKMARK [2][-]{subsection.4.19}{Scalability}{section.4}% 52
-\BOOKMARK [3][-]{subsubsection.4.19.1}{Sharding}{subsection.4.19}% 53
-\BOOKMARK [3][-]{subsubsection.4.19.2}{Casper}{subsection.4.19}% 54
-\BOOKMARK [3][-]{subsubsection.4.19.3}{Plasma}{subsection.4.19}% 55
-\BOOKMARK [1][-]{appendix.A}{Opcodes}{}% 56
-\BOOKMARK [2][-]{subsection.A.1}{0x10's: Comparisons and Bitwise Logic Operations}{appendix.A}% 57
-\BOOKMARK [2][-]{subsection.A.2}{0x20's: SHA3}{appendix.A}% 58
-\BOOKMARK [2][-]{subsection.A.3}{0x30's: Environmental Information}{appendix.A}% 59
-\BOOKMARK [2][-]{subsection.A.4}{0x40's: Block Data}{appendix.A}% 60
-\BOOKMARK [2][-]{subsection.A.5}{0x50's: Stack, memory, storage, and flow operations.}{appendix.A}% 61
-\BOOKMARK [2][-]{subsection.A.6}{0x60-70's: Push Operations}{appendix.A}% 62
-\BOOKMARK [2][-]{subsection.A.7}{0x80's: Duplication Operations}{appendix.A}% 63
-\BOOKMARK [2][-]{subsection.A.8}{0x90's: Swap Operations}{appendix.A}% 64
-\BOOKMARK [2][-]{subsection.A.9}{0xa0's: Logging Operations}{appendix.A}% 65
-\BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 66
-\BOOKMARK [1][-]{appendix.B}{Higher Level Languages}{}% 67
-\BOOKMARK [2][-]{subsection.B.1}{Lower-Level Lisp}{appendix.B}% 68
-\BOOKMARK [2][-]{subsection.B.2}{Solidity}{appendix.B}% 69
-\BOOKMARK [2][-]{subsection.B.3}{Serpent}{appendix.B}% 70
-\BOOKMARK [2][-]{subsection.B.4}{Vyper}{appendix.B}% 71
-\BOOKMARK [1][-]{section*.49}{References}{}% 72
-\BOOKMARK [1][-]{section*.50}{Glossary}{}% 73
-\BOOKMARK [1][-]{section*.52}{Acronyms}{}% 74
-\BOOKMARK [1][-]{section*.54}{Index}{}% 75
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Fees}{subsection.4.7}% 27
+\BOOKMARK [2][-]{subsection.4.8}{Execution}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Intrinsic Validity}{subsection.4.8}% 29
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Transaction Receipt}{subsection.4.8}% 30
+\BOOKMARK [3][-]{subsubsection.4.8.3}{Code Deposit}{subsection.4.8}% 31
+\BOOKMARK [3][-]{subsubsection.4.8.4}{Execution Model}{subsection.4.8}% 32
+\BOOKMARK [3][-]{subsubsection.4.8.5}{Execution Overview}{subsection.4.8}% 33
+\BOOKMARK [3][-]{subsubsection.4.8.6}{The Execution Cycle}{subsection.4.8}% 34
+\BOOKMARK [3][-]{subsubsection.4.8.7}{Message Calls}{subsection.4.8}% 35
+\BOOKMARK [3][-]{subsubsection.4.8.8}{Contract Creation}{subsection.4.8}% 36
+\BOOKMARK [3][-]{subsubsection.4.8.9}{Account Creation}{subsection.4.8}% 37
+\BOOKMARK [2][-]{subsection.4.9}{Halting}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.10}{Gas}{section.4}% 39
+\BOOKMARK [3][-]{subsubsection.4.10.1}{Gasprice}{subsection.4.10}% 40
+\BOOKMARK [3][-]{subsubsection.4.10.2}{Machine State}{subsection.4.10}% 41
+\BOOKMARK [3][-]{subsubsection.4.10.3}{Exceptional Halting}{subsection.4.10}% 42
+\BOOKMARK [3][-]{subsubsection.4.10.4}{EVM Code}{subsection.4.10}% 43
+\BOOKMARK [3][-]{subsubsection.4.10.5}{EVM Assembly}{subsection.4.10}% 44
+\BOOKMARK [2][-]{subsection.4.11}{Blocktree to Blockchain}{section.4}% 45
+\BOOKMARK [2][-]{subsection.4.12}{Ommer Validation}{section.4}% 46
+\BOOKMARK [2][-]{subsection.4.13}{Transaction Validation}{section.4}% 47
+\BOOKMARK [2][-]{subsection.4.14}{Reward Application}{section.4}% 48
+\BOOKMARK [2][-]{subsection.4.15}{Mining Proof-of-Work}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.16}{Ethash}{section.4}% 50
+\BOOKMARK [2][-]{subsection.4.17}{Pseudorandom Numbers}{section.4}% 51
+\BOOKMARK [2][-]{subsection.4.18}{Chainsize Limits}{section.4}% 52
+\BOOKMARK [2][-]{subsection.4.19}{Scalability}{section.4}% 53
+\BOOKMARK [3][-]{subsubsection.4.19.1}{Sharding}{subsection.4.19}% 54
+\BOOKMARK [3][-]{subsubsection.4.19.2}{Casper}{subsection.4.19}% 55
+\BOOKMARK [3][-]{subsubsection.4.19.3}{Plasma}{subsection.4.19}% 56
+\BOOKMARK [1][-]{appendix.A}{Opcodes}{}% 57
+\BOOKMARK [2][-]{subsection.A.1}{0x10's: Comparisons and Bitwise Logic Operations}{appendix.A}% 58
+\BOOKMARK [2][-]{subsection.A.2}{0x20's: SHA3}{appendix.A}% 59
+\BOOKMARK [2][-]{subsection.A.3}{0x30's: Environmental Information}{appendix.A}% 60
+\BOOKMARK [2][-]{subsection.A.4}{0x40's: Block Data}{appendix.A}% 61
+\BOOKMARK [2][-]{subsection.A.5}{0x50's: Stack, memory, storage, and flow operations.}{appendix.A}% 62
+\BOOKMARK [2][-]{subsection.A.6}{0x60-70's: Push Operations}{appendix.A}% 63
+\BOOKMARK [2][-]{subsection.A.7}{0x80's: Duplication Operations}{appendix.A}% 64
+\BOOKMARK [2][-]{subsection.A.8}{0x90's: Swap Operations}{appendix.A}% 65
+\BOOKMARK [2][-]{subsection.A.9}{0xa0's: Logging Operations}{appendix.A}% 66
+\BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 67
+\BOOKMARK [1][-]{appendix.B}{Higher Level Languages}{}% 68
+\BOOKMARK [2][-]{subsection.B.1}{Lower-Level Lisp}{appendix.B}% 69
+\BOOKMARK [2][-]{subsection.B.2}{Solidity}{appendix.B}% 70
+\BOOKMARK [2][-]{subsection.B.3}{Serpent}{appendix.B}% 71
+\BOOKMARK [2][-]{subsection.B.4}{Vyper}{appendix.B}% 72
+\BOOKMARK [1][-]{section*.38}{References}{}% 73
+\BOOKMARK [1][-]{section*.39}{Glossary}{}% 74
+\BOOKMARK [1][-]{section*.41}{Acronyms}{}% 75
+\BOOKMARK [1][-]{section*.43}{Index}{}% 76
