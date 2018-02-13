@@ -1,19 +1,19 @@
 [0] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [0] Config.pm:357> INFO - Logfile is 'off-whitepaper.blg'
-[51] biber:303> INFO - === Tue Feb 13, 2018, 10:11:23
-[75] Biber.pm:360> INFO - Reading 'off-whitepaper.bcf'
-[189] Biber.pm:836> INFO - Found 5 citekeys in bib section 0
-[212] Biber.pm:3671> INFO - Processing section 0
-[235] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
-[236] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[243] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
-[258] Utils.pm:164> WARN - BibTeX subsystem: /tmp/OaGC_t48yN/References.bib_28134.utf8, line 3, warning: 37 characters of junk seen at toplevel
-[258] Utils.pm:164> WARN - I didn't find a database entry for 'billwagner' (section 0)
-[258] Utils.pm:164> WARN - I didn't find a database entry for 'Ngondi2016' (section 0)
-[275] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[275] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[275] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[275] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[279] bbl.pm:608> INFO - Writing 'off-whitepaper.bbl' with encoding 'UTF-8'
-[280] bbl.pm:712> INFO - Output to off-whitepaper.bbl
-[280] Biber.pm:110> INFO - WARNINGS: 3
+[19] biber:303> INFO - === Tue Feb 13, 2018, 11:56:03
+[29] Biber.pm:360> INFO - Reading 'off-whitepaper.bcf'
+[77] Biber.pm:836> INFO - Found 5 citekeys in bib section 0
+[86] Biber.pm:3671> INFO - Processing section 0
+[95] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
+[96] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[99] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
+[106] Utils.pm:164> WARN - BibTeX subsystem: /tmp/zc6_GMiSv8/References.bib_5429.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[112] Utils.pm:164> WARN - I didn't find a database entry for 'billwagner' (section 0)
+[113] Utils.pm:164> WARN - I didn't find a database entry for 'Ngondi2016' (section 0)
+[119] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[119] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[119] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[119] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[121] bbl.pm:608> INFO - Writing 'off-whitepaper.bbl' with encoding 'UTF-8'
+[121] bbl.pm:712> INFO - Output to off-whitepaper.bbl
+[121] Biber.pm:110> INFO - WARNINGS: 3

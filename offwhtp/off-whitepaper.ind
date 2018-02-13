@@ -4,10 +4,12 @@
 
   \indexspace
 
-  \item 32
-    \subitem byte, \hyperpage{4}
+  \item 160
+    \subitem bit, \hyperpage{5}
   \item 256
-    \subitem bit, \hyperpage{4}
+    \subitem bit, \hyperpage{4}, \hyperpage{6}
+  \item 1024
+    \subitem bit, \hyperpage{6}
 
   \indexspace
 
@@ -25,6 +27,8 @@
     \subitem states, \hyperpage{2}
     \subitem storage root, \hyperpage{4}
   \item ancestor node, \hyperpage{3}
+  \item apply
+    \subitem rewards, \hyperpage{5}
   \item apply rewards, \hyperpage{1}
   \item assembly language, \hyperpage{1}
 
@@ -36,12 +40,16 @@
   \item Bitcoin, \hyperpage{1}
   \item Bitcoin Whitepaper, \hyperpage{2}
   \item block
+    \subitem beneficiary, \hyperpage{5}
     \subitem composition, \hyperpage{3}
     \subitem header, \hyperpage{3}
+    \subitem reward, \hyperpage{5}
     \subitem rewards, \hyperpage{3}
   \item block difficulty, \hyperpage{2}
   \item block number, \hyperpage{4}
   \item branch node, \hyperpage{3}
+  \item byte
+    \subitem array, \hyperpage{6}
   \item bytecode, \hyperpage{1}
   \item byzantium, \hyperpage{4}
 
@@ -63,6 +71,7 @@
   \item data
     \subitem structure, \hyperpage{2}
   \item descendant node, \hyperpage{3}
+  \item deserialization, \hyperpage{5}
   \item deterministic, \hyperpage{1}
   \item difficulty, \hyperpage{4}
     \subitem bomb, \hyperpage{4}
@@ -76,9 +85,13 @@
     \subitem 2, \hyperpage{4}
     \subitem 100, \hyperpage{4}
     \subitem 649, \hyperpage{4}
+  \item elliptic curve, \hyperpage{6}
+    \subitem computation, \hyperpage{6}
+    \subitem cryptography, \hyperpage{6}
   \item empty byte-array, \hyperpage{3}
   \item Ether, \hyperpage{1}
   \item ethereum interpreter, \hyperpage{1}
+  \item EVM, \hyperpage{5}
   \item excessive computational expenditures, \hyperpage{1}
   \item executed, \hyperpage{1}
   \item exponential difficulty increase, \hyperpage{4}
@@ -92,7 +105,8 @@
   \indexspace
 
   \item gas
-    \subitem limit, \hyperpage{4}
+    \subitem limit, \hyperpage{4, 5}
+    \subitem price, \hyperpage{5}
     \subitem used, \hyperpage{4}
   \item genesis difficulty, \hyperpage{4}
   \item GHOST protocol, \hyperpage{2}
@@ -100,6 +114,7 @@
 
   \indexspace
 
+  \item hash scheme, \hyperpage{6}
   \item higher-level languages, \hyperpage{1}
   \item homestead, \hyperpage{4}
     \subitem difficulty parameter, \hyperpage{4}
@@ -112,6 +127,8 @@
 
   \indexspace
 
+  \item keccak
+    \subitem 256, \hyperpage{6}
   \item Keccak-256, \hyperpage{3, 4}
 
   \indexspace
@@ -128,10 +145,16 @@
   \item machine
     \subitem codes, \hyperpage{1}
     \subitem state, \hyperpage{5}
+    \subitem storage, \hyperpage{6}
   \item mapping, \hyperpage{2}
   \item mapping between
     \subitem account states, \hyperpage{3}
     \subitem addresses, \hyperpage{3}
+  \item memory, \hyperpage{6}
+    \subitem model, \hyperpage{6}
+      \subsubitem volatility of, \hyperpage{6}
+    \subitem size, \hyperpage{6}
+    \subitem stack, \hyperpage{6}
   \item merkle-patricia
     \subitem trees, \hyperpage{2}
     \subitem tries, \hyperpage{2}
@@ -172,6 +195,7 @@
 
   \indexspace
 
+  \item r, \hyperpage{5}
   \item receipts root, \hyperpage{4}
   \item recorded, \hyperpage{1}
   \item RLP, \hyperpage{2, 3}
@@ -186,25 +210,34 @@
 
   \indexspace
 
+  \item s, \hyperpage{5}
   \item Satoshi Nakamoto, \hyperpage{2}
+  \item serialization, \hyperpage{5}
   \item sibling node, \hyperpage{3}
   \item single byte integer, \hyperpage{3}
   \item singleton, \hyperpage{1}
   \item speedy
     \subitem traversal
       \subsubitem of data, \hyperpage{3}
+  \item stack
+    \subitem based, \hyperpage{6}
+      \subsubitem architecture, \hyperpage{6}
   \item stack-based
     \subitem virtual machine, \hyperpage{1}
   \item state
     \subitem database, \hyperpage{4}
     \subitem transition, \hyperpage{5}
   \item state root, \hyperpage{3}
+  \item storage
+    \subitem model, \hyperpage{6}
+  \item system state, \hyperpage{6}
   \item Szabo, \hyperpage{1}
 
   \indexspace
 
   \item timestamp, \hyperpage{4}
   \item timestamped, \hyperpage{1}
+  \item to, \hyperpage{5}
   \item total difficulty, \hyperpage{2}
   \item transaction, \hyperpage{5}
   \item transactions root, \hyperpage{4}
@@ -228,14 +261,22 @@
 
   \indexspace
 
+  \item v, \hyperpage{5}
+  \item value, \hyperpage{5}
   \item veracity, \hyperpage{1}
   \item verifiable, \hyperpage{1}
+  \item verification, \hyperpage{5}
   \item virtual machine, \hyperpage{1}
 
   \indexspace
 
   \item Wei, \hyperpage{1}
   \item wei, \hyperpage{4}
+  \item word
+    \subitem addressable, \hyperpage{6}
+    \subitem addressed, \hyperpage{6}
+    \subitem array, \hyperpage{6}
+  \item word size, \hyperpage{6}
   \item World State, \hyperpage{2}
 
   \indexspace

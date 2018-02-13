@@ -142,7 +142,6 @@
 \indexentry{account!balance|hyperpage}{4}
 \indexentry{wei|hyperpage}{4}
 \indexentry{256!bit|hyperpage}{4}
-\indexentry{32!byte|hyperpage}{4}
 \indexentry{root!node|hyperpage}{4}
 \indexentry{leaf!node|hyperpage}{4}
 \indexentry{state!database|hyperpage}{4}
@@ -150,3 +149,40 @@
 \indexentry{transaction|hyperpage}{5}
 \indexentry{state!transition|hyperpage}{5}
 \indexentry{machine!state|hyperpage}{5}
+\indexentry{gas!price|hyperpage}{5}
+\indexentry{gas!limit|hyperpage}{5}
+\indexentry{to|hyperpage}{5}
+\indexentry{value|hyperpage}{5}
+\indexentry{v|hyperpage}{5}
+\indexentry{r|hyperpage}{5}
+\indexentry{s|hyperpage}{5}
+\indexentry{EVM|hyperpage}{5}
+\indexentry{verification|hyperpage}{5}
+\indexentry{160!bit|hyperpage}{5}
+\indexentry{apply!rewards|hyperpage}{5}
+\indexentry{block!beneficiary|hyperpage}{5}
+\indexentry{block!reward|hyperpage}{5}
+\indexentry{serialization|hyperpage}{5}
+\indexentry{deserialization|hyperpage}{5}
+\indexentry{stack!based!architecture|hyperpage}{6}
+\indexentry{stack!based|hyperpage}{6}
+\indexentry{word size|hyperpage}{6}
+\indexentry{256!bit|hyperpage}{6}
+\indexentry{1024!bit|hyperpage}{6}
+\indexentry{memory|hyperpage}{6}
+\indexentry{memory!size|hyperpage}{6}
+\indexentry{keccak!256|hyperpage}{6}
+\indexentry{hash scheme|hyperpage}{6}
+\indexentry{elliptic curve!cryptography|hyperpage}{6}
+\indexentry{elliptic curve!|hyperpage}{6}
+\indexentry{elliptic curve!computation|hyperpage}{6}
+\indexentry{memory!model|hyperpage}{6}
+\indexentry{word!addressed|hyperpage}{6}
+\indexentry{byte!array|hyperpage}{6}
+\indexentry{memory!stack|hyperpage}{6}
+\indexentry{machine!storage|hyperpage}{6}
+\indexentry{storage!model|hyperpage}{6}
+\indexentry{word!array|hyperpage}{6}
+\indexentry{word!addressable|hyperpage}{6}
+\indexentry{memory!model!volatility of|hyperpage}{6}
+\indexentry{system state|hyperpage}{6}
