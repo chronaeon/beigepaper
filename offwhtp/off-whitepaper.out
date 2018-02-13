@@ -6,15 +6,15 @@
 \BOOKMARK [2][-]{subsection.3.1}{World State}{section.3}% 6
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Merkle-Patricia Trees}{subsection.3.1}% 7
 \BOOKMARK [3][-]{subsubsection.3.1.2}{Tree Terminologywiki:xxx}{subsection.3.1}% 8
-\BOOKMARK [3][-]{subsubsection.3.1.3}{RLP}{subsection.3.1}% 9
-\BOOKMARK [3][-]{subsubsection.3.1.4}{Create Account}{subsection.3.1}% 10
-\BOOKMARK [3][-]{subsubsection.3.1.5}{The Block}{subsection.3.1}% 11
-\BOOKMARK [3][-]{subsubsection.3.1.6}{Block Headers}{subsection.3.1}% 12
-\BOOKMARK [3][-]{subsubsection.3.1.7}{Block Footer}{subsection.3.1}% 13
-\BOOKMARK [3][-]{subsubsection.3.1.8}{Block Number}{subsection.3.1}% 14
-\BOOKMARK [3][-]{subsubsection.3.1.9}{Account State}{subsection.3.1}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Bloom Filter}{section.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Transaction Receipts}{subsection.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Recursive Length Prefixes}{subsection.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.2}{The Block}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.1}{The Block Header}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Block Footer}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Block Number and Difficulty}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Account Creation}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Account State}{subsection.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.3}{Bloom Filter}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Transaction Receipts}{subsection.3.3}% 17
 \BOOKMARK [1][-]{section.4}{Processing and Computation}{}% 18
 \BOOKMARK [2][-]{subsection.4.1}{The Transaction}{section.4}% 19
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Transactions Root}{subsection.4.1}% 20
@@ -48,23 +48,26 @@
 \BOOKMARK [2][-]{subsection.4.15}{Pseudorandom Numbers}{section.4}% 48
 \BOOKMARK [2][-]{subsection.4.16}{Chainsize Limits}{section.4}% 49
 \BOOKMARK [2][-]{subsection.4.17}{Scalability}{section.4}% 50
-\BOOKMARK [1][-]{appendix.A}{Opcodes}{}% 51
-\BOOKMARK [2][-]{subsection.A.1}{0x10's: Comparisons and Bitwise Logic Operations}{appendix.A}% 52
-\BOOKMARK [2][-]{subsection.A.2}{0x20's: SHA3}{appendix.A}% 53
-\BOOKMARK [2][-]{subsection.A.3}{0x30's: Environmental Information}{appendix.A}% 54
-\BOOKMARK [2][-]{subsection.A.4}{0x40's: Block Data}{appendix.A}% 55
-\BOOKMARK [2][-]{subsection.A.5}{0x50's: Stack, memory, storage, and flow operations.}{appendix.A}% 56
-\BOOKMARK [2][-]{subsection.A.6}{0x60-70's: Push Operations}{appendix.A}% 57
-\BOOKMARK [2][-]{subsection.A.7}{0x80's: Duplication Operations}{appendix.A}% 58
-\BOOKMARK [2][-]{subsection.A.8}{0x90's: Swap Operations}{appendix.A}% 59
-\BOOKMARK [2][-]{subsection.A.9}{0xa0's: Logging Operations}{appendix.A}% 60
-\BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 61
-\BOOKMARK [1][-]{appendix.B}{Higher Level Languages}{}% 62
-\BOOKMARK [2][-]{subsection.B.1}{Lower-Level Lisp}{appendix.B}% 63
-\BOOKMARK [2][-]{subsection.B.2}{Solidity}{appendix.B}% 64
-\BOOKMARK [2][-]{subsection.B.3}{Serpent}{appendix.B}% 65
-\BOOKMARK [2][-]{subsection.B.4}{Viper}{appendix.B}% 66
-\BOOKMARK [1][-]{section*.71}{References}{}% 67
-\BOOKMARK [1][-]{section*.72}{Glossary}{}% 68
-\BOOKMARK [1][-]{section*.74}{Acronyms}{}% 69
-\BOOKMARK [1][-]{section*.76}{Index}{}% 70
+\BOOKMARK [3][-]{subsubsection.4.17.1}{Sharding}{subsection.4.17}% 51
+\BOOKMARK [3][-]{subsubsection.4.17.2}{Casper}{subsection.4.17}% 52
+\BOOKMARK [3][-]{subsubsection.4.17.3}{Plasma}{subsection.4.17}% 53
+\BOOKMARK [1][-]{appendix.A}{Opcodes}{}% 54
+\BOOKMARK [2][-]{subsection.A.1}{0x10's: Comparisons and Bitwise Logic Operations}{appendix.A}% 55
+\BOOKMARK [2][-]{subsection.A.2}{0x20's: SHA3}{appendix.A}% 56
+\BOOKMARK [2][-]{subsection.A.3}{0x30's: Environmental Information}{appendix.A}% 57
+\BOOKMARK [2][-]{subsection.A.4}{0x40's: Block Data}{appendix.A}% 58
+\BOOKMARK [2][-]{subsection.A.5}{0x50's: Stack, memory, storage, and flow operations.}{appendix.A}% 59
+\BOOKMARK [2][-]{subsection.A.6}{0x60-70's: Push Operations}{appendix.A}% 60
+\BOOKMARK [2][-]{subsection.A.7}{0x80's: Duplication Operations}{appendix.A}% 61
+\BOOKMARK [2][-]{subsection.A.8}{0x90's: Swap Operations}{appendix.A}% 62
+\BOOKMARK [2][-]{subsection.A.9}{0xa0's: Logging Operations}{appendix.A}% 63
+\BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 64
+\BOOKMARK [1][-]{appendix.B}{Higher Level Languages}{}% 65
+\BOOKMARK [2][-]{subsection.B.1}{Lower-Level Lisp}{appendix.B}% 66
+\BOOKMARK [2][-]{subsection.B.2}{Solidity}{appendix.B}% 67
+\BOOKMARK [2][-]{subsection.B.3}{Serpent}{appendix.B}% 68
+\BOOKMARK [2][-]{subsection.B.4}{Vyper}{appendix.B}% 69
+\BOOKMARK [1][-]{section*.63}{References}{}% 70
+\BOOKMARK [1][-]{section*.64}{Glossary}{}% 71
+\BOOKMARK [1][-]{section*.66}{Acronyms}{}% 72
+\BOOKMARK [1][-]{section*.68}{Index}{}% 73

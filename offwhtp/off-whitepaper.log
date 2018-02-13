@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  13 FEB 2018 04:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  13 FEB 2018 05:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2579,14 +2579,14 @@ Package biblatex Info: ... file 'off-whitepaper.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                billwagner
+(biblatex)                Ngondi2016
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Ngondi2016
+(biblatex)                billwagner
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2715,229 +2715,226 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\supercite' on input line 360.
+(hyperref)                removing `\supercite' on input line 378.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 367.
+(multicol)                Footnotes on page 2 might be wrong on input line 385.
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
+Underfull \hbox (badness 10000) in paragraph at lines 440--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 452--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 452--454
 
  []
 
-[3] [4]
+[3]
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 468.
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 474.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 548.
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 4 might be wrong on input line 551.
+
+
+[4]
+Underfull \hbox (badness 5359) in paragraph at lines 570--571
+[] []\T1/cmss/bx/n/10 Description[][] \T1/ccr/m/n/10 (+20) : The \T1/cmtt/m/n/1
+0 K256 \T1/ccr/m/n/10 (+20) hash of the root
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+[] []\T1/cmss/bx/n/10 Apply Re-wards[][] \T1/ccr/m/n/10 (+20) The third pro-ces
+s in
+ []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 5 might be wrong on input line 593.
+
+
+[5] [6]
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 616.
 
  (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 474
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 616
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 474.
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 616.
 
-Underfull \hbox (badness 5359) in paragraph at lines 497--498
-[] []\T1/cmss/bx/n/10 Description[][] \T1/ccr/m/n/10 (+20) : The \T1/cmtt/m/n/1
-0 K256 \T1/ccr/m/n/10 (+20) hash of the root
- []
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 514.
-
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
-[] []\T1/cmss/bx/n/10 Apply Re-wards[][] \T1/ccr/m/n/10 (+20) The third pro-ces
-s in
- []
-
-[6]
-Underfull \hbox (badness 5504) in paragraph at lines 550--554
+Underfull \hbox (badness 5504) in paragraph at lines 623--627
 []\T1/ccr/m/n/10 (+20) Accordingly, the post-transactional state of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--554
+Underfull \hbox (badness 10000) in paragraph at lines 623--627
 \T1/cmtt/m/n/10 transaction(post.state) = stf(present.state,
  []
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 7 might be wrong on input line 564.
-
-
 [7] [8]
-Underfull \hbox (badness 7907) in paragraph at lines 597--598
+Underfull \hbox (badness 7907) in paragraph at lines 670--671
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 9 might be wrong on input line 620.
-
 
 [9] [10]
-Underfull \hbox (badness 7907) in paragraph at lines 700--701
+Underfull \hbox (badness 7907) in paragraph at lines 773--774
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
+Underfull \hbox (badness 10000) in paragraph at lines 773--774
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--792
 \T1/ccr/m/n/10 (+20) lows: \T1/cmtt/m/n/10 Validate (or, if mining, determine)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 791--792
 \T1/cmtt/m/n/10 ommers; validate (or, if mining, determine)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 791--792
 \T1/cmtt/m/n/10 transactions; apply rewards; verify (or, if
  []
 
-[12] [13] [14]
-Underfull \vbox (badness 10000) detected at line 773
+[11] [12] [13]
+Underfull \vbox (badness 10000) detected at line 854
  []
 
 
-Underfull \vbox (badness 10000) detected at line 787
+Underfull \vbox (badness 10000) detected at line 868
  []
 
 
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 799--799
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 880--880
  []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
  []
 
 
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 801--801
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 882--882
  []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
  []
 
 
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 807--807
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 888--888
  []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
  []
 
 
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 808--808
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 889--889
  []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 810
+Underfull \vbox (badness 10000) detected at line 891
  []
 
-[15]
-Underfull \vbox (badness 10000) detected at line 824
+[14]
+Underfull \vbox (badness 10000) detected at line 905
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--839
+Underfull \hbox (badness 10000) in paragraph at lines 919--920
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 844
+Underfull \vbox (badness 10000) detected at line 925
+ []
+
+[15]
+Underfull \vbox (badness 10000) detected at line 951
  []
 
 [16]
-Underfull \vbox (badness 10000) detected at line 870
+Underfull \vbox (badness 10000) detected at line 989
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1014
  []
 
 [17]
-Underfull \vbox (badness 10000) detected at line 908
+Underfull \vbox (badness 10000) detected at line 1027
  []
 
 
-Underfull \vbox (badness 10000) detected at line 933
- []
-
-[18]
-Underfull \vbox (badness 10000) detected at line 946
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 953--954
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 957--957
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 1038--1038
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Overfull \hbox (2.77728pt too wide) in paragraph at lines 958--958
+Overfull \hbox (2.77728pt too wide) in paragraph at lines 1039--1039
  []|\T1/ccr/m/n/10 (-20) CALLBLACKBOX| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 964
+Underfull \vbox (badness 10000) detected at line 1045
  []
 
-[19] [20]
+[18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 981.
+(biblatex)                Using fallback driver on input line 1063.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 981.
+(biblatex)                Using fallback driver on input line 1063.
 
-[21
+[20
 
 ]
 No file off-whitepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 985--985
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1067
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 22 might be wrong on input line 985
-.
+(multicol)                Footnotes on page 21 might be wrong on input line 106
+7.
 
-[22]
+[21]
 Using TeX to sort glossary entries---this may take a while
-[23] (./off-whitepaper.ind) 
+[22] (./off-whitepaper.ind [23]) 
 AED: lastpage setting LastPage
 [24]
 Package minitoc Info: I0009
@@ -2951,30 +2948,28 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the off-whitepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 992.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 992.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1074.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1074.
 (./off-whitepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 992.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 992.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1074.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1074.
+
 Package rerunfilecheck Info: File `off-whitepaper.out' has not changed.
-(rerunfilecheck)             Checksum: A80FB8E30368C5444C743928A920CE84;4823.
+(rerunfilecheck)             Checksum: 9E01F4EAF4CF4208B6464241D2875D52;5061.
 Package logreq Info: Writing requests to 'off-whitepaper.run.xml'.
 \openout1 = `off-whitepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66405 strings out of 492990
- 1343977 string characters out of 6135005
- 2194038 words of memory out of 5000000
+ 66395 strings out of 492990
+ 1343909 string characters out of 6135005
+ 2194012 words of memory out of 5000000
  68424 multiletter control sequences out of 15000+600000
- 564806 words of font info for 158 fonts, out of 8000000 for 9000
+ 563863 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 169i,11n,190p,10387b,4994s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not ex
+ 169i,12n,190p,10387b,4994s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not ex
 ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
-t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3018,32 +3013,30 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/micah/.texli
 ve2017/texmf-var/fonts/pk/ljfour/public/concmath-fonts/xccsy10.600pk></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0700.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx12
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfocc10.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sform10.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sform6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform7.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfoti10.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfsx0700.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-tt1000.pfb>
-Output written on off-whitepaper.pdf (24 pages, 494478 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0700.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfocc10.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sform10.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sform6.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sform7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfoti
+10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0700.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx144
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sftt1000.pfb>
+Output written on off-whitepaper.pdf (24 pages, 481797 bytes).
 PDF statistics:
- 896 PDF objects out of 1000 (max. 8388607)
- 816 compressed objects within 9 object streams
- 269 named destinations out of 1000 (max. 500000)
- 33437 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 886 compressed objects within 9 object streams
+ 263 named destinations out of 1000 (max. 500000)
+ 31413 words of extra memory for PDF output out of 35830 (max. 10000000)
 
