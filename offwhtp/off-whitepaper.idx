@@ -1,6 +1,33 @@
 \indexentry{pseudocode|hyperpage}{1}
-\indexentry{abstract!state-machines|hyperpage}{1}
+\indexentry{abstract!state-machine|hyperpage}{1}
 \indexentry{Yellowpaper|hyperpage}{1}
+\indexentry{deterministic|hyperpage}{1}
+\indexentry{singleton|hyperpage}{1}
+\indexentry{virtual machine|hyperpage}{1}
+\indexentry{Bitcoin|hyperpage}{1}
+\indexentry{cryptoeconomic!model|hyperpage}{1}
+\indexentry{cryptographically!secure|hyperpage}{1}
+\indexentry{cryptographically!instantiated|hyperpage}{1}
+\indexentry{ledger|hyperpage}{1}
+\indexentry{stack-based!virtual machine|hyperpage}{1}
+\indexentry{assembly language|hyperpage}{1}
+\indexentry{bytecode|hyperpage}{1}
+\indexentry{higher-level languages|hyperpage}{1}
+\indexentry{veracity|hyperpage}{1}
+\indexentry{certainty|hyperpage}{1}
+\indexentry{transfer|hyperpage}{1}
+\indexentry{balance|hyperpage}{1}
+\indexentry{timestamped|hyperpage}{1}
+\indexentry{machine!codes|hyperpage}{1}
+\indexentry{ledger|hyperpage}{1}
+\indexentry{ethereum interpreter|hyperpage}{1}
+\indexentry{unstoppable|hyperpage}{1}
+\indexentry{loopholes|hyperpage}{1}
+\indexentry{undesirable outcomes|hyperpage}{1}
+\indexentry{uncensorable|hyperpage}{1}
+\indexentry{recorded|hyperpage}{1}
+\indexentry{verifiable|hyperpage}{1}
+\indexentry{executed|hyperpage}{1}
 \indexentry{native currency|hyperpage}{1}
 \indexentry{mining|hyperpage}{1}
 \indexentry{network cost unit|hyperpage}{1}
@@ -8,10 +35,14 @@
 \indexentry{Szabo|hyperpage}{1}
 \indexentry{Finney|hyperpage}{1}
 \indexentry{Ether|hyperpage}{1}
+\indexentry{models!computer|hyperpage}{1}
+\indexentry{excessive computational expenditures|hyperpage}{1}
 \indexentry{mining|hyperpage}{1}
+\indexentry{apply rewards|hyperpage}{1}
 \indexentry{apply rewards|hyperpage}{1}
 \indexentry{total difficulty|hyperpage}{2}
 \indexentry{block difficulty|hyperpage}{2}
+\indexentry{difficulty mechanism|hyperpage}{2}
 \indexentry{GHOST protocol|hyperpage}{2}
 \indexentry{double-spend problem|hyperpage}{2}
 \indexentry{longest chain|hyperpage}{2}

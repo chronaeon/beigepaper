@@ -5,20 +5,38 @@
   \indexspace
 
   \item abstract
-    \subitem state-machines, \hyperpage{1}
+    \subitem state-machine, \hyperpage{1}
   \item apply rewards, \hyperpage{1}
+  \item assembly language, \hyperpage{1}
 
   \indexspace
 
+  \item balance, \hyperpage{1}
+  \item Bitcoin, \hyperpage{1}
   \item block difficulty, \hyperpage{2}
+  \item bytecode, \hyperpage{1}
 
   \indexspace
 
+  \item certainty, \hyperpage{1}
+  \item cryptoeconomic
+    \subitem model, \hyperpage{1}
+  \item cryptographically
+    \subitem instantiated, \hyperpage{1}
+    \subitem secure, \hyperpage{1}
+
+  \indexspace
+
+  \item deterministic, \hyperpage{1}
+  \item difficulty mechanism, \hyperpage{2}
   \item double-spend problem, \hyperpage{2}
 
   \indexspace
 
   \item Ether, \hyperpage{1}
+  \item ethereum interpreter, \hyperpage{1}
+  \item excessive computational expenditures, \hyperpage{1}
+  \item executed, \hyperpage{1}
 
   \indexspace
 
@@ -30,11 +48,21 @@
 
   \indexspace
 
-  \item longest chain, \hyperpage{2}
+  \item higher-level languages, \hyperpage{1}
 
   \indexspace
 
+  \item ledger, \hyperpage{1}
+  \item longest chain, \hyperpage{2}
+  \item loopholes, \hyperpage{1}
+
+  \indexspace
+
+  \item machine
+    \subitem codes, \hyperpage{1}
   \item mining, \hyperpage{1}
+  \item models
+    \subitem computer, \hyperpage{1}
 
   \indexspace
 
@@ -47,11 +75,32 @@
 
   \indexspace
 
+  \item recorded, \hyperpage{1}
+
+  \indexspace
+
+  \item singleton, \hyperpage{1}
+  \item stack-based
+    \subitem virtual machine, \hyperpage{1}
   \item Szabo, \hyperpage{1}
 
   \indexspace
 
+  \item timestamped, \hyperpage{1}
   \item total difficulty, \hyperpage{2}
+  \item transfer, \hyperpage{1}
+
+  \indexspace
+
+  \item uncensorable, \hyperpage{1}
+  \item undesirable outcomes, \hyperpage{1}
+  \item unstoppable, \hyperpage{1}
+
+  \indexspace
+
+  \item veracity, \hyperpage{1}
+  \item verifiable, \hyperpage{1}
+  \item virtual machine, \hyperpage{1}
 
   \indexspace
 
