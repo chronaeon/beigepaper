@@ -258,3 +258,8 @@
 \indexentry{exceptional!halt|hyperpage}{8}
 \indexentry{init|hyperpage}{8}
 \indexentry{message!call|hyperpage}{8}
+\indexentry{universal!gas|hyperpage}{9}
+\indexentry{contract creation transactions|hyperpage}{9}
+\indexentry{message call transactions|hyperpage}{9}
+\indexentry{computation|hyperpage}{9}
+\indexentry{valid state|hyperpage}{9}

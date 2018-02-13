@@ -801,6 +801,11 @@
 					\index{message!call}
 
 \paragraph{Universal Gas}Message calls always have a universally agreed-upon cost in gas. There is a strong distinction between contract creation transactions and message call transactions. Computation performed, whether it is a contract creation or a message call, represents the currently legal valid state. There can be no invalid transactions from this point. \supercite{Wood2017} There is also a message call/contract creation \textit{stack}. This stack has a depth, depending on how many transactions are in it. Contract creations and message calls have entirely different ways of executing, and are entirely different in their roles in Ethereum. The concepts can be conflated. Message calls can result in computation that occurs in the next state rather than the current one. If an account that is currently executing receives a message call, no code will execute, because the account might exist but has no code in it yet. To execute a message call transactions are required:
+					\index{universal!gas}
+					\index{contract creation transactions}
+					\index{message call transactions}
+					\index{computation}
+					\index{valid state}
 
 \begin{itemize}
 	\item \texttt{Sender}

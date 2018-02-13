@@ -60,11 +60,12 @@
   \item child node, \hyperpage{3}
   \item code
     \subitem array, \hyperpage{7}
-  \item computation
+  \item computation, \hyperpage{9}
     \subitem of
       \subsubitem operation, \hyperpage{6}
   \item contract
     \subitem creation, \hyperpage{4}
+  \item contract creation transactions, \hyperpage{9}
   \item cryptoeconomic
     \subitem model, \hyperpage{1}
   \item cryptographically
@@ -206,6 +207,7 @@
   \item merkletrees, \hyperpage{2}
   \item message
     \subitem call, \hyperpage{6}, \hyperpage{8}
+  \item message call transactions, \hyperpage{9}
   \item minimize
     \subitem storage use, \hyperpage{6}
   \item mining, \hyperpage{1}
@@ -343,6 +345,8 @@
 
   \item uncensorable, \hyperpage{1}
   \item undesirable outcomes, \hyperpage{1}
+  \item universal
+    \subitem gas, \hyperpage{9}
   \item unstoppable, \hyperpage{1}
   \item upfront
     \subitem payment, \hyperpage{6}
@@ -350,6 +354,7 @@
   \indexspace
 
   \item v, \hyperpage{5}
+  \item valid state, \hyperpage{9}
   \item value, \hyperpage{5}
   \item veracity, \hyperpage{1}
   \item verifiable, \hyperpage{1}
