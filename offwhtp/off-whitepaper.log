@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  13 FEB 2018 03:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  13 FEB 2018 04:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2965,7 +2965,7 @@ Package logreq Info: Writing requests to 'off-whitepaper.run.xml'.
 Here is how much of TeX's memory you used:
  66409 strings out of 492990
  1344013 string characters out of 6135005
- 2194040 words of memory out of 5000000
+ 2194038 words of memory out of 5000000
  68424 multiletter control sequences out of 15000+600000
  565056 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3040,7 +3040,7 @@ fsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 tt1000.pfb>
-Output written on off-whitepaper.pdf (24 pages, 493180 bytes).
+Output written on off-whitepaper.pdf (24 pages, 493162 bytes).
 PDF statistics:
  865 PDF objects out of 1000 (max. 8388607)
  786 compressed objects within 8 object streams
