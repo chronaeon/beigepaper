@@ -13,13 +13,13 @@
 
   \item abstract
     \subitem state-machine, \hyperpage{1}
-  \item account
+  \item account, \hyperpage{9}
     \subitem address, \hyperpage{7}
     \subitem addresses, \hyperpage{2}
     \subitem balance, \hyperpage{4}
     \subitem body, \hyperpage{4}
     \subitem code hash, \hyperpage{4}
-    \subitem creation, \hyperpage{4}
+    \subitem creation, \hyperpage{4}, \hyperpage{9}
     \subitem init, \hyperpage{4}
     \subitem nonce, \hyperpage{4}
     \subitem state, \hyperpage{4}
@@ -27,27 +27,51 @@
     \subitem storage root, \hyperpage{4}
   \item accrued
     \subitem substate, \hyperpage{8}
+  \item accumulated gas used, \hyperpage{11}
+  \item age, \hyperpage{12}
   \item ancestor node, \hyperpage{3}
   \item apply
     \subitem rewards, \hyperpage{5}
-  \item apply rewards, \hyperpage{1}
+  \item apply rewards, \hyperpage{1}, \hyperpage{11}
+  \item arbitrarily
+    \subitem determined, \hyperpage{9}
+  \item arbitrary length
+    \subitem byte-array, \hyperpage{9}
+  \item asic
+    \subitem resistant, \hyperpage{12}
   \item assembly language, \hyperpage{1}
+  \item autonomous
+    \subitem objects, \hyperpage{9}
+  \item available
+    \subitem gas, \hyperpage{9}
 
   \indexspace
 
   \item balance, \hyperpage{1}
   \item beneficiary, \hyperpage{3}
+    \subitem address, \hyperpage{11}
+  \item big
+    \subitem endian function, \hyperpage{9}
   \item big endian, \hyperpage{3}
   \item Bitcoin, \hyperpage{1}
   \item Bitcoin Whitepaper, \hyperpage{2}
-  \item block
+  \item block, \hyperpage{9}
     \subitem beneficiary, \hyperpage{5}
     \subitem composition, \hyperpage{3}
+    \subitem contents, \hyperpage{9}
+    \subitem finalization
+      \subsubitem state transition function, \hyperpage{11}
     \subitem header, \hyperpage{3}, \hyperpage{7}
-    \subitem reward, \hyperpage{5}
+      \subsubitem validity function, \hyperpage{9}
+    \subitem number, \hyperpage{10, 11}
+    \subitem reward, \hyperpage{5}, \hyperpage{11}
     \subitem rewards, \hyperpage{3}
   \item block difficulty, \hyperpage{2}
   \item block number, \hyperpage{4}
+  \item block reward
+    \subitem function, \hyperpage{11}
+  \item BLOCKHASH, \hyperpage{12}
+  \item body, \hyperpage{9}
   \item branch node, \hyperpage{3}
   \item byte
     \subitem array, \hyperpage{6}
@@ -56,33 +80,60 @@
 
   \indexspace
 
+  \item cache, \hyperpage{12}
+  \item canonical
+    \subitem blockchain, \hyperpage{10}
+    \subitem gas, \hyperpage{9}
+  \item casper, \hyperpage{12}
   \item certainty, \hyperpage{1}
+  \item checkpoint
+    \subitem nodes, \hyperpage{12}
+  \item checkpoints, \hyperpage{10}
   \item child node, \hyperpage{3}
   \item code
     \subitem array, \hyperpage{7}
+  \item collisions, \hyperpage{11}
+  \item complete
+    \subitem block, \hyperpage{11}
   \item computation, \hyperpage{9}
     \subitem of
       \subsubitem operation, \hyperpage{6}
+  \item compute
+    \subitem valid
+      \subsubitem nonce, \hyperpage{10}
+      \subsubitem state, \hyperpage{10}
   \item contract
-    \subitem creation, \hyperpage{4}
+    \subitem creation, \hyperpage{4}, \hyperpage{9}
+      \subsubitem stack, \hyperpage{9}
   \item contract creation transactions, \hyperpage{9}
+  \item controlled
+    \subitem halt, \hyperpage{10}
+  \item correct
+    \subitem DAG, \hyperpage{9}
   \item cryptoeconomic
     \subitem model, \hyperpage{1}
   \item cryptographically
     \subitem instantiated, \hyperpage{1}
     \subitem secure, \hyperpage{1}
+  \item cumulative
+    \subitem gas, \hyperpage{11}
   \item cumulative difficulty, \hyperpage{2}
 
   \indexspace
 
+  \item DAG, \hyperpage{9}
   \item data
     \subitem structure, \hyperpage{2}
+  \item dataset, \hyperpage{12}
+    \subitem slice, \hyperpage{12}
   \item descendant node, \hyperpage{3}
-  \item deserialization, \hyperpage{5}
+  \item deserialization, \hyperpage{5}, \hyperpage{9}
   \item deterministic, \hyperpage{1}
-  \item difficulty, \hyperpage{4}
+  \item difficulty, \hyperpage{4}, \hyperpage{9}
     \subitem bomb, \hyperpage{4}
   \item difficulty mechanism, \hyperpage{2}
+  \item discard
+    \subitem nodes, \hyperpage{12}
   \item double-spend problem, \hyperpage{2}
   \item dynamic difficulty homeostasis, \hyperpage{4}
 
@@ -95,10 +146,19 @@
   \item elliptic curve, \hyperpage{6}
     \subitem computation, \hyperpage{6}
     \subitem cryptography, \hyperpage{6}
+  \item empty
+    \subitem byte-sequence, \hyperpage{9}
+    \subitem set, \hyperpage{10}
   \item empty byte-array, \hyperpage{3}
+  \item ere, \hyperpage{9}
+  \item ethash, \hyperpage{12}
   \item Ether, \hyperpage{1}
+  \item ethereum
+    \subitem runtime environment, \hyperpage{9}
   \item ethereum interpreter, \hyperpage{1}
   \item EVM, \hyperpage{5}
+    \subitem assembly, \hyperpage{10}
+    \subitem code, \hyperpage{10}
   \item evm
     \subitem computation
       \subsubitem instances, \hyperpage{7}
@@ -110,6 +170,9 @@
     \subitem environment, \hyperpage{7}
     \subitem function, \hyperpage{8}
     \subitem model, \hyperpage{8}
+  \item explicitly
+    \subitem specify
+      \subsubitem meaning, \hyperpage{10}
   \item exponential difficulty increase, \hyperpage{4}
   \item extra data, \hyperpage{4}
   \item extract
@@ -126,15 +189,21 @@
 
   \indexspace
 
-  \item gas, \hyperpage{6}
+  \item gas, \hyperpage{6}, \hyperpage{9}
+    \subitem available, \hyperpage{9}
     \subitem deducted, \hyperpage{6}
+    \subitem expenditure per block, \hyperpage{9}
     \subitem limit, \hyperpage{4--6}
     \subitem paid for
       \subsubitem increased use of memory, \hyperpage{6}
     \subitem price, \hyperpage{5, 6}
     \subitem refund
       \subsubitem clearing space, \hyperpage{6}
-    \subitem used, \hyperpage{4}, \hyperpage{7}
+    \subitem used, \hyperpage{4}, \hyperpage{7}, \hyperpage{9}
+  \item gas price, \hyperpage{9}
+  \item gas used, \hyperpage{11}
+  \item genesis
+    \subitem block, \hyperpage{10}
   \item genesis difficulty, \hyperpage{4}
   \item GHOST protocol, \hyperpage{2}
   \item global state database, \hyperpage{3}
@@ -145,6 +214,8 @@
     \subitem function, \hyperpage{8}
     \subitem state, \hyperpage{8}
   \item hash scheme, \hyperpage{6}
+  \item heaviest
+    \subitem path, \hyperpage{10}
   \item higher-level languages, \hyperpage{1}
   \item homestead, \hyperpage{4}
     \subitem difficulty parameter, \hyperpage{4}
@@ -152,7 +223,9 @@
   \indexspace
 
   \item ice age, \hyperpage{4}
-  \item init, \hyperpage{8}
+  \item incomplete
+    \subitem block, \hyperpage{11}
+  \item init, \hyperpage{8, 9}
   \item input
     \subitem data, \hyperpage{7}
   \item inspection
@@ -180,6 +253,10 @@
     \subitem events, \hyperpage{7}
     \subitem items, \hyperpage{7}
   \item log series, \hyperpage{8}
+  \item logs
+    \subitem bloom, \hyperpage{10}
+    \subitem series, \hyperpage{10}
+    \subitem set, \hyperpage{10}
   \item logs bloom, \hyperpage{4}
   \item longest chain, \hyperpage{2}
   \item loopholes, \hyperpage{1}
@@ -189,29 +266,37 @@
   \item machine
     \subitem codes, \hyperpage{1}
     \subitem halt, \hyperpage{6}
-    \subitem state, \hyperpage{5}
+    \subitem state, \hyperpage{5}, \hyperpage{9}
     \subitem storage, \hyperpage{6}
   \item mapping, \hyperpage{2}
   \item mapping between
     \subitem account states, \hyperpage{3}
     \subitem addresses, \hyperpage{3}
   \item memory, \hyperpage{6}
+    \subitem contents, \hyperpage{9}
     \subitem model, \hyperpage{6}
       \subsubitem volatility of, \hyperpage{6}
     \subitem size, \hyperpage{6}
     \subitem stack, \hyperpage{6}
     \subitem usage fee, \hyperpage{6}
+    \subitem word count, \hyperpage{9}
   \item merkle-patricia
     \subitem trees, \hyperpage{2}
     \subitem tries, \hyperpage{2}
   \item merkletrees, \hyperpage{2}
   \item message
-    \subitem call, \hyperpage{6}, \hyperpage{8}
+    \subitem call, \hyperpage{6}, \hyperpage{8, 9}
   \item message call transactions, \hyperpage{9}
+  \item miner
+    \subitem choice, \hyperpage{9}
+  \item miners, \hyperpage{9}
   \item minimize
     \subitem storage use, \hyperpage{6}
   \item mining, \hyperpage{1}
-  \item mix hash, \hyperpage{4}
+    \subitem effort, \hyperpage{10}
+  \item mix
+    \subitem hash, \hyperpage{9}
+  \item mix hash, \hyperpage{4}, \hyperpage{12}
   \item models
     \subitem computer, \hyperpage{1}
   \item modified merkletrees, \hyperpage{2}
@@ -219,7 +304,11 @@
   \indexspace
 
   \item native currency, \hyperpage{1}
+  \item natively
+    \subitem execute, \hyperpage{10}
   \item nested binary data, \hyperpage{3}
+  \item network
+    \subitem cost unit, \hyperpage{9}
   \item network cost unit, \hyperpage{1}
   \item newstate
     \subitem value, \hyperpage{7}
@@ -232,12 +321,16 @@
     \subitem empty deserialized integer, \hyperpage{3}
   \item non-standard
     \subitem architecture, \hyperpage{6}
-  \item nonce, \hyperpage{4}
+  \item nonce, \hyperpage{4}, \hyperpage{9}
+    \subitem validation, \hyperpage{11}
   \item number, \hyperpage{4}
 
   \indexspace
 
+  \item ommer, \hyperpage{11}
   \item ommer block headers, \hyperpage{4}
+  \item ommer headers, \hyperpage{10}
+  \item ommer validation, \hyperpage{10}
   \item ommers
     \subitem hash, \hyperpage{3}
   \item originator
@@ -250,16 +343,28 @@
     \subitem hash, \hyperpage{3}
   \item parent node, \hyperpage{3}
   \item payment, \hyperpage{6}
+  \item plasma, \hyperpage{12}
+  \item positive
+    \subitem integer, \hyperpage{9}
   \item post
     \subitem transaction
       \subsubitem state, \hyperpage{7}
+  \item present depth, \hyperpage{9}
+  \item probability statement, \hyperpage{11}
+  \item program
+    \subitem counter, \hyperpage{9}
+  \item proof-of-work, \hyperpage{11}
   \item pseudocode, \hyperpage{1}
+  \item pseudorandom number
+    \subitem generation, \hyperpage{12}
 
   \indexspace
 
   \item r, \hyperpage{5}
   \item receipts root, \hyperpage{4}
+  \item recipient, \hyperpage{9}
   \item recorded, \hyperpage{1}
+  \item refunded, \hyperpage{9}
   \item refunds, \hyperpage{8}
   \item remaining
     \subitem gas, \hyperpage{7, 8}
@@ -274,6 +379,7 @@
     \subitem integers, \hyperpage{3}
     \subitem serialized
       \subsubitem byte-array, \hyperpage{3}
+  \item rlp, \hyperpage{9}
   \item root
     \subitem node, \hyperpage{4}
   \item root node, \hyperpage{3}
@@ -282,11 +388,16 @@
 
   \item s, \hyperpage{5}
   \item Satoshi Nakamoto, \hyperpage{2}
+  \item scalability, \hyperpage{12}
+  \item seed, \hyperpage{12}
   \item self-destructs set, \hyperpage{8}
-  \item sender
+  \item sender, \hyperpage{9}
     \subitem account, \hyperpage{6}
     \subitem address, \hyperpage{7}
-  \item serialization, \hyperpage{5}
+  \item sequence
+    \subitem concatenation, \hyperpage{9}
+  \item serialization, \hyperpage{5}, \hyperpage{9}
+  \item sharding, \hyperpage{12}
   \item sibling node, \hyperpage{3}
   \item single byte integer, \hyperpage{3}
   \item singleton, \hyperpage{1}
@@ -296,17 +407,20 @@
   \item stack
     \subitem based, \hyperpage{6, 7}
       \subsubitem architecture, \hyperpage{6}
+    \subitem contents, \hyperpage{9}
     \subitem underflow, \hyperpage{6}
   \item stack-based
     \subitem virtual machine, \hyperpage{1}
   \item state
-    \subitem database, \hyperpage{4}
+    \subitem database, \hyperpage{4}, \hyperpage{12}
     \subitem machine
       \subsubitem cycle, \hyperpage{8}
     \subitem transition, \hyperpage{5}
       \subsubitem function, \hyperpage{8}
     \subitem unchanged, \hyperpage{6}
   \item state root, \hyperpage{3}
+  \item status
+    \subitem code, \hyperpage{11}
   \item storage
     \subitem model, \hyperpage{6}
   \item substates, \hyperpage{7}
@@ -317,17 +431,30 @@
 
   \indexspace
 
+  \item tagged
+    \subitem for
+      \subsubitem self destruction, \hyperpage{10}
+  \item time stamp, \hyperpage{9}
   \item timestamp, \hyperpage{4}
   \item timestamped, \hyperpage{1}
   \item to, \hyperpage{5}
+    \subitem execute, \hyperpage{9}
   \item total difficulty, \hyperpage{2}
   \item total fee, \hyperpage{6}
+  \item total gas used, \hyperpage{11}
+  \item totaly
+    \subitem difficulty, \hyperpage{10}
   \item touched accounts, \hyperpage{8}
   \item transaction, \hyperpage{5}
     \subitem execution, \hyperpage{7}
+    \subitem execution function, \hyperpage{11}
     \subitem nonce, \hyperpage{6}
-    \subitem receipt, \hyperpage{7}
+    \subitem originator, \hyperpage{9}
+    \subitem receipt, \hyperpage{7}, \hyperpage{10}
+    \subitem series, \hyperpage{10}
     \subitem signature, \hyperpage{6}
+    \subitem validation, \hyperpage{11}
+  \item transactions, \hyperpage{11}
   \item transactions root, \hyperpage{4}
   \item transfer, \hyperpage{1}
   \item tree
@@ -348,14 +475,18 @@
   \item universal
     \subitem gas, \hyperpage{9}
   \item unstoppable, \hyperpage{1}
+  \item unused
+    \subitem gas, \hyperpage{9}
   \item upfront
     \subitem payment, \hyperpage{6}
 
   \indexspace
 
   \item v, \hyperpage{5}
+  \item valid
+    \subitem header, \hyperpage{10}
   \item valid state, \hyperpage{9}
-  \item value, \hyperpage{5}
+  \item value, \hyperpage{5}, \hyperpage{9}
   \item veracity, \hyperpage{1}
   \item verifiable, \hyperpage{1}
   \item verification, \hyperpage{5}

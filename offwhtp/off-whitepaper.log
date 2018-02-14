@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  13 FEB 2018 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  14 FEB 2018 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2791,144 +2791,135 @@ Package multicol Warning: I moved some lines to the next page.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 778.
  [8] [9]
-Underfull \hbox (badness 7907) in paragraph at lines 900--901
+Underfull \hbox (badness 7907) in paragraph at lines 951--952
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--901
+Underfull \hbox (badness 10000) in paragraph at lines 951--952
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
 
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 10 might be wrong on input line 914
-.
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 918--919
-\T1/ccr/m/n/10 (+20) lows: \T1/cmtt/m/n/10 Validate (or, if mining, determine)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 918--919
+Underfull \hbox (badness 10000) in paragraph at lines 972--982
 \T1/cmtt/m/n/10 ommers; validate (or, if mining, determine)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 918--919
+Underfull \hbox (badness 10000) in paragraph at lines 972--982
 \T1/cmtt/m/n/10 transactions; apply rewards; verify (or, if
  []
 
-[11] [12] [13]
-Underfull \vbox (badness 10000) detected at line 981
+[10] [11] [12]
+Underfull \vbox (badness 10000) detected at line 1073
  []
 
 
-Underfull \vbox (badness 10000) detected at line 995
+Underfull \vbox (badness 10000) detected at line 1087
  []
 
 
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 1007--1007
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 1099--1099
  []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
  []
 
 
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 1009--1009
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 1101--1101
  []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
  []
 
 
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 1015--1015
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 1107--1107
  []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
  []
 
 
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 1016--1016
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 1108--1108
  []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1018
+Underfull \vbox (badness 10000) detected at line 1110
  []
 
-[14]
-Underfull \vbox (badness 10000) detected at line 1032
+[13]
+Underfull \vbox (badness 10000) detected at line 1124
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1139
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1052
+Underfull \vbox (badness 10000) detected at line 1144
+ []
+
+[14]
+Underfull \vbox (badness 10000) detected at line 1170
  []
 
 [15]
-Underfull \vbox (badness 10000) detected at line 1078
+Underfull \vbox (badness 10000) detected at line 1208
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1233
  []
 
 [16]
-Underfull \vbox (badness 10000) detected at line 1116
+Underfull \vbox (badness 10000) detected at line 1246
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1141
- []
-
-[17]
-Underfull \vbox (badness 10000) detected at line 1154
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1161--1162
+Underfull \hbox (badness 10000) in paragraph at lines 1253--1254
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 1165--1165
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 1257--1257
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Overfull \hbox (2.77728pt too wide) in paragraph at lines 1166--1166
+Overfull \hbox (2.77728pt too wide) in paragraph at lines 1258--1258
  []|\T1/ccr/m/n/10 (-20) CALLBLACKBOX| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1172
+Underfull \vbox (badness 10000) detected at line 1264
  []
 
-[18] [19]
+[17] [18]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1190.
+(biblatex)                Using fallback driver on input line 1282.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1190.
+(biblatex)                Using fallback driver on input line 1282.
 
-[20
+[19
 
 ]
 No file off-whitepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1286
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 21 might be wrong on input line 119
-4.
+(multicol)                Footnotes on page 20 might be wrong on input line 128
+6.
 
-[21]
+[20]
 Using TeX to sort glossary entries---this may take a while
-[22] (./off-whitepaper.ind [23] [24] [25]) 
+[21] (./off-whitepaper.ind [22] [23] [24] [25] [26])
+
 AED: lastpage setting LastPage
-[26]
+[27]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the off-whitepaper.maf file.
@@ -2940,24 +2931,28 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the off-whitepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1201.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1293.
 (./off-whitepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1293.
 
 Package rerunfilecheck Info: File `off-whitepaper.out' has not changed.
-(rerunfilecheck)             Checksum: C3B3690D0411C1A6620E42200071603F;5270.
+(rerunfilecheck)             Checksum: 7AE4094F701D4EC5F010263E7AF38D72;5226.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'off-whitepaper.run.xml'.
 \openout1 = `off-whitepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66365 strings out of 492990
- 1343520 string characters out of 6135005
- 2194047 words of memory out of 5000000
- 68411 multiletter control sequences out of 15000+600000
- 561905 words of font info for 153 fonts, out of 8000000 for 9000
+ 66339 strings out of 492990
+ 1343222 string characters out of 6135005
+ 2194073 words of memory out of 5000000
+ 68410 multiletter control sequences out of 15000+600000
+ 561741 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,12n,190p,10387b,4994s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
@@ -3021,10 +3016,10 @@ are/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type
 sx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sftt1000.pfb>
-Output written on off-whitepaper.pdf (26 pages, 478935 bytes).
+Output written on off-whitepaper.pdf (27 pages, 482568 bytes).
 PDF statistics:
- 1089 PDF objects out of 1200 (max. 8388607)
- 1008 compressed objects within 11 object streams
- 241 named destinations out of 1000 (max. 500000)
- 29901 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1179 PDF objects out of 1200 (max. 8388607)
+ 1097 compressed objects within 11 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 29893 words of extra memory for PDF output out of 35830 (max. 10000000)
 
