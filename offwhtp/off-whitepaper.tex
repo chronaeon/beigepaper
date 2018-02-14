@@ -63,9 +63,9 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{Off-Whitepaper: Ethereum}
+\fancyhead[C]{Beigepaper}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{Version 0.5.0}
+\fancyhead[R]{Version 0.9.5}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -74,8 +74,7 @@
 \glstoctrue
 \newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
 
-%\definecolor{papayawhip}{RGB}{255,239,213}
-\definecolor{blanchedalmond}{RGB}{255,235,205}
+\definecolor{beige}{RGB}{245,245,220}
 
 \newcount\n
 \n=0
@@ -103,29 +102,24 @@
  \makeatother
 
 %╔═══════════════════DELETED TERMS═════════════════════╗
-%║Autonomous Object				      				   ║
-%║Design Pattern				       				   ║
-%║Object-Oriented Programming					       ║
-%║External Actor				       				   ║
-%║Abstract Machine				       				   ║
-%║Hacker Ethic					       				   ║
+%║Autonomous Object				       ║
+%║Design Pattern				       ║
+%║Object-Oriented Programming			       ║
+%║External Actor				       ║
+%║Abstract Machine				       ║
+%║Hacker Ethic					       ║
 %╚═════════════════════════════════════════════════════╝
-
 
 \makenoidxglossaries
 \setacronymstyle{long-short}
 \newacronym{EVM}{EVM}{Ethereum Virtual Machine}
 \newacronym{ERE}{ERE}{Ethereum Runtime Environment}
 \newacronym{RLP}{RLP}{Recursive Length Prefix}
-\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed. \autocite{billwagner}}}
-\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays [i.e. organized chunks of binary data] to other bytearrays [other organized chunks of binary data]. The \textsl{relationships} between each node on this trie constitute a \textsc{map}, a.k.a. a \textsc{mapping} of all previous \textsl{world states} which a client might need to reference}}
-\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain. Transactions are regarded as a single unit of work, and must be processed completely or not at all.\autocite{Ngondi2016}}}
-\newglossaryentry{Ethereum Virtual Machine}{name={Ethereum Virtual Machine}, description={A sub-process of the \textit{State Transition Function} which initializes and executes all of the transactions (ergo computations) in a block, prior to their finalization into the state.}}
-\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there is typically only one possible output.}}
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed.}}
+\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays (organized chunks of binary data) to other bytearrays. The \textsl{relationships} between each node on this trie constitutes a \textsc{mapping} of Ethereum's state.}}
+\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain.}}
+\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there are limited, usually only one, possible output yet that output is unique.}}
 \newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
-\newglossaryentry{root node}{name={root node}, description={the uppermost node in a particular tree, of blocks, representing a single world state at a particular time}}
-\newglossaryentry{trie}{name={trie}, description={A tree-structure for organizing data, the position of data in the tree contains the particular path from root to leaf node that represents the key (the path from root to leaf is ``one'' key) you are searching the trie structure for. The data of the key is contained in the trie relationships that emerge from related nodes in the trie structure}}
-\newglossaryentry{leaf node}{name={leaf node},description={the bottom-most node in a particular tree, of blocks, one half of the ``key'' the other half being the root node, which creates the path between}}
 \newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.}}
 \newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
 \newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
@@ -134,11 +128,9 @@
 \newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit; gas is paid for exclusively by Ether}}
 \newglossaryentry{Contract}{name={Contract}, description={A piece of EVM Code that may be associated with an Account or an Autonomous Object}}
 \newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
-\newglossaryentry{balance}{name={balance}, description={A value which is intrinsic to accounts; the quantity of Wei in the account. All EVM operations are associated with changes in account balance}}
-\newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of this block be transferred}}
+\newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of a block are transferred}}
 \newglossaryentry{block header}{name={block header}, description={All the information in a block besides transaction information}}
 \newglossaryentry{storage root}{name={storage root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
-\newglossaryentry{Recursive Length Prefix}{name={Recursive Length Prefix}, description={Recursive Length Prefix}}
 
 \addbibresource{References.bib}
 
@@ -182,11 +174,9 @@
 
 \setcounter{secnumdepth}{3}
 
-\date{}
-
 \author{\large{\textbf{Micah Dameron}}}
 
-\title{\LARGE{Ethereum Technical Specification}}
+\title{\LARGE{Beigepaper: \\ An Ethereum Technical Specification}}
 
 \makeindex
 \begin{document}
@@ -194,7 +184,7 @@
 
 	\begin{alphafootnotes}
 
-	\pagecolor{blanchedalmond}
+	\pagecolor{beige}
 
 	\maketitle
 
@@ -213,8 +203,7 @@
 	
 	
 	\section{Imagining Bitcoin as a Computer}
-		Ethereum borrows the crypto-economic model of a cryptographically-secure and instantiated ledger that originated with Bitcoin and repurposes it to model not just a ledger, but a stack-based virtual machine, complete with an assembly language, its own byte code, and many higher-level languages as well. With this machine one can execute machine codes with the same veracity and certainty that one has when sending a Bitcoin transaction. Just as sure as you can be certain of a Bitcoin transaction being the right balance, the right transfer, that things in the record are timestamped and actually \textit{did in fact happen}, just as certain as the 1st, 2nd, 1000th, and 10,000th transactions on the Bitcoin network are the same transactions that happened nine years ago, without anyone altering the record, (for no alteration of the record is possible, nor has ever been possible) just so sure are the \textit{machine instructions in assembly language that are given to the Ethereum interpreter.} \par
-		\index{Bitcoin}
+		Ethereum utilizes the crypto-economic ledger model that originated with Bitcoin and repurposes it to model not merely a ledger, but a virtual machine, complete its own byte code. Ethereum allows machine code to be executed with the same certainty and verifiability as Bitcoin transactions. Just as sure as you can be certain of a Bitcoin transaction being the right amount, and that things in the record are timestamped and actually \textit{did in fact happen}, just as certain as the 1st, 2nd, 1000th, and 10,000th transactions on the Bitcoin network are the same transactions that happened nine years ago, (for no alteration of the record is possible, nor has ever been possible) just so sure are the \textit{machine instructions in bytecode that are given to the Ethereum interpreter.} 			     \index{Bitcoin}
 		\index{cryptoeconomic!model}
 		\index{cryptographically!secure}
 		\index{cryptographically!instantiated}
@@ -231,8 +220,9 @@
 		\index{machine!codes}
 		\index{ledger}
 		\index{ethereum interpreter}
-
-		This has profound implications for all areas of society and cannot be explored fully in this context. But in short, \textit{programs written and executed on the Ethereum Blockchain are unstoppable.} This does not mean that no loopholes in the code exist that could cause undesirable outcomes, rather it means that at the base level, the outcomes, whether desirable or not, happened, remain verifiable, are recorded, and are entirely  uncensorable. 
+		
+		
+		This has profound implications for all areas of society although this would be the wrong context to explore those implications. But in short, \textit{programs written and executed on the Ethereum Blockchain are unstoppable.} This does not mean that no loopholes in the code exist that could cause undesirable outcomes, rather it means that at the base level, the outcomes, whether desirable or not, \textbf{happened}, \textbf{remain verifiable}, \textbf{are recorded}, and are \textbf{entirely  uncensorable}. 
 		\index{unstoppable}
 		\index{loopholes}
 		\index{undesirable outcomes}
@@ -240,6 +230,7 @@
 		\index{recorded}
 		\index{verifiable}
 		\index{executed}
+		
 
 	\section{Native Currency \& Mining}
 		Because Ethereum aims not at being a currency, but at modeling a computer, there needs to be a \textsl{network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
@@ -289,20 +280,18 @@
 			\index{50\% attack}
 			\index{Satoshi Nakamoto}
 			\index{Bitcoin Whitepaper}
-	
+			
 	\section{Memory and Storage}
 				
 				
 			\subsection{World State}
-				The actual state of the Ethereum Blockchain, after all transactions have been finalized and applied, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP. The mapping is stored as a Merkle-Patricia \gls{trie} in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the \gls{root node} represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
+				The actual state of the Ethereum Blockchain, after all transactions have been finalized and applied, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP. The mapping is stored as a Merkle-Patricia trie in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the root node represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
 			\index{World State}
 			\index{mapping}
 			\index{RLP}
 			\index{account!states}
 			\index{account!addresses}
 			
-
-
 			\subsubsection{Merkle-Patricia Trees} 
 	
 				
