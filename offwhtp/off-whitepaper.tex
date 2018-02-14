@@ -796,7 +796,7 @@
 				A smaller, temporary state that is generated during transaction execution. It contains three sets of data:
 
 			\subsubsection{Message Calls}
-			A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call. Messages allow communication between accounts (whether contract or external.) Messages can come in the form of \texttt{msg\_calls} which give output data. If it is a contract account, this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. 
+			A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call. Messages allow communication between accounts (whether contract or external.) Messages can come in the form of \texttt{msg\_calls} which give output data. If it is a contract account, this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
 					\index{init}
 					\index{message!call}
 
@@ -812,27 +812,29 @@
 	\item \texttt{Transaction\_Originator} 
 	\item \texttt{Recipient}
 	\item \texttt{Account} (usually the same as the recipient) 
-	\item \texttt{Available\_Gas} 
+	\item \texttt{available\_gas} 
 	\item \texttt{Value}
-	\item \texttt{Gas\_Price}
+	\item \texttt{gas\_price}
 	\item An arbitrary length byte-array. \texttt{arb\_array}
 	\item \texttt{Present\_Depth} of the message call/contract creation stack.
 \end{itemize}
-\paragraph{Notation}: \texttt{data}
-\paragraph{Description}: User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
+
+					\index{sender}
+					\index{transaction!originator}
+					\index{recipient}
+					\index{account}
+					\index{available!gas}
+					\index{value}
+					\index{gas price}
+					\index{arbitrary length!byte-array}
 
 			\subsubsection{Contract Creation}
-				\paragraph{Notation}: \texttt{init}
-				\paragraph{Description}: When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. 				Contract creation transactions are equal the recursive length prefix of an empty byte-sequence. 		
-			\subsubsection{Account Creation}
+				\paragraph{Description}: When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. Contract creation transactions are equal the recursive length prefix of an empty byte-sequence. 		
 			
-			\subsection{Halting}
-				\paragraph{Execution Environment}
-					\paragraph{Notation}: \texttt{ERE}
-					\paragraph{Description}: The environment under which an Autonomous Object executes in the EVM: the EVM runs as a part of this environment.  
+				\subsubsection{Execution Environment}
+					 The Ethereum Runtime Environment is the environment under which Autonomous Objects execute in the EVM: the EVM runs as a part of this environment.  
 
-				\paragraph{Notation}: \texttt{big\_endian\_f}
-				\paragraph{Description}:\textsc{Big Endian Function} This function expands a positive-integer value to a big-endian byte array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation. The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
+				\subsubsection{Big Endian Function} This function expands a positive-integer value to a big-endian byte array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation. The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
 
 			\subsection{Gas}
 				\paragraph{Description}: The fundamental network cost unit converted to and from Ether as needed to complete the transaction while it is sent. Gas is arbitrarily determined at the moment it is needed, by the block and according to the miners decision to charge certain fees. 
