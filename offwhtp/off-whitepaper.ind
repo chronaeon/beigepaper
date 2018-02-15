@@ -26,13 +26,13 @@
     \subitem states, \hyperpage{2}
     \subitem storage root, \hyperpage{4}
   \item accrued
-    \subitem substate, \hyperpage{8}
+    \subitem substate, \hyperpage{7}
   \item accumulated gas used, \hyperpage{11}
   \item age, \hyperpage{12}
   \item ancestor node, \hyperpage{3}
   \item apply
     \subitem rewards, \hyperpage{5}
-  \item apply rewards, \hyperpage{1}, \hyperpage{11}
+  \item apply rewards, \hyperpage{11}
   \item arbitrarily
     \subitem determined, \hyperpage{9}
   \item arbitrary length
@@ -95,7 +95,7 @@
   \item collisions, \hyperpage{11}
   \item complete
     \subitem block, \hyperpage{11}
-  \item computation, \hyperpage{9}
+  \item computation, \hyperpage{8}
     \subitem of
       \subsubitem operation, \hyperpage{6}
   \item compute
@@ -105,7 +105,7 @@
   \item contract
     \subitem creation, \hyperpage{4}, \hyperpage{9}
       \subsubitem stack, \hyperpage{9}
-  \item contract creation transactions, \hyperpage{9}
+  \item contract creation transactions, \hyperpage{8}
   \item controlled
     \subitem halt, \hyperpage{10}
   \item correct
@@ -169,7 +169,7 @@
   \item execution, \hyperpage{6}
     \subitem environment, \hyperpage{7}
     \subitem function, \hyperpage{8}
-    \subitem model, \hyperpage{8}
+    \subitem model, \hyperpage{7}
   \item explicitly
     \subitem specify
       \subsubitem meaning, \hyperpage{10}
@@ -199,7 +199,7 @@
     \subitem price, \hyperpage{5, 6}
     \subitem refund
       \subsubitem clearing space, \hyperpage{6}
-    \subitem used, \hyperpage{4}, \hyperpage{7}, \hyperpage{9}
+    \subitem used, \hyperpage{4}, \hyperpage{6}, \hyperpage{9}
   \item gas price, \hyperpage{9}
   \item gas used, \hyperpage{11}
   \item genesis
@@ -250,9 +250,9 @@
     \subitem node, \hyperpage{3, 4}
   \item ledger, \hyperpage{1}
   \item log
-    \subitem events, \hyperpage{7}
-    \subitem items, \hyperpage{7}
-  \item log series, \hyperpage{8}
+    \subitem events, \hyperpage{6}
+    \subitem items, \hyperpage{6}
+  \item log series, \hyperpage{7}
   \item logs
     \subitem bloom, \hyperpage{10}
     \subitem series, \hyperpage{10}
@@ -286,7 +286,7 @@
   \item merkletrees, \hyperpage{2}
   \item message
     \subitem call, \hyperpage{6}, \hyperpage{8, 9}
-  \item message call transactions, \hyperpage{9}
+  \item message call transactions, \hyperpage{8}
   \item miner
     \subitem choice, \hyperpage{9}
   \item miners, \hyperpage{9}
@@ -348,7 +348,7 @@
     \subitem integer, \hyperpage{9}
   \item post
     \subitem transaction
-      \subsubitem state, \hyperpage{7}
+      \subsubitem state, \hyperpage{6}
   \item present depth, \hyperpage{9}
   \item probability statement, \hyperpage{11}
   \item program
@@ -365,14 +365,14 @@
   \item recipient, \hyperpage{9}
   \item recorded, \hyperpage{1}
   \item refunded, \hyperpage{9}
-  \item refunds, \hyperpage{8}
+  \item refunds, \hyperpage{7}
   \item remaining
-    \subitem gas, \hyperpage{7, 8}
+    \subitem gas, \hyperpage{7}
   \item report
     \subitem exception, \hyperpage{6}
   \item resultant
-    \subitem output, \hyperpage{8}
-    \subitem state, \hyperpage{8}
+    \subitem output, \hyperpage{7}
+    \subitem state, \hyperpage{7}
   \item RLP, \hyperpage{2, 3}
     \subitem encodes as
       \subsubitem byte-arrays, \hyperpage{3}
@@ -390,7 +390,7 @@
   \item Satoshi Nakamoto, \hyperpage{2}
   \item scalability, \hyperpage{12}
   \item seed, \hyperpage{12}
-  \item self-destructs set, \hyperpage{8}
+  \item self-destructs set, \hyperpage{7}
   \item sender, \hyperpage{9}
     \subitem account, \hyperpage{6}
     \subitem address, \hyperpage{7}
@@ -416,7 +416,7 @@
     \subitem machine
       \subsubitem cycle, \hyperpage{8}
     \subitem transition, \hyperpage{5}
-      \subsubitem function, \hyperpage{8}
+      \subsubitem function, \hyperpage{7}
     \subitem unchanged, \hyperpage{6}
   \item state root, \hyperpage{3}
   \item status
@@ -444,13 +444,13 @@
   \item total gas used, \hyperpage{11}
   \item totaly
     \subitem difficulty, \hyperpage{10}
-  \item touched accounts, \hyperpage{8}
+  \item touched accounts, \hyperpage{7}
   \item transaction, \hyperpage{5}
-    \subitem execution, \hyperpage{7}
+    \subitem execution, \hyperpage{6}
     \subitem execution function, \hyperpage{11}
     \subitem nonce, \hyperpage{6}
     \subitem originator, \hyperpage{9}
-    \subitem receipt, \hyperpage{7}, \hyperpage{10}
+    \subitem receipt, \hyperpage{6}, \hyperpage{10}
     \subitem series, \hyperpage{10}
     \subitem signature, \hyperpage{6}
     \subitem validation, \hyperpage{11}
@@ -473,7 +473,7 @@
   \item uncensorable, \hyperpage{1}
   \item undesirable outcomes, \hyperpage{1}
   \item universal
-    \subitem gas, \hyperpage{9}
+    \subitem gas, \hyperpage{8}
   \item unstoppable, \hyperpage{1}
   \item unused
     \subitem gas, \hyperpage{9}
@@ -485,7 +485,7 @@
   \item v, \hyperpage{5}
   \item valid
     \subitem header, \hyperpage{10}
-  \item valid state, \hyperpage{9}
+  \item valid state, \hyperpage{8}
   \item value, \hyperpage{5}, \hyperpage{9}
   \item veracity, \hyperpage{1}
   \item verifiable, \hyperpage{1}

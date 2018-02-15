@@ -65,7 +65,7 @@
 \fancyhf{}
 \fancyhead[C]{Beigepaper}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{Version 0.9.5}
+\fancyhead[R]{\today--Version 0.9.5}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -176,6 +176,8 @@
 
 \author{\large{\textbf{Micah Dameron}}}
 
+\date{}
+
 \title{\LARGE{Beigepaper: \\ An Ethereum Technical Specification}}
 
 \makeindex
@@ -256,16 +258,7 @@
 			\bottomrule
 		\end{tabular}
 \justify
-		\subsection{Mining}
-		\index{mining}
 		
-				\paragraph{Apply Rewards}
-				\index{apply rewards}
-				
-				\paragraph{Notation}: \texttt{apply\_rewards} 
-				\paragraph{Description}: The third process in \texttt{block\_finalization} that sends the mining reward to an account's address. 
-				\index{apply rewards}
-
 				
 			\subsubsection{Difficulty Mechanism}
 			This mechanism enforces a homeostasis in terms of the time between blocks; a smaller period between the last two blocks results in an increase in the difficulty level and thus additional computation required, lengthening the likely next period. Conversely, if the period is too large, the difficulty, and expected time to the next block, is reduced. The \textit{Total Computation} is the difficulty state of the entire Ethereum blockchain. The \textit{Block Difficulty} is not a state of the blockchain, but is local--particular to each specific block. You reach the total difficulty by summing the difficulty of all previous blocks and then adding the present one.  \par

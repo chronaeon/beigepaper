@@ -37,9 +37,6 @@
 \indexentry{Ether|hyperpage}{1}
 \indexentry{models!computer|hyperpage}{1}
 \indexentry{excessive computational expenditures|hyperpage}{1}
-\indexentry{mining|hyperpage}{1}
-\indexentry{apply rewards|hyperpage}{1}
-\indexentry{apply rewards|hyperpage}{1}
 \indexentry{total difficulty|hyperpage}{2}
 \indexentry{block difficulty|hyperpage}{2}
 \indexentry{difficulty mechanism|hyperpage}{2}
@@ -215,12 +212,12 @@
 \indexentry{gas!limit|hyperpage}{6}
 \indexentry{sender!account|hyperpage}{6}
 \indexentry{upfront!payment|hyperpage}{6}
-\indexentry{gas!used|hyperpage}{7}
-\indexentry{transaction!receipt|hyperpage}{7}
-\indexentry{log!items|hyperpage}{7}
-\indexentry{log!events|hyperpage}{7}
-\indexentry{transaction!execution|hyperpage}{7}
-\indexentry{post!transaction!state|hyperpage}{7}
+\indexentry{gas!used|hyperpage}{6}
+\indexentry{transaction!receipt|hyperpage}{6}
+\indexentry{log!items|hyperpage}{6}
+\indexentry{log!events|hyperpage}{6}
+\indexentry{transaction!execution|hyperpage}{6}
+\indexentry{post!transaction!state|hyperpage}{6}
 \indexentry{system!state|hyperpage}{7}
 \indexentry{remaining!gas|hyperpage}{7}
 \indexentry{stack!based|hyperpage}{7}
@@ -238,16 +235,16 @@
 \indexentry{newstate!value|hyperpage}{7}
 \indexentry{code!array|hyperpage}{7}
 \indexentry{block!header|hyperpage}{7}
-\indexentry{execution!model|hyperpage}{8}
-\indexentry{state!transition!function|hyperpage}{8}
-\indexentry{resultant!state|hyperpage}{8}
-\indexentry{remaining!gas|hyperpage}{8}
-\indexentry{accrued!substate|hyperpage}{8}
-\indexentry{resultant!output|hyperpage}{8}
-\indexentry{self-destructs set|hyperpage}{8}
-\indexentry{log series|hyperpage}{8}
-\indexentry{touched accounts|hyperpage}{8}
-\indexentry{refunds|hyperpage}{8}
+\indexentry{execution!model|hyperpage}{7}
+\indexentry{state!transition!function|hyperpage}{7}
+\indexentry{resultant!state|hyperpage}{7}
+\indexentry{remaining!gas|hyperpage}{7}
+\indexentry{accrued!substate|hyperpage}{7}
+\indexentry{resultant!output|hyperpage}{7}
+\indexentry{self-destructs set|hyperpage}{7}
+\indexentry{log series|hyperpage}{7}
+\indexentry{touched accounts|hyperpage}{7}
+\indexentry{refunds|hyperpage}{7}
 \indexentry{execution!function|hyperpage}{8}
 \indexentry{iterative!progression|hyperpage}{8}
 \indexentry{iterator function|hyperpage}{8}
@@ -258,11 +255,11 @@
 \indexentry{exceptional!halt|hyperpage}{8}
 \indexentry{init|hyperpage}{8}
 \indexentry{message!call|hyperpage}{8}
-\indexentry{universal!gas|hyperpage}{9}
-\indexentry{contract creation transactions|hyperpage}{9}
-\indexentry{message call transactions|hyperpage}{9}
-\indexentry{computation|hyperpage}{9}
-\indexentry{valid state|hyperpage}{9}
+\indexentry{universal!gas|hyperpage}{8}
+\indexentry{contract creation transactions|hyperpage}{8}
+\indexentry{message call transactions|hyperpage}{8}
+\indexentry{computation|hyperpage}{8}
+\indexentry{valid state|hyperpage}{8}
 \indexentry{sender|hyperpage}{9}
 \indexentry{transaction!originator|hyperpage}{9}
 \indexentry{recipient|hyperpage}{9}
