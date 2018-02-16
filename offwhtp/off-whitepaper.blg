@@ -1,17 +1,17 @@
 [0] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [0] Config.pm:357> INFO - Logfile is 'off-whitepaper.blg'
-[21] biber:303> INFO - === Wed Feb 14, 2018, 16:37:01
-[31] Biber.pm:360> INFO - Reading 'off-whitepaper.bcf'
-[79] Biber.pm:836> INFO - Found 3 citekeys in bib section 0
-[88] Biber.pm:3671> INFO - Processing section 0
-[97] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
-[98] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[102] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
-[108] Utils.pm:164> WARN - BibTeX subsystem: /tmp/KMBgcSXc0T/References.bib_27483.utf8, line 3, warning: 37 characters of junk seen at toplevel
-[121] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[121] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[121] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[121] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[123] bbl.pm:608> INFO - Writing 'off-whitepaper.bbl' with encoding 'UTF-8'
-[124] bbl.pm:712> INFO - Output to off-whitepaper.bbl
-[124] Biber.pm:110> INFO - WARNINGS: 1
+[51] biber:303> INFO - === Fri Feb 16, 2018, 08:19:14
+[75] Biber.pm:360> INFO - Reading 'off-whitepaper.bcf'
+[184] Biber.pm:836> INFO - Found 3 citekeys in bib section 0
+[206] Biber.pm:3671> INFO - Processing section 0
+[229] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
+[231] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[238] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
+[252] Utils.pm:164> WARN - BibTeX subsystem: /tmp/qp_sgYeXco/References.bib_58236.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[269] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[269] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[272] bbl.pm:608> INFO - Writing 'off-whitepaper.bbl' with encoding 'UTF-8'
+[273] bbl.pm:712> INFO - Output to off-whitepaper.bbl
+[273] Biber.pm:110> INFO - WARNINGS: 1

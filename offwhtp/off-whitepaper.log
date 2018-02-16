@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  14 FEB 2018 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  16 FEB 2018 08:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2900,10 +2900,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
  []
 
 Using TeX to sort glossary entries---this may take a while
-[20] (./off-whitepaper.ind [21] [22] [23] [24] [25])
-
+[20] (./off-whitepaper.ind [21] [22] [23]) 
 AED: lastpage setting LastPage
-[26]
+[24]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the off-whitepaper.maf file.
@@ -2923,14 +2922,18 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1275.
 
 Package rerunfilecheck Info: File `off-whitepaper.out' has not changed.
 (rerunfilecheck)             Checksum: 38EB288CC9A60F023062BC6BED6DC120;5165.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'off-whitepaper.run.xml'.
 \openout1 = `off-whitepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66142 strings out of 492990
- 1338575 string characters out of 6135005
- 2189856 words of memory out of 5000000
+ 66140 strings out of 492990
+ 1338561 string characters out of 6135005
+ 2189858 words of memory out of 5000000
  68222 multiletter control sequences out of 15000+600000
  561871 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2996,10 +2999,10 @@ are/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type
 sx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sftt1000.pfb>
-Output written on off-whitepaper.pdf (26 pages, 479911 bytes).
+Output written on off-whitepaper.pdf (24 pages, 478614 bytes).
 PDF statistics:
- 1144 PDF objects out of 1200 (max. 8388607)
- 1063 compressed objects within 11 object streams
- 209 named destinations out of 1000 (max. 500000)
+ 1135 PDF objects out of 1200 (max. 8388607)
+ 1056 compressed objects within 11 object streams
+ 207 named destinations out of 1000 (max. 500000)
  29885 words of extra memory for PDF output out of 35830 (max. 10000000)
 
