@@ -37,10 +37,10 @@
 \indexentry{Ether|hyperpage}{1}
 \indexentry{models computer|hyperpage}{1}
 \indexentry{excessive computational expenditures|hyperpage}{1}
-\indexentry{total difficulty|hyperpage}{2}
-\indexentry{block difficulty|hyperpage}{2}
-\indexentry{difficulty mechanism|hyperpage}{2}
-\indexentry{cumulative difficulty|hyperpage}{2}
+\indexentry{total difficulty|hyperpage}{1}
+\indexentry{block difficulty|hyperpage}{1}
+\indexentry{difficulty mechanism|hyperpage}{1}
+\indexentry{cumulative difficulty|hyperpage}{1}
 \indexentry{GHOST protocol|hyperpage}{2}
 \indexentry{double-spend problem|hyperpage}{2}
 \indexentry{longest chain|hyperpage}{2}
@@ -100,11 +100,11 @@
 \indexentry{state root|hyperpage}{3}
 \indexentry{keccak 256|hyperpage}{3}
 \indexentry{block rewards|hyperpage}{3}
-\indexentry{transactions root|hyperpage}{4}
-\indexentry{receipts root|hyperpage}{4}
-\indexentry{logs bloom|hyperpage}{4}
-\indexentry{difficulty|hyperpage}{4}
-\indexentry{keccak 256|hyperpage}{4}
+\indexentry{transactions root|hyperpage}{3}
+\indexentry{receipts root|hyperpage}{3}
+\indexentry{logs bloom|hyperpage}{3}
+\indexentry{difficulty|hyperpage}{3}
+\indexentry{keccak 256|hyperpage}{3}
 \indexentry{number|hyperpage}{4}
 \indexentry{gas limit|hyperpage}{4}
 \indexentry{gas used|hyperpage}{4}
@@ -160,27 +160,27 @@
 \indexentry{block reward|hyperpage}{5}
 \indexentry{serialization|hyperpage}{5}
 \indexentry{deserialization|hyperpage}{5}
-\indexentry{stack based architecture|hyperpage}{6}
-\indexentry{stack based|hyperpage}{6}
-\indexentry{word size|hyperpage}{6}
-\indexentry{256 bit|hyperpage}{6}
-\indexentry{memory|hyperpage}{6}
-\indexentry{memory size|hyperpage}{6}
-\indexentry{keccak 256|hyperpage}{6}
-\indexentry{hash scheme|hyperpage}{6}
-\indexentry{elliptic curve cryptography|hyperpage}{6}
-\indexentry{elliptic curve |hyperpage}{6}
-\indexentry{elliptic curve computation|hyperpage}{6}
-\indexentry{memory model|hyperpage}{6}
-\indexentry{word addressed|hyperpage}{6}
-\indexentry{byte array|hyperpage}{6}
-\indexentry{memory stack|hyperpage}{6}
-\indexentry{machine storage|hyperpage}{6}
-\indexentry{storage model|hyperpage}{6}
-\indexentry{word array|hyperpage}{6}
-\indexentry{word addressable|hyperpage}{6}
-\indexentry{memory model volatility of|hyperpage}{6}
-\indexentry{system state|hyperpage}{6}
+\indexentry{stack based architecture|hyperpage}{5}
+\indexentry{stack based|hyperpage}{5}
+\indexentry{word size|hyperpage}{5}
+\indexentry{256 bit|hyperpage}{5}
+\indexentry{memory|hyperpage}{5}
+\indexentry{memory size|hyperpage}{5}
+\indexentry{keccak 256|hyperpage}{5}
+\indexentry{hash scheme|hyperpage}{5}
+\indexentry{elliptic curve cryptography|hyperpage}{5}
+\indexentry{elliptic curve |hyperpage}{5}
+\indexentry{elliptic curve computation|hyperpage}{5}
+\indexentry{memory model|hyperpage}{5}
+\indexentry{word addressed|hyperpage}{5}
+\indexentry{byte array|hyperpage}{5}
+\indexentry{memory stack|hyperpage}{5}
+\indexentry{machine storage|hyperpage}{5}
+\indexentry{storage model|hyperpage}{5}
+\indexentry{word array|hyperpage}{5}
+\indexentry{word addressable|hyperpage}{5}
+\indexentry{memory model volatility of|hyperpage}{5}
+\indexentry{system state|hyperpage}{5}
 \indexentry{well defined storage|hyperpage}{6}
 \indexentry{well defined memory|hyperpage}{6}
 \indexentry{non-standard architecture|hyperpage}{6}
@@ -260,17 +260,17 @@
 \indexentry{message call transactions|hyperpage}{8}
 \indexentry{computation|hyperpage}{8}
 \indexentry{valid state|hyperpage}{8}
-\indexentry{sender|hyperpage}{9}
-\indexentry{transaction originator|hyperpage}{9}
-\indexentry{recipient|hyperpage}{9}
-\indexentry{account|hyperpage}{9}
-\indexentry{available gas|hyperpage}{9}
-\indexentry{value|hyperpage}{9}
-\indexentry{gas price|hyperpage}{9}
-\indexentry{arbitrary length byte-array|hyperpage}{9}
-\indexentry{present depth|hyperpage}{9}
-\indexentry{contract creation stack|hyperpage}{9}
-\indexentry{message call|hyperpage}{9}
+\indexentry{sender|hyperpage}{8}
+\indexentry{transaction originator|hyperpage}{8}
+\indexentry{recipient|hyperpage}{8}
+\indexentry{account|hyperpage}{8}
+\indexentry{available gas|hyperpage}{8}
+\indexentry{value|hyperpage}{8}
+\indexentry{gas price|hyperpage}{8}
+\indexentry{arbitrary length byte-array|hyperpage}{8}
+\indexentry{present depth|hyperpage}{8}
+\indexentry{contract creation stack|hyperpage}{8}
+\indexentry{message call|hyperpage}{8}
 \indexentry{contract creation|hyperpage}{9}
 \indexentry{init|hyperpage}{9}
 \indexentry{body|hyperpage}{9}
@@ -336,11 +336,11 @@
 \indexentry{ommer validation|hyperpage}{10}
 \indexentry{ommer headers|hyperpage}{10}
 \indexentry{valid header|hyperpage}{10}
-\indexentry{transaction validation|hyperpage}{11}
-\indexentry{gas used|hyperpage}{11}
-\indexentry{transactions|hyperpage}{11}
-\indexentry{total gas used|hyperpage}{11}
-\indexentry{accumulated gas used|hyperpage}{11}
+\indexentry{transaction validation|hyperpage}{10}
+\indexentry{gas used|hyperpage}{10}
+\indexentry{transactions|hyperpage}{10}
+\indexentry{total gas used|hyperpage}{10}
+\indexentry{accumulated gas used|hyperpage}{10}
 \indexentry{apply rewards|hyperpage}{11}
 \indexentry{beneficiary address|hyperpage}{11}
 \indexentry{ommer|hyperpage}{11}
@@ -357,9 +357,9 @@
 \indexentry{block reward function|hyperpage}{11}
 \indexentry{proof-of-work|hyperpage}{11}
 \indexentry{probability statement|hyperpage}{11}
-\indexentry{asic resistant|hyperpage}{12}
-\indexentry{ethash|hyperpage}{12}
-\indexentry{mix hash|hyperpage}{12}
+\indexentry{asic resistant|hyperpage}{11}
+\indexentry{ethash|hyperpage}{11}
+\indexentry{mix hash|hyperpage}{11}
 \indexentry{seed|hyperpage}{12}
 \indexentry{cache|hyperpage}{12}
 \indexentry{dataset|hyperpage}{12}
