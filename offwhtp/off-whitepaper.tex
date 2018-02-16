@@ -205,38 +205,25 @@
 	
 	
 	\section{Imagining Bitcoin as a Computer}
-		Ethereum utilizes the distributed ledger model that originated with Bitcoin and repurposes it to model a virtual computer, giving  machine level opcodes the same level of certainty as Bitcoin transactions. Just as sure as you can be certain that Bitcoin's ledger is accurate and that timestamps are correct through the \textit{group consensus mechanism}, just so sure can you be that machine instructions on Ethereum \textit{will execute}.  	      
+		Ethereum utilizes the distributed ledger model that originated with Bitcoin and repurposes it to model a virtual computer, giving  machine level opcodes the same level of certainty as Bitcoin transactions. Just as sure as you can be certain that Bitcoin's ledger is accurate and that timestamps are correct through the \textit{group consensus mechanism}, just so sure is it that machine instructions initiated  on Ethereum \textit{will execute}.  	      
 		\index{Bitcoin}
-		\index{cryptoeconomic model}
-		\index{cryptographically secure}
-		\index{cryptographically instantiated}
 		\index{ledger}
-		\index{stack-based virtual machine}
-		\index{assembly language}
-		\index{bytecode}
-		\index{higher-level languages}
-		\index{veracity}
+		\index{opcodes}
 		\index{certainty}
-		\index{transfer}
 		\index{balance}
 		\index{timestamped}
-		\index{machine codes}
+		\index{machine instructions}
 		\index{ledger}
-		\index{ethereum interpreter}
 		
 		
-		This has profound implications for almost every area of society and culture. But in short, \textit{programs written and executed on the Ethereum Blockchain are unstoppable.} This does not mean that no loopholes in the code exist that could cause undesirable outcomes, rather it means that at the base level, the outcomes, whether desirable or not, \textbf{happen}, remain \textbf{verifiable}, stay \textbf{recorded}, and are \textbf{entirely  uncensorable}. 
+		In short, programs executed on the Ethereum Blockchain are \textsl{basically unstoppable.} This doesn't mean that writing bad code is impossible. Bad, buggy code can be written and executed on Ethereum just like it can on any other computer. Rather it means that code, whether well-  or poorly-written, can be trusted to execute as long as the network stays live, without any interference from \textsl{external, non-network forces}. This property arises from the inherent security of a blockchain which is built by, and maintained upon, cryptographic proofs.
 		\index{unstoppable}
-		\index{loopholes}
-		\index{undesirable outcomes}
-		\index{uncensorable}
-		\index{recorded}
-		\index{verifiable}
+		\index{trusted}
 		\index{executed}
 		
 
-	\section{Native Currency \& Mining}
-		Because Ethereum aims not at being a currency, but at modeling a computer, there needs to be a \textsl{network cost unit} to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+	\subsection{Native Currency}
+		Because Ethereum aims not at being a currency, but at modeling a computer, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
 		\index{native currency}
 		\index{mining}
 		\index{network cost unit}
@@ -244,8 +231,6 @@
 		\index{Szabo}
 		\index{Finney}
 		\index{Ether}
-		\index{models computer}
-		\index{excessive computational expenditures}
 	\end{justify}
 \raggedright
 		\begin{tabular}{llr}
@@ -259,23 +244,7 @@
 			\bottomrule
 		\end{tabular}
 \justify
-		
-				
-			\subsubsection{Difficulty Mechanism}
-			This mechanism enforces a homeostasis in terms of the time between blocks; a smaller period between the last two blocks results in an increase in the difficulty level and thus additional computation required, lengthening the likely next period. Conversely, if the period is too large, the difficulty, and expected time to the next block, is reduced. The \textit{Total Computation} is the difficulty state of the entire Ethereum blockchain. The \textit{Block Difficulty} is not a state of the blockchain, but is local--particular to each specific block. You reach the total difficulty by summing the difficulty of all previous blocks and then adding the present one.  \par
-			\index{total difficulty}	
-			\index{block difficulty}
-			\index{difficulty mechanism}
-			\index{cumulative difficulty}
-			The \textbf{GHOST Protocol} provides an alternative solution to double-spend attacks from the original solution in Satoshi Nakamoto's Bitcoin Whitepaper. Nakamoto solved the problem of double-spending by requiring the network to agree on the first valid block.  impossible to submit a ``double-spend''  block without  having at least 50\% of the network's mining power to force the longest chain. This is because the network automatically chooses the longest chain. So even if one wanted to  submit two spend transactions in a row, the network simply picks whichever one comes first, ignoring the second because it no longer pertains to the longest chain (which now contains the first block that was sent) so the would-be hacker needs to submit a new block, as the first double block is no longer feasible.\par
-			\index{GHOST protocol}
-			\index{double-spend problem}
-			\index{longest chain}
-			\index{50\% attack}
-			\index{Satoshi Nakamoto}
-			\index{Bitcoin Whitepaper}
-			
-	\section{Memory and Storage}
+				\section{Memory and Storage}
 				
 				
 			\subsection{World State}
@@ -991,18 +960,33 @@
 		\paragraph{}The nth state is given from applying the corresponding transaction to the state resulting from the previous transaction (or the block’s initial state in the case of the first BYZANTIUM VERSION 3475aa8 - 2018-01-26 14 such transaction): otherwise In certain cases we take a similar approach defining each item as the gas used in evaluating the corresponding transaction summed with the previous item (or zero, if it is the first), giving us a running total: the function is used that was defined in the transaction execution function. We define R[n] a similar manner. Finally, we define \texttt{new state} given the \texttt{block reward function} applied to the final transaction’s \texttt{resultant state}, thus the complete block-transition mechanism, less PoW, the proof-of-work function is defined. 
 					\index{transaction execution function}
 					\index{block reward function}
+		
+		
 		\subsection{Mining Proof-of-Work} Proof that a certain amount of mining has been done exists as a cryptographic probability statement which asserts beyond reasonable doubt that a particular amount of computation has been expended in the determination of some token value n. It is utilised to enforce the uncompromisable security of the blockchain. Since mining blocks comes with an attached reward, the proof-of-work not only functions as a method of securing confidence in the future and past state of the machine, but also as a wealth distribution mechanism. The proof of work function should be as accessible as possible to as many people as possible. 
 					\index{proof-of-work}
 					\index{probability statement}
 
 		To make the Ethereum Blockchain ASIC resistant, the Proof-of-Work mechanism has been designed to be  sequential memory-hard. This means that the nonce requires a lot of memory and bandwidth such that the memory cannot be used in parallel to discover multiple nonces simultaneously. Therefore, the proof-of-work function takes the form of $2^256m = Hm$ is the new block’s header but without the nonce and mix-hash components; $Hn$ is the nonce of the header; $d$ is a large data set needed to compute the mix hash and $H d$ is the new block’s difficulty value. PoW is the proof-of-work function which evaluates to an array with the first item being the mix hash and the second item being a pseudorandom number which is cryptographically dependent on $H$ and $d$. The name for this algorithm is Ethash. 
-		\subsection{Ethash}	\index{asic resistant}
+		\subsubsection{Ethash}	\index{asic resistant}
 					\index{ethash}
 					\index{mix hash}
 		Ethash is the PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, introduced by Vitalik Buterin. The general route that the algorithm takes is as follows: There exists a seed which can be computed for each block by scanning through the block headers up until that point. From the seed, one can compute a pseudorandom cache, J cacheinit bytes in initial size. Light clients store the cache. From the cache, we can generate a dataset, \texttt{ds} bytes in initial size, with the property that each item in the dataset depends on only a small number of items from the cache. Full clients and miners store the dataset. The dataset grows linearly with time. Mining involves grabbing random slices of the dataset and hashing them together. Verification can be done with low memory by using the cache to regenerate the specific pieces of the dataset that you need, so you only need to store the cache. The large dataset is updated once every 1 epoch blocks, so the vast majority of a miner’s effort will be reading the dataset, not making changes to it. The mentioned parameters as well as the algorithm is explained in detail in appendix J. 12. Implementing Contracts There are several patterns of contracts engineering that allow particular useful behaviours; two of these that I will briefly discuss are data feeds and random numbers. 
 					\index{seed}
 					\index{cache}
 					\index{dataset}
+		\subsubsection{Difficulty Mechanism}
+			This mechanism enforces a homeostasis in terms of the time between blocks; a smaller period between the last two blocks results in an increase in the difficulty level and thus additional computation required, lengthening the likely next period. Conversely, if the period is too large, the difficulty, and expected time to the next block, is reduced. The \textit{Total Computation} is the difficulty state of the entire Ethereum blockchain. The \textit{Block Difficulty} is not a state of the blockchain, but is local--particular to each specific block. You reach the total difficulty by summing the difficulty of all previous blocks and then adding the present one.  \par
+			\index{total difficulty}	
+			\index{block difficulty}
+			\index{difficulty mechanism}
+			\index{cumulative difficulty}
+			The \textbf{GHOST Protocol} provides an alternative solution to double-spend attacks from the original solution in Satoshi Nakamoto's Bitcoin Whitepaper. Nakamoto solved the problem of double-spending by requiring the network to agree on the first valid block.  impossible to submit a ``double-spend''  block without  having at least 50\% of the network's mining power to force the longest chain. This is because the network automatically chooses the longest chain. So even if one wanted to  submit two spend transactions in a row, the network simply picks whichever one comes first, ignoring the second because it no longer pertains to the longest chain (which now contains the first block that was sent) so the would-be hacker needs to submit a new block, as the first double block is no longer feasible.\par
+			\index{GHOST protocol}
+			\index{double-spend problem}
+			\index{longest chain}
+			\index{50\% attack}
+			\index{Satoshi Nakamoto}
+			\index{Bitcoin Whitepaper}
 					\index{dataset slice}
 		\subsection{Pseudorandom Numbers} Pseeudo-random numbers be generated by utilizing data which is generally unknowable at the time of transacting. Such data might include the block’s hash, the block’s timestamp or the block’s beneficiary address. The BLOCKHASH opcode uses the previous 256 blocks as pseudo-random numbers. One could automate this randomness by adding a fixed value and hashing the result.   
 					\index{pseudorandom number generation}
