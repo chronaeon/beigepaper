@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  16 FEB 2018 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.12)  16 FEB 2018 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2681,11 +2681,6 @@ Overfull \hbox (3.69498pt too wide) in paragraph at lines 236--246
 []  
  []
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 257.
-
-
 [1
 
 
@@ -2730,10 +2725,16 @@ LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 4 might be wrong on input line 540.
+(multicol)                Footnotes on page 4 might be wrong on input line 542.
 
 
-[4] [5]
+[4]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 5 might be wrong on input line 634.
+
+
+[5]
 LaTeX Font Info:    Try loading font information for OMS+ccr on input line 641.
 
  (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
@@ -2757,6 +2758,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--675
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 6 might be wrong on input line 686.
+
+
 [6]
 Overfull \hbox (1.88895pt too wide) in paragraph at lines 718--729
 []\T1/ccr/m/n/10 (-20) The ex-e-cu-tion model de-fines the \T1/cmtt/m/n/10 stat
@@ -2774,6 +2780,11 @@ Underfull \hbox (badness 7907) in paragraph at lines 903--904
 Underfull \hbox (badness 10000) in paragraph at lines 903--904
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 9 might be wrong on input line 922.
+
 
 [9]
 Underfull \hbox (badness 10000) in paragraph at lines 924--934
@@ -2912,10 +2923,10 @@ Package logreq Info: Writing requests to 'off-whitepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66137 strings out of 492990
- 1338565 string characters out of 6135005
- 2189857 words of memory out of 5000000
- 68222 multiletter control sequences out of 15000+600000
+ 66138 strings out of 492990
+ 1338577 string characters out of 6135005
+ 2189860 words of memory out of 5000000
+ 68223 multiletter control sequences out of 15000+600000
  561871 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,12n,190p,10387b,4939s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2980,10 +2991,10 @@ are/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type
 sx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sftt1000.pfb>
-Output written on off-whitepaper.pdf (24 pages, 475989 bytes).
+Output written on off-whitepaper.pdf (24 pages, 475182 bytes).
 PDF statistics:
- 1115 PDF objects out of 1200 (max. 8388607)
- 1036 compressed objects within 11 object streams
+ 1116 PDF objects out of 1200 (max. 8388607)
+ 1037 compressed objects within 11 object streams
  207 named destinations out of 1000 (max. 500000)
  29885 words of extra memory for PDF output out of 35830 (max. 10000000)
 

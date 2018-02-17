@@ -244,12 +244,12 @@
 			\bottomrule
 		\end{tabular}
 \justify
-				\section{Memory and Storage}
+		\section{Memory and Storage}
 				
 				
 			\subsection{World State}
-				The actual state of the Ethereum Blockchain, after all transactions have been finalized and applied, this is a \textsc{mapping} of \textbf{addresses} and \textbf{account states} through the use of RLP. The mapping is stored as a Merkle-Patricia trie in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.} The cryptographic internal data going back to the root node represents the \textit{State} of the Blockchain at any given root, i.e. at any given \textit{time}.\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. The state is an inert position on the chain, a position between prior state and post state; a block's frame of reference, and a defined set of relationships to that frame of reference.
-			\index{World State}
+				The \textit{World State} is divided by blocks; each new block represents a new world state. The world state is a mapping of \textbf{addresses} and \textbf{account states} through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
+			\index{world state}
 			\index{mapping}
 			\index{RLP}
 			\index{account states}
@@ -258,7 +258,7 @@
 			\subsubsection{Merkle-Patricia Trees} 
 	
 				
-	Merkle-Patricia Trees\footnote{Also known as ``tries''} are modified Merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard Merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
+	Merkle-Patricia Trees are modified Merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard Merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
 		\index{merkletrees}
 		\index{merkle-patricia trees}
 		\index{merkle-patricia tries}
