@@ -39,7 +39,7 @@
   \item big endian function, \hyperpage{8}
   \item Bitcoin, \hyperpage{1}
   \item Bitcoin Whitepaper, \hyperpage{12}
-  \item block, \hyperpage{9}
+  \item block, \hyperpage{8}
   \item block beneficiary, \hyperpage{5}
   \item block composition, \hyperpage{3}
   \item block contents, \hyperpage{9}
@@ -61,11 +61,11 @@
 
   \item cache, \hyperpage{11}
   \item canonical blockchain, \hyperpage{10}
-  \item canonical gas, \hyperpage{9}
+  \item canonical gas, \hyperpage{8}
   \item casper, \hyperpage{12}
   \item certainty, \hyperpage{1}
   \item checkpoint nodes, \hyperpage{12}
-  \item checkpoints, \hyperpage{10}
+  \item checkpoints, \hyperpage{9}
   \item child node, \hyperpage{2}
   \item code array, \hyperpage{7}
   \item collisions, \hyperpage{10}
@@ -140,7 +140,7 @@
   \item gas, \hyperpage{5}, \hyperpage{8}
   \item gas available, \hyperpage{9}
   \item gas deducted, \hyperpage{5}
-  \item gas expenditure per block, \hyperpage{9}
+  \item gas expenditure per block, \hyperpage{8}
   \item gas limit, \hyperpage{3}, \hyperpage{5, 6}
   \item gas paid for increased use of memory, \hyperpage{5}
   \item gas price, \hyperpage{5, 6}, \hyperpage{8}
@@ -184,9 +184,9 @@
   \item log events, \hyperpage{6}
   \item log items, \hyperpage{6}
   \item log series, \hyperpage{7}
-  \item logs bloom, \hyperpage{3}, \hyperpage{10}
-  \item logs series, \hyperpage{10}
-  \item logs set, \hyperpage{10}
+  \item logs bloom, \hyperpage{3}, \hyperpage{9}
+  \item logs series, \hyperpage{9}
+  \item logs set, \hyperpage{9}
   \item longest chain, \hyperpage{12}
 
   \indexspace
@@ -212,7 +212,7 @@
   \item message call, \hyperpage{5}, \hyperpage{8}
   \item message call transactions, \hyperpage{8}
   \item miner choice, \hyperpage{8}
-  \item miners, \hyperpage{9}
+  \item miners, \hyperpage{8}
   \item minimize storage use, \hyperpage{6}
   \item mining, \hyperpage{1}
   \item mining effort, \hyperpage{10}
@@ -264,10 +264,9 @@
 
   \indexspace
 
-  \item r, \hyperpage{5}
   \item receipts root, \hyperpage{3}
   \item recipient, \hyperpage{8}
-  \item refunded, \hyperpage{9}
+  \item refunded, \hyperpage{8}
   \item refunds, \hyperpage{7}
   \item remaining gas, \hyperpage{7}
   \item report exception, \hyperpage{5}
@@ -282,7 +281,6 @@
 
   \indexspace
 
-  \item s, \hyperpage{5}
   \item Satoshi Nakamoto, \hyperpage{12}
   \item scalability, \hyperpage{12}
   \item seed, \hyperpage{11}
@@ -315,8 +313,8 @@
 
   \indexspace
 
-  \item tagged for self destruction, \hyperpage{10}
-  \item time stamp, \hyperpage{9}
+  \item tagged for self destruction, \hyperpage{9}
+  \item time stamp, \hyperpage{8}
   \item timestamp, \hyperpage{3}
   \item timestamped, \hyperpage{1}
   \item to, \hyperpage{5}
@@ -331,7 +329,7 @@
   \item transaction execution function, \hyperpage{11}
   \item transaction nonce, \hyperpage{6}
   \item transaction originator, \hyperpage{8}
-  \item transaction receipt, \hyperpage{6}, \hyperpage{10}
+  \item transaction receipt, \hyperpage{6}, \hyperpage{9}
   \item transaction series, \hyperpage{9}
   \item transaction signature, \hyperpage{6}
   \item transaction validation, \hyperpage{10}
@@ -351,15 +349,14 @@
 
   \item universal gas, \hyperpage{8}
   \item unstoppable, \hyperpage{1}
-  \item unused gas, \hyperpage{9}
+  \item unused gas, \hyperpage{8}
   \item upfront payment, \hyperpage{6}
 
   \indexspace
 
-  \item v, \hyperpage{5}
   \item valid header, \hyperpage{10}
   \item valid state, \hyperpage{8}
-  \item value, \hyperpage{5}, \hyperpage{8, 9}
+  \item value, \hyperpage{5}, \hyperpage{8}
   \item verification, \hyperpage{5}
   \item virtual machine, \hyperpage{1}, \hyperpage{7}
   \item virtual ROM, \hyperpage{5}

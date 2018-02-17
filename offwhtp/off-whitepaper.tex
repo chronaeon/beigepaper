@@ -548,12 +548,9 @@
 					\index{gas limit}
 					\index{to}
 					\index{value}
-					\index{v}
-					\index{r}
-					\index{s}
 	
 		\subsection{Mining}
-			The \texttt{Block Beneficiary} is the 160-bit (20-byte, or 20-character) address to which all fees collected from the successful mining of a block are transferred. \texttt{Apply Rewards} is the third process in \texttt{block\_finalization} that sends the mining reward to an account's address. A scalar value corresponding to the difficulty level of a current block. 
+			The \texttt{Block Beneficiary} is the 160-bit (20-byte) address to which all fees collected from the successful mining of a block are transferred. \texttt{Apply Rewards} is the third process in \texttt{block\_finalization} that sends the mining reward to an account's address. This is a scalar value corresponding to the difficulty level of a current block. 
 
 		\subsection{Verification}
 			The process in The EVM that verifies Ommer Headers
@@ -565,14 +562,14 @@
 					\index{block beneficiary}
 					\index{block reward}
 
-		\subsection{Sender FUnction} A description that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve,
+		\subsection{Sender Function} A description that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve,
 
 		\subsection{Serialization/Deserialization}
-			This function expands a positive-integer value to a big-endian byte  array of minimal length.  When accompanied by a $\cdot$ operator, it signals sequence concatenation.  The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
+			This function expands a positive-integer value to a big-endian byte-array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation.  The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
 					\index{serialization}
 					\index{deserialization}
 		\subsection{Ethereum Virtual Machine}
-			The EVM has a simple stack-based architecture. The word size of the machine and thus size of stack is 256-bit. This was chosen to facilitate the Keccak-256 hash scheme and elliptic-curve based  computation. The memory model is a simple word-addressed byte array. The memory stack has a maximum size of 1024-bits. The machine also has an independent storage model; this is similar in concept to the memory but rather than a byte array, it is a word-addressable word array. Unlike memory, which is volatile, storage is non-volatile and is maintained as part of the system state. 
+			The EVM has a simple stack-based architecture. The word size of the machine and thus size of stack is 256-bit. This was chosen to facilitate the Keccak-256 hash scheme and elliptic-curve based computation. The memory model is a simple word-addressed byte-array. The memory stack has a maximum size of 1024-bits. The machine also has an independent storage model; this is similar in concept to the memory but rather than a byte array, it is a word-addressable word array. Unlike memory, which is volatile, storage is non-volatile and is maintained as part of the system state. 
 					\index{stack based architecture}
 					\index{stack based}
 					\index{word size}

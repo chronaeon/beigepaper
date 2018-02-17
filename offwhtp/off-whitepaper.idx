@@ -124,9 +124,6 @@
 \indexentry{gas limit|hyperpage}{5}
 \indexentry{to|hyperpage}{5}
 \indexentry{value|hyperpage}{5}
-\indexentry{v|hyperpage}{5}
-\indexentry{r|hyperpage}{5}
-\indexentry{s|hyperpage}{5}
 \indexentry{EVM|hyperpage}{5}
 \indexentry{verification|hyperpage}{5}
 \indexentry{160 bit|hyperpage}{5}
@@ -264,14 +261,14 @@
 \indexentry{arbitrarily determined|hyperpage}{8}
 \indexentry{gas|hyperpage}{8}
 \indexentry{network cost unit|hyperpage}{8}
-\indexentry{value|hyperpage}{9}
-\indexentry{gas expenditure per block|hyperpage}{9}
-\indexentry{miners|hyperpage}{9}
-\indexentry{unused gas|hyperpage}{9}
-\indexentry{refunded|hyperpage}{9}
-\indexentry{canonical gas|hyperpage}{9}
-\indexentry{time stamp|hyperpage}{9}
-\indexentry{block|hyperpage}{9}
+\indexentry{value|hyperpage}{8}
+\indexentry{gas expenditure per block|hyperpage}{8}
+\indexentry{miners|hyperpage}{8}
+\indexentry{unused gas|hyperpage}{8}
+\indexentry{refunded|hyperpage}{8}
+\indexentry{canonical gas|hyperpage}{8}
+\indexentry{time stamp|hyperpage}{8}
+\indexentry{block|hyperpage}{8}
 \indexentry{DAG|hyperpage}{9}
 \indexentry{mix hash|hyperpage}{9}
 \indexentry{correct DAG|hyperpage}{9}
@@ -290,12 +287,12 @@
 \indexentry{controlled halt|hyperpage}{9}
 \indexentry{transaction series|hyperpage}{9}
 \indexentry{empty set|hyperpage}{9}
-\indexentry{tagged for self destruction|hyperpage}{10}
-\indexentry{logs series|hyperpage}{10}
-\indexentry{checkpoints|hyperpage}{10}
-\indexentry{logs set|hyperpage}{10}
-\indexentry{logs bloom|hyperpage}{10}
-\indexentry{transaction receipt|hyperpage}{10}
+\indexentry{tagged for self destruction|hyperpage}{9}
+\indexentry{logs series|hyperpage}{9}
+\indexentry{checkpoints|hyperpage}{9}
+\indexentry{logs set|hyperpage}{9}
+\indexentry{logs bloom|hyperpage}{9}
+\indexentry{transaction receipt|hyperpage}{9}
 \indexentry{EVM code|hyperpage}{10}
 \indexentry{natively execute|hyperpage}{10}
 \indexentry{EVM assembly|hyperpage}{10}
