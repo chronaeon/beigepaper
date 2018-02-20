@@ -131,6 +131,8 @@
 \newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of a block are transferred}}
 \newglossaryentry{block header}{name={block header}, description={All the information in a block besides transaction information}}
 \newglossaryentry{storage root}{name={storage root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
+\newglossaryentry{account state}{name={account state}, description={The state of a particular account--a section of the total world state. Comprises: the \texttt{nonce}, \texttt{balance}, \texttt{storage root}, and \texttt{code hash} of the account.}}
+
 
 \addbibresource{References.bib}
 
@@ -220,14 +222,15 @@
 		\index{unstoppable}
 		\index{trusted}
 		\index{executed}
-		
-		Just as in human systems power is allocated by hard work, by diligence, and by making oneself indispensable to others, the Ethereum network is subservient to others in terms of one thing only: \textsc{Ether}, the native currency for Ethereum. Everything which the system can do is bounded up in its ability to expend Ether in exchange for system performance. 
-
-	\subsection{Native Currency}
+	 	\subsection{Native Currency}
 		Because Ethereum aims not at being a currency, but at modeling a computer, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		
+		The Ethereum network is subservient to others in terms of one thing only: \textsc{Ether}, the native currency for Ethereum. Everything the system can do is bounded up in its ability to expend Ether in exchange for a particular amount of system performance in a certain direction. 
+
+
+		
 		\index{native currency}
 		\index{mining}
-		\index{network cost unit}
 		\index{Wei}
 		\index{Szabo}
 		\index{Finney}
@@ -249,7 +252,7 @@
 				
 				
 			\subsection{World State}
-				The \textit{World State} is divided by blocks; each new block represents a new world state. The world state is a mapping of \textbf{addresses} and \textbf{account states} through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
+				The \textit{world state} is divided by blocks; each new block representing a new world state. The structure of the world state is a mapping of \textbf{addresses} and \textbf{\gls{account state}s} through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
 			\index{world state}
 			\index{mapping}
 			\index{RLP}
