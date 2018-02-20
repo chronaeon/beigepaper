@@ -1,5 +1,5 @@
-pdflatex off-whitepaper.tex &&
-biber off-whitepaper &&
-pdflatex off-whitepaper.tex &&
-makeindex off-whitepaper.idx &&
-pdflatex off-whitepaper.tex
+pdflatex beigepaper.tex &&
+biber beigepaper &&
+pdflatex beigepaper.tex &&
+makeindex beigepaper.idx &&
+pdflatex beigepaper.tex

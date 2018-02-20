@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>off-whitepaper.bcf</file>
+      <file>beigepaper.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>off-whitepaper.bbl</file>
+      <file>beigepaper.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,19 +67,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>off-whitepaper</infile>
+      <infile>beigepaper</infile>
     </cmdline>
     <input>
-      <file>off-whitepaper.bcf</file>
+      <file>beigepaper.bcf</file>
     </input>
     <output>
-      <file>off-whitepaper.bbl</file>
+      <file>beigepaper.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>off-whitepaper.bbl</file>
+      <file>beigepaper.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>off-whitepaper.bcf</file>
+      <file>beigepaper.bcf</file>
     </requires>
     <requires type="editable">
       <file>References.bib</file>

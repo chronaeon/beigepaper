@@ -17,7 +17,6 @@
 \indexentry{executed|hyperpage}{1}
 \indexentry{native currency|hyperpage}{1}
 \indexentry{mining|hyperpage}{1}
-\indexentry{network cost unit|hyperpage}{1}
 \indexentry{Wei|hyperpage}{1}
 \indexentry{Szabo|hyperpage}{1}
 \indexentry{Finney|hyperpage}{1}
@@ -53,11 +52,11 @@
 \indexentry{RLP|hyperpage}{2}
 \indexentry{nested binary data|hyperpage}{2}
 \indexentry{tree arbitrary depth|hyperpage}{2}
-\indexentry{RLP integers|hyperpage}{2}
-\indexentry{big endian|hyperpage}{2}
-\indexentry{no leading zeroes|hyperpage}{2}
-\indexentry{empty byte-array|hyperpage}{2}
-\indexentry{non empty deserialized integer|hyperpage}{2}
+\indexentry{RLP integers|hyperpage}{3}
+\indexentry{big endian|hyperpage}{3}
+\indexentry{no leading zeroes|hyperpage}{3}
+\indexentry{empty byte-array|hyperpage}{3}
+\indexentry{non empty deserialized integer|hyperpage}{3}
 \indexentry{global state database|hyperpage}{3}
 \indexentry{speedy traversal of data|hyperpage}{3}
 \indexentry{inspection  of data|hyperpage}{3}
