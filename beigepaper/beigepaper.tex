@@ -785,7 +785,7 @@
 					\index{message call}
 
 				\subsubsection{Contract Creation}
-				When \textsc{init} is executed it returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that. Contract creation transactions are equal the recursive length prefix of an empty byte-sequence. 		
+				To initiate contract creation you need to send transaction to \texttt{nothing}. This executes \textsc{init} and returns the \textsc{body}. Init is executed only once at \textsc{account\_creation}, and permanently discarded after that.		
 					\index{contract creation}
 					\index{init}
 					\index{body}
@@ -1223,7 +1223,6 @@
 			0xf2 & CALLCODE & 700 & 7 & 1 & Message-call into this account with an alternative account's code. Exactly equivalent to CALL, except the recipient is the same account as at present, but the code is overwritten. \\
 			0xf3 & RETURN & 0 & 2 & 0 & Halt execution, then return output data. This defines the output at the moment of the halt. \\
 			0xf4 & DELEGATECALL & 700 & 6 & 1 & Message-call into this account with an alternative account's code, but with persisting values for \texttt{sender} and \texttt{value}. DELEGATECALL takes one less argument than CALL. This means that the recipient is in fact the same account as at present, but that the code is overwritten \textit{and} the context is almost entirely identical. \\
-			0xf5 & CALLBLACKBOX & 40 & 7 & 1 & - \\
 			0xfa & STATICCALL & 40 & 6 & 1 & - \\
 			0xfd & REVERT & 0 & 2 & 0 & - \\
 			0xfe & INVALID & - & 1 & 0 & Designated invalid instruction. \\
