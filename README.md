@@ -15,7 +15,7 @@ If you're running Debian or Ubuntu derivatives:
 sudo apt install pdflatex texlive* biber tex
 ```
 
-NOTE: You need to install the full texlive library or else build problems will occur. Next:
+**NOTE:** *You need to install the full `texlive` libraries or else build problems will most likely occur.* Next:
 
 ```
 ./biber-n-build
