@@ -22,7 +22,7 @@ sudo apt install pdflatex texlive* biber tex
 ```
 will create the pdf file. 
 
-Lastly, open the pdf with a reader that supports character rendering (e.g. evince on Linux) if you want to do text searches.
+Lastly, open the pdf with a reader that supports *character rendering* (e.g. evince on Linux) if you want to do text searches.
 
 ### FAQ
 
@@ -32,7 +32,7 @@ A. Use the index and section headings.
 
 **Q. I'd like to contribute.**
 
-A. Follow the style guide (not yet published -- to be published soon.)
+A. Follow the style guide, to be published soon. 
 
 **Q. Do I need to build the paper to obtain a copy of it?**
 
