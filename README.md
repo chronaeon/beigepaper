@@ -1,4 +1,4 @@
-##### [Click here to read the newest release of the Beigepaper](https://www.github.com/chronaeon/beigepaper/beigeaper.pdf)
+##### [Click here to read the newest release of the Beigepaper](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
 
 # Beigepaper 
 A rewrite of the Yellowpaper in non-Yellowpaper syntax.
@@ -36,7 +36,7 @@ A. Follow the style guide (not yet published -- to be published soon.)
 
 **Q. Do I need to build the paper to obtain a copy of it?**
 
-A. No, just clone the repo, which includes the PDF, or download the file directly: [beigepaper.pdf](https://www.github.com/chronaeon/beigepaper/beigepaper.pdf).
+A. No, just clone the repo, which includes the PDF, or download the file directly: [beigepaper.pdf](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
 
 
 
