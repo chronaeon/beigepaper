@@ -5,6 +5,8 @@ This project exists to make the [Ethereum Yellowpaper](http://gavwood.com/paper.
 
 A fully compiled version of the Beigepaper exists in the main directory of this repository.
 
+#[Read the most recent release of the Beigepaper](https://www.github.com/chronaeon/beigepaper/beigeaper.pdf)
+
 ###Build Instructions
 
 If you're running Debian or Ubuntu derivatives:
