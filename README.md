@@ -12,7 +12,7 @@ A fully compiled version of the Beigepaper lives in the main directory of this r
 
 If you're running Debian or Ubuntu derivatives:
 ```
-sudo apt install pdflatex texlive* biber tex
+sudo apt install pdflatex texlive* biber
 ```
 
 **NOTE:** *You need to install the full `texlive` libraries or else build problems will most likely occur.* Next:
