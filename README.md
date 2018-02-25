@@ -1,3 +1,5 @@
+# [Read the Current Release](https://www.github.com/chronaeon/beigepaper/beigeaper.pdf)
+
 # Beigepaper 
 A rewrite of the Yellowpaper in non-Yellowpaper syntax.
 
@@ -5,7 +7,6 @@ This project exists to make the [Ethereum Yellowpaper](http://gavwood.com/paper.
 
 A fully compiled version of the Beigepaper lives in the main directory of this repo.
 
-# [Read the most recent release of the Beigepaper](https://www.github.com/chronaeon/beigepaper/beigeaper.pdf)
 
 ### Build Instructions
 
