@@ -26,14 +26,17 @@ Lastly, open the pdf with a reader that supports character rendering (e.g. evinc
 
 ### FAQ
 
-Q. How should I navigate the document?
+**Q. How should I navigate the document?**
+
 A. Use the index and section headings.
 
-Q. I'd like to contribute.
+**Q. I'd like to contribute.**
+
 A. Follow the style guide (not yet published -- to be published soon.)
 
-Q. Do I need to build the paper to view it?
-A. No, just clone the repo or download the file directly: [beigepaper.pdf](https://www.github.com/chronaeon/beigepaper/beigepaper.pdf).
+**Q. Do I need to build the paper to obtain a copy of it?**
+
+A. No, just clone the repo, which includes the PDF, or download the file directly: [beigepaper.pdf](https://www.github.com/chronaeon/beigepaper/beigepaper.pdf).
 
 
 
