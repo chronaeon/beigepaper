@@ -1,11 +1,9 @@
-[Newest Release](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf)
+[Latest Release](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf)
 
 # Beigepaper 
 A rewrite of the Yellowpaper in non-Yellowpaper syntax.
 
-This project exists to make the [Ethereum Yellowpaper](http://gavwood.com/paper.pdf) readable by a broader audience. This is a beta release, so errata exist, and more content will be added. 
-
-A fully compiled version of the Beigepaper lives in the main directory of this repo.
+This project exists to make the [Ethereum Yellowpaper](http://gavwood.com/paper.pdf) readable by a broader audience. This is a beta release, so errata exist, and content is still being added.
 
 
 ### Build Instructions
@@ -15,7 +13,7 @@ If you're running Debian or Ubuntu derivatives:
 sudo apt install pdflatex texlive* biber
 ```
 
-**NOTE:** *You need to install the full `texlive` libraries or else build problems will most likely occur.* Next:
+Next:
 
 ```
 ./biber-n-build
@@ -30,7 +28,7 @@ Lastly, open the pdf with a reader that supports *character rendering* (e.g. evi
 
 A. Use the index and section headings.
 
-**Q. I'd like to contribute.**
+**Q. I'd like to contribute content.**
 
 A. Follow the style guide, to be published soon. 
 
@@ -38,7 +36,8 @@ A. Follow the style guide, to be published soon.
 
 A. No, just clone the repo, which includes the PDF, or download the file directly: [beigepaper.pdf](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
 
-
+Want to support this work?
+ETH: 0xC22d9Ed14077d194d563fE084B3ac2d1Cf685CEF
 
 
 
