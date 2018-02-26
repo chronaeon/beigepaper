@@ -1,4 +1,4 @@
-##### [Click here to read the newest release of the Beigepaper](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
+##### [Newest Release](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
 
 # Beigepaper 
 A rewrite of the Yellowpaper in non-Yellowpaper syntax.
