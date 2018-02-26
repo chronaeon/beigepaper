@@ -36,8 +36,9 @@ A. Follow the style guide, to be published soon.
 
 A. No, just clone the repo, which includes the PDF, or download the file directly: [beigepaper.pdf](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
 
-Donations:
+#### Donations
 
-ETH: 0xC22d9Ed14077d194d563fE084B3ac2d1Cf685CEF
+Want to grow this work and the philosophy of clarity behind it?
 
+ETH: 0xC22d9Ed14077d194d563fE084B3ac2d1Cf685CEF <br> BTC: 1EkGXxWa2mPAhsGYE6KTJyUpVi14gwWdzh
 
