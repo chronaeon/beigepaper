@@ -40,5 +40,5 @@ A. No, just clone the repo, which includes the PDF, or download the file directl
 
 Want to grow this work and the philosophy of clarity behind it?
 
-ETH: 0xC22d9Ed14077d194d563fE084B3ac2d1Cf685CEF 
+0xC22d9Ed14077d194d563fE084B3ac2d1Cf685CEF 
 
