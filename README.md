@@ -36,9 +36,6 @@ A. Follow the style guide, to be published soon.
 
 A. No, just clone the repo, which includes the PDF, or download the file directly: [beigepaper.pdf](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf).
 
-### Donate
 
-Want to grow this work and the philosophy of clarity behind it?
-
-0xC22d9Ed14077d194d563fE084B3ac2d1Cf685CEF 
+ 
 
