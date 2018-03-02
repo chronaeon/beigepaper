@@ -1,8 +1,8 @@
 \documentclass[10pt,a4paper,leqno,bibliography=totoc]{scrartcl}
 \usepackage[utf8]{inputenc}
-\usepackage{lastpage} % Required to print the total number of pages
-\usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4.0cm]{geometry} % Adjust page margins
-\usepackage{amsmath} % Required for equation customization
+\usepackage{lastpage} %Prints total pages
+\usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4.0cm]{geometry} 
+\usepackage{amsmath}
 \usepackage{amssymb} % Required to include mathematical symbols
 \usepackage{makecell}
 \usepackage{forest}
@@ -223,9 +223,9 @@
 		\index{trusted}
 		\index{executed}
 	 	\subsection{Native Currency}
-		Because Ethereum aims not at being a currency, but at modeling a computer, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$. \\ 
+		Because Ethereum aims not at being a currency, but at modeling a computer, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$.
 		
-		The Ethereum network is subservient to others in terms of one thing only: \textsc{Ether}, the native currency for Ethereum. Everything the system can do is bounded up in its ability to expend Ether in exchange for a particular amount of system performance in a certain direction. 
+		The Ethereum network is subservient to others in terms of one thing only: \textbf{ether}, the native currency for Ethereum. Everything the system can do is bounded up in its ability to expend ether in exchange for a particular amount of system performance in a certain direction. 
 
 
 		
@@ -244,6 +244,9 @@
 			\scriptsize{Ether} & \scriptsize{$\Xi$\textbf{1}.000000000000000000} & \scriptsize{1,000,000,000,000,000,000} \\
 			\scriptsize{Finney} & \scriptsize{$\Xi$0.00\textbf{1}000000000000000} & \scriptsize{1,000,000,000,000,000} \\
 			\scriptsize{Szabo} & \scriptsize{$\Xi$0.00000\textbf{1}000000000000} & \scriptsize{1,000,000,000,000} \\
+			\scriptsize{Maurelian} &
+			\scriptsize{$\Xi$0.000000000\textbf{1}00000000} &
+			\scriptsize{1,000,000,000} \\
 			\scriptsize{Wei} & \scriptsize{$\Xi$0.00000000000000000\textbf{1}} & \scriptsize{1} \\
 			\bottomrule
 		\end{tabular}
