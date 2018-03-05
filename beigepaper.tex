@@ -116,7 +116,7 @@
 \newacronym{ERE}{ERE}{Ethereum Runtime Environment}
 \newacronym{RLP}{RLP}{Recursive Length Prefix}
 \newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed.}}
-\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a trie structure mapping bytearrays (organized chunks of binary data) to other bytearrays. The \textsl{relationships} between each node on this trie constitutes a \textsc{mapping} of Ethereum's state.}}
+\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a radix tree mapping bytearrays (organized chunks of binary data) to other bytearrays. The \textsl{relationships} between each node on this trie constitutes a \textsc{mapping} of Ethereum's state.}}
 \newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain.}}
 \newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there are limited, usually only one, possible output yet that output is unique.}}
 \newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
@@ -218,14 +218,15 @@
 		\index{ledger}
 		
 		
-		In other words, programs executed on the Ethereum Blockchain are \textit{basically} unstoppable. However, that's not to say that writing bad code is impossible, because bad and buggy code can be written and executed on Ethereum the same way it can on any other computer. More precisely it means that code can be trusted to execute without any interference from \textit{external} non-network forces. This property arises from the inherent security of the blockchain which is built by, and maintained upon, cryptographic proofs.
+		In other words, programs executed on the Ethereum Blockchain are \textit{basically} unstoppable. This doesn't mean that Ethereum programs can't have bugs. This means that Ethereum programs can be trusted to execute without any interference from \textit{external} non-network forces. This property arises from the inherent security of the blockchain which is built by, and maintained upon, cryptographic proofs.
 		\index{unstoppable}
 		\index{trusted}
 		\index{executed}
+
 	 	\subsection{Native Currency}
-		Because Ethereum aims not at being a currency, but at modeling a computer, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$.
+		Because Ethereum strives not primarily at the currency application, but at all applications, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. This is called gas, and is explained fully in \S3. Gas is paid for exclusively in Ether. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$.
 		
-		The Ethereum network is subservient to others in terms of one thing only: \textbf{ether}, the native currency for Ethereum. Everything the system can do is bounded up in its ability to expend ether in exchange for a particular amount of system performance in a certain direction. 
+		The Ethereum network is subservient to others in terms of one thing only: \textbf{ether}, the native currency for Ethereum. Everything the system can do is bounded up in its ability to expend ether in exchange for gas, which buys a particular amount of system performance in some desired direction. 
 
 
 		
