@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  5 MAR 2018 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  5 MAR 2018 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2916,20 +2916,27 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1262.
 
 Package rerunfilecheck Info: File `beigepaper.out' has not changed.
 (rerunfilecheck)             Checksum: 07354805FC774DBC3B1DD3ABB375F714;5185.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 \openout1 = `beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66176 strings out of 492990
- 1339249 string characters out of 6135005
+ 66178 strings out of 492990
+ 1339274 string characters out of 6135005
  2190458 words of memory out of 5000000
- 68253 multiletter control sequences out of 15000+600000
+ 68254 multiletter control sequences out of 15000+600000
  562285 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,12n,190p,10383b,4939s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2986,10 +2993,10 @@ are/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type
 sx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (24 pages, 474600 bytes).
+Output written on beigepaper.pdf (24 pages, 474875 bytes).
 PDF statistics:
- 1114 PDF objects out of 1200 (max. 8388607)
- 1035 compressed objects within 11 object streams
- 207 named destinations out of 1000 (max. 500000)
+ 1116 PDF objects out of 1200 (max. 8388607)
+ 1037 compressed objects within 11 object streams
+ 208 named destinations out of 1000 (max. 500000)
  29885 words of extra memory for PDF output out of 35830 (max. 10000000)
 
