@@ -35,7 +35,7 @@
   \item balance, \hyperpage{1}
   \item beneficiary, \hyperpage{3}
   \item beneficiary address, \hyperpage{10}
-  \item big endian, \hyperpage{3}
+  \item big endian, \hyperpage{2}
   \item big endian function, \hyperpage{8}
   \item Bitcoin, \hyperpage{1}
   \item Bitcoin Whitepaper, \hyperpage{12}
@@ -106,7 +106,7 @@
   \item elliptic curve , \hyperpage{5}
   \item elliptic curve computation, \hyperpage{5}
   \item elliptic curve cryptography, \hyperpage{5}
-  \item empty byte-array, \hyperpage{3}
+  \item empty byte-array, \hyperpage{2}
   \item empty byte-sequence, \hyperpage{8}
   \item empty set, \hyperpage{9}
   \item ere, \hyperpage{8}
@@ -226,11 +226,11 @@
   \item nested binary data, \hyperpage{2}
   \item network cost unit, \hyperpage{8}
   \item newstate value, \hyperpage{7}
-  \item no leading zeroes, \hyperpage{3}
+  \item no leading zeroes, \hyperpage{2}
   \item node depth, \hyperpage{2}
   \item node height, \hyperpage{2}
   \item node operator computer, \hyperpage{3}
-  \item non empty deserialized integer, \hyperpage{3}
+  \item non empty deserialized integer, \hyperpage{2}
   \item non-standard architecture, \hyperpage{5}
   \item nonce, \hyperpage{3}, \hyperpage{9}
   \item nonce validation, \hyperpage{10}
@@ -275,7 +275,7 @@
   \item RLP, \hyperpage{2}
   \item rlp, \hyperpage{8}
   \item RLP encodes as byte-arrays, \hyperpage{3}
-  \item RLP integers, \hyperpage{3}
+  \item RLP integers, \hyperpage{2}
   \item RLP serialized byte-array, \hyperpage{3}
   \item root node, \hyperpage{2}, \hyperpage{4}
 
