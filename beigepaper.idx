@@ -33,22 +33,6 @@
 \indexentry{tree database|hyperpage}{2}
 \indexentry{trie database|hyperpage}{2}
 \indexentry{data structure|hyperpage}{2}
-\indexentry{root node|hyperpage}{2}
-\indexentry{child node|hyperpage}{2}
-\indexentry{parent node|hyperpage}{2}
-\indexentry{sibling node|hyperpage}{2}
-\indexentry{descendant node|hyperpage}{2}
-\indexentry{ancestor node|hyperpage}{2}
-\indexentry{leaf node|hyperpage}{2}
-\indexentry{branch node|hyperpage}{2}
-\indexentry{tree degree|hyperpage}{2}
-\indexentry{tree edge|hyperpage}{2}
-\indexentry{tree path|hyperpage}{2}
-\indexentry{tree level|hyperpage}{2}
-\indexentry{node height|hyperpage}{2}
-\indexentry{tree height|hyperpage}{2}
-\indexentry{node depth|hyperpage}{2}
-\indexentry{forest|hyperpage}{2}
 \indexentry{RLP|hyperpage}{2}
 \indexentry{nested binary data|hyperpage}{2}
 \indexentry{tree arbitrary depth|hyperpage}{2}
@@ -57,17 +41,17 @@
 \indexentry{no leading zeroes|hyperpage}{2}
 \indexentry{empty byte-array|hyperpage}{2}
 \indexentry{non empty deserialized integer|hyperpage}{2}
-\indexentry{global state database|hyperpage}{3}
-\indexentry{speedy traversal of data|hyperpage}{3}
-\indexentry{inspection  of data|hyperpage}{3}
-\indexentry{mapping between addresses|hyperpage}{3}
-\indexentry{mapping between account states|hyperpage}{3}
-\indexentry{node operator computer|hyperpage}{3}
-\indexentry{RLP encodes as byte-arrays|hyperpage}{3}
-\indexentry{RLP serialized byte-array|hyperpage}{3}
-\indexentry{single byte integer|hyperpage}{3}
-\indexentry{block composition|hyperpage}{3}
-\indexentry{block header|hyperpage}{3}
+\indexentry{global state database|hyperpage}{2}
+\indexentry{speedy traversal of data|hyperpage}{2}
+\indexentry{inspection  of data|hyperpage}{2}
+\indexentry{mapping between addresses|hyperpage}{2}
+\indexentry{mapping between account states|hyperpage}{2}
+\indexentry{node operator computer|hyperpage}{2}
+\indexentry{RLP encodes as byte-arrays|hyperpage}{2}
+\indexentry{RLP serialized byte-array|hyperpage}{2}
+\indexentry{single byte integer|hyperpage}{2}
+\indexentry{block composition|hyperpage}{2}
+\indexentry{block header|hyperpage}{2}
 \indexentry{parent hash|hyperpage}{3}
 \indexentry{ommers hash|hyperpage}{3}
 \indexentry{beneficiary|hyperpage}{3}
@@ -88,23 +72,23 @@
 \indexentry{mix hash|hyperpage}{3}
 \indexentry{nonce|hyperpage}{3}
 \indexentry{ommer block headers|hyperpage}{3}
-\indexentry{block number|hyperpage}{4}
-\indexentry{genesis difficulty|hyperpage}{4}
-\indexentry{homestead difficulty parameter|hyperpage}{4}
-\indexentry{dynamic difficulty homeostasis|hyperpage}{4}
-\indexentry{exponential difficulty increase|hyperpage}{4}
-\indexentry{difficulty bomb|hyperpage}{4}
-\indexentry{byzantium|hyperpage}{4}
-\indexentry{ice age|hyperpage}{4}
-\indexentry{homestead|hyperpage}{4}
-\indexentry{EIP 2|hyperpage}{4}
-\indexentry{EIP 100|hyperpage}{4}
-\indexentry{EIP 649|hyperpage}{4}
-\indexentry{account creation|hyperpage}{4}
-\indexentry{contract creation|hyperpage}{4}
-\indexentry{account init|hyperpage}{4}
-\indexentry{account body|hyperpage}{4}
-\indexentry{account state|hyperpage}{4}
+\indexentry{block number|hyperpage}{3}
+\indexentry{genesis difficulty|hyperpage}{3}
+\indexentry{homestead difficulty parameter|hyperpage}{3}
+\indexentry{dynamic difficulty homeostasis|hyperpage}{3}
+\indexentry{exponential difficulty increase|hyperpage}{3}
+\indexentry{difficulty bomb|hyperpage}{3}
+\indexentry{byzantium|hyperpage}{3}
+\indexentry{ice age|hyperpage}{3}
+\indexentry{homestead|hyperpage}{3}
+\indexentry{EIP 2|hyperpage}{3}
+\indexentry{EIP 100|hyperpage}{3}
+\indexentry{EIP 649|hyperpage}{3}
+\indexentry{account creation|hyperpage}{3}
+\indexentry{contract creation|hyperpage}{3}
+\indexentry{account init|hyperpage}{3}
+\indexentry{account body|hyperpage}{3}
+\indexentry{account state|hyperpage}{3}
 \indexentry{account nonce|hyperpage}{4}
 \indexentry{account balance|hyperpage}{4}
 \indexentry{account storage root|hyperpage}{4}
@@ -118,17 +102,17 @@
 \indexentry{transaction|hyperpage}{4}
 \indexentry{state transition|hyperpage}{4}
 \indexentry{machine state|hyperpage}{4}
+\indexentry{gas price|hyperpage}{4}
+\indexentry{gas limit|hyperpage}{4}
+\indexentry{to|hyperpage}{4}
+\indexentry{value|hyperpage}{4}
+\indexentry{EVM|hyperpage}{4}
+\indexentry{verification|hyperpage}{4}
+\indexentry{160 bit|hyperpage}{4}
+\indexentry{apply rewards|hyperpage}{4}
+\indexentry{block beneficiary|hyperpage}{4}
+\indexentry{block reward|hyperpage}{4}
 \indexentry{state database|hyperpage}{4}
-\indexentry{gas price|hyperpage}{5}
-\indexentry{gas limit|hyperpage}{5}
-\indexentry{to|hyperpage}{5}
-\indexentry{value|hyperpage}{5}
-\indexentry{EVM|hyperpage}{5}
-\indexentry{verification|hyperpage}{5}
-\indexentry{160 bit|hyperpage}{5}
-\indexentry{apply rewards|hyperpage}{5}
-\indexentry{block beneficiary|hyperpage}{5}
-\indexentry{block reward|hyperpage}{5}
 \indexentry{serialization|hyperpage}{5}
 \indexentry{deserialization|hyperpage}{5}
 \indexentry{stack based architecture|hyperpage}{5}
@@ -171,33 +155,33 @@
 \indexentry{payment|hyperpage}{5}
 \indexentry{message call|hyperpage}{5}
 \indexentry{gas paid for increased use of memory|hyperpage}{5}
-\indexentry{total fee|hyperpage}{6}
-\indexentry{memory usage fee|hyperpage}{6}
-\indexentry{gas price|hyperpage}{6}
-\indexentry{minimize storage use|hyperpage}{6}
-\indexentry{gas refund clearing space|hyperpage}{6}
-\indexentry{intrinsic validity|hyperpage}{6}
-\indexentry{well-formed RLP|hyperpage}{6}
-\indexentry{transaction signature|hyperpage}{6}
-\indexentry{transaction nonce|hyperpage}{6}
-\indexentry{gas limit|hyperpage}{6}
-\indexentry{sender account|hyperpage}{6}
-\indexentry{upfront payment|hyperpage}{6}
+\indexentry{total fee|hyperpage}{5}
+\indexentry{memory usage fee|hyperpage}{5}
+\indexentry{gas price|hyperpage}{5}
+\indexentry{minimize storage use|hyperpage}{5}
+\indexentry{gas refund clearing space|hyperpage}{5}
+\indexentry{intrinsic validity|hyperpage}{5}
+\indexentry{well-formed RLP|hyperpage}{5}
+\indexentry{transaction signature|hyperpage}{5}
+\indexentry{transaction nonce|hyperpage}{5}
+\indexentry{gas limit|hyperpage}{5}
+\indexentry{sender account|hyperpage}{5}
+\indexentry{upfront payment|hyperpage}{5}
 \indexentry{gas used|hyperpage}{6}
 \indexentry{transaction receipt|hyperpage}{6}
 \indexentry{log items|hyperpage}{6}
 \indexentry{log events|hyperpage}{6}
 \indexentry{transaction execution|hyperpage}{6}
 \indexentry{post transaction state|hyperpage}{6}
-\indexentry{system state|hyperpage}{7}
-\indexentry{remaining gas|hyperpage}{7}
-\indexentry{stack based|hyperpage}{7}
-\indexentry{virtual machine|hyperpage}{7}
-\indexentry{instantial runtime|hyperpage}{7}
-\indexentry{substates|hyperpage}{7}
-\indexentry{evm computation instances|hyperpage}{7}
-\indexentry{finalization function|hyperpage}{7}
-\indexentry{execution environment|hyperpage}{7}
+\indexentry{system state|hyperpage}{6}
+\indexentry{remaining gas|hyperpage}{6}
+\indexentry{stack based|hyperpage}{6}
+\indexentry{virtual machine|hyperpage}{6}
+\indexentry{instantial runtime|hyperpage}{6}
+\indexentry{substates|hyperpage}{6}
+\indexentry{evm computation instances|hyperpage}{6}
+\indexentry{finalization function|hyperpage}{6}
+\indexentry{execution environment|hyperpage}{6}
 \indexentry{account address|hyperpage}{7}
 \indexentry{sender address|hyperpage}{7}
 \indexentry{originator price|hyperpage}{7}
@@ -224,8 +208,8 @@
 \indexentry{halting state|hyperpage}{7}
 \indexentry{extract remaining gas|hyperpage}{7}
 \indexentry{exceptional halt|hyperpage}{7}
-\indexentry{init|hyperpage}{8}
-\indexentry{message call|hyperpage}{8}
+\indexentry{init|hyperpage}{7}
+\indexentry{message call|hyperpage}{7}
 \indexentry{universal gas|hyperpage}{8}
 \indexentry{contract creation transactions|hyperpage}{8}
 \indexentry{message call transactions|hyperpage}{8}
@@ -260,22 +244,22 @@
 \indexentry{arbitrarily determined|hyperpage}{8}
 \indexentry{gas|hyperpage}{8}
 \indexentry{network cost unit|hyperpage}{8}
-\indexentry{value|hyperpage}{9}
-\indexentry{gas expenditure per block|hyperpage}{9}
-\indexentry{miners|hyperpage}{9}
-\indexentry{unused gas|hyperpage}{9}
-\indexentry{refunded|hyperpage}{9}
-\indexentry{canonical gas|hyperpage}{9}
-\indexentry{time stamp|hyperpage}{9}
-\indexentry{block|hyperpage}{9}
-\indexentry{DAG|hyperpage}{9}
-\indexentry{mix hash|hyperpage}{9}
-\indexentry{correct DAG|hyperpage}{9}
-\indexentry{difficulty|hyperpage}{9}
-\indexentry{block header validity function|hyperpage}{9}
-\indexentry{nonce|hyperpage}{9}
-\indexentry{block contents|hyperpage}{9}
-\indexentry{gas used|hyperpage}{9}
+\indexentry{value|hyperpage}{8}
+\indexentry{gas expenditure per block|hyperpage}{8}
+\indexentry{miners|hyperpage}{8}
+\indexentry{unused gas|hyperpage}{8}
+\indexentry{refunded|hyperpage}{8}
+\indexentry{canonical gas|hyperpage}{8}
+\indexentry{time stamp|hyperpage}{8}
+\indexentry{block|hyperpage}{8}
+\indexentry{DAG|hyperpage}{8}
+\indexentry{mix hash|hyperpage}{8}
+\indexentry{correct DAG|hyperpage}{8}
+\indexentry{difficulty|hyperpage}{8}
+\indexentry{block header validity function|hyperpage}{8}
+\indexentry{nonce|hyperpage}{8}
+\indexentry{block contents|hyperpage}{8}
+\indexentry{gas used|hyperpage}{8}
 \indexentry{machine state|hyperpage}{9}
 \indexentry{gas available|hyperpage}{9}
 \indexentry{program counter|hyperpage}{9}
@@ -286,16 +270,16 @@
 \indexentry{controlled halt|hyperpage}{9}
 \indexentry{transaction series|hyperpage}{9}
 \indexentry{empty set|hyperpage}{9}
-\indexentry{tagged for self destruction|hyperpage}{10}
-\indexentry{logs series|hyperpage}{10}
-\indexentry{checkpoints|hyperpage}{10}
-\indexentry{logs set|hyperpage}{10}
-\indexentry{logs bloom|hyperpage}{10}
-\indexentry{transaction receipt|hyperpage}{10}
-\indexentry{EVM code|hyperpage}{10}
-\indexentry{natively execute|hyperpage}{10}
-\indexentry{EVM assembly|hyperpage}{10}
-\indexentry{explicitly specify meaning|hyperpage}{10}
+\indexentry{tagged for self destruction|hyperpage}{9}
+\indexentry{logs series|hyperpage}{9}
+\indexentry{checkpoints|hyperpage}{9}
+\indexentry{logs set|hyperpage}{9}
+\indexentry{logs bloom|hyperpage}{9}
+\indexentry{transaction receipt|hyperpage}{9}
+\indexentry{EVM code|hyperpage}{9}
+\indexentry{natively execute|hyperpage}{9}
+\indexentry{EVM assembly|hyperpage}{9}
+\indexentry{explicitly specify meaning|hyperpage}{9}
 \indexentry{canonical blockchain|hyperpage}{10}
 \indexentry{heaviest path|hyperpage}{10}
 \indexentry{block number|hyperpage}{10}
@@ -324,10 +308,10 @@
 \indexentry{complete block|hyperpage}{10}
 \indexentry{status code|hyperpage}{10}
 \indexentry{cumulative gas|hyperpage}{10}
-\indexentry{transaction execution function|hyperpage}{11}
-\indexentry{block reward function|hyperpage}{11}
-\indexentry{proof-of-work|hyperpage}{11}
-\indexentry{probability statement|hyperpage}{11}
+\indexentry{transaction execution function|hyperpage}{10}
+\indexentry{block reward function|hyperpage}{10}
+\indexentry{proof-of-work|hyperpage}{10}
+\indexentry{probability statement|hyperpage}{10}
 \indexentry{asic resistant|hyperpage}{11}
 \indexentry{ethash|hyperpage}{11}
 \indexentry{mix hash|hyperpage}{11}
@@ -338,15 +322,15 @@
 \indexentry{block difficulty|hyperpage}{11}
 \indexentry{difficulty mechanism|hyperpage}{11}
 \indexentry{cumulative difficulty|hyperpage}{11}
-\indexentry{GHOST protocol|hyperpage}{12}
-\indexentry{double-spend problem|hyperpage}{12}
-\indexentry{longest chain|hyperpage}{12}
-\indexentry{50\% attack|hyperpage}{12}
-\indexentry{Satoshi Nakamoto|hyperpage}{12}
-\indexentry{Bitcoin Whitepaper|hyperpage}{12}
-\indexentry{dataset slice|hyperpage}{12}
-\indexentry{pseudorandom number generation|hyperpage}{12}
-\indexentry{BLOCKHASH|hyperpage}{12}
+\indexentry{GHOST protocol|hyperpage}{11}
+\indexentry{double-spend problem|hyperpage}{11}
+\indexentry{longest chain|hyperpage}{11}
+\indexentry{50\% attack|hyperpage}{11}
+\indexentry{Satoshi Nakamoto|hyperpage}{11}
+\indexentry{Bitcoin Whitepaper|hyperpage}{11}
+\indexentry{dataset slice|hyperpage}{11}
+\indexentry{pseudorandom number generation|hyperpage}{11}
+\indexentry{BLOCKHASH|hyperpage}{11}
 \indexentry{state database|hyperpage}{12}
 \indexentry{age|hyperpage}{12}
 \indexentry{discard nodes|hyperpage}{12}
@@ -355,3 +339,19 @@
 \indexentry{sharding|hyperpage}{12}
 \indexentry{casper|hyperpage}{12}
 \indexentry{plasma|hyperpage}{12}
+\indexentry{root node|hyperpage}{13}
+\indexentry{child node|hyperpage}{13}
+\indexentry{parent node|hyperpage}{13}
+\indexentry{sibling node|hyperpage}{13}
+\indexentry{descendant node|hyperpage}{13}
+\indexentry{ancestor node|hyperpage}{13}
+\indexentry{leaf node|hyperpage}{13}
+\indexentry{branch node|hyperpage}{13}
+\indexentry{tree degree|hyperpage}{13}
+\indexentry{tree edge|hyperpage}{13}
+\indexentry{tree path|hyperpage}{13}
+\indexentry{tree level|hyperpage}{13}
+\indexentry{node height|hyperpage}{13}
+\indexentry{tree height|hyperpage}{13}
+\indexentry{node depth|hyperpage}{13}
+\indexentry{forest|hyperpage}{13}

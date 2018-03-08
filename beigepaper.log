@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  5 MAR 2018 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  7 MAR 2018 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2373,27 +2373,34 @@ File: pppdftex.def 2017/08/14 v0.5k Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count555
 \AM@templatesizebox=\box126
 )
-(/usr/share/texlive/texmf-dist/tex/latex/kantlipsum/kantlipsum.sty
-Package: kantlipsum 2012/10/14 v0.6 Dummy text in Kantian style
-\l_kgl_start_int=\count556
-\l_kgl_end_int=\count557
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \kant with sig. 's>{\SplitArgument {1}{-}}O{1-7}' on line
-. 86.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \kantdef with sig. 'mm' on line 101.
-.................................................
-.................................................
-. kantlipsum info: "how-many"
-. 
-. The package provides paragraphs 1 to 164. Values outside this range will be
-. ignored.
-.................................................
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count556
+\lst@gtempboxa=\box127
+\lst@token=\toks96
+\lst@length=\count557
+\lst@currlwidth=\dimen366
+\lst@column=\count558
+\lst@pos=\count559
+\lst@lostspace=\dimen367
+\lst@width=\dimen368
+\lst@newlines=\count560
+\lst@lineno=\count561
+\lst@maxwidth=\dimen369
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count562
+\lst@skipnumbers=\count563
+\lst@framebox=\box128
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
+\c@mn@abspage=\count564
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
@@ -2405,7 +2412,7 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 Writing index file beigepaper.idx
 (/usr/share/texlive/texmf-dist/tex/latex/idxlayout/idxlayout.sty
 Package: idxlayout 2012/03/30 v0.4d Configurable index layout
-\c@idxcols=\count558
+\c@idxcols=\count565
 \indexcolsep=\skip199
 \indexrule=\skip256
 \ila@indentunit=\skip257
@@ -2417,7 +2424,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 61.
+(scrartcl)              package `fancyhdr' on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
@@ -2432,7 +2439,7 @@ s
 \f@nch@O@olf=\skip266
 \f@nch@O@orf=\skip267
 )
-\n=\count559
+\n=\count566
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -2443,32 +2450,32 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count560
-\@quotereset=\count561
+\@quotelevel=\count567
+\@quotereset=\count568
 (./beigepaper.aux)
 \openout1 = `beigepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Try loading font information for T1+ccr on input line 186.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Try loading font information for T1+ccr on input line 194.
  (/usr/share/texlive/texmf-dist/tex/latex/ccfonts/t1ccr.fd
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 186.
+(lastpage)             ! on input line 194.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2507,17 +2514,17 @@ Package lastpage Info: Please have a look at the pageslts package at
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count562
-\scratchdimen=\dimen366
-\scratchbox=\box127
-\nofMPsegments=\count563
-\nofMParguments=\count564
-\everyMPshowfont=\toks96
-\MPscratchCnt=\count565
-\MPscratchDim=\dimen367
-\MPnumerator=\count566
-\makeMPintoPDFobject=\count567
-\everyMPtoPDFconversion=\toks97
+\scratchcounter=\count569
+\scratchdimen=\dimen370
+\scratchbox=\box129
+\nofMPsegments=\count570
+\nofMParguments=\count571
+\everyMPshowfont=\toks97
+\MPscratchCnt=\count572
+\MPscratchDim=\dimen371
+\MPnumerator=\count573
+\makeMPintoPDFobject=\count574
+\everyMPtoPDFconversion=\toks98
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2535,8 +2542,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box128
-Package hyperref Info: Link coloring ON on input line 186.
+\AtBeginShipoutBox=\box130
+Package hyperref Info: Link coloring ON on input line 194.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2544,11 +2551,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count568
+\c@section@level=\count575
 )
-LaTeX Info: Redefining \ref on input line 186.
-LaTeX Info: Redefining \pageref on input line 186.
-LaTeX Info: Redefining \nameref on input line 186.
+LaTeX Info: Redefining \ref on input line 194.
+LaTeX Info: Redefining \pageref on input line 194.
+LaTeX Info: Redefining \nameref on input line 194.
 
 (./beigepaper.out) (./beigepaper.out)
 \@outlinefile=\write12
@@ -2556,6 +2563,7 @@ LaTeX Info: Redefining \nameref on input line 186.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -2566,7 +2574,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 186.
+LaTeX Info: Redefining \selectfont on input line 194.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -2575,14 +2583,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'beigepaper.bbl' found.
  (./beigepaper.bbl)
-Package biblatex Info: Reference section=0 on input line 186.
-Package biblatex Info: Reference segment=0 on input line 186.
-\c@minilofdepth=\count569
-\c@minilotdepth=\count570
-\c@partlofdepth=\count571
-\c@partlotdepth=\count572
-\c@sectlofdepth=\count573
-\c@sectlotdepth=\count574
+Package biblatex Info: Reference section=0 on input line 194.
+Package biblatex Info: Reference segment=0 on input line 194.
+\c@minilofdepth=\count576
+\c@minilotdepth=\count577
+\c@partlofdepth=\count578
+\c@partlotdepth=\count579
+\c@sectlofdepth=\count580
+\c@sectlotdepth=\count581
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -2615,7 +2623,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-LaTeX Info: Redefining \microtypecontext on input line 186.
+LaTeX Info: Redefining \microtypecontext on input line 194.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2637,8 +2645,12 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\GPT@outputbox=\box129
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 194.
+\c@lstlisting=\count582
+Package marginnote Info: \pdfoutput not 0 or unimportant and
+(marginnote)             \pdflastxpos or \lastxpos available.
+(marginnote)             Extended position detection mode activated.
+\GPT@outputbox=\box131
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 202.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -2653,7 +2665,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 194.
+LaTeX Font Info:    Try loading font information for U+msa on input line 202.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2661,7 +2673,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 194.
+LaTeX Font Info:    Try loading font information for U+msb on input line 202.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2670,26 +2682,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 194.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 202.
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 195.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 203.
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <7> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 245.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 253.
 
-Overfull \hbox (3.69498pt too wide) in paragraph at lines 241--252
+Overfull \hbox (3.69498pt too wide) in paragraph at lines 249--260
 []  
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 263.
+(multicol)                Footnotes on page 1 might be wrong on input line 271.
 
 
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 276.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 284.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -2700,160 +2712,156 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\supercite' on input line 336.
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+
+ []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 389.
+(multicol)                Footnotes on page 2 might be wrong on input line 406.
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
-
- []
-
-[3]
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 506.
- [4]
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 637.
-
-
-[5]
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 644.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 480.
+ [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 618.
 
  (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 644
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 618
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 644.
-
-Underfull \hbox (badness 7907) in paragraph at lines 677--678
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 618.
+ [5]
+Underfull \hbox (badness 7907) in paragraph at lines 651--652
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 6 might be wrong on input line 689.
-
-
 [6]
-Overfull \hbox (1.88895pt too wide) in paragraph at lines 721--732
+Overfull \hbox (1.88895pt too wide) in paragraph at lines 695--706
 []\T1/ccr/m/n/10 (-20) The ex-e-cu-tion model de-fines the \T1/cmtt/m/n/10 stat
 e_transition
  []
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 733.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 707.
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 7 might be wrong on input line 738.
+
+
 [7] [8]
-Underfull \hbox (badness 7907) in paragraph at lines 906--907
+Underfull \hbox (badness 7907) in paragraph at lines 880--881
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--907
+Underfull \hbox (badness 10000) in paragraph at lines 880--881
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
 
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 9 might be wrong on input line 925.
-
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 927--937
+Underfull \hbox (badness 10000) in paragraph at lines 901--911
 \T1/cmtt/m/n/10 ommers; validate (or, if mining, determine)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--937
+Underfull \hbox (badness 10000) in paragraph at lines 901--911
 \T1/cmtt/m/n/10 transactions; apply rewards; verify (or, if
  []
 
-[10] [11] [12]
-Underfull \vbox (badness 10000) detected at line 1043
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 9 might be wrong on input line 912.
+
+
+[9] [10] [11] [12]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\supercite' on input line 990.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1029
+
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1057
+Underfull \vbox (badness 10000) detected at line 1056
+ []
+
+[13]
+Underfull \vbox (badness 10000) detected at line 1070
  []
 
 
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 1069--1069
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 1082--1082
  []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
  []
 
 
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 1071--1071
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 1084--1084
  []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
  []
 
 
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 1077--1077
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 1090--1090
  []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
  []
 
 
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 1078--1078
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 1091--1091
  []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1080
+Underfull \vbox (badness 10000) detected at line 1093
  []
 
-[13]
-Underfull \vbox (badness 10000) detected at line 1094
+[14]
+Underfull \vbox (badness 10000) detected at line 1107
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1122
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1114
- []
-
-[14]
-Underfull \vbox (badness 10000) detected at line 1140
+Underfull \vbox (badness 10000) detected at line 1127
  []
 
 [15]
-Underfull \vbox (badness 10000) detected at line 1178
+Underfull \vbox (badness 10000) detected at line 1153
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1203
+Underfull \vbox (badness 10000) detected at line 1191
  []
 
 [16]
@@ -2861,42 +2869,46 @@ Underfull \vbox (badness 10000) detected at line 1216
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1223--1224
+Underfull \vbox (badness 10000) detected at line 1229
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1237
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 1227--1227
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 1240--1240
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1233
+Underfull \vbox (badness 10000) detected at line 1246
  []
 
-[17] [18]
+[17] [18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1251.
+(biblatex)                Using fallback driver on input line 1264.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1251.
+(biblatex)                Using fallback driver on input line 1264.
 
-[19
+[20
 
 ]
 No file beigepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 1255--1255
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 Using TeX to sort glossary entries---this may take a while
-[20] (./beigepaper.ind [21] [22] [23]) 
+[21] (./beigepaper.ind [22] [23] [24]) 
 AED: lastpage setting LastPage
-[24]
+[25]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the beigepaper.maf file.
@@ -2908,30 +2920,26 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the beigepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1262.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1262.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1275.
 (./beigepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1262.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1275.
 
 Package rerunfilecheck Info: File `beigepaper.out' has not changed.
-(rerunfilecheck)             Checksum: 07354805FC774DBC3B1DD3ABB375F714;5185.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: ED7520A1D881614A5B33414ECCD9952B;5164.
 Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 \openout1 = `beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66178 strings out of 492990
- 1339274 string characters out of 6135005
- 2190458 words of memory out of 5000000
- 68254 multiletter control sequences out of 15000+600000
- 562285 words of font info for 156 fonts, out of 8000000 for 9000
+ 67522 strings out of 492990
+ 1358361 string characters out of 6135005
+ 2032693 words of memory out of 5000000
+ 69585 multiletter control sequences out of 15000+600000
+ 561511 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 169i,12n,190p,10383b,4939s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 169i,15n,190p,10383b,4940s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -2987,16 +2995,15 @@ f/fonts/type1/public/cm-super/sform6.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sform7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sform8.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sform9.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfosl10.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfoti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0700.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-sx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (24 pages, 474875 bytes).
+sfoti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+sx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on beigepaper.pdf (25 pages, 473716 bytes).
 PDF statistics:
- 1116 PDF objects out of 1200 (max. 8388607)
- 1037 compressed objects within 11 object streams
- 208 named destinations out of 1000 (max. 500000)
- 29885 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1119 PDF objects out of 1200 (max. 8388607)
+ 1040 compressed objects within 11 object streams
+ 207 named destinations out of 1000 (max. 500000)
+ 29373 words of extra memory for PDF output out of 29859 (max. 10000000)
 

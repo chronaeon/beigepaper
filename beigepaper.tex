@@ -52,7 +52,8 @@
 \usepackage{dirtytalk}
 \usepackage{pdfpages}
 \usepackage{supertabular}
-\usepackage{kantlipsum}
+\usepackage{listings}
+\usepackage{marginnote}
 \usepackage{makeidx}
 \makeindex
 \usepackage[totoc]{idxlayout}
@@ -65,7 +66,7 @@
 \fancyhf{}
 \fancyhead[C]{Beigepaper}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{\today--Version 0.7.0}
+\fancyhead[R]{\today--Version 0.7.1}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -75,6 +76,9 @@
 \newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
 
 \definecolor{beige}{RGB}{245,245,220}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{aliceblue}{RGB}{240,248,255}
+
 
 \newcount\n
 \n=0
@@ -182,6 +186,10 @@
 
 \title{\LARGE{Beigepaper: \\ An Ethereum Technical Specification}}
 
+\lstset{linewidth=\columnwidth}
+\lstset{backgroundcolor=\color{lightblue}}
+\lstset{basicstyle=\ttfamily}
+
 \makeindex
 \begin{document}
 	\setstretch{1.15}
@@ -254,7 +262,11 @@
 				
 				
 			\subsection{World State}
-				The \textit{world state} is divided by blocks; each new block representing a new world state. The structure of the world state is a mapping of \textbf{addresses} and \textbf{\gls{account state}s} through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
+				The \textit{world state} is divided by blocks; each new block representing a new world state. The structure of the world state is a mapping of 
+				\begin{enumerate}
+				addresses and \textbf{\gls{account state}s} 
+				\end{enumerate}
+				through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
 			\index{world state}
 			\index{mapping}
 			\index{RLP}
@@ -333,52 +345,18 @@
 		]
 		\end{forest}
 
-		\subsubsection{Tree Terminology\supercite{wiki:xxx}}
-		\begin{enumerate}[label=\textbf{\alph*})]
-			\item \textbf{Root Node} --  The top (first) node in a tree.
-			\item \textbf{Child Node} --  A node directly connected to another node when moving away from the Root.
-			\item \textbf{Parent Node} --  The converse notion of a child.
-			\item \textbf{Sibling Nodes} --  A group of nodes with the same parent.
-			\item \textbf{Descendant Node} --  A node reachable by repeated proceeding from parent to child.
-			\item \textbf{Ancestor Node} --  A node reachable by repeated proceeding from child to parent.
-			\item \textbf{Leaf Node} --  A node with no children.
-			\item \textbf{Branch Node} --  A node with at least one child.
-			\item \textbf{Degree} --  The number of subtrees of a node.
-			\item \textbf{Edge} --  The connection between one node and another.
-			\item \textbf{Path} --  A sequence of nodes and edges connecting a node with a descendant.
-			\item \textbf{Level} --  The level of a node is defined by 1 + (the number of connections between the node and the root).
-			\item \textbf{Node Height} --  The height of a node is the number of edges on the longest path between that node and a leaf.
-			\item \textbf{Tree Height} --  The height of a tree is the height of its root node.
-			\item \textbf{Depth} --  The depth of a node is the number of edges from the tree's root node to the node.
-			\item \textbf{Forest} -- A forest is a set of n $\geq  0$ disjoint trees.
-		\end{enumerate}
-			\index{root node}
-			\index{child node}
-			\index{parent node}
-			\index{sibling node}
-			\index{descendant node}
-			\index{ancestor node}
-			\index{leaf node}
-			\index{branch node}
-			\index{tree degree}
-			\index{tree edge}
-			\index{tree path}
-			\index{tree level}
-			\index{node height}
-			\index{tree height}
-			\index{node depth}
-			\index{forest}
 
-			\subsubsection{Recursive Length Prefixes}
-			\paragraph{Notation}: \texttt{rlp}
-			\paragraph{Description}: RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes mainly structure and does not pay heed to what type of data it is encoding. 
-			\par
+
+			\subsubsection{Recursive Length Prefix}
+				Recursive Length Prefix (RLP) imposes structure on data in Ethereum by encoding it in the state database according to a certain set of rules. These rules, when followed, make it possible to look up data in Ethereum because it is always sorted according to this predictable and efficient structure.
+				
+				RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes structure of data only, so it does not pay heed to what particular type of data is being encoded. 
 			\index{RLP}
 			\index{nested binary data}
 			\index{tree arbitrary depth}
 
 		Positive RLP integers are represented with the most significant value stored at the lowest memory adddress (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeros it is invalid.\supercite{EF2017}
-			\par
+
 			\index{RLP integers}
 			\index{big endian}
 			\index{no leading zeroes}
@@ -1013,8 +991,47 @@
 	\end{multicols*}
 
 	\appendix
+	\section{Tree Terminology\supercite{wiki:xxx}}
+	
 
-	\section{Opcodes}
+	\begin{enumerate}[label=\textbf{\alph*})]
+		\item \textbf{Root Node} --  The top (first) node in a tree.
+		\item \textbf{Child Node} --  A node directly connected to another node when moving away from the Root.
+		\item \textbf{Parent Node} --  The converse notion of a child.
+		\item \textbf{Sibling Nodes} --  A group of nodes with the same parent.
+		\item \textbf{Descendant Node} --  A node reachable by repeated proceeding from parent to child.
+		\item \textbf{Ancestor Node} --  A node reachable by repeated proceeding from child to parent.
+		\item \textbf{Leaf Node} --  A node with no children.
+		\item \textbf{Branch Node} --  A node with at least one child.
+		\item \textbf{Degree} --  The number of subtrees of a node.
+		\item \textbf{Edge} --  The connection between one node and another.
+		\item \textbf{Path} --  A sequence of nodes and edges connecting a node with a descendant.
+		\item \textbf{Level} --  The level of a node is defined by 1 + (the number of connections between the node and the root).
+		\item \textbf{Node Height} --  The height of a node is the number of edges on the longest path between that node and a leaf.
+		\item \textbf{Tree Height} --  The height of a tree is the height of its root node.
+		\item \textbf{Depth} --  The depth of a node is the number of edges from the tree's root node to the node.
+		\item \textbf{Forest} -- A forest is a set of n $\geq  0$ disjoint trees.
+	\end{enumerate}
+	\index{root node}
+	\index{child node}
+	\index{parent node}
+	\index{sibling node}
+	\index{descendant node}
+	\index{ancestor node}
+	\index{leaf node}
+	\index{branch node}
+	\index{tree degree}
+	\index{tree edge}
+	\index{tree path}
+	\index{tree level}
+	\index{node height}
+	\index{tree height}
+	\index{node depth}
+	\index{forest}
+	\hfill 
+	\\
+	
+	\section{EVM Opcodes}
 
 		\subsection{0x10's: Comparisons and Bitwise Logic Operations}
 			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
