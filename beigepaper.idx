@@ -106,13 +106,13 @@
 \indexentry{gas limit|hyperpage}{4}
 \indexentry{to|hyperpage}{4}
 \indexentry{value|hyperpage}{4}
-\indexentry{EVM|hyperpage}{4}
-\indexentry{verification|hyperpage}{4}
-\indexentry{160 bit|hyperpage}{4}
-\indexentry{apply rewards|hyperpage}{4}
-\indexentry{block beneficiary|hyperpage}{4}
-\indexentry{block reward|hyperpage}{4}
 \indexentry{state database|hyperpage}{4}
+\indexentry{EVM|hyperpage}{5}
+\indexentry{verification|hyperpage}{5}
+\indexentry{160 bit|hyperpage}{5}
+\indexentry{apply rewards|hyperpage}{5}
+\indexentry{block beneficiary|hyperpage}{5}
+\indexentry{block reward|hyperpage}{5}
 \indexentry{serialization|hyperpage}{5}
 \indexentry{deserialization|hyperpage}{5}
 \indexentry{stack based architecture|hyperpage}{5}
@@ -161,12 +161,12 @@
 \indexentry{minimize storage use|hyperpage}{5}
 \indexentry{gas refund clearing space|hyperpage}{5}
 \indexentry{intrinsic validity|hyperpage}{5}
-\indexentry{well-formed RLP|hyperpage}{5}
-\indexentry{transaction signature|hyperpage}{5}
-\indexentry{transaction nonce|hyperpage}{5}
-\indexentry{gas limit|hyperpage}{5}
-\indexentry{sender account|hyperpage}{5}
-\indexentry{upfront payment|hyperpage}{5}
+\indexentry{well-formed RLP|hyperpage}{6}
+\indexentry{transaction signature|hyperpage}{6}
+\indexentry{transaction nonce|hyperpage}{6}
+\indexentry{gas limit|hyperpage}{6}
+\indexentry{sender account|hyperpage}{6}
+\indexentry{upfront payment|hyperpage}{6}
 \indexentry{gas used|hyperpage}{6}
 \indexentry{transaction receipt|hyperpage}{6}
 \indexentry{log items|hyperpage}{6}
@@ -208,8 +208,8 @@
 \indexentry{halting state|hyperpage}{7}
 \indexentry{extract remaining gas|hyperpage}{7}
 \indexentry{exceptional halt|hyperpage}{7}
-\indexentry{init|hyperpage}{7}
-\indexentry{message call|hyperpage}{7}
+\indexentry{init|hyperpage}{8}
+\indexentry{message call|hyperpage}{8}
 \indexentry{universal gas|hyperpage}{8}
 \indexentry{contract creation transactions|hyperpage}{8}
 \indexentry{message call transactions|hyperpage}{8}
@@ -256,10 +256,10 @@
 \indexentry{mix hash|hyperpage}{8}
 \indexentry{correct DAG|hyperpage}{8}
 \indexentry{difficulty|hyperpage}{8}
-\indexentry{block header validity function|hyperpage}{8}
-\indexentry{nonce|hyperpage}{8}
-\indexentry{block contents|hyperpage}{8}
-\indexentry{gas used|hyperpage}{8}
+\indexentry{block header validity function|hyperpage}{9}
+\indexentry{nonce|hyperpage}{9}
+\indexentry{block contents|hyperpage}{9}
+\indexentry{gas used|hyperpage}{9}
 \indexentry{machine state|hyperpage}{9}
 \indexentry{gas available|hyperpage}{9}
 \indexentry{program counter|hyperpage}{9}
@@ -310,8 +310,8 @@
 \indexentry{cumulative gas|hyperpage}{10}
 \indexentry{transaction execution function|hyperpage}{10}
 \indexentry{block reward function|hyperpage}{10}
-\indexentry{proof-of-work|hyperpage}{10}
-\indexentry{probability statement|hyperpage}{10}
+\indexentry{proof-of-work|hyperpage}{11}
+\indexentry{probability statement|hyperpage}{11}
 \indexentry{asic resistant|hyperpage}{11}
 \indexentry{ethash|hyperpage}{11}
 \indexentry{mix hash|hyperpage}{11}

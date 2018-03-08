@@ -264,7 +264,8 @@
 			\subsection{World State}
 				The \textit{world state} is divided by blocks; each new block representing a new world state. The structure of the world state is a mapping of 
 				\begin{enumerate}
-				addresses and \textbf{\gls{account state}s} 
+					\item addresses and 
+					\item account states
 				\end{enumerate}
 				through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
 			\index{world state}
@@ -1031,7 +1032,7 @@
 	\hfill 
 	\\
 	
-	\section{EVM Opcodes}
+	\section{EVM Opcodes\supercite{Buterin2017}} 
 
 		\subsection{0x10's: Comparisons and Bitwise Logic Operations}
 			\begin{longtable}{|cP{2.8cm}cccp{6cm}|}
@@ -1120,7 +1121,7 @@
 			0x52 & MSTORE & 3 & 2 & 0 & Save a word to memory. \\
 			0x53 & MSTORE8 & 3 & 2 & 0 & Save a byte to memory. \\
 			0x54 & SLOAD & 200 & 1 & 1 & Load a word from storage. \\
-			0x55 & SSTORE & 0 & 2 & 0 & Save a word to storage.\\
+			0x55 & SSTORE & 5,000 -- 20,000 & 2 & 0 & Save a word to storage.\\
 			0x56 & JUMP & 8 & 1 & 0 & Alter the program counter. \\
 			0x57 & JUMPI & 10 & 2 & 0 & Conditionally alter the program counter. \\
 			0x58 & PC & 2 & 0 & 1 & Look up the value of the program counter prior to the increment resulting from this instruction. \\
