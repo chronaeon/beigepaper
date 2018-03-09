@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.24)  8 MAR 2018 07:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.24)  9 MAR 2018 07:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2936,17 +2936,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1280.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1280.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1280.
 
-Package rerunfilecheck Info: File `beigepaper.out' has not changed.
-(rerunfilecheck)             Checksum: 8104286A6B8B1A63E0D7D914EC6FEA4E;5175.
+
+
+Package rerunfilecheck Warning: File `beigepaper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `beigepaper.out':
+(rerunfilecheck)             Before: C7737A8789C4EC59A08C864793D66ECB;5132
+(rerunfilecheck)             After:  8104286A6B8B1A63E0D7D914EC6FEA4E;5175.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 \openout1 = `beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67526 strings out of 492990
- 1358473 string characters out of 6135005
- 2032770 words of memory out of 5000000
- 69588 multiletter control sequences out of 15000+600000
+ 67525 strings out of 492990
+ 1358460 string characters out of 6135005
+ 2032769 words of memory out of 5000000
+ 69587 multiletter control sequences out of 15000+600000
  561429 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,15n,190p,10383b,4942s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3010,10 +3020,10 @@ are/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 sx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (25 pages, 474975 bytes).
+Output written on beigepaper.pdf (25 pages, 474672 bytes).
 PDF statistics:
- 1129 PDF objects out of 1200 (max. 8388607)
- 1050 compressed objects within 11 object streams
+ 1126 PDF objects out of 1200 (max. 8388607)
+ 1047 compressed objects within 11 object streams
  210 named destinations out of 1000 (max. 500000)
- 29373 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 29365 words of extra memory for PDF output out of 29859 (max. 10000000)
 
