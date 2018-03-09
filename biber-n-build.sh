@@ -26,6 +26,7 @@ then
   echo "Beigepaper build successful."
 else
   echo "Beigepaper build failed. Check write access and dependencies."
+fi
 
 exit 
      
