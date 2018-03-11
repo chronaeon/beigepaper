@@ -2,7 +2,7 @@
 
   \item 160 bit, \hyperpage{5}
   \item 256 bit, \hyperpage{4, 5}
-  \item 50\% attack, \hyperpage{11}
+  \item 50\% attack, \hyperpage{12}
 
   \indexspace
 
@@ -11,20 +11,20 @@
   \item account address, \hyperpage{7}
   \item account addresses, \hyperpage{2}
   \item account balance, \hyperpage{4}
-  \item account body, \hyperpage{3}
+  \item account body, \hyperpage{4}
   \item account code hash, \hyperpage{4}
-  \item account creation, \hyperpage{3}, \hyperpage{8}
-  \item account init, \hyperpage{3}
+  \item account creation, \hyperpage{4}, \hyperpage{8}
+  \item account init, \hyperpage{4}
   \item account nonce, \hyperpage{4}
-  \item account state, \hyperpage{3}
+  \item account state, \hyperpage{4}
   \item account states, \hyperpage{2}
   \item account storage root, \hyperpage{4}
   \item accrued substate, \hyperpage{7}
   \item accumulated gas used, \hyperpage{10}
   \item age, \hyperpage{12}
-  \item ancestor node, \hyperpage{13}
+  \item ancestor node, \hyperpage{2}
   \item apply rewards, \hyperpage{5}, \hyperpage{10}
-  \item arbitrarily determined, \hyperpage{8}
+  \item arbitrarily determined, \hyperpage{9}
   \item arbitrary length byte-array, \hyperpage{8}
   \item asic resistant, \hyperpage{11}
   \item autonomous objects, \hyperpage{8}
@@ -35,78 +35,78 @@
   \item balance, \hyperpage{1}
   \item beneficiary, \hyperpage{3}
   \item beneficiary address, \hyperpage{10}
-  \item big endian, \hyperpage{2}
+  \item big endian, \hyperpage{3}
   \item big endian function, \hyperpage{8}
   \item Bitcoin, \hyperpage{1}
-  \item Bitcoin Whitepaper, \hyperpage{11}
-  \item block, \hyperpage{8}
+  \item Bitcoin Whitepaper, \hyperpage{12}
+  \item block, \hyperpage{9}
   \item block beneficiary, \hyperpage{5}
-  \item block composition, \hyperpage{2}
+  \item block composition, \hyperpage{3}
   \item block contents, \hyperpage{9}
-  \item block difficulty, \hyperpage{11}
+  \item block difficulty, \hyperpage{12}
   \item block finalization state transition function, \hyperpage{10}
-  \item block header, \hyperpage{2}, \hyperpage{7}
+  \item block header, \hyperpage{3}, \hyperpage{7}
   \item block header validity function, \hyperpage{9}
-  \item block number, \hyperpage{3}, \hyperpage{10}
+  \item block number, \hyperpage{4}, \hyperpage{10}
   \item block reward, \hyperpage{5}, \hyperpage{10}
-  \item block reward function, \hyperpage{10}
+  \item block reward function, \hyperpage{11}
   \item block rewards, \hyperpage{3}
-  \item BLOCKHASH, \hyperpage{11}
+  \item BLOCKHASH, \hyperpage{12}
   \item body, \hyperpage{8}
-  \item branch node, \hyperpage{13}
+  \item branch node, \hyperpage{2}
   \item byte array, \hyperpage{5}
-  \item byzantium, \hyperpage{3}
+  \item byzantium, \hyperpage{4}
 
   \indexspace
 
   \item cache, \hyperpage{11}
   \item canonical blockchain, \hyperpage{10}
-  \item canonical gas, \hyperpage{8}
+  \item canonical gas, \hyperpage{9}
   \item casper, \hyperpage{12}
   \item certainty, \hyperpage{1}
   \item checkpoint nodes, \hyperpage{12}
-  \item checkpoints, \hyperpage{9}
-  \item child node, \hyperpage{13}
+  \item checkpoints, \hyperpage{10}
+  \item child node, \hyperpage{2}
   \item code array, \hyperpage{7}
   \item collisions, \hyperpage{10}
-  \item complete block, \hyperpage{10}
+  \item complete block, \hyperpage{11}
   \item computation, \hyperpage{8}
-  \item computation of operation, \hyperpage{5}
+  \item computation of operation, \hyperpage{6}
   \item compute valid nonce, \hyperpage{10}
   \item compute valid state, \hyperpage{10}
-  \item contract creation, \hyperpage{3}, \hyperpage{8}
+  \item contract creation, \hyperpage{4}, \hyperpage{8}
   \item contract creation stack, \hyperpage{8}
   \item contract creation transactions, \hyperpage{8}
   \item controlled halt, \hyperpage{9}
-  \item correct DAG, \hyperpage{8}
-  \item cumulative difficulty, \hyperpage{11}
-  \item cumulative gas, \hyperpage{10}
+  \item correct DAG, \hyperpage{9}
+  \item cumulative difficulty, \hyperpage{12}
+  \item cumulative gas, \hyperpage{11}
 
   \indexspace
 
-  \item DAG, \hyperpage{8}
+  \item DAG, \hyperpage{9}
   \item data structure, \hyperpage{2}
   \item dataset, \hyperpage{11}
-  \item dataset slice, \hyperpage{11}
-  \item descendant node, \hyperpage{13}
+  \item dataset slice, \hyperpage{12}
+  \item descendant node, \hyperpage{2}
   \item deserialization, \hyperpage{5}, \hyperpage{8}
   \item deterministic, \hyperpage{1}
-  \item difficulty, \hyperpage{3}, \hyperpage{8}
-  \item difficulty bomb, \hyperpage{3}
-  \item difficulty mechanism, \hyperpage{11}
+  \item difficulty, \hyperpage{3}, \hyperpage{9}
+  \item difficulty bomb, \hyperpage{4}
+  \item difficulty mechanism, \hyperpage{12}
   \item discard nodes, \hyperpage{12}
-  \item double-spend problem, \hyperpage{11}
-  \item dynamic difficulty homeostasis, \hyperpage{3}
+  \item double-spend problem, \hyperpage{12}
+  \item dynamic difficulty homeostasis, \hyperpage{4}
 
   \indexspace
 
-  \item EIP 100, \hyperpage{3}
-  \item EIP 2, \hyperpage{3}
-  \item EIP 649, \hyperpage{3}
+  \item EIP 100, \hyperpage{4}
+  \item EIP 2, \hyperpage{4}
+  \item EIP 649, \hyperpage{4}
   \item elliptic curve , \hyperpage{5}
   \item elliptic curve computation, \hyperpage{5}
   \item elliptic curve cryptography, \hyperpage{5}
-  \item empty byte-array, \hyperpage{2}
+  \item empty byte-array, \hyperpage{3}
   \item empty byte-sequence, \hyperpage{8}
   \item empty set, \hyperpage{9}
   \item ere, \hyperpage{8}
@@ -114,42 +114,42 @@
   \item Ether, \hyperpage{1}
   \item ethereum runtime environment, \hyperpage{8}
   \item EVM, \hyperpage{5}
-  \item EVM assembly, \hyperpage{9}
-  \item EVM code, \hyperpage{9}
-  \item evm computation instances, \hyperpage{6}
+  \item EVM assembly, \hyperpage{10}
+  \item EVM code, \hyperpage{10}
+  \item evm computation instances, \hyperpage{7}
   \item exceptional halt, \hyperpage{5}, \hyperpage{7}
   \item executed, \hyperpage{1}
-  \item execution, \hyperpage{5}
-  \item execution environment, \hyperpage{6}
+  \item execution, \hyperpage{6}
+  \item execution environment, \hyperpage{7}
   \item execution function, \hyperpage{7}
   \item execution model, \hyperpage{7}
-  \item explicitly specify meaning, \hyperpage{9}
-  \item exponential difficulty increase, \hyperpage{3}
+  \item explicitly specify meaning, \hyperpage{10}
+  \item exponential difficulty increase, \hyperpage{4}
   \item extra data, \hyperpage{3}
   \item extract remaining gas, \hyperpage{7}
 
   \indexspace
 
-  \item fees, \hyperpage{5}
-  \item finalization function, \hyperpage{6}
+  \item fees, \hyperpage{6}
+  \item finalization function, \hyperpage{7}
   \item Finney, \hyperpage{1}
-  \item forest, \hyperpage{13}
+  \item forest, \hyperpage{2}
 
   \indexspace
 
-  \item gas, \hyperpage{5}, \hyperpage{8}
+  \item gas, \hyperpage{6}, \hyperpage{9}
   \item gas available, \hyperpage{9}
-  \item gas deducted, \hyperpage{5}
-  \item gas expenditure per block, \hyperpage{8}
-  \item gas limit, \hyperpage{3, 4}, \hyperpage{6}
-  \item gas paid for increased use of memory, \hyperpage{5}
-  \item gas price, \hyperpage{4, 5}, \hyperpage{8}
-  \item gas refund clearing space, \hyperpage{5}
+  \item gas deducted, \hyperpage{6}
+  \item gas expenditure per block, \hyperpage{9}
+  \item gas limit, \hyperpage{3}, \hyperpage{5, 6}
+  \item gas paid for increased use of memory, \hyperpage{6}
+  \item gas price, \hyperpage{5, 6}, \hyperpage{8}
+  \item gas refund clearing space, \hyperpage{6}
   \item gas used, \hyperpage{3}, \hyperpage{6}, \hyperpage{9, 10}
   \item genesis block, \hyperpage{10}
-  \item genesis difficulty, \hyperpage{3}
-  \item GHOST protocol, \hyperpage{11}
-  \item global state database, \hyperpage{2}
+  \item genesis difficulty, \hyperpage{4}
+  \item GHOST protocol, \hyperpage{12}
+  \item global state database, \hyperpage{3}
 
   \indexspace
 
@@ -157,18 +157,18 @@
   \item halting state, \hyperpage{7}
   \item hash scheme, \hyperpage{5}
   \item heaviest path, \hyperpage{10}
-  \item homestead, \hyperpage{3}
-  \item homestead difficulty parameter, \hyperpage{3}
+  \item homestead, \hyperpage{4}
+  \item homestead difficulty parameter, \hyperpage{4}
 
   \indexspace
 
-  \item ice age, \hyperpage{3}
-  \item incomplete block, \hyperpage{10}
+  \item ice age, \hyperpage{4}
+  \item incomplete block, \hyperpage{11}
   \item init, \hyperpage{8}
   \item input data, \hyperpage{7}
-  \item inspection  of data, \hyperpage{2}
-  \item instantial runtime, \hyperpage{6}
-  \item intrinsic validity, \hyperpage{5}
+  \item inspection  of data, \hyperpage{3}
+  \item instantial runtime, \hyperpage{7}
+  \item intrinsic validity, \hyperpage{6}
   \item invalid instruction, \hyperpage{5}
   \item iterative progression, \hyperpage{7}
   \item iterator function, \hyperpage{7}
@@ -179,15 +179,15 @@
 
   \indexspace
 
-  \item leaf node, \hyperpage{4}, \hyperpage{13}
+  \item leaf node, \hyperpage{2}, \hyperpage{4}
   \item ledger, \hyperpage{1}
   \item log events, \hyperpage{6}
   \item log items, \hyperpage{6}
   \item log series, \hyperpage{7}
-  \item logs bloom, \hyperpage{3}, \hyperpage{9}
-  \item logs series, \hyperpage{9}
-  \item logs set, \hyperpage{9}
-  \item longest chain, \hyperpage{11}
+  \item logs bloom, \hyperpage{3}, \hyperpage{10}
+  \item logs series, \hyperpage{10}
+  \item logs set, \hyperpage{10}
+  \item longest chain, \hyperpage{12}
 
   \indexspace
 
@@ -196,44 +196,44 @@
   \item machine state, \hyperpage{4}, \hyperpage{9}
   \item machine storage, \hyperpage{5}
   \item mapping, \hyperpage{2}
-  \item mapping between account states, \hyperpage{2}
-  \item mapping between addresses, \hyperpage{2}
+  \item mapping between account states, \hyperpage{3}
+  \item mapping between addresses, \hyperpage{3}
   \item memory, \hyperpage{5}
   \item memory contents, \hyperpage{9}
   \item memory model, \hyperpage{5}
   \item memory model volatility of, \hyperpage{5}
   \item memory size, \hyperpage{5}
   \item memory stack, \hyperpage{5}
-  \item memory usage fee, \hyperpage{5}
+  \item memory usage fee, \hyperpage{6}
   \item memory word count, \hyperpage{9}
   \item merkle-patricia trees, \hyperpage{2}
   \item merkle-patricia tries, \hyperpage{2}
   \item merkletrees, \hyperpage{2}
-  \item message call, \hyperpage{5}, \hyperpage{8}
+  \item message call, \hyperpage{6}, \hyperpage{8}
   \item message call transactions, \hyperpage{8}
-  \item miner choice, \hyperpage{8}
-  \item miners, \hyperpage{8}
-  \item minimize storage use, \hyperpage{5}
+  \item miner choice, \hyperpage{9}
+  \item miners, \hyperpage{9}
+  \item minimize storage use, \hyperpage{6}
   \item mining, \hyperpage{1}
   \item mining effort, \hyperpage{10}
-  \item mix hash, \hyperpage{3}, \hyperpage{8}, \hyperpage{11}
+  \item mix hash, \hyperpage{3}, \hyperpage{9}, \hyperpage{11}
   \item modified merkletrees, \hyperpage{2}
 
   \indexspace
 
   \item native currency, \hyperpage{1}
-  \item natively execute, \hyperpage{9}
-  \item nested binary data, \hyperpage{2}
-  \item network cost unit, \hyperpage{8}
+  \item natively execute, \hyperpage{10}
+  \item nested binary data, \hyperpage{3}
+  \item network cost unit, \hyperpage{9}
   \item newstate value, \hyperpage{7}
-  \item no leading zeroes, \hyperpage{2}
-  \item node depth, \hyperpage{13}
-  \item node height, \hyperpage{13}
-  \item node operator computer, \hyperpage{2}
-  \item non empty deserialized integer, \hyperpage{2}
+  \item no leading zeroes, \hyperpage{3}
+  \item node depth, \hyperpage{2}
+  \item node height, \hyperpage{2}
+  \item node operator computer, \hyperpage{3}
+  \item non empty deserialized integer, \hyperpage{3}
   \item non-standard architecture, \hyperpage{5}
   \item nonce, \hyperpage{3}, \hyperpage{9}
-  \item nonce validation, \hyperpage{10}
+  \item nonce validation, \hyperpage{11}
   \item number, \hyperpage{3}
 
   \indexspace
@@ -250,8 +250,8 @@
   \indexspace
 
   \item parent hash, \hyperpage{3}
-  \item parent node, \hyperpage{13}
-  \item payment, \hyperpage{5}
+  \item parent node, \hyperpage{2}
+  \item payment, \hyperpage{6}
   \item plasma, \hyperpage{12}
   \item positive integer, \hyperpage{8}
   \item post transaction state, \hyperpage{6}
@@ -260,28 +260,28 @@
   \item program counter, \hyperpage{9}
   \item proof-of-work, \hyperpage{11}
   \item pseudocode, \hyperpage{1}
-  \item pseudorandom number generation, \hyperpage{11}
+  \item pseudorandom number generation, \hyperpage{12}
 
   \indexspace
 
   \item receipts root, \hyperpage{3}
   \item recipient, \hyperpage{8}
-  \item refunded, \hyperpage{8}
+  \item refunded, \hyperpage{9}
   \item refunds, \hyperpage{7}
-  \item remaining gas, \hyperpage{6, 7}
+  \item remaining gas, \hyperpage{7}
   \item report exception, \hyperpage{5}
   \item resultant output, \hyperpage{7}
   \item resultant state, \hyperpage{7}
-  \item RLP, \hyperpage{2}
+  \item RLP, \hyperpage{2, 3}
   \item rlp, \hyperpage{8}
-  \item RLP encodes as byte-arrays, \hyperpage{2}
-  \item RLP integers, \hyperpage{2}
-  \item RLP serialized byte-array, \hyperpage{2}
-  \item root node, \hyperpage{4}, \hyperpage{13}
+  \item RLP encodes as byte-arrays, \hyperpage{3}
+  \item RLP integers, \hyperpage{3}
+  \item RLP serialized byte-array, \hyperpage{3}
+  \item root node, \hyperpage{2}, \hyperpage{4}
 
   \indexspace
 
-  \item Satoshi Nakamoto, \hyperpage{11}
+  \item Satoshi Nakamoto, \hyperpage{12}
   \item scalability, \hyperpage{12}
   \item seed, \hyperpage{11}
   \item self-destructs set, \hyperpage{7}
@@ -291,11 +291,11 @@
   \item sequence concatenation, \hyperpage{8}
   \item serialization, \hyperpage{5}, \hyperpage{8}
   \item sharding, \hyperpage{12}
-  \item sibling node, \hyperpage{13}
-  \item single byte integer, \hyperpage{2}
+  \item sibling node, \hyperpage{2}
+  \item single byte integer, \hyperpage{3}
   \item singleton, \hyperpage{1}
-  \item speedy traversal of data, \hyperpage{2}
-  \item stack based, \hyperpage{5, 6}
+  \item speedy traversal of data, \hyperpage{3}
+  \item stack based, \hyperpage{5}, \hyperpage{7}
   \item stack based architecture, \hyperpage{5}
   \item stack contents, \hyperpage{9}
   \item stack underflow, \hyperpage{5}
@@ -305,43 +305,43 @@
   \item state transition, \hyperpage{4}
   \item state transition function, \hyperpage{7}
   \item state unchanged, \hyperpage{5}
-  \item status code, \hyperpage{10}
+  \item status code, \hyperpage{11}
   \item storage model, \hyperpage{5}
-  \item substates, \hyperpage{6}
-  \item system state, \hyperpage{5, 6}
+  \item substates, \hyperpage{7}
+  \item system state, \hyperpage{5}, \hyperpage{7}
   \item Szabo, \hyperpage{1}
 
   \indexspace
 
-  \item tagged for self destruction, \hyperpage{9}
-  \item time stamp, \hyperpage{8}
+  \item tagged for self destruction, \hyperpage{10}
+  \item time stamp, \hyperpage{9}
   \item timestamp, \hyperpage{3}
   \item timestamped, \hyperpage{1}
-  \item to, \hyperpage{4}
+  \item to, \hyperpage{5}
   \item to execute, \hyperpage{9}
-  \item total difficulty, \hyperpage{11}
-  \item total fee, \hyperpage{5}
+  \item total difficulty, \hyperpage{12}
+  \item total fee, \hyperpage{6}
   \item total gas used, \hyperpage{10}
   \item totaly difficulty, \hyperpage{10}
   \item touched accounts, \hyperpage{7}
   \item transaction, \hyperpage{4}
   \item transaction execution, \hyperpage{6}
-  \item transaction execution function, \hyperpage{10}
+  \item transaction execution function, \hyperpage{11}
   \item transaction nonce, \hyperpage{6}
   \item transaction originator, \hyperpage{8}
-  \item transaction receipt, \hyperpage{6}, \hyperpage{9}
+  \item transaction receipt, \hyperpage{6}, \hyperpage{10}
   \item transaction series, \hyperpage{9}
   \item transaction signature, \hyperpage{6}
   \item transaction validation, \hyperpage{10}
   \item transactions, \hyperpage{10}
   \item transactions root, \hyperpage{3}
-  \item tree arbitrary depth, \hyperpage{2}
+  \item tree arbitrary depth, \hyperpage{3}
   \item tree database, \hyperpage{2}
-  \item tree degree, \hyperpage{13}
-  \item tree edge, \hyperpage{13}
-  \item tree height, \hyperpage{13}
-  \item tree level, \hyperpage{13}
-  \item tree path, \hyperpage{13}
+  \item tree degree, \hyperpage{2}
+  \item tree edge, \hyperpage{2}
+  \item tree height, \hyperpage{2}
+  \item tree level, \hyperpage{2}
+  \item tree path, \hyperpage{2}
   \item trie database, \hyperpage{2}
   \item trusted, \hyperpage{1}
 
@@ -349,16 +349,16 @@
 
   \item universal gas, \hyperpage{8}
   \item unstoppable, \hyperpage{1}
-  \item unused gas, \hyperpage{8}
+  \item unused gas, \hyperpage{9}
   \item upfront payment, \hyperpage{6}
 
   \indexspace
 
   \item valid header, \hyperpage{10}
   \item valid state, \hyperpage{8}
-  \item value, \hyperpage{4}, \hyperpage{8}
+  \item value, \hyperpage{5}, \hyperpage{8, 9}
   \item verification, \hyperpage{5}
-  \item virtual machine, \hyperpage{1}, \hyperpage{6}
+  \item virtual machine, \hyperpage{1}, \hyperpage{7}
   \item virtual ROM, \hyperpage{5}
 
   \indexspace
