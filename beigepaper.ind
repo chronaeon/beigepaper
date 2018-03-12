@@ -51,7 +51,7 @@
   \item block reward, \hyperpage{5}, \hyperpage{11}
   \item block reward function, \hyperpage{11}
   \item block rewards, \hyperpage{3}
-  \item BLOCKHASH, \hyperpage{12}
+  \item BLOCKHASH, \hyperpage{13}
   \item body, \hyperpage{9}
   \item branch node, \hyperpage{2}
   \item byte array, \hyperpage{5}
@@ -261,7 +261,7 @@
   \item program counter, \hyperpage{10}
   \item proof-of-work, \hyperpage{11}
   \item pseudocode, \hyperpage{1}
-  \item pseudorandom number generation, \hyperpage{12}
+  \item pseudorandom number generation, \hyperpage{13}
 
   \indexspace
 
@@ -295,6 +295,7 @@
   \item sibling node, \hyperpage{2}
   \item single byte integer, \hyperpage{3}
   \item singleton, \hyperpage{1}
+  \item slice, \hyperpage{12}
   \item speedy traversal of data, \hyperpage{3}
   \item stack based, \hyperpage{5}, \hyperpage{7}
   \item stack based architecture, \hyperpage{5}

@@ -334,6 +334,7 @@
 \indexentry{seed|hyperpage}{12}
 \indexentry{cache|hyperpage}{12}
 \indexentry{dataset|hyperpage}{12}
+\indexentry{slice|hyperpage}{12}
 \indexentry{total difficulty|hyperpage}{12}
 \indexentry{block difficulty|hyperpage}{12}
 \indexentry{difficulty mechanism|hyperpage}{12}
@@ -345,8 +346,8 @@
 \indexentry{Satoshi Nakamoto|hyperpage}{12}
 \indexentry{Bitcoin Whitepaper|hyperpage}{12}
 \indexentry{dataset slice|hyperpage}{12}
-\indexentry{pseudorandom number generation|hyperpage}{12}
-\indexentry{BLOCKHASH|hyperpage}{12}
+\indexentry{pseudorandom number generation|hyperpage}{13}
+\indexentry{BLOCKHASH|hyperpage}{13}
 \indexentry{state database|hyperpage}{13}
 \indexentry{age|hyperpage}{13}
 \indexentry{discard nodes|hyperpage}{13}

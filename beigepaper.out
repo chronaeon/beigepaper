@@ -44,7 +44,7 @@
 \BOOKMARK [2][-]{subsection.3.12}{Transaction Validation}{section.3}% 44
 \BOOKMARK [2][-]{subsection.3.13}{Reward Application}{section.3}% 45
 \BOOKMARK [2][-]{subsection.3.14}{Mining Proof-of-Work}{section.3}% 46
-\BOOKMARK [3][-]{subsubsection.3.14.1}{Ethash}{subsection.3.14}% 47
+\BOOKMARK [3][-]{subsubsection.3.14.1}{Ethash: Seed Cache Dataset Slice}{subsection.3.14}% 47
 \BOOKMARK [3][-]{subsubsection.3.14.2}{Difficulty Mechanism}{subsection.3.14}% 48
 \BOOKMARK [2][-]{subsection.3.15}{Pseudorandom Numbers}{section.3}% 49
 \BOOKMARK [2][-]{subsection.3.16}{Chainsize Limits}{section.3}% 50
