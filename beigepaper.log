@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  12 MAR 2018 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  12 MAR 2018 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2987,20 +2987,17 @@ Package rerunfilecheck Warning: File `beigepaper.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `beigepaper.out':
-(rerunfilecheck)             Before: C1C2EC245FE483CDDD570BF6EF9B8FF5;5171
-(rerunfilecheck)             After:  7BE04323B4925DE5DB69999EB021F3E6;5214.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Before: 7BE04323B4925DE5DB69999EB021F3E6;5214
+(rerunfilecheck)             After:  FAD152A1B4C401A7C750AF364AF2C735;5211.
 Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 \openout1 = `beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67537 strings out of 492990
- 1358751 string characters out of 6135005
+ 67538 strings out of 492990
+ 1358764 string characters out of 6135005
  2033773 words of memory out of 5000000
- 69602 multiletter control sequences out of 15000+600000
+ 69603 multiletter control sequences out of 15000+600000
  563625 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,15n,190p,10383b,4942s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3067,10 +3064,10 @@ s/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (25 pages, 470849 bytes).
+Output written on beigepaper.pdf (25 pages, 470863 bytes).
 PDF statistics:
- 1132 PDF objects out of 1200 (max. 8388607)
- 1053 compressed objects within 11 object streams
+ 1135 PDF objects out of 1200 (max. 8388607)
+ 1056 compressed objects within 11 object streams
  211 named destinations out of 1000 (max. 500000)
- 30389 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 30397 words of extra memory for PDF output out of 35830 (max. 10000000)
 
