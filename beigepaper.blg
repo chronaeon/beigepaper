@@ -1,17 +1,17 @@
 [0] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [0] Config.pm:357> INFO - Logfile is 'beigepaper.blg'
-[50] biber:303> INFO - === Mon Mar 12, 2018, 17:38:57
-[72] Biber.pm:360> INFO - Reading 'beigepaper.bcf'
-[187] Biber.pm:836> INFO - Found 4 citekeys in bib section 0
-[209] Biber.pm:3671> INFO - Processing section 0
-[231] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
-[233] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[239] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
-[254] Utils.pm:164> WARN - BibTeX subsystem: /tmp/vtpHTRCl1l/References.bib_19290.utf8, line 3, warning: 37 characters of junk seen at toplevel
-[274] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[274] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[274] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[274] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[278] bbl.pm:608> INFO - Writing 'beigepaper.bbl' with encoding 'UTF-8'
-[280] bbl.pm:712> INFO - Output to beigepaper.bbl
-[280] Biber.pm:110> INFO - WARNINGS: 1
+[47] biber:303> INFO - === Tue Mar 13, 2018, 11:26:40
+[68] Biber.pm:360> INFO - Reading 'beigepaper.bcf'
+[178] Biber.pm:836> INFO - Found 4 citekeys in bib section 0
+[201] Biber.pm:3671> INFO - Processing section 0
+[223] Biber.pm:3841> INFO - Looking for bibtex format file 'References.bib' for section 0
+[224] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[231] bibtex.pm:1281> INFO - Found BibTeX data source 'References.bib'
+[246] Utils.pm:164> WARN - BibTeX subsystem: /tmp/shiIW9WCk6/References.bib_26255.utf8, line 3, warning: 37 characters of junk seen at toplevel
+[264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[264] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[265] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[269] bbl.pm:608> INFO - Writing 'beigepaper.bbl' with encoding 'UTF-8'
+[270] bbl.pm:712> INFO - Output to beigepaper.bbl
+[270] Biber.pm:110> INFO - WARNINGS: 1

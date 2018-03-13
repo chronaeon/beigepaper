@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  12 MAR 2018 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  13 MAR 2018 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2853,96 +2853,96 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package multicol Warning: I moved some lines to the next page.
 (multicol)                Footnotes on page 12 might be wrong on input line 101
-5.
+4.
 
 [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\supercite' on input line 1035.
+(hyperref)                removing `\supercite' on input line 1038.
 
 
-Underfull \vbox (badness 10000) detected at line 1061
+Underfull \vbox (badness 10000) detected at line 1064
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1075
+Underfull \vbox (badness 10000) detected at line 1078
  []
 
 
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 1087--1087
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 1090--1090
  []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
  []
 
 
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 1089--1089
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 1092--1092
  []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
  []
 
 
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 1095--1095
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 1098--1098
  []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
  []
 
 
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 1096--1096
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 1099--1099
  []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1098
+Underfull \vbox (badness 10000) detected at line 1101
  []
 
 [14]
-Underfull \vbox (badness 10000) detected at line 1112
+Underfull \vbox (badness 10000) detected at line 1115
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1130
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1132
+Underfull \vbox (badness 10000) detected at line 1135
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1158
+Underfull \vbox (badness 10000) detected at line 1161
  []
 
 [16]
-Underfull \vbox (badness 10000) detected at line 1196
+Underfull \vbox (badness 10000) detected at line 1199
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1221
+Underfull \vbox (badness 10000) detected at line 1224
  []
 
 [17]
-Underfull \vbox (badness 10000) detected at line 1234
+Underfull \vbox (badness 10000) detected at line 1237
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1241--1242
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1245
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 1245--1245
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 1248--1248
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1251
+Underfull \vbox (badness 10000) detected at line 1254
  []
 
 [18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1268.
+(biblatex)                Using fallback driver on input line 1271.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1268.
+(biblatex)                Using fallback driver on input line 1271.
 
 [20
 
@@ -2950,12 +2950,12 @@ Package biblatex Warning: No driver for entry type 'paper'.
 No file beigepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 1272--1272
+Underfull \hbox (badness 10000) in paragraph at lines 1275--1275
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1272--1272
+Underfull \hbox (badness 10000) in paragraph at lines 1275--1275
 []\T1/ccr/m/n/10 (+20) The en-vi-ron-ment
  []
 
@@ -2974,11 +2974,11 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the beigepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1279.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1279.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1282.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1282.
 (./beigepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1279.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1279.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1282.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1282.
 
 
 
@@ -2987,18 +2987,21 @@ Package rerunfilecheck Warning: File `beigepaper.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `beigepaper.out':
-(rerunfilecheck)             Before: 7BE04323B4925DE5DB69999EB021F3E6;5214
+(rerunfilecheck)             Before: D0E05EAF156F1195FC63D047D7938D2A;5168
 (rerunfilecheck)             After:  FAD152A1B4C401A7C750AF364AF2C735;5211.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 \openout1 = `beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67538 strings out of 492990
- 1358764 string characters out of 6135005
+ 67541 strings out of 492990
+ 1358785 string characters out of 6135005
  2033773 words of memory out of 5000000
- 69603 multiletter control sequences out of 15000+600000
- 563625 words of font info for 160 fonts, out of 8000000 for 9000
+ 69602 multiletter control sequences out of 15000+600000
+ 563789 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,15n,190p,10383b,4942s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not ex
@@ -3064,10 +3067,10 @@ s/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (25 pages, 470863 bytes).
+Output written on beigepaper.pdf (25 pages, 470724 bytes).
 PDF statistics:
- 1135 PDF objects out of 1200 (max. 8388607)
- 1056 compressed objects within 11 object streams
+ 1132 PDF objects out of 1200 (max. 8388607)
+ 1053 compressed objects within 11 object streams
  211 named destinations out of 1000 (max. 500000)
- 30397 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 30389 words of extra memory for PDF output out of 35830 (max. 10000000)
 

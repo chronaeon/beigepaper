@@ -1,5 +1,5 @@
 #!/bin/bash
-# Biber-N-Build, Version 2
+# Biber-N-Build, Version 3 
 
 #  Warning:
 #  -------
@@ -13,10 +13,13 @@ biber beigepaper 	       # Generate bibliography.
 pdflatex beigepaper.tex        # 2nd build from source w/ bibliography.
 makeindex beigepaper.idx       # Generate index.
 pdflatex beigepaper.tex        # 3rd build from source w/ bibliography and index.
+clear
 
 if [ -e "beigepaper.pdf" ]     # Does beigepaper.pdf exist in this directory?
 then
   echo "Beigepaper build successful."
+  sleep 1.25
+  xdg-open beigepaper.pdf
 else
   echo "Beigepaper build failed. Check write access and dependencies."
 fi
