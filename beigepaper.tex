@@ -385,7 +385,7 @@
 			\subsubsection{Recursive Length Prefix}
 				Recursive Length Prefix (RLP) imposes structure on data in Ethereum by encoding it in the state database according to a certain set of rules. These rules, when followed, make it possible to look up data in Ethereum because it is always sorted according to this predictable and efficient structure.
 				
-				RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes structure of data only, so it does not pay heed to what particular type of data is being encoded. 
+				RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes structure of data only, so it does not pay heed to the particular types of data being encoded. 
 			\index{RLP}
 			\index{nested binary data}
 			\index{tree arbitrary depth}
@@ -398,8 +398,8 @@
 			\index{empty byte-array}
 			\index{non empty deserialized integer}
 
-			The global state database is encoded as RLP for fast traversal and inspection of data. In structure it constitutes a mapping between \textsl{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be traversed speedily and without network delay. RLP encodes values as byte-arrays, or as sequences of further values. \supercite{Wood2017} 
-			\par 
+			The global state database is encoded as RLP for fast traversal and inspection of data. RLP encoding creates a mapping between \textit{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be indrexed and searched without network delay. RLP encodes values as byte-arrays, or as sequences of further values, which are subsequently encoded as byte-arrays. \supercite{Wood2017} 
+
 			\index{global state database}
 			\index{speedy traversal of data}
 			\index{inspection  of data}
@@ -408,21 +408,24 @@
 			\index{node operator computer}
 			\index{RLP encodes as byte-arrays}
 
-			This means that:
-			\\
 
-			\texttt{%
-				\begin{tabular}{ r l c l }
-					if & rlp(x) &  = & bytearray \\
-					then & rlp(bytearray) & = & true \\
-					elif & rlp(x) & = & value \\
-					then & rlp(value) & = & true \\
-					elif & rlp(x) & = & null \\
-					then & rlp(x) & = & false \\
-				\end{tabular}
-				}
-				\\~\\
-
+% This pseudocode isn't necessary to describe possible RLP configurations, but it is a useful alternative to the listing environment for displaying pseudocode objects in monospace font and maintaining order.
+%-----------------------------------------------------------------------
+%			This means that an RLP
+%			\\
+%
+%			\texttt{%
+%				\begin{tabular}{ r l c l }
+%					if & rlp(x) &  = & bytearray \\
+%					then & rlp(bytearray) & = & true \\
+%					elif & rlp(x) & = & value \\
+%					then & rlp(value) & = & true \\
+%					elif & rlp(x) & = & null \\
+%					then & rlp(x) & = & false \\
+%				\end{tabular}
+%				}
+%				\\~\\
+%----------------------------------------------------------------------
 				\begin{enumerate}
 							\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
 				\end{enumerate}

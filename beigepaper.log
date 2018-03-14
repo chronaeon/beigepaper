@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  13 MAR 2018 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.24)  14 MAR 2018 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2715,234 +2715,215 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--384
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
-[3]
+[2] [3]
 LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 519.
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 522.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 4 might be wrong on input line 548.
+(multicol)                Footnotes on page 4 might be wrong on input line 555.
 
 
 [4]
-Underfull \hbox (badness 6575) in paragraph at lines 552--553
+Underfull \hbox (badness 6575) in paragraph at lines 555--556
 \T1/ccr/m/n/10 (+20) node that pre-cedes the \T1/cmtt/m/n/10 transactions \T1/c
 cr/m/n/10 (+20) in the
  []
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 621.
-
-
 [5]
-LaTeX Font Info:    Try loading font information for OMS+ccr on input line 657.
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 660.
 
  (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccr.fd
 File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 657
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 660
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/concmath/omsccsy.fd
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
-(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 657.
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 660.
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+[]\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+\T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
+ []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 6 might be wrong on input line 680.
+(multicol)                Footnotes on page 6 might be wrong on input line 694.
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
-[]\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
-\T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
- []
-
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 746.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 749.
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 7 might be wrong on input line 761.
+
+
 [7]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 8 might be wrong on input line 779.
+(multicol)                Footnotes on page 8 might be wrong on input line 791.
 
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 919--920
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
 []\T1/ccr/m/n/10 (+20) The ac-counts tagged for self-destruction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 919--920
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
 \T1/ccr/m/n/10 (+20) fol-low-ing the trans-ac-tion's com-ple-tion.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 940--950
+Underfull \hbox (badness 10000) in paragraph at lines 943--953
 \T1/cmtt/m/n/10 ommers; validate (or, if mining, determine)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 940--950
+Underfull \hbox (badness 10000) in paragraph at lines 943--953
 \T1/cmtt/m/n/10 transactions; apply rewards; verify (or, if
  []
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 10 might be wrong on input line 951
-.
 
 [10] [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 987.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 987.
+(hyperref)                removing `\rightarrow' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 987.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 987.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 987.
+(hyperref)                removing `\rightarrow' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 987.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 987.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 987.
+(hyperref)                removing `\rightarrow' on input line 990.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 987.
+(hyperref)                removing `math shift' on input line 990.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 12 might be wrong on input line 101
-4.
+(multicol)                Footnotes on page 12 might be wrong on input line 102
+1.
 
 [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\supercite' on input line 1038.
+(hyperref)                removing `\supercite' on input line 1041.
 
 
-Underfull \vbox (badness 10000) detected at line 1064
+Underfull \vbox (badness 10000) detected at line 1067
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1078
+Underfull \vbox (badness 10000) detected at line 1081
  []
 
 
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 1090--1090
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 1093--1093
  []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
  []
 
 
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 1095--1095
  []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
  []
 
 
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 1098--1098
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 1101--1101
  []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
  []
 
 
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 1099--1099
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 1102--1102
  []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1101
+Underfull \vbox (badness 10000) detected at line 1104
  []
 
 [14]
-Underfull \vbox (badness 10000) detected at line 1115
+Underfull \vbox (badness 10000) detected at line 1118
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1130
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1133
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1135
+Underfull \vbox (badness 10000) detected at line 1138
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1161
+Underfull \vbox (badness 10000) detected at line 1164
  []
 
 [16]
-Underfull \vbox (badness 10000) detected at line 1199
+Underfull \vbox (badness 10000) detected at line 1202
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1224
+Underfull \vbox (badness 10000) detected at line 1227
  []
 
 [17]
-Underfull \vbox (badness 10000) detected at line 1237
+Underfull \vbox (badness 10000) detected at line 1240
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1244--1245
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1248
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 1251--1251
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1254
+Underfull \vbox (badness 10000) detected at line 1257
  []
 
 [18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1271.
+(biblatex)                Using fallback driver on input line 1274.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1271.
+(biblatex)                Using fallback driver on input line 1274.
 
 [20
 
@@ -2950,12 +2931,12 @@ Package biblatex Warning: No driver for entry type 'paper'.
 No file beigepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 1275--1275
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1278
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1275--1275
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1278
 []\T1/ccr/m/n/10 (+20) The en-vi-ron-ment
  []
 
@@ -2974,11 +2955,11 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the beigepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1282.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1282.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1285.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1285.
 (./beigepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1282.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1282.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1285.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1285.
 
 
 
@@ -2997,11 +2978,11 @@ Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67541 strings out of 492990
- 1358785 string characters out of 6135005
- 2033804 words of memory out of 5000000
- 69602 multiletter control sequences out of 15000+600000
- 563789 words of font info for 162 fonts, out of 8000000 for 9000
+ 67540 strings out of 492990
+ 1358769 string characters out of 6135005
+ 2033807 words of memory out of 5000000
+ 69599 multiletter control sequences out of 15000+600000
+ 563914 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,15n,190p,10383b,4942s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not ex
@@ -3067,7 +3048,7 @@ s/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (25 pages, 470168 bytes).
+Output written on beigepaper.pdf (25 pages, 470198 bytes).
 PDF statistics:
  1134 PDF objects out of 1200 (max. 8388607)
  1055 compressed objects within 11 object streams
