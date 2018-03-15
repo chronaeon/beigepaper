@@ -277,7 +277,6 @@
   \item rlp, \hyperpage{9}
   \item RLP encodes as byte-arrays, \hyperpage{3}
   \item RLP integers, \hyperpage{3}
-  \item RLP serialized byte-array, \hyperpage{3}
   \item root node, \hyperpage{2}, \hyperpage{4}
 
   \indexspace
@@ -293,7 +292,6 @@
   \item serialization, \hyperpage{5}, \hyperpage{9}
   \item sharding, \hyperpage{13}
   \item sibling node, \hyperpage{2}
-  \item single byte integer, \hyperpage{3}
   \item singleton, \hyperpage{1}
   \item slice, \hyperpage{12}
   \item speedy traversal of data, \hyperpage{3}

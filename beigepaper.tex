@@ -382,8 +382,12 @@
 	\hfill 
 	\\
 
-			\subsubsection{Recursive Length Prefix}
-				Recursive Length Prefix (RLP) imposes structure on data in Ethereum by encoding it in the state database according to a certain set of rules. These rules, when followed, make it possible to look up data in Ethereum because it is always sorted according to this predictable and efficient structure.
+			\subsubsection{Recursive Length Prefix Encoding}
+				Recursive Length Prefix Encoding (RLP) imposes a structure on data that intrinsically considers a prefixed hex value to position the data in the state database tree. This hex value determines the depth of a certain piece of data. There are two types of fundamental items one can encode in RLP:\supercite{jnnk}
+
+			\begin{enumerate}
+				\item Strings of bytes
+				\item Lists of other items						\end{enumerate}
 				
 				RLP encodes arrays of nested binary data to an arbitrary depth; it is the main serialization method for data in Ethereum. RLP encodes structure of data only, so it does not pay heed to the particular types of data being encoded. 
 			\index{RLP}
@@ -408,7 +412,6 @@
 			\index{node operator computer}
 			\index{RLP encodes as byte-arrays}
 
-
 % This pseudocode isn't necessary to describe possible RLP configurations, but it is a useful alternative to the listing environment for displaying pseudocode objects in monospace font and maintaining order.
 %-----------------------------------------------------------------------
 %			This means that an RLP
@@ -426,12 +429,8 @@
 %				}
 %				\\~\\
 %----------------------------------------------------------------------
-				\begin{enumerate}
-							\item If the RLP-serialized byte-array contains a single byte integer value less than $128$, then the output is exactly equal to the input. 
-				\end{enumerate}
-				\index{RLP serialized byte-array}
-				\index{single byte integer}
-
+			
+				
 
 			\subsection{The Block}
 				A block is made up of 17 different elements. The first 15 elements are part of what is called the \textsl{block header}.

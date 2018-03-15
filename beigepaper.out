@@ -4,7 +4,7 @@
 \BOOKMARK [2][-]{subsection.2.1}{World State}{section.2}% 4
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Merkle-Patricia Trees}{subsection.2.1}% 5
 \BOOKMARK [2][-]{subsection.2.2}{Tree Terminologywiki:xxx}{section.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Recursive Length Prefix}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Recursive Length Prefix Encoding}{subsection.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{The Block}{section.2}% 8
 \BOOKMARK [3][-]{subsubsection.2.3.1}{The Block Header}{subsection.2.3}% 9
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Block Footer}{subsection.2.3}% 10

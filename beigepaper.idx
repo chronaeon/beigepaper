@@ -64,8 +64,6 @@
 \indexentry{mapping between account states|hyperpage}{3}
 \indexentry{node operator computer|hyperpage}{3}
 \indexentry{RLP encodes as byte-arrays|hyperpage}{3}
-\indexentry{RLP serialized byte-array|hyperpage}{3}
-\indexentry{single byte integer|hyperpage}{3}
 \indexentry{block composition|hyperpage}{3}
 \indexentry{block header|hyperpage}{3}
 \indexentry{parent hash|hyperpage}{3}
