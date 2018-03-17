@@ -3,7 +3,7 @@
 
 #  Warning:
 #  -------
-#  This build script requires the installation of biber, pdflatex, and the full texlive library on an Ubuntu or Debian based system to work. Most likely it can be built using the same packages on other systems, but such a build has not been tested yet.
+#  This build script requires the installation of biber, pdflatex, and the full texlive library on an Ubuntu or Debian based system to work. Most likely it can be built using the same packages on other systems, but such a build is presently untested.
 
 mv beigepaper.tex foopaper.bar # Temporarily rename the source file.
 rm beigepaper* 		       # Remove the previously built files.
