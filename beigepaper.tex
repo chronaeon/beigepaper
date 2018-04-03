@@ -66,7 +66,7 @@
 \fancyhf{}
 \fancyhead[C]{Beigepaper}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{\today--Version 0.7.1}
+\fancyhead[R]{\today--Version 0.7.2}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -118,23 +118,23 @@
 \newacronym{EVM}{EVM}{Ethereum Virtual Machine}
 \newacronym{ERE}{ERE}{Ethereum Runtime Environment}
 \newacronym{RLP}{RLP}{Recursive Length Prefix}
-\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed.}}
-\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a radix tree mapping bytearrays (organized chunks of binary data) to other bytearrays. The \textsl{relationships} between each node on this trie constitutes a \textsc{mapping} of Ethereum's state.}}
-\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain.}}
-\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there are limited, usually only one, possible output yet that output is unique.}}
-\newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next.}}
-\newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block.}}
+\newglossaryentry{serialization}{name={serialization}, description={Serialization is the process of converting an object into a stream of bytes in order to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the machine state of an object in order to be able to recreate it when needed}}
+\newglossaryentry{state database}{name={state database},description={A database stored off-chain, [i.e. on the computer of some user running an Ethereum client] which contains a radix tree mapping bytearrays (organized chunks of binary data) to other bytearrays. The \textsl{relationships} between each node on this trie constitutes a \textsc{mapping} of Ethereum's state}}
+\newglossaryentry{transaction}{name={transaction}, description={A piece of data, signed by an External Actor. It represents either a Message or a new Autonomous Object. Transactions are recorded into each block of the blockchain}}
+\newglossaryentry{Cryptographic hashing functions}{name={Cryptographic hashing functions}, description={Hash functions make secure blockchains possible by establishing universal inputs for which there are limited, usually only one, possible output yet that output is unique}}
+\newglossaryentry{state machine}{name={state machine}, description={The term \textsl{State Machine} is reserved for any simple or complex process that moves deterministically from one discrete state to the next}}
+\newglossaryentry{addresses}{name={addresses}, description={20 character strings, specifically the rightmost 20 characters of the \texttt{Keccak-256} hash of the RLP-derived mapping which contains the sender's address and the nonce of the block}}
 \newglossaryentry{EVM Code}{name={EVM Code}, description={The bytecode that the EVM can natively execute. Used to formally specify the meaning and ramifications of a message to an Account}}
 \newglossaryentry{EVM Assembly}{name={EVM Assembly}, description={The human readable version of EVM code}}
 \newglossaryentry{Storage State}{name={Storage State}, description={The information particular to a given account that is maintained between the times that the account's associated EVM Code runs}}
-\newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two accounts.}}
-\newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit; gas is paid for exclusively by Ether}}
+\newglossaryentry{Message}{name={Message}, description={Data (as a set of bytes) and Value (specified in Wei) that is passed between two accounts}}
+\newglossaryentry{Gas}{name={Gas}, description={The fundamental network cost unit; gas is paid for exclusively by ether}}
 \newglossaryentry{Contract}{name={Contract}, description={A piece of EVM Code that may be associated with an Account or an Autonomous Object}}
 \newglossaryentry{Ethereum Runtime Environment}{name={Ethereum Runtime Environment}, description={The environment which is provided to an Autonomous Object executing in the EVM. Includes the EVM but also the structure of the world state on which the relies for certain I/O instructions including CALL \& CREATE}}
 \newglossaryentry{beneficiary}{name={beneficiary}, description={The 20-character (160-bit)  address to which all fees collected from the successful mining of a block are transferred}}
 \newglossaryentry{block header}{name={block header}, description={All the information in a block besides transaction information}}
 \newglossaryentry{storage root}{name={storage root}, description={One aspect of an \textsc{account's state}: this is the hash of the trie\footnote{A particular path from root to leaf in the state database} that decides the \textsc{storage contents} of the account}}
-\newglossaryentry{account state}{name={account state}, description={The state of a particular account--a section of the total world state. Comprises: the \texttt{nonce}, \texttt{balance}, \texttt{storage root}, and \texttt{code hash} of the account.}}
+\newglossaryentry{account state}{name={account state}, description={The state of a particular account--a section of the total world state. Comprises: the \texttt{nonce}, \texttt{balance}, \texttt{storage root}, and \texttt{code hash} of the account}}
 
 
 \addbibresource{References.bib}
@@ -231,7 +231,7 @@
 		\index{executed}
 
 	 	\subsection{Native Currency}
-		Because Ethereum strives not primarily at the currency application, but at all applications, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. This is called gas, and is explained fully in \S3. Gas is paid for exclusively in Ether. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 Ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$.
+		Because Ethereum strives not primarily at the currency application, but at all applications, there is a fundamental \textsl{network cost unit} used to mitigate the possibility of abusing the network with excessive computational expenditures. This is called gas, and is explained fully in \S3. Gas is paid for exclusively in ether. The smallest unit of currency in Ethereum is the Wei, which is equal to $\Xi10^{-18}$, where $\Xi$ stands for 1 ether. All currency transactions in Ethereum, at the machine level, are counted in Wei. There is also the Szabo, which is $\Xi10^{-6}$,  and the Finney, which is $\Xi10^{-3}$.
 		
 		The Ethereum network is subservient to others in terms of one thing only: \textbf{ether}, the native currency for Ethereum. Everything the system can do is bounded up in its ability to expend ether in exchange for gas, which buys a particular amount of system performance in some desired direction. 
 		
@@ -240,7 +240,7 @@
 		\index{Wei}
 		\index{Szabo}
 		\index{Finney}
-		\index{Ether}
+		\index{ether}
 	\end{justify}
 \raggedright
 		\begin{tabular}{llr}
@@ -263,17 +263,17 @@
 					\item addresses and 
 					\item account states
 				\end{enumerate}
-				through the use of the recursive length prefix standard (RLP). This information is stored as a  Merkle-Patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
+				through the use of the recursive length prefix standard (RLP). This information is stored as a  merkle patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
 			\index{world state}
 			\index{mapping}
 			\index{RLP}
 			\index{account states}
 			\index{account addresses}
 			
-			\subsubsection{Merkle-Patricia Trees} 
+			\subsubsection{merkle patricia trees} 
 	
 				
-	Merkle-Patricia Trees are modified Merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard Merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
+	merkle patricia trees are modified merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
 		\index{merkletrees}
 		\index{merkle-patricia trees}
 		\index{merkle-patricia tries}
@@ -394,7 +394,7 @@
 			\index{nested binary data}
 			\index{tree arbitrary depth}
 
-		Positive RLP integers are represented with the most significant value stored at the lowest memory adddress (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeroes it is invalid.\supercite{EF2017}
+		Positive RLP integers are represented with the most significant value stored at the lowest memory address (big endian)  and without any leading zeroes. As a result, the RLP integer value for \texttt{0} is represented by an empty byte-array. If a non-empty deserialized integer begins with leading zeroes it is invalid.\supercite{EF2017}
 
 			\index{RLP integers}
 			\index{big endian}
@@ -402,7 +402,7 @@
 			\index{empty byte-array}
 			\index{non empty deserialized integer}
 
-			The global state database is encoded as RLP for fast traversal and inspection of data. RLP encoding creates a mapping between \textit{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be indrexed and searched without network delay. RLP encodes values as byte-arrays, or as sequences of further values, which are subsequently encoded as byte-arrays. \supercite{Wood2017} 
+			The global state database is encoded as RLP for fast traversal and inspection of data. RLP encoding creates a mapping between \textit{addresses} and \textit{account states}. Since it is stored on node operator's computers, the tree can be indexed and searched without network delay. RLP encodes values as byte-arrays, or as sequences of further values, which are subsequently encoded as byte-arrays. \supercite{Wood2017} 
 
 			\index{global state database}
 			\index{speedy traversal of data}
@@ -412,7 +412,7 @@
 			\index{node operator computer}
 			\index{RLP encodes as byte-arrays}
 
-% This pseudocode isn't necessary to describe possible RLP configurations, but it is a useful alternative to the listing environment for displaying pseudocode objects in monospace font and maintaining order.
+% The below code  demonstrates use of the tabular package to emulate the verbatim, or code listings environment. 
 %-----------------------------------------------------------------------
 %			This means that an RLP
 %			\\
@@ -490,7 +490,7 @@
 					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
 					
 					\subsubsection{Block Number and Difficulty}
-						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time between blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the expo- nential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor, and the denominator 9, in order to target the mean block time including uncle blocks. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced and the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
+						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time between blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the exponential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor, and the denominator 9, in order to target the mean block time including uncle blocks. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
 					\index{block number}
 					\index{genesis difficulty}
 					\index{homestead difficulty parameter}
@@ -518,7 +518,7 @@
 				\begin{enumerate}
 					\item \textbf{nonce} The number of transactions sent from this address, or the number of contract creations made by the account associated with this address.
 					\item \textbf{balance} The amount of \textbf{Wei} \textsc{owned} by this account. Stored as a key/value pair inside the state database. 
-					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a Merkle Patricia tree that encodes the storage contents of the account.\footnote{A particular path from root to leaf in the \textbf{\gls{state database}\index{state database}}} 
+					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a merkle patricia tree that encodes the storage contents of the account.\footnote{A particular path from root to leaf in the \textbf{\gls{state database}\index{state database}}} 
 					\item \textbf{code\_hash} The hash of the EVM code of this account's contract. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.
 
 				\end{enumerate}
@@ -543,7 +543,7 @@
 	
 					\subsection{The Transaction}
 	
-			The basic method for Ethereum accounts to interact with eachother. The transaction is a single cryptographically signed instruction sent to the Ethereum network. There are two types of transactions: \textsc{message calls} and \textsc{contract creations}. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and flexibility of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the required changes in computation that must be made before a block is finalized and added to the world state.
+			The basic method for Ethereum accounts to interact with each other. The transaction is a single cryptographically signed instruction sent to the Ethereum network. There are two types of transactions: \textsc{message calls} and \textsc{contract creations}. Transactions lie at the heart of Ethereum, and are entirely responsible for the dynamism and flexibility of the platform. Transactions are the bread and butter of state transitions, that is of block additions, which contain all of the computation performed in one block. Each transaction applies the execution changes to the \textit{machine state}, a temporary state which consists of all the required changes in computation that must be made before a block is finalized and added to the world state.
 					\index{transaction}
 					\index{state transition}
 					\index{machine state}
@@ -694,7 +694,7 @@
 			\item The refund balance.\footnote{The \textsc{sstore} operation increases the amount refunded by resetting contract storage to zero from some non-zero state.}
 		\end{itemize}
 
-		Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effeffect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
+		Code execution always depletes \texttt{gas}. If gas runs out, an out-of-gas error is signaled (\texttt{oog}) and the resulting state defines itself as an empty set; it has no effect on the world state. This describes the transactional nature of Ethereum. In order to affect the \textsc{world state}, a transaction must go through completely or not at all. 
 
 				\subsubsection{Code Deposit}
 				If the initialization code completes successfully, a final contract-creation cost is paid, the code-deposit cost, \textsc{c}, proportional to the size of the created contract's code. 
@@ -766,7 +766,7 @@
 				A smaller, temporary state that is generated during transaction execution. It contains three sets of data.\footnote{The final state is reached after deleting all accounts that either appear in the self-destruct list or are touched and empty.}
 
 			\subsubsection{Message Calls}
-			A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call. Messages allow communication between accounts (whether contract or external.) Messages can come in the form of \texttt{msg\_calls} which give output data. If it is a contract account, this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to an account. If the message call is an account creation transaction then the value given is takes on the role of an endowment toward the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
+			A message call can come from a transaction or internally from contract code execution. It contains the field \textsc{data}, which consists of user data input to a message call. Messages allow communication between accounts (whether contract or external.) Messages can come in the form of \texttt{msg\_calls} which give output data. If it is a contract account, this code gets executed when the account receives a message call. Message calls and contract creations are both \textsl{transactions}, but contract creations are never considered the same as message calls. Message calls always transfer some amount of value to another account. If the message call is an account creation transaction then the value given takes on the role of an endowment towards the new account. Every time an account receives a message call it returns the \texttt{body}, something which is triggered by the \texttt{init} function. User data input to a \texttt{message\_call}, structured as an unlimited size byte-array.
 					\index{init}
 					\index{message call}
 
@@ -827,7 +827,7 @@
 
 
 				\subsection{Gas}
-				Gas is the fundamental network cost unit converted to and from Ether as needed to complete the transaction while it is sent. Gas is arbitrarily determined at the moment it is needed, by the block and according to the miners decision to charge certain fees. Miners choose which gas prices they want to accept.
+				Gas is the fundamental network cost unit converted to and from ether as needed to complete the transaction while it is sent. Gas is arbitrarily determined at the moment it is needed, by the block and according to the total network's miners decision to charge certain fees. Each miner choose individually which gas prices they want to accept and which they want to reject.
 					\index{miner choice}
 					\index{arbitrarily determined}
 					\index{gas}
@@ -845,7 +845,7 @@
 					\index{block}
 
 				\paragraph{Gas Price Stability}
-					Where \texttt{new\_header} is the new block’s header, but without the nonce and mix-hash components, d being the current DAG, a large data set needed to compute the mix-hash, and PoW is the proof-of-work function this evaluates to an array with the first item being the mix-hash, to proof that a correct DAG has been used, and the second item being a pseudo-random number cryptographically dependent on it. Given an approximately uniform distribution in the range the expected time to find a solution is proportional to the difficulty.\supercite{Wood2017} 
+					Where \texttt{new\_header} is the new block’s header, but without the nonce and mix-hash components, d being the current DAG, a large data set needed to compute the mix-hash, and PoW is the proof-of-work function this evaluates to an array with the first item being the mix-hash, to prove that a correct DAG has been used, and the second item being a pseudo-random number cryptographically dependent on it. Given an approximately uniform distribution in the range the expected time to find a solution is proportional to the difficulty.\supercite{Wood2017} 
 					
 					\index{DAG}
 					\index{mix hash}
@@ -903,7 +903,7 @@
 		
 		\begin{itemize}
 			\item The amount of remaining gas in each transaction is extracted from information contained in the \texttt{machine\_state} 
-			\item A simple iterative recursive  loop\supercite{Wood2017} with a boolean  value: 
+			\item A simple iterative recursive  loop\supercite{Wood2017} with a Boolean value: 
 		\begin{itemize}
 				\item\textbf{true} indicating that in the run of computation, an exception was signaled
 				\item\textbf{false} indicating in the run of computation, no exceptions were signaled. If this value remains false for the duration of the execution until the set of transactions becomes a series (rather than an empty set.) This means that the machine has reached a controlled halt. 
@@ -960,7 +960,7 @@
 					\index{transactions}
 					\index{total gas used}
 					\index{accumulated gas used}
-		\subsection{Reward Application} The application of rewards to a block involves raising the balance of the accounts of the beneficiary address of the block and each ommer by a certain amount. We raise the block’s beneficiary account; for each ommer, we raise the block’s beneficiary by 1 an additional 32 of the block reward and the beneficiary of the ommer gets rewarded depending on the block number. This constitutes the \texttt{block\_finalization state\_transition\_function} If there are collisions of the beneficiary addresses between ommers and the block two ommers with the same beneficiary address or an ommer with the same beneficiary address as the present block,
+		\subsection{Reward Application} The application of rewards to a block involves raising the balance of the accounts of the beneficiary address of the block and each ommer by a certain amount. We raise the block’s beneficiary account; for each ommer, we raise the block’s beneficiary by 1 an additional 32 of the block reward and the beneficiary of the ommer gets rewarded depending on the block number. This constitutes the \texttt{block\_finalization state\_transition\_function.} If there are collisions of the beneficiary addresses between ommers and the block two ommers with the same beneficiary address or an ommer with the same beneficiary address as the present block,
 					\index{apply rewards}
 					\index{beneficiary address}
 					\index{ommer}
@@ -969,13 +969,15 @@
 					\index{block finalization state transition function}
 					\index{collisions}
 
-			additions are applied cumulatively. We define the block reward as 3 Ether: State \& Nonce Validation. We may now define the function, that maps a block B to its initiation state: otherwise Here, that means the hash of the root node of a trie of state x; it is assumed that implementations will store this in the state database, trivial and efficient since the trie is by nature a resilient data structure. And finally define the \texttt{block\_transition\_function}, which maps an incomplete block to a complete block with a specified dataset. As specified at the beginning of the present work, the \texttt{state\_transition\_function}, which is defined in terms of, the \texttt{block\_finalisation\_function} and, the \texttt{transaction\_evaluation\_function}. As previously detailed, there is the nth corresponding status code, logs and cumulative gas used after each transaction, the fourth component in the tuple, has already been defined in terms of the logs). 
+			additions are applied cumulatively. The block reward is three ether per block. 
+			
+			/paragraph{State \& Nonce Validation} The function that maps a block B to its initiation state, that is,the hash of the root node of a trie of state x. This value is stored in the state database trivial and efficient since the trie is by nature a resilient data structure. And finally define the \texttt{block\_transition\_function}, which maps an incomplete block to a complete block with a specified dataset. As specified at the beginning of the present work, the \texttt{state\_transition\_function}, which is defined in terms of, the \texttt{block\_finalisation\_function} and, the \texttt{transaction\_evaluation\_function}. As previously detailed, there is the nth corresponding status code, logs and cumulative gas used after each transaction, the fourth component in the tuple, has already been defined in terms of the logs). 
 					\index{nonce validation}
 					\index{incomplete block}
 					\index{complete block}
 					\index{status code}
 					\index{cumulative gas}
-		\paragraph{}The nth state is given from applying the corresponding transaction to the state resulting from the previous transaction (or the block’s initial state in the case of the first BYZANTIUM VERSION 3475aa8 - 2018-01-26 14 such transaction): otherwise In certain cases we take a similar approach defining each item as the gas used in evaluating the corresponding transaction summed with the previous item (or zero, if it is the first), giving us a running total: the function is used that was defined in the transaction execution function. We define R[n] a similar manner. Finally, we define \texttt{new state} given the \texttt{block reward function} applied to the final transaction’s \texttt{resultant state}, thus the complete block-transition mechanism, less PoW, the proof-of-work function is defined. 
+		\paragraph{}The nth state is given from applying the corresponding transaction to the state resulting from the previous transaction (or the block’s initial state in the case of the first BYZANTIUM VERSION 3475aa8 -- 2018-01-26 14 such transaction): otherwise in certain cases there is a similar approach defining each item as the gas used in evaluating the corresponding transaction summed with the previous item (or zero, if it is the first), giving us a running total: the function is used that was defined in the transaction execution function. Finally \texttt{new state} exists in the context of the \texttt{block reward function} applied to the final transaction’s \texttt{resultant state}, thus the complete block-transition mechanism, less PoW, the proof-of-work function is defined. 
 					\index{transaction execution function}
 					\index{block reward function}
 		
@@ -1003,7 +1005,7 @@
 			\index{difficulty mechanism}
 			\index{cumulative difficulty}
 
-			The \textbf{GHOST Protocol} provides an alternative solution to double-spend attacks from the original solution in Satoshi Nakamoto's Bitcoin Whitepaper. Nakamoto solved the problem of double-spending by requiring the network to agree on the first valid block.  impossible to submit a ``double-spend''  block without  having at least 50\% of the network's mining power to force the longest chain. This is because the network automatically chooses the longest chain. So even if one wanted to  submit two spend transactions in a row, the network simply picks whichever one comes first, ignoring the second because it no longer pertains to the longest chain (which now contains the first block that was sent) so the would-be hacker needs to submit a new block, as the first double block is no longer feasible.\par
+			The \textbf{GHOST Protocol} provides an alternative solution to double-spend attacks from the original solution in Satoshi Nakamoto's Bitcoin Whitepaper. Nakamoto solved the problem of double-spending by requiring the network to agree on a single block in order to function. For that reason, in the Bitcoin protocol, it's impossible to submit a ``double-spend''  block without  having at least 50\% of the network's mining power to force the longest chain. This is because the network automatically chooses the longest chain. So even if one wanted to  submit two spend transactions in a row, the network simply picks whichever one comes first, ignoring the second because it no longer pertains to the longest chain (which now contains the first block that was sent) so the would-be hacker needs to submit a new block, as the first double block is no longer feasible.\par
 			\index{GHOST protocol}
 			\index{double-spend problem}
 			\index{longest chain}
@@ -1012,7 +1014,7 @@
 			\index{Bitcoin Whitepaper}
 			\index{dataset slice}
 
-		The ``GHOST Protocol'' (which stands for Greedy Heaviest Object Subtree) rather requires that miners begin mining whichever chain the most other miners are on. Because of differences in network propagation of data about which miners are mining which block, this has a tendency to create more uncles. Nevertheless, in spite of the increased amount of uncle blocks, the chain itself is equally secure, and this method allows for higher throughput of transactions than Satoshi's solution to double-spending does.
+		The ``GHOST Protocol'' (which stands for Greedy Heaviest Object subTree) rather requires that miners begin mining whichever chain the most other miners are on. Because of differences in network propagation of data about which miners are mining which block, this has a tendency to create more uncles. Nevertheless, in spite of the increased amount of uncle blocks, the chain itself is equally secure, and this method allows for higher throughput of transactions than Satoshi's solution to double-spending does.
 
 		\subsection{Pseudorandom Numbers} Pseudo-random numbers may be generated by utilizing data which is generally unknowable at the time of transacting. This constitutes anything based off of factors which are unknowable under regular circumstances, but become knowable through the regular operation and growth of the chain. Such data might include a current (or relatively current) block’s hash, timestamp, or beneficiary address. The \textsc{blockhash} opcode uses the previous 256 blocks as pseudo-random numbers. One could further automate this randomness by adding two \textsc{blockhash} operations and hashing the result.   
 					\index{pseudorandom number generation}
@@ -1254,17 +1256,6 @@
 			0xff & SELFDESTRUCT & 5000 & 1 & 0 & Halt execution and register the account for later deletion. \\
 			\hline
 			\end{longtable}
-
-		
-	\section{Higher Level Languages}
-		\subsection{Lower-Level Lisp}
-			The Lisp-Like low level language: a human-writable language used for authoring simple contracts and trans-compiling to higher-level languages.	
-		\subsection{Solidity}
-			A language similar in syntax to Javascript, and the most commonly used language for creating smart contracts in Ethereum.
-		\subsection{Serpent}
-			A deprecated language which existed early on in the Ethereum ecosystem.
-		\subsection{Vyper}
-			A newer language for developing smart contracts -- still under development.
 
 
 

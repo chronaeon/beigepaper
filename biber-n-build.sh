@@ -17,7 +17,7 @@ clear
 
 if [ -e "beigepaper.pdf" ]     # Does beigepaper.pdf exist in this directory?
 then
-  echo "Beigepaper build successful."
+  echo "Beigepaper successfully built from LaTeX source."
   sleep 1.25
   xdg-open beigepaper.pdf
 else

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.24)  15 MAR 2018 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.24)  3 APR 2018 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2797,133 +2797,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 942--952
 [10] [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 989.
+(hyperref)                removing `math shift' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 989.
+(hyperref)                removing `\rightarrow' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 989.
+(hyperref)                removing `math shift' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 989.
+(hyperref)                removing `math shift' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 989.
+(hyperref)                removing `\rightarrow' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 989.
+(hyperref)                removing `math shift' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 989.
+(hyperref)                removing `math shift' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 989.
+(hyperref)                removing `\rightarrow' on input line 991.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 989.
+(hyperref)                removing `math shift' on input line 991.
 
 
 Package multicol Warning: I moved some lines to the next page.
 (multicol)                Footnotes on page 12 might be wrong on input line 102
-0.
+2.
 
 [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\supercite' on input line 1040.
+(hyperref)                removing `\supercite' on input line 1042.
 
 
-Underfull \vbox (badness 10000) detected at line 1066
+Underfull \vbox (badness 10000) detected at line 1068
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1080
+Underfull \vbox (badness 10000) detected at line 1082
  []
 
 
-Overfull \hbox (1.92726pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (1.92726pt too wide) in paragraph at lines 1094--1094
  []|\T1/ccr/m/n/10 (-20) CALLDATALOAD| 
  []
 
 
-Overfull \hbox (2.1178pt too wide) in paragraph at lines 1094--1094
+Overfull \hbox (2.1178pt too wide) in paragraph at lines 1096--1096
  []|\T1/ccr/m/n/10 (-20) CALLDATACOPY| 
  []
 
 
-Overfull \hbox (11.35167pt too wide) in paragraph at lines 1100--1100
+Overfull \hbox (11.35167pt too wide) in paragraph at lines 1102--1102
  []|\T1/ccr/m/n/10 (-20) RETURNDATASIZE| 
  []
 
 
-Overfull \hbox (18.15167pt too wide) in paragraph at lines 1101--1101
+Overfull \hbox (18.15167pt too wide) in paragraph at lines 1103--1103
  []|\T1/ccr/m/n/10 (-20) RETURNDATACOPY| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1103
+Underfull \vbox (badness 10000) detected at line 1105
  []
 
 [14]
-Underfull \vbox (badness 10000) detected at line 1117
+Underfull \vbox (badness 10000) detected at line 1119
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 1131--1132
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
 []|\T1/ccr/m/n/10 (+20) Conditionally al-ter the pro-gram
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1137
+Underfull \vbox (badness 10000) detected at line 1139
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1163
+Underfull \vbox (badness 10000) detected at line 1165
  []
 
 [16]
-Underfull \vbox (badness 10000) detected at line 1201
+Underfull \vbox (badness 10000) detected at line 1203
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1226
+Underfull \vbox (badness 10000) detected at line 1228
  []
 
 [17]
-Underfull \vbox (badness 10000) detected at line 1239
+Underfull \vbox (badness 10000) detected at line 1241
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1246--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1249
 []|\T1/ccr/m/n/10 (+20) Create a new con-tract ac-count.
  []
 
 
-Overfull \hbox (1.28813pt too wide) in paragraph at lines 1250--1250
+Overfull \hbox (1.28813pt too wide) in paragraph at lines 1252--1252
  []|\T1/ccr/m/n/10 (-20) DELEGATECALL| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1256
+Underfull \vbox (badness 10000) detected at line 1258
  []
 
 [18] [19]
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1273.
+(biblatex)                Using fallback driver on input line 1264.
 
 
 Package biblatex Warning: No driver for entry type 'paper'.
-(biblatex)                Using fallback driver on input line 1273.
+(biblatex)                Using fallback driver on input line 1264.
 
 [20
 
@@ -2931,12 +2931,12 @@ Package biblatex Warning: No driver for entry type 'paper'.
 No file beigepaper.acr.
 Using TeX to sort glossary entries---this may take a while
 
-Underfull \hbox (badness 10000) in paragraph at lines 1277--1277
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
 []\T1/ccr/m/n/10 (+20) Hash func-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1277--1277
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
 []\T1/ccr/m/n/10 (+20) The en-vi-ron-ment
  []
 
@@ -2955,11 +2955,11 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the beigepaper.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1284.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1284.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1275.
 (./beigepaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1284.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1275.
 
 
 
@@ -2968,8 +2968,8 @@ Package rerunfilecheck Warning: File `beigepaper.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `beigepaper.out':
-(rerunfilecheck)             Before: 54BFE95F487952F4DCF9FB7131281515;5177
-(rerunfilecheck)             After:  961B687CB77BB18A7973915258E2FB17;5220.
+(rerunfilecheck)             Before: C7A6EAFD49A76DB9C09174B3CC4D1169;4878
+(rerunfilecheck)             After:  46B504F49BF1B810598E777A92AE5AF1;4921.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -2978,10 +2978,10 @@ Package logreq Info: Writing requests to 'beigepaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67545 strings out of 492990
- 1358862 string characters out of 6135005
- 2033837 words of memory out of 5000000
- 69602 multiletter control sequences out of 15000+600000
+ 67532 strings out of 492990
+ 1358705 string characters out of 6135005
+ 2033835 words of memory out of 5000000
+ 69597 multiletter control sequences out of 15000+600000
  563914 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  169i,15n,190p,10383b,4942s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3048,10 +3048,10 @@ s/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sftt1000.pfb>
-Output written on beigepaper.pdf (25 pages, 470718 bytes).
+Output written on beigepaper.pdf (25 pages, 468631 bytes).
 PDF statistics:
- 1138 PDF objects out of 1200 (max. 8388607)
- 1059 compressed objects within 11 object streams
- 213 named destinations out of 1000 (max. 500000)
- 30389 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1118 PDF objects out of 1200 (max. 8388607)
+ 1039 compressed objects within 11 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 30349 words of extra memory for PDF output out of 35830 (max. 10000000)
 

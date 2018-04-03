@@ -2,7 +2,7 @@
 \BOOKMARK [2][-]{subsection.1.1}{Native Currency}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Memory and Storage}{}% 3
 \BOOKMARK [2][-]{subsection.2.1}{World State}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Merkle-Patricia Trees}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.1}{merkle patricia trees}{subsection.2.1}% 5
 \BOOKMARK [2][-]{subsection.2.2}{Tree Terminologywiki:xxx}{section.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Recursive Length Prefix Encoding}{subsection.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{The Block}{section.2}% 8
@@ -63,12 +63,7 @@
 \BOOKMARK [2][-]{subsection.A.8}{0x90's: Swap Operations}{appendix.A}% 63
 \BOOKMARK [2][-]{subsection.A.9}{0xa0's: Logging Operations}{appendix.A}% 64
 \BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 65
-\BOOKMARK [1][-]{appendix.B}{Higher Level Languages}{}% 66
-\BOOKMARK [2][-]{subsection.B.1}{Lower-Level Lisp}{appendix.B}% 67
-\BOOKMARK [2][-]{subsection.B.2}{Solidity}{appendix.B}% 68
-\BOOKMARK [2][-]{subsection.B.3}{Serpent}{appendix.B}% 69
-\BOOKMARK [2][-]{subsection.B.4}{Vyper}{appendix.B}% 70
-\BOOKMARK [1][-]{section*.12}{References}{}% 71
-\BOOKMARK [1][-]{section*.13}{Glossary}{}% 72
-\BOOKMARK [1][-]{section*.15}{Acronyms}{}% 73
-\BOOKMARK [1][-]{section*.17}{Index}{}% 74
+\BOOKMARK [1][-]{section*.12}{References}{}% 66
+\BOOKMARK [1][-]{section*.13}{Glossary}{}% 67
+\BOOKMARK [1][-]{section*.15}{Acronyms}{}% 68
+\BOOKMARK [1][-]{section*.17}{Index}{}% 69
