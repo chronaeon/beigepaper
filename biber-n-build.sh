@@ -17,11 +17,11 @@ clear
 
 if [ -e "beigepaper.pdf" ]     # Does beigepaper.pdf exist in this directory?
 then
-  echo "Beigepaper successfully built from LaTeX source."
+  echo "Document successfully built from LaTeX source."
   sleep 1.25
   xdg-open beigepaper.pdf
 else
-  echo "Beigepaper build failed. Check write access and dependencies."
+  echo "Document build failed. Check write access and dependencies."
 fi
 
 exit 
