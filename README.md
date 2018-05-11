@@ -26,11 +26,11 @@ Lastly, open the pdf with a reader that supports *character rendering* (e.g. evi
 
 **Q. How should I navigate the document?**
 
-A. Use the index and section headings.
+A. Use the index, section headings, and glossary.
 
 **Q. I'd like to contribute content.**
 
-A. Follow the style guide, to be published soon. 
+A. Awesome! Submit a PR. 
 
 **Q. Do I need to build the paper to obtain a copy of it?**
 

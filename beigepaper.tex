@@ -66,7 +66,7 @@
 \fancyhf{}
 \fancyhead[C]{Beigepaper}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{\today--Version 0.7.2}
+\fancyhead[R]{\today--Version 0.7.3}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -258,19 +258,19 @@
 				
 				
 			\subsection{World State}
-				The \textit{world state} is divided by blocks; each new block representing a new world state. The structure of the world state is a mapping of 
+				The \textit{world state} is divided by blocks; each new block representing a new world state. The structure of the world state is a mapping of two things:
 				\begin{enumerate}
-					\item addresses and 
+					\item addresses  
 					\item account states
 				\end{enumerate}
-				through the use of the recursive length prefix standard (RLP). This information is stored as a  merkle patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
+				through the use of the recursive length prefix standard (RLP). This information is stored as a merkle patricia tree in a \textsc{database backend}.\footnote{The database backend is accessed by users through an external application, most likely an Ethereum client; see also: \gls{state database}} that maintains a mapping of bytearrays to bytearrays.\footnote{A bytearray is specific set of bytes [data] that can be loaded into memory. It is a structure for storing binary data, e.g. the contents of a file.}\footnote{This permanent data structure makes it possible to easily recall any previous state with its root hash keeping the resources off-chain and minimizing on-chain storage needs.}As a whole, the state is the sum total of database relationships in the \textbf{ \gls{state database}}. 
 			\index{world state}
 			\index{mapping}
 			\index{RLP}
 			\index{account states}
 			\index{account addresses}
 			
-			\subsubsection{merkle patricia trees} 
+			\subsubsection{Merkle Patricia Trees} 
 	
 				
 	merkle patricia trees are modified merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
@@ -518,7 +518,7 @@
 				\begin{enumerate}
 					\item \textbf{nonce} The number of transactions sent from this address, or the number of contract creations made by the account associated with this address.
 					\item \textbf{balance} The amount of \textbf{Wei} \textsc{owned} by this account. Stored as a key/value pair inside the state database. 
-					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a merkle patricia tree that encodes the storage contents of the account.\footnote{A particular path from root to leaf in the \textbf{\gls{state database}\index{state database}}} 
+					\item \textbf{storage\_root} A 256-bit (32-byte) hash of the root node of a Merkle Patricia Tree that encodes the storage contents of the account.\footnote{A particular path from root to leaf in the \textbf{\gls{state database}\index{state database}}} 
 					\item \textbf{code\_hash} The hash of the EVM code of this account's contract. Code hashes are \textsc{stored} in the \textbf{\gls{state database}}. Code hashes are permanent and they are executed when the address belonging to that account \textsc{receives} a message call.
 
 				\end{enumerate}

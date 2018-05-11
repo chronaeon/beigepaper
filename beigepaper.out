@@ -2,7 +2,7 @@
 \BOOKMARK [2][-]{subsection.1.1}{Native Currency}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Memory and Storage}{}% 3
 \BOOKMARK [2][-]{subsection.2.1}{World State}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.1}{merkle patricia trees}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Merkle Patricia Trees}{subsection.2.1}% 5
 \BOOKMARK [2][-]{subsection.2.2}{Tree Terminologywiki:xxx}{section.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Recursive Length Prefix Encoding}{subsection.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{The Block}{section.2}% 8
