@@ -477,17 +477,18 @@
 					\item \textbf{Extra Data} -- This byte-array of size 32 bytes or less contains extra data relevant to this block.
 					\item \textbf{Mix Hash} -- This is a 32-byte hash that verifies a sufficient amount of computation has been done on this block.
 					\item \textbf{Nonce} -- This is an 8-byte hash that verifies a sufficient amount of computation has been done on this block.
-					\item \textbf{Ommer Block Headers} -- These are the same components listed above for any ommers.
 				
 					\index{extra data}
 					\index{mix hash}
 					\index{nonce}
-					\index{ommer block headers}
 
 					\end{enumerate}
 				
-					\subsubsection{Block Footer}
-					\item \textbf{Transaction Series} -- This is the only non-header content in the block.
+					\subsubsection{The Other 2 Block Components}
+					\item \textbf{Ommer Block Headers} -- These are ommer block headers (15 components listed above) of this block.
+					\item \textbf{Transaction Series} -- This is a list of transactions in this block and the only non-header content in the block.
+
+					\index{ommer block headers}
 					
 					\subsubsection{Block Number and Difficulty}
 						Note that is the difficulty of the genesis block. The Homestead difficulty parameter, is used to affect a dynamic homeostasis of time between blocks, as the time between blocks varies, as discussed below, as implemented in EIP-2. In the Homestead release, the exponential difficulty symbol, causes the difficulty to slowly increase (every 100,000 blocks) at an exponential rate, and thus increasing the block time difference, and putting time pressure on transitioning to proof-of-stake. This effect, known as the “difficulty bomb”, or “ice age”, was explained in EIP-649 and delayed and implemented earlier in EIP-2, was also modified in EIP-100 with the use of x, the adjustment factor, and the denominator 9, in order to target the mean block time including uncle blocks. Finally, in the Byzantium release, with EIP-649, the ice age was delayed by creating a fake block number, which is obtained by substracting three million from the actual block number, which in other words reduced the time difference between blocks, in order to allow more time to develop proof-of-stake and preventing the network from “freezing” up.\supercite{Wood2017}
