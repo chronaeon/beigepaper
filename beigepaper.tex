@@ -273,7 +273,7 @@
 			\subsubsection{Merkle Patricia Trees} 
 	
 				
-	merkle patricia trees are modified merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
+	Merkle patricia trees are modified merkletrees where nodes represent individual characters from hashes rather than each node representing an entire hash. This allows the state data structure itself to represent not only the intrinsically correct paths in the data, but also the requisite cryptographic proofs which go into making sure that a piece of data was valid in the first place. In other words, it keeps the blockchain valid by combining the structure of a standard merkletree with the structure of a Radix Tree. Since all searching and sorting algorithms in Ethereum must be filtered through this stringently correct database, accuracy of information is guaranteed. \par		
 		\index{merkletrees}
 		\index{merkle-patricia trees}
 		\index{merkle-patricia tries}
@@ -559,8 +559,8 @@
 				\item \textbf{Gas Price} -- The number of Wei to pay the network for unit of gas.
 				\item \textbf{Gas Limit} -- The maximum amount of gas to be used in while executing a transaction.			
 				\item \textbf{To} -- The 20-character recipient of a message call.\footnote{In the case of a contract creation this is 0x000000000000000000.}
-				\item \textbf{Value} The number of Wei to be transferred to the recipient of a message call.\footnote{In the case of a contract creation, an endowment to the newly created contract account.}
-				\item \textbf{v, r, s} 
+				\item \textbf{Value} -- The number of Wei to be transferred to the recipient of a message call.\footnote{In the case of a contract creation, an endowment to the newly created contract account.}
+				\item \textbf{v, r, s} -- Values for the transaction's signature from which the public key can be derived.
 			\end{enumerate}
 			
 		\subsection{State Transition Function}
@@ -574,7 +574,7 @@
 			The \texttt{Block Beneficiary} is the 160-bit (20-byte) address to which all fees collected from the successful mining of a block are transferred. \texttt{Apply Rewards} is the third process in \texttt{block\_finalization} that sends the mining reward to an account's address. This is a scalar value corresponding to the difficulty level of a current block. 
 
 		\subsection{Verification}
-			The process in The EVM that verifies Ommer Headers
+			The process in The EVM that verifies Ommer Headers.
 
 					\index{EVM}
 					\index{verification}
@@ -583,7 +583,7 @@
 					\index{block beneficiary}
 					\index{block reward}
 
-		\subsection{Sender Function} A description that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve,
+		\subsection{Sender Function} A description that maps transactions to their sender using \texttt{ECDSA} of the SECP-256k1 curve.
 
 		\subsection{Serialization/Deserialization}
 			This function expands a positive-integer value to a big-endian byte-array of minimal length. When accompanied by a $\cdot$ operator, it signals sequence concatenation.  The \texttt{big\_endian} function  accompanies RLP serialization and deserialization.
@@ -683,9 +683,9 @@
 			After a transaction is executed, there comes a \textsc{provisional state}, which is a pre-final state. Gas used for the execution of individual EVM opcodes prior to their potential addition to the \texttt{world\_state} creates:
 			
 		\begin{itemize}
-			\item provisional state
+			\item Provisional state.
 			\item \texttt{intrinsic gas}, and
-			\item an associated substate  
+			\item an associated substate.  
 		\end{itemize}
 		
 		\begin{itemize}
