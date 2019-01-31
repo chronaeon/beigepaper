@@ -7,7 +7,7 @@
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Recursive Length Prefix Encoding}{subsection.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.3}{The Block}{section.2}% 8
 \BOOKMARK [3][-]{subsubsection.2.3.1}{The Block Header}{subsection.2.3}% 9
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Block Footer}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.2}{The Other 2 Block Components}{subsection.2.3}% 10
 \BOOKMARK [3][-]{subsubsection.2.3.3}{Block Number and Difficulty}{subsection.2.3}% 11
 \BOOKMARK [3][-]{subsubsection.2.3.4}{Account Creation}{subsection.2.3}% 12
 \BOOKMARK [3][-]{subsubsection.2.3.5}{Account State}{subsection.2.3}% 13
@@ -63,7 +63,7 @@
 \BOOKMARK [2][-]{subsection.A.8}{0x90's: Swap Operations}{appendix.A}% 63
 \BOOKMARK [2][-]{subsection.A.9}{0xa0's: Logging Operations}{appendix.A}% 64
 \BOOKMARK [2][-]{subsection.A.10}{0xf0's: System Operations}{appendix.A}% 65
-\BOOKMARK [1][-]{section*.12}{References}{}% 66
-\BOOKMARK [1][-]{section*.13}{Glossary}{}% 67
-\BOOKMARK [1][-]{section*.15}{Acronyms}{}% 68
-\BOOKMARK [1][-]{section*.17}{Index}{}% 69
+\BOOKMARK [1][-]{section*.13}{References}{}% 66
+\BOOKMARK [1][-]{section*.14}{Glossary}{}% 67
+\BOOKMARK [1][-]{section*.16}{Acronyms}{}% 68
+\BOOKMARK [1][-]{section*.18}{Index}{}% 69

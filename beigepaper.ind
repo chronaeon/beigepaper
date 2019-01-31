@@ -72,8 +72,8 @@
   \item complete block, \hyperpage{11}
   \item computation, \hyperpage{8}
   \item computation of operation, \hyperpage{6}
-  \item compute valid nonce, \hyperpage{10}
-  \item compute valid state, \hyperpage{10}
+  \item compute valid nonce, \hyperpage{11}
+  \item compute valid state, \hyperpage{11}
   \item contract creation, \hyperpage{4}, \hyperpage{9}
   \item contract creation stack, \hyperpage{9}
   \item contract creation transactions, \hyperpage{8}
@@ -117,7 +117,7 @@
   \item EVM assembly, \hyperpage{10}
   \item EVM code, \hyperpage{10}
   \item evm computation instances, \hyperpage{7}
-  \item exceptional halt, \hyperpage{5}, \hyperpage{8}
+  \item exceptional halt, \hyperpage{6}, \hyperpage{8}
   \item executed, \hyperpage{1}
   \item execution, \hyperpage{6}
   \item execution environment, \hyperpage{7}
@@ -138,7 +138,7 @@
   \indexspace
 
   \item gas, \hyperpage{6}, \hyperpage{9}
-  \item gas available, \hyperpage{9}
+  \item gas available, \hyperpage{10}
   \item gas deducted, \hyperpage{6}
   \item gas expenditure per block, \hyperpage{9}
   \item gas limit, \hyperpage{3}, \hyperpage{5, 6}
@@ -170,7 +170,7 @@
   \item inspection  of data, \hyperpage{3}
   \item instantial runtime, \hyperpage{7}
   \item intrinsic validity, \hyperpage{6}
-  \item invalid instruction, \hyperpage{5}
+  \item invalid instruction, \hyperpage{6}
   \item iterative progression, \hyperpage{8}
   \item iterator function, \hyperpage{8}
 
@@ -192,21 +192,21 @@
 
   \indexspace
 
-  \item machine halt, \hyperpage{5}
+  \item machine halt, \hyperpage{6}
   \item machine instructions, \hyperpage{1}
-  \item machine state, \hyperpage{4}, \hyperpage{9}
+  \item machine state, \hyperpage{4}, \hyperpage{10}
   \item machine storage, \hyperpage{5}
   \item mapping, \hyperpage{2}
   \item mapping between account states, \hyperpage{3}
   \item mapping between addresses, \hyperpage{3}
   \item memory, \hyperpage{5}
-  \item memory contents, \hyperpage{9}
+  \item memory contents, \hyperpage{10}
   \item memory model, \hyperpage{5}
   \item memory model volatility of, \hyperpage{5}
   \item memory size, \hyperpage{5}
   \item memory stack, \hyperpage{5}
   \item memory usage fee, \hyperpage{6}
-  \item memory word count, \hyperpage{9}
+  \item memory word count, \hyperpage{10}
   \item merkle-patricia trees, \hyperpage{2}
   \item merkle-patricia tries, \hyperpage{2}
   \item merkletrees, \hyperpage{2}
@@ -240,13 +240,13 @@
   \indexspace
 
   \item ommer, \hyperpage{11}
-  \item ommer block headers, \hyperpage{3}
+  \item ommer block headers, \hyperpage{4}
   \item ommer headers, \hyperpage{11}
   \item ommer validation, \hyperpage{11}
   \item ommers hash, \hyperpage{3}
   \item opcodes, \hyperpage{1}
   \item originator price, \hyperpage{7}
-  \item out-of-gas, \hyperpage{5}
+  \item out-of-gas, \hyperpage{6}
 
   \indexspace
 
@@ -258,7 +258,7 @@
   \item post transaction state, \hyperpage{6}
   \item present depth, \hyperpage{9}
   \item probability statement, \hyperpage{11}
-  \item program counter, \hyperpage{9}
+  \item program counter, \hyperpage{10}
   \item proof-of-work, \hyperpage{11}
   \item pseudocode, \hyperpage{1}
   \item pseudorandom number generation, \hyperpage{13}
@@ -270,7 +270,7 @@
   \item refunded, \hyperpage{9}
   \item refunds, \hyperpage{7}
   \item remaining gas, \hyperpage{7}
-  \item report exception, \hyperpage{5}
+  \item report exception, \hyperpage{6}
   \item resultant output, \hyperpage{7}
   \item resultant state, \hyperpage{7}
   \item RLP, \hyperpage{2, 3}
@@ -297,14 +297,14 @@
   \item speedy traversal of data, \hyperpage{3}
   \item stack based, \hyperpage{5}, \hyperpage{7}
   \item stack based architecture, \hyperpage{5}
-  \item stack contents, \hyperpage{9}
-  \item stack underflow, \hyperpage{5}
+  \item stack contents, \hyperpage{10}
+  \item stack underflow, \hyperpage{6}
   \item state database, \hyperpage{4}, \hyperpage{13}
   \item state machine cycle, \hyperpage{8}
   \item state root, \hyperpage{3}
   \item state transition, \hyperpage{4}
   \item state transition function, \hyperpage{7}
-  \item state unchanged, \hyperpage{5}
+  \item state unchanged, \hyperpage{6}
   \item status code, \hyperpage{11}
   \item storage model, \hyperpage{5}
   \item substates, \hyperpage{7}
@@ -318,7 +318,7 @@
   \item timestamp, \hyperpage{3}
   \item timestamped, \hyperpage{1}
   \item to, \hyperpage{5}
-  \item to execute, \hyperpage{9}
+  \item to execute, \hyperpage{10}
   \item total difficulty, \hyperpage{12}
   \item total fee, \hyperpage{6}
   \item total gas used, \hyperpage{11}

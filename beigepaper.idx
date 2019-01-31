@@ -85,7 +85,7 @@
 \indexentry{extra data|hyperpage}{3}
 \indexentry{mix hash|hyperpage}{3}
 \indexentry{nonce|hyperpage}{3}
-\indexentry{ommer block headers|hyperpage}{3}
+\indexentry{ommer block headers|hyperpage}{4}
 \indexentry{block number|hyperpage}{4}
 \indexentry{genesis difficulty|hyperpage}{4}
 \indexentry{homestead difficulty parameter|hyperpage}{4}
@@ -154,13 +154,13 @@
 \indexentry{well defined memory|hyperpage}{5}
 \indexentry{non-standard architecture|hyperpage}{5}
 \indexentry{virtual ROM|hyperpage}{5}
-\indexentry{exceptional halt|hyperpage}{5}
-\indexentry{stack underflow|hyperpage}{5}
-\indexentry{invalid instruction|hyperpage}{5}
-\indexentry{out-of-gas|hyperpage}{5}
-\indexentry{state unchanged|hyperpage}{5}
-\indexentry{machine halt|hyperpage}{5}
-\indexentry{report exception|hyperpage}{5}
+\indexentry{exceptional halt|hyperpage}{6}
+\indexentry{stack underflow|hyperpage}{6}
+\indexentry{invalid instruction|hyperpage}{6}
+\indexentry{out-of-gas|hyperpage}{6}
+\indexentry{state unchanged|hyperpage}{6}
+\indexentry{machine halt|hyperpage}{6}
+\indexentry{report exception|hyperpage}{6}
 \indexentry{fees|hyperpage}{6}
 \indexentry{gas|hyperpage}{6}
 \indexentry{execution|hyperpage}{6}
@@ -274,13 +274,13 @@
 \indexentry{nonce|hyperpage}{9}
 \indexentry{block contents|hyperpage}{9}
 \indexentry{gas used|hyperpage}{9}
-\indexentry{machine state|hyperpage}{9}
-\indexentry{gas available|hyperpage}{9}
-\indexentry{program counter|hyperpage}{9}
-\indexentry{memory contents|hyperpage}{9}
-\indexentry{memory word count|hyperpage}{9}
-\indexentry{stack contents|hyperpage}{9}
-\indexentry{to execute|hyperpage}{9}
+\indexentry{machine state|hyperpage}{10}
+\indexentry{gas available|hyperpage}{10}
+\indexentry{program counter|hyperpage}{10}
+\indexentry{memory contents|hyperpage}{10}
+\indexentry{memory word count|hyperpage}{10}
+\indexentry{stack contents|hyperpage}{10}
+\indexentry{to execute|hyperpage}{10}
 \indexentry{controlled halt|hyperpage}{10}
 \indexentry{transaction series|hyperpage}{10}
 \indexentry{empty set|hyperpage}{10}
@@ -300,8 +300,8 @@
 \indexentry{genesis block|hyperpage}{10}
 \indexentry{mining effort|hyperpage}{10}
 \indexentry{totaly difficulty|hyperpage}{10}
-\indexentry{compute valid state|hyperpage}{10}
-\indexentry{compute valid nonce|hyperpage}{10}
+\indexentry{compute valid state|hyperpage}{11}
+\indexentry{compute valid nonce|hyperpage}{11}
 \indexentry{ommer validation|hyperpage}{11}
 \indexentry{ommer headers|hyperpage}{11}
 \indexentry{valid header|hyperpage}{11}
