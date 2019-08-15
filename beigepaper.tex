@@ -9,7 +9,7 @@
 \usepackage{boldline}
 \usepackage{beton}
 \usepackage{booktabs}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage[normalem]{ulem}
 \usepackage{array}
 \usepackage[colorlinks]{hyperref}
@@ -45,7 +45,7 @@
 \usepackage{footnote}
 \usepackage{pgfkeys}
 \usepackage{pgf}
-\usepackage{microtype}
+%\usepackage{microtype}
 \usepackage{enumitem}
 \usepackage[acronyms,toc,section=section]{glossaries}
 \usepackage{endnotes}
@@ -53,7 +53,7 @@
 \usepackage{pdfpages}
 \usepackage{supertabular}
 \usepackage{listings}
-\usepackage{marginnote}
+%\usepackage{marginnote}
 \usepackage{makeidx}
 \makeindex
 \usepackage[totoc]{idxlayout}
@@ -61,12 +61,23 @@
 \usepackage{fancyhdr}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\RequirePackage{multicol}
+\RequirePackage{fontspec}
+\RequirePackage{tgheros}
+\RequirePackage{datetime2}
+
+\DTMsetdatestyle{iso}
+
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+%\setmonofont{TeX Gyre Heros}
+\renewcommand*\familydefault{\sfdefault}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{Beigepaper}
+\fancyhead[C]{Beigepaper -- v0.8.5}
 \fancyhead[L]{\rightmark}
-\fancyhead[R]{\today--Version 0.7.3}
+\fancyhead[R]{\today}
 \fancyfoot[C]{\thepage} 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
